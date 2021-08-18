@@ -1,0 +1,159 @@
+Algoritmo "Corredor"
+
+Var
+
+procedimento mostrarCorredor
+var
+void:inteiro
+inicio
+  ESCREVA("No corredor, em formato de L, dava para ouvir perfeitamente a forte tempestade que caia lá fora. ")
+  LEIA(void)
+  
+  ESCREVA("Todas as janelas do corredor estavam quebradas e seus cacos espalhados pelo chão, que estava molhado devido a intensa tempestade.")
+  LEIA(void)
+
+  ESCREVA("Do seu lado direito tem um enorme grade no caminho, no seu lado esquerdo o corredor continua até chegar em outra grade.")
+  LEIA(void)
+  
+  ESCREVA("Você vai até a janela primeiro.")
+  LEIA(void)
+  
+  ESCREVA("crack!")
+  LEIA(void)
+  
+  ESCREVA("os vidros quebramaos seus passos")
+  LEIA(void)
+  
+  ESCREVA("Por ela, você consegue ver um pátio arborizado com uma enorme fonte no meio dela, ")
+  ESCREVA("na qual há uma estátua de uma pessoa encapuzada segurando um livro estranho em uma das mãos e uma adaga na outra.")
+  LEIA(void)
+  
+
+  
+  ESCREVA("Você percebe que as plantas do pátio mesmo que estejam verdes  passam uma sensação de estarem doentes e definhando.")
+  LEIA(void)
+  
+  ESCREVA("Você se afasta da janela e vai até a grade mais próxima.")
+  LEIA(void)
+  
+  ESCREVA("Você tenta abri-la.")
+  LEIA(void)
+  
+  ESCREVA("Mas não consegue.")
+  LEIA(void)
+  
+  ESCREVA("'Que ótimo. Vou ter que achar uma chave ou escalar até lá embaixo.'")
+  LEIA(void)
+  
+  ESCREVA("Você vai até a grade do outro lado do corredor.")
+  LEIA(void)
+  
+  ESCREVA("Essa você conseguiu abrir.")
+  LEIA(void)
+  
+  ESCREVA("Depois da grade, o corredor continua sem ter mais nenhuma cela.")
+  LEIA(void)
+  
+  ESCREVA("No fim do corredor tinha outra grade trancada e do seu lado uma porta.")
+  LEIA(void)
+  
+  ESCREVA("No caminho a até o fim do corredor você vê quatro quadros na parede.")
+  LEIA(void)
+  
+  ESCREVA("Você para no primeiro e nota que, curiosamente, só a moldura foi afetada pelo tempo,  ")
+  ESCREVA("a pintura, porém, está fresca como se tivesse acabado de ser pintada.")
+  LEIA(void)
+
+  ESCREVA("No quadro você vê uma figura aparentemente humana, ")
+  ESCREVA("ele é sobrenaturalmente pálido, ")
+  ESCREVA("vestia um manto amarelo com capuz que cobria sua cabeça, ")
+  ESCREVA("o seu rosto é coberto por uma máscara branca bizarra")
+  ESCREVA(" sobre o capuz utilizava uma coroa de ferro amarelado.")
+  LEIA(void)
+  
+  ESCREVA("Na moldura você vê algo escrito:")
+  LEIA(void)
+
+  
+  ESCREVA("Hastur, o Rei Amarelo.")
+  LEIA(void)
+
+  ESCREVA("ocê caminha até o segundo quadro que possui o mesmo aspecto, ")
+  ESCREVA("porém sua imagem era diferente.")
+  LEIA(void)
+  
+  ESCREVA("Você vê um grupo de exploradores posando como se estivessem tirando uma foto na frente de um navio,")
+  ESCREVA(", porém todo o grupo e o navio estavam no meio do deserto congelado que é a Antártida.")
+  LEIA(void)
+  
+  ESCREVA("Na moldura está escrito:")
+  LEIA(void)
+  
+  ESCREVA("nas montanhas da loucura, eis a última expedição do navio Dunwich.")
+  LEIA(void)
+  
+  ESCREVA("No terceiro quadro, você percebe o mesmo aspecto que os outros e com uma imagem diferente.")
+  LEIA(void)
+  
+  ESCREVA("Você vê na imagem uma pequena casa com um poço, ")
+  ESCREVA("rodeada por florestas e montanhas, ")
+  ESCREVA("o céu noturno sem estrelas do quadro era  cortado ao meio por cometa ")
+  ESCREVA("de cores inaturais vindo para o nosso mundo.")
+  LEIA(void)
+  
+  ESCREVA("Na moldura estava escrito:")
+  LEIA(void)
+  
+  ESCREVA("A cor vinda do Espaço, e o Início dos Dias Estranhos.")
+  LEIA(void)
+  
+  ESCREVA("No quarto e último quadro de mesmo aspecto, tinha uma imagem completamente preta.")
+  LEIA(void)
+  
+  ESCREVA("Você fica olhando estática para o quadro como se estivesse sendo hipnotizada.")
+  LEIA(void)
+  
+  ESCREVA("Você se sente sendo sugada para dentro do quadro, ")
+  ESCREVA("como se tivesse na frente do abismo de um buraco negro prestes te a engolir.")
+  LEIA(void)
+  
+  ESCREVA("NYAHUEHEHEHE")
+  LEIA(void)
+  
+  ESCREVA("-Cuidado pequena Jesse, ")
+  ESCREVA("quando se olha por muito tempo o abismo exterior, os deuses  de dentro dele te olham de volta.-")
+  LEIA(void)
+  
+  ESCREVA("Há! Ah! Ah! Há! Ah! Ah! Há! Ah! Ah! Há! Ah! Ah! Há! Ah! Ah! Há! Ah! Ah!")
+  LEIA(void)
+  
+  ESCREVA("Você olha ao redor procurando de onde veio essa gargalhada e essa voz")
+  LEIA(void)
+  
+  ESCREVA(" mas você não vê ninguém.")
+  LEIA(void)
+  
+
+  
+  ESCREVA("Ao olhar de novo para o quadro,")
+  ESCREVA(" você percebe o que está escrito na moldura do quarto quadro:")
+  LEIA(void)
+  
+  ESCREVA("O sussurro nas trevas")
+  LEIA(void)
+  
+  ESCREVA("crack!crack!")
+  LEIA(void)
+  
+  ESCREVA("Um pouco assustada você continua até chegar na porta desconhecida.")
+  LEIA(void)
+
+  ESCREVA("clink!")
+  LEIA(void)
+
+fimprocedimento
+Inicio
+mostrarCorredor
+
+
+Fimalgoritmo
