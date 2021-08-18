@@ -2,6 +2,8 @@
 
 Descricao aqui
 
-## Subtopicos Aqui
+## Adicionando/Editando Arquivos
 
-blablabla
+Clique no nome do arquivo e depois no símbolo do lápis.
+
+Faça suas edições e depois confirme com "request changes".
