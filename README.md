@@ -1,6 +1,6 @@
 # Jogo sem Nome
 
-Descricao aqui
+Leia o Guia de Estilo antes de postar.
 
 ## Adicionando/Editando Arquivos
 
