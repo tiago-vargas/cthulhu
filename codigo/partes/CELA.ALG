@@ -2,7 +2,7 @@ ALGORITMO "CELA"
 
 VAR
    entrada: CARACTERE
-   
+
 // ======================================================================
 PROCEDIMENTO mostre(trecho: CARACTERE)
 VAR a: CARACTERE // so pra poder pausar o texto
@@ -42,18 +42,18 @@ INICIO
    opcoes[6] <- "CAMA"
 
    MOSTRE("CAAARRACK!!!!!!!")
-   MOSTRE("VocÍ desperta com o barulho de um trov„o.")
-   MOSTRE("VocÍ est· deitada numa cama.")
-   MOSTRE("Ao olhar para os lados, se vÍ presa numa cela trancada por uma porta de aÁo, na qual tem uma janelinha.")
-   MOSTRE("Ao analisar o ambiente novo e desconhecido, vocÍ vÍ um ba˙ que est· na parede a sua frente, no lado de sua cama tem uma mesinha e em um dos cantos da cela est· a privada e a pia.")
+   MOSTRE("Voc√™ desperta com o barulho de um trov√£o.")
+   MOSTRE("Voc√™ est√° deitada numa cama.")
+   MOSTRE("Ao olhar para os lados, se v√™ presa numa cela trancada por uma porta de a√ßo, na qual tem uma janelinha.")
+   MOSTRE("Ao analisar o ambiente novo e desconhecido, voc√™ v√™ um ba√∫ que est√° na parede a sua frente, no lado de sua cama tem uma mesinha e em um dos cantos da cela est√° a privada e a pia.")
 
-   PERGUNTE("No que vocÍ vai mexer primeiro?") // P1
+   PERGUNTE("No que voc√™ vai mexer primeiro?") // P1
    
    terminarLoop <- FALSO
    iteracao <- 1
    ENQUANTO NAO terminarLoop FACA
       SE iteracao > 1 ENTAO
-         PERGUNTE("No que vocÍ vai mexer agora?") // P1+
+         PERGUNTE("No que voc√™ vai mexer agora?") // P1+
       FIMSE
 
       PARA i DE 1 ATE 6 FACA
@@ -66,17 +66,17 @@ INICIO
       ESCOLHA entrada
       CASO "PORTA"
          opcoes[1] <- ""
-         MOSTRE("Ao analisar o ambiente novo e desconhecido, vocÍ vÍ um ba˙ que est· na parede a sua frente, no lado de sua cama tem uma mesinha e em um dos cantos da cela est· a privada e a pia.")
-         MOSTRE("VocÍ consegue visualizar um corredor de sanatÛrio que parece ter sido construÌdo no inÌcio do sÈculo 20; o corredor est· cheio de mÈdicos, enfermeiras e pacientes.")
-         MOSTRE("VocÍ grita: ìAlguÈm me tire daqui!!!î")
-         MOSTRE("Apesar do esforÁo, parece que ninguÈm te ouviu.")
-         MOSTRE("ìPreciso encontrar algo para chamar a atenÁ„o deles.î")
+         MOSTRE("Ao analisar o ambiente novo e desconhecido, voc√™ v√™ um ba√∫ que est√° na parede a sua frente, no lado de sua cama tem uma mesinha e em um dos cantos da cela est√° a privada e a pia.")
+         MOSTRE("Voc√™ consegue visualizar um corredor de sanat√≥rio que parece ter sido constru√≠do no in√≠cio do s√©culo 20; o corredor est√° cheio de m√©dicos, enfermeiras e pacientes.")
+         MOSTRE("Voc√™ grita: ‚ÄúAlgu√©m me tire daqui!!!‚Äù")
+         MOSTRE("Apesar do esfor√ßo, parece que ningu√©m te ouviu.")
+         MOSTRE("‚ÄúPreciso encontrar algo para chamar a aten√ß√£o deles.‚Äù")
       CASO "BAU"
-         MOSTRE("VocÍ vai atÈ o ba˙ e tenta abri-lo.")
-         MOSTRE("Por sorte, o ba˙ est· aberto.")
-         MOSTRE("VocÍ encontra dentro dele uma bolsa, uma lanterna e a chave da cela.")
+         MOSTRE("Voc√™ vai at√© o ba√∫ e tenta abri-lo.")
+         MOSTRE("Por sorte, o ba√∫ est√° aberto.")
+         MOSTRE("Voc√™ encontra dentro dele uma bolsa, uma lanterna e a chave da cela.")
 
-         pergunte("VocÍ quer abrir a porta ou vasculhar o resto da cela?") // p1.2
+         pergunte("Voc√™ quer abrir a porta ou vasculhar o resto da cela?") // p1.2
          ENQUANTO (entrada <> "CELA") E (entrada <> "PORTA") FACA
             ESCREVAL("- CELA")
             ESCREVAL("- PORTA")
@@ -84,13 +84,13 @@ INICIO
             RESPOSTA(entrada)
 
             SE entrada = "CELA" ENTAO
-               MOSTRE("ìMelhor eu dar mais uma olhada antes de sair. Talvez tenha alguma outra coisa ˙til.î")
+               MOSTRE("‚ÄúMelhor eu dar mais uma olhada antes de sair. Talvez tenha alguma outra coisa √∫til.‚Äù")
             SENAO
                SE entrada = "PORTA" ENTAO
-                  MOSTRE("VocÍ insere a chave e a porta destranca.")
+                  MOSTRE("Voc√™ insere a chave e a porta destranca.")
                   MOSTRE("Raio, BAR-ROOM!!!!!")
-                  MOSTRE("VocÍ fica atordoada por um segundo.")
-                  MOSTRE("Ao abrir os olhos, vocÍ nota que todo o lugar mudou; tudo estava velho e acabado pelo tempo, a porta que antes trancava sua cela agora est· no ch„o, toda corroÌda pela ferrugem.")
+                  MOSTRE("Voc√™ fica atordoada por um segundo.")
+                  MOSTRE("Ao abrir os olhos, voc√™ nota que todo o lugar mudou; tudo estava velho e acabado pelo tempo, a porta que antes trancava sua cela agora est√° no ch√£o, toda corro√≠da pela ferrugem.")
                   terminarLoop <- VERDADEIRO
                SENAO
                   MOSTRE("So ha duas opcoes...")
@@ -100,25 +100,25 @@ INICIO
          FIMENQUANTO
       CASO "PIA"
          opcoes[3] <- ""
-         MOSTRE("N„o È hora para isso.")
+         MOSTRE("N√£o √© hora para isso.")
       CASO "PRIVADA"
          opcoes[4] <- ""
-         MOSTRE("N„o È hora para isso.")
+         MOSTRE("N√£o √© hora para isso.")
       CASO "MESA"
          opcoes[5] <- ""
-         MOSTRE("VocÍ se encaminha atÈ a mesa.")
-         MOSTRE("Nela, vocÍ encontra uma ficha mÈdica com seu nome, sua idade, descriÁ„o fÌsica e dizendo que estava internada devido a problemas psicolÛgicos no sanatÛrio Blackwood.")
-         MOSTRE("Segundo o laudo de um doutor San-Nity, Jesse sofre de sanidade aguda e deveria ser tratada com torturas psicolÛgicas constantes.")
-         MOSTRE("VocÍ fica um pouco assustada e confusa.")
+         MOSTRE("Voc√™ se encaminha at√© a mesa.")
+         MOSTRE("Nela, voc√™ encontra uma ficha m√©dica com seu nome, sua idade, descri√ß√£o f√≠sica e dizendo que estava internada devido a problemas psicol√≥gicos no sanat√≥rio Blackwood.")
+         MOSTRE("Segundo o laudo de um doutor San-Nity, Jesse sofre de sanidade aguda e deveria ser tratada com torturas psicol√≥gicas constantes.")
+         MOSTRE("Voc√™ fica um pouco assustada e confusa.")
       CASO "CAMA"
          opcoes[6] <- ""
-         MOSTRE("VocÍ olha embaixo da cama sem esperanÁa de encontrar alguma coisa, porÈm suas expectativas estavam erradas.")
-         MOSTRE("VocÍ encontra uma maleta velha debaixo da cama.")
-         MOSTRE("Dentro dela tinha in˙meros mapas, que vocÍ os guarda consigo.")
+         MOSTRE("Voc√™ olha embaixo da cama sem esperan√ßa de encontrar alguma coisa, por√©m suas expectativas estavam erradas.")
+         MOSTRE("Voc√™ encontra uma maleta velha debaixo da cama.")
+         MOSTRE("Dentro dela tinha in√∫meros mapas, que voc√™ os guarda consigo.")
       OUTROCASO
-         MOSTRE("Escolha inv·lida.")
+         MOSTRE("Escolha inv√°lida.")
       FIMESCOLHA
-      
+
       iteracao <- iteracao + 1
    FIMENQUANTO
 FIMPROCEDIMENTO
