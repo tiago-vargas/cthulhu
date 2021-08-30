@@ -267,6 +267,7 @@ Do lado da estante, tem uma cômoda com um machado encravado e três bustos em c
 	```
 	MACHADO??
 	```
+
 ## A passagem secreta
 
 Vinha um forte cheiro de mofo de dentro da passagem, característicos de lugares a muito tempo isolados do mundo.
@@ -319,3 +320,122 @@ Você chega ao último andar e a porta já está aberta.
 Você olha na plaquinha para saber que sala é essa.
 
 Estava escrito: Sala de máquinas.
+
+## Primeiro Andar
+
+De volta à sala de segurança, você tranca a porta da passagem e percebe que a sala não estava mais parecendo velha.
+
+Ela estava completamente nova, bem iluminada e sem nenhum corpo.
+
+Você não tem muito tempo para ficar pensando, algo estava batendo na porta da passagem para entrar.
+
+Você corre para o corredor e percebe que o mesmo tinha acontecido com ele.
+
+Porém tinha um detalhe a mais.
+
+Das janelas completamente estilhaçadas, estravam tentáculos completamente pretos que ficavam convulsivamente se batendo e arrastando pelas paredes, teto e chão.
+
+Nem a tempestade estava normal mais.
+
+No lugar de água, chovia sangue e os raios que cortavam o céu eram verdes.
+
+_Me pergunto, será se sua mente tão pequena consegue apreciar a beleza de como o mundo vai ficar depois que o ritual estiver concluído?_
+
+Era Nyarlathotep de novo.
+
+_Daqui algumas horas, quando o ritual estiver completo, essa bela visão se estenderá além das montanhas de Arkham e será prazeroso assistir a sua espécie de vermes sendo massacradas pelos filhos de Shub-niggurath sem saber o porquê de que isso está acontecendo com eles._
+
+_Provavelmente irão justificar que é uma punição do Deus de vocês ou clamar por Ele, e irão sucumbir a sua tolice ao perceber que não existe Deus._
+
+_Espero que goste do show de mortes que irei trazer para esse mundo._
+
+AHAHAHAHAHAHAHAHAAAAAAAAAAA
+
+Você fala um palavrão e continua o seu caminho o ignorando.
+
+_Ei, espere um minuto._
+
+Você ignora a voz feminina te chamando.
+
+_Ei, espera um minuto._
+
+Você a ignora de novo.
+
+Ơ̭̗̙̯̤̱̋ͭL̸̺͔̪̊ͯͦͅH̴͚̲͉̜̺̝̻ͩ̍E̴̪͍̜̭͇͓̐̋́ͭ ̧̟͇̰̩̲̬̫́̚P̷̼̥̳͒ͥ̚ͅÃ̶̖̤̜̳̠̞͊ͩ͗ͅR͔̩̭͔̺ͭ͆ͣ͘ͅǍ̵̻͈̯̳̺͆ͫ̈́ ̷͚̖̖̺̽ͮM̷̫̙͉͉̹̰̈ͭ̇I̝̺͆͠M̡̤̻̘̏͑̋ͅ
+
+Você se vira ao perceber a distorção em sua voz.
+
+Você vê algo quase indescritível.
+
+Aquela coisa tinha metade de um dorso humano, não tinha olhos, só buracos pretos em seu lugar, um de seus braços era um tentáculo gigantesco e disforme, e parte do corpo que faltava tinha no lugar um monte tentáculos.
+
+Ela usava uma roupa de enfermeira toda ensanguentada.
+
+Você começa a correr daquilo e aquilo começa a correr atrás de você.
+
+Na curva do corredor aquilo derrapa e se bate na parede, o que te dá tempo para abrir a porta.
+
+Você chega na grade já com o molho de chaves na mão e só tem alguns segundos para abrir a porta.
+
+Agora é questão de escolher a chave certa.
+
+Você tem 20 chaves cada uma com um número, de 1 a 20.
+
+**P5:** Qual você vai usar?
+- _Acertou_
+	- Você coloca chave no trinco e gira.
+	- A porta se abre.
+	- Você entra e fecha a porta logo atrás de você.
+	- A criatura se bate enfurecida na grade.
+	- Você estava segura agora.
+	- Aquela coisa não poderia te pegar.
+	- _Ou será que não? AHAHAHAHAHAHAAAA_
+	- A porta na grade começa a se soltar.
+	- Você pensa em correr para o corredor que está ao seu lado.
+	- Mas quando se vira tem uma parede viva formada por tentáculos impedindo sua passagem.
+	- No meio da parede começa a se formar uma silhueta de um ser humanóide com três pernas, dois braços e um tentáculo no lugar da cabeça.
+	- _Eu não vou deixar você sair dessa tão fácil, minha cara Jesse._
+	- _Pelo que eu me lembro, na sua ficha dizia que o seu tratamento era na base de torturas psicológicas constantes, certo?_
+	- _Pois é só o começo agora! NYAHAHAHAHA!_
+	- A silhueta some, mas pela voz você sabe que era Nyarlathotep.
+	- A porta na grade se solta.
+
+- _Errou_
+	- Você coloca a chave no trinco e gira.
+	- Mas a porta não abre.
+
+- _Errou 3 vezes_
+	- O seu tempo acabou e a enfermeira chegou muito perto.
+
+## Encarando o Bicho
+O tentáculo que fica no lugar do braço de enfermeira te agarra e puxa.
+
+Ela está te apertando muito forte, você começa a ficar sem ar.
+
+Ela te bate com muita força na parede onde ficam as celas.
+
+Com essa pancada você quase desmaia.
+
+_Use a adaga._
+
+Era aquela voz rouca de novo.
+
+**P6:** usar agora ou esperar?
+- **>> USAR**
+	- (Você enfia a adaga no tentáculo.
+	- Ela te solta e se afasta urrando de dor.
+	- Você pega o seu machado e disfere um golpe.
+	- Você acerta bem no peito da criatura.
+	- Ela te bate, te jogando contra a grade.
+	- Você se levanta e vai para cima dela para dar mais um golpe.
+	- Porém ela te dá um golpe horizontal com o tentáculo te jogando para fora da janela.
+- **>> ESPERAR**
+	- Você a espera chegar mais próxima.
+	- Ela já está quase com o rosto colado no seu.
+	- Você enfia a adaga no pescoço dela e ela dá um urro de dor.
+	- Ela te solta e se afasta indo para mais perto da janela.
+	- Você pega o seu machado e desce no peito dela.
+	- Ela dá mais um urro de dor e chega no parapeito da janela.
+	- Você corre para cima dela e desfere um último golpe que a faz ir mais para traz batendo no parapeito e caindo.
+	- Porém ela era mais rápida que você e te agarra antes de cair, levando você junto com ela.
+
