@@ -289,7 +289,11 @@ Você aciona a alavanca.
 
 Nada.
 
-_Você precisa de energia, Jesse. Sério mesmo que você foi burra o suficiente de pensar que iria sair tão fácil assim? Parece até que seu diploma foi comprado._
+_Você precisa de energia, Jesse._
+
+_Sério mesmo que você foi burra o suficiente de pensar que iria sair tão fácil assim?_
+
+_Parece até que seu diploma foi comprado._
 
 ```
 Saber implementar esse italico.
@@ -333,23 +337,23 @@ Você corre para o corredor e percebe que o mesmo tinha acontecido com ele.
 
 Porém tinha um detalhe a mais.
 
-Das janelas completamente estilhaçadas, estravam tentáculos completamente pretos que ficavam convulsivamente se batendo e arrastando pelas paredes, teto e chão.
+Pelas janelas completamente estilhaçadas entravam tentáculos completamente pretos que ficavam convulsivamente se batendo e arrastando pelas paredes, teto e chão.
 
 Nem a tempestade estava normal mais.
 
 No lugar de água, chovia sangue e os raios que cortavam o céu eram verdes.
 
-_Me pergunto, será se sua mente tão pequena consegue apreciar a beleza de como o mundo vai ficar depois que o ritual estiver concluído?_
+_Me pergunto, será que sua mente tão pequena consegue apreciar a beleza de como o mundo vai ficar depois que o ritual estiver concluído?_
 
 Era Nyarlathotep de novo.
 
-_Daqui algumas horas, quando o ritual estiver completo, essa bela visão se estenderá além das montanhas de Arkham e será prazeroso assistir a sua espécie de vermes sendo massacradas pelos filhos de Shub-niggurath sem saber o porquê de que isso está acontecendo com eles._
+_Daqui algumas horas, quando o ritual estiver completo, essa bela visão se estenderá para além das montanhas de Arkham e será prazeroso assistir a sua espécie de vermes sendo massacrada pelos filhos de Shub-niggurath sem saber o porquê de isso estar acontecendo com eles._
 
 _Provavelmente irão justificar que é uma punição do Deus de vocês ou clamar por Ele, e irão sucumbir a sua tolice ao perceber que não existe Deus._
 
 _Espero que goste do show de mortes que irei trazer para esse mundo._
 
-AHAHAHAHAHAHAHAHAAAAAAAAAAA
+_AHAHAHAHAHAHAHAHAAAAAAAAAAA_
 
 Você fala um palavrão e continua o seu caminho o ignorando.
 
@@ -408,6 +412,7 @@ Você tem 20 chaves cada uma com um número, de 1 a 20.
 	- O seu tempo acabou e a enfermeira chegou muito perto.
 
 ## Encarando o Bicho
+
 O tentáculo que fica no lugar do braço de enfermeira te agarra e puxa.
 
 Ela está te apertando muito forte, você começa a ficar sem ar.
@@ -422,7 +427,7 @@ Era aquela voz rouca de novo.
 
 **P6:** usar agora ou esperar?
 - **>> USAR**
-	- (Você enfia a adaga no tentáculo.
+	- Você enfia a adaga no tentáculo.
 	- Ela te solta e se afasta urrando de dor.
 	- Você pega o seu machado e disfere um golpe.
 	- Você acerta bem no peito da criatura.
