@@ -5,13 +5,13 @@ O guia de estilos tá desatualizado. Depois resolvo isso.
 * **Terminar o Manual.**
 * **Nome Provisório - As Montanhas da Loucura**
 
-## Adicionando Aruivos
+## Adicionando Arquivos
 
 Vá pro diretório onde você deseja adicionar o arquivo.
 
 Clique em "add file".
 
-Arquivos das fases ficam em codigo/partes
+Arquivos das fases ficam em `cthulhu/codigo/partes`.
 
 ## Editando Arquivos
 
