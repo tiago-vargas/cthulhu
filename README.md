@@ -1,6 +1,6 @@
 # MURAL DE AVISOS
 
-Leia o Guia de Estilo antes de postar.
+O guia de estilos tá desatualizado. Depois resolvo isso.
 
 ## Adicionando Aruivos
 
