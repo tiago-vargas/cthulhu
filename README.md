@@ -2,6 +2,8 @@
 
 O guia de estilos tá desatualizado. Depois resolvo isso.
 
+* **Terminar o Manual.**
+
 ## Adicionando Aruivos
 
 Vá pro diretório onde você deseja adicionar o arquivo.
