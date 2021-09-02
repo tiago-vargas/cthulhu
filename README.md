@@ -3,6 +3,7 @@
 O guia de estilos tá desatualizado. Depois resolvo isso.
 
 * **Terminar o Manual.**
+* **Nome Provisório - As Montanhas da Loucura**
 
 ## Adicionando Aruivos
 
