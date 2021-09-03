@@ -3,7 +3,11 @@
 O guia de estilos tá desatualizado. Depois resolvo isso.
 
 * **Terminar o Manual.**
-* **Nome Provisório - As Montanhas da Loucura**
+ 
+    Nomes possiveis:
+    
+  - As Montanhas da Loucura
+  - Call of Madness
 
 ## Adicionando Arquivos
 
@@ -18,3 +22,5 @@ Arquivos das fases ficam em `cthulhu/codigo/partes`.
 Clique no nome do arquivo e depois no símbolo do lápis.
 
 Faça suas edições e depois confirme com "request changes".
+
+
