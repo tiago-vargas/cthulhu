@@ -29,10 +29,25 @@ Sai do jogo.
 ## Como Jogar
 
 ## Wiki
-### Passado dos involvidos no incidente Blackwood:
+
+## Registro da investigação do desaparecimento/sequestro de Jesse W. Lovecraft:
+
+### Detetive responsavel: Leon S. Valentine 
  
- #### Jesse:
+ #### Registro dos supeitos/vitimas:
+ -Nome: Jesse W. Lovecraft
  
+ -Idade: 26 anos
+ 
+ -Data de nascimento: 26/10/1995
+ 
+ -Local de nascimento: Hospipal Memorial Ammi, cidade de Arkham
+ 
+ -Nome do pai: James whaterley Lovecraft
+ 
+ -nome da mãe: Sara da Silva Costa
+ 
+ -Historia do suspeito/vitima:
  Jesse nasceu em 1995, no Hospital Ammi que fica na cidade de Arkham. Ela é a filha mais nova do norte-americano James Lovecraft e da brasileira Sara Lovecraft. James whaterley Lovecraft era um renomado astrônomo e muito famoso entre a counidade ciêntifica da Universidade Miskatonic, mesmo lugar onde conheceu Sara sua futura esposa e mãe de Jesse.Sara da Silva Costa era uma experiente e talentosa oceanógrafa. Sara foi até Arkham para pedir ajuda a uma amiga geologa que trabalhava na Universidade Mistatonic, nessa mesma viajem foi quando Sara conheceu James. Pelo que Jesse sabe sua mãe foi para Arkham para descobrir mais informaçoes sobre um misterioso pedaço de pedra que extraira de uma estranha formação geologica subimarina que encontrara na sua ultima viajem de exploração do oceano pacifico.
  
   Sara e James se casaram dois anos depois de seu primeiroencontro na unversidade de Mistatonic e um ano depois tiveram o primeiro filho, John Lovecraft, e depois de 5 anos do nacimento de John tiveram Jesse. depois de nacimento eles se mudaram para Massachusetts, onde viveram até o fatidico dia do acidente.
