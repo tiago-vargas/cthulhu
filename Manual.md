@@ -29,5 +29,11 @@ Sai do jogo.
 ## Como Jogar
 
 ## Wiki
+### Historias dos Personagens:
+ 
+ #### Jesse:
+       
+ 
+ 
 
 ## Dicas
