@@ -29,6 +29,13 @@ Sai do jogo.
 ## Como Jogar
 
 ## Wiki
+## Criação de mundo:
+
+O mundo de nosso jogo foi criado levando como inspiração e base o horripilante mundo de horror criado Howard Philips Lovecraft. O universo de horror criado H.P.Lovecraft fundou um novo subgênero de horror que ficou conhecido como Horror cósmico. As obras de Lovecraft foram de inspirações para a criação de várias obras de sucesso da atualidade como o livro It, a coisa.
+
+No jogo, nos adaptamos esse universo trazendo monstros icônicos de Lovecraft para a narrativa como também construímos um mundo usando como base o mundo de seus contos. Assim criando um mundo de horror Lovecraftiano ambientado no tempo presente e que se passa e faz referência a localidades existentes nos contos de Lovecraft, e criamos uma localidade nova onde se situa a trama principal do jogo.
+
+seguindo mais a frente nessa parte do manual terá a história dos personagens que aparecem e são citados no jogo, como também a macabra história do sanatório Blackwood. Essa parte do manual é um recorte dos arquivos de um detetive que está trabalhando para solucionar o mistério de desaparecimento da nossa destemida e implacável protagonista. O que será que o nosso habilidoso detetive descobriu sobre o passado de Jesse e dos Angel’s? Que segredos obscuros ele encontrou sobre os deuses antigos enquanto procurava Jesse? Será que o culto o impediu permanentemente de encontrar a resposta para esse mistério?
 
 ## Registro da investigação do desaparecimento/sequestro de Jesse W. Lovecraft:
 
