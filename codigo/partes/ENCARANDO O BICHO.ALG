@@ -5,8 +5,8 @@ VAR
 
 // ======================================================================
 PROCEDIMENTO TEXTO(trecho: CARACTERE)
-  VAR a: CARACTERE
-  INICIO
+ VAR a: CARACTERE
+ INICIO
    ESCREVAL(trecho)
    LEIA(a)
 FIMPROCEDIMENTO
@@ -15,7 +15,7 @@ FIMPROCEDIMENTO
 PROCEDIMENTO FALA(trecho: CARACTERE)
   VAR a: CARACTERE
   INICIO
-   ESCREVA ("- ")
+   ESCREVA ("    -- ")
    ESCREVAL(trecho)
    LEIA(a)
 FIMPROCEDIMENTO
@@ -39,54 +39,56 @@ FIMPROCEDIMENTO
 // ----------------------------------------------------------------------
 PROCEDIMENTO Bicho
   VAR
-   terminarLoop: LOGICO
-   iteracao, i : INTEIRO
-   opcoes      : vetor[1..6] DE CARACTERE
   INICIO
-   opcoes[1] <- ""
-   opcoes[2] <- ""
-   opcoes[3] <- ""
-   opcoes[4] <- ""
-   opcoes[5] <- ""
-   opcoes[6] <- ""
+   //       "+-----------------------------------------------------------------------------+"
+   TEXTO   ("O tentÃ¡culo que fica no lugar do braÃ§o de enfermeira te agarra e puxa.")
+   TEXTO   ("Ela estÃ¡ te apertando muito forte, vocÃª comeÃ§a a ficar sem ar.")
+   TEXTO   ("Ela te bate com muita forÃ§a na parede onde ficam as celas.")
+   TEXTO   ("Com essa pancada vocÃª quase desmaia.")
 
-   TEXTO("O tentáculo que fica no lugar do braço de enfermeira te agarra e puxa.")
-   TEXTO("Ela está te apertando muito forte, você começa a ficar sem ar.")
-   TEXTO("Ela te bate com muita força na parede onde ficam as celas.")
-   TEXTO("Com essa pancada você quase desmaia.")
-   FALA ("Use a adaga.")
-   TEXTO("Era aquela voz rouca de novo.")
-   
+   DIALOGO ("     ???????")
+   FALA    ("Use a adaga.")
+
+   TEXTO   ("Era aquela voz rouca de novo.")
+
    PERGUNTA("Usar agora ou esperar?")
-   
+
    REPITA
       ESCREVAL("- USAR")
       ESCREVAL("- ESPERAR")
       Resposta(entrada)
+      LIMPATELA()
       ESCOLHA entrada
       CASO "USAR"
-         TEXTO("Você enfia a adaga no tentáculo.")
-         TEXTO("Ela te solta e se afasta urrando de dor.")
-         TEXTO("Você pega o seu machado e disfere um golpe.")
-         TEXTO("Você acerta bem no peito da criatura.")
-         TEXTO("Ela te bate, te jogando contra a grade.")
-         TEXTO("Você se levanta e vai para cima dela para dar mais um golpe.")
-         TEXTO("Porém ela te dá um golpe horizontal com o tentáculo te jogando para fora da janela.")
+         //       "+-----------------------------------------------------------------------------+"
+         TEXTO   ("VocÃª enfia a adaga no tentÃ¡culo.")
+         TEXTO   ("Ela te solta e se afasta urrando de dor.")
+         TEXTO   ("VocÃª pega o seu machado e disfere um golpe.")
+         TEXTO   ("VocÃª acerta bem no peito da criatura.")
+         TEXTO   ("Ela te bate, te jogando contra a grade.")
+         TEXTO   ("VocÃª se levanta e vai para cima dela para dar mais um golpe.")
+
+         ESCREVAL("PorÃ©m ela te dÃ¡ um golpe horizontal com o tentÃ¡culo te jogando para fora da ja-")
+         TEXTO   ("nela.")
       CASO "ESPERAR"
-         TEXTO("Você a espera chegar mais próxima.")
-         TEXTO("Ela já está quase com o rosto colado no seu.")
-         TEXTO("Você enfia a adaga no pescoço dela e ela dá um urro de dor.")
-         TEXTO("Ela te solta e se afasta indo para mais perto da janela.")
-         TEXTO("Você pega o seu machado e desce no peito dela")
-         TEXTO("Ela dá mais um urro de dor e chega no parapeito da janela.")
-         TEXTO("Você corre para cima dela e desfere um último golpe que a faz ir mais para traz batendo no parapeito e caindo.")
-         TEXTO("Porém ela era mais rápida que você e te agarra antes de cair, levando você junto com ela.")
+         TEXTO   ("VocÃª a espera chegar mais prÃ³xima.")
+         TEXTO   ("Ela jÃ¡ estÃ¡ quase com o rosto colado no seu.")
+         TEXTO   ("VocÃª enfia a adaga no pescoÃ§o dela e ela dÃ¡ um urro de dor.")
+         TEXTO   ("Ela te solta e se afasta indo para mais perto da janela.")
+         TEXTO   ("VocÃª pega o seu machado e desce no peito dela")
+         TEXTO   ("Ela dÃ¡ mais um urro de dor e chega no parapeito da janela.")
+
+         ESCREVAL("VocÃª corre para cima dela e desfere um Ãºltimo golpe que a faz ir mais para traz")
+         TEXTO   ("batendo no parapeito e caindo.")
+
+         ESCREVAL("PorÃ©m ela era mais rÃ¡pida que vocÃª e te agarra antes de cair, levando vocÃª jun-")
+         TEXTO   ("to com ela.")
       OUTROCASO
-         TEXTO("Não há outras opções!!")
-         PERGUNTA("O que você faz??")
+         TEXTO   ("NÃ£o hÃ¡ outras opÃ§Ãµes!!")
+         PERGUNTA("O que vocÃª faz??")
       FIMESCOLHA
    ATE (entrada = "USAR") ou (entrada = "ESPERAR")
-   
+
 
 FIMPROCEDIMENTO
 

@@ -15,7 +15,7 @@ FIMPROCEDIMENTO
 PROCEDIMENTO FALA(trecho: CARACTERE)
   VAR a: CARACTERE
   INICIO
-   ESCREVA ("- ")
+   ESCREVA ("    -- ")
    ESCREVAL(trecho)
    LEIA(a)
 FIMPROCEDIMENTO
@@ -53,75 +53,109 @@ PROCEDIMENTO PrimeiroAndar
    erros       : INTEIRO
    acertouChave: LOGICO
   INICIO
-//   TEXTO("De volta à sala de segurança, você tranca a porta da passagem e percebe que a sala não estava mais parecendo velha.")
-  // TEXTO("Ela estava completamente nova, bem iluminada e sem nenhum corpo.")
-//   TEXTO("Você não tem muito tempo para ficar pensando, algo estava batendo na porta da passagem para entrar.")
-  // TEXTO("Você corre para o corredor e percebe que o mesmo tinha acontecido com ele.")
-//   TEXTO("Porém tinha um detalhe a mais.")
-  // TEXTO("Das janelas completamente estilhaçadas, estravam tentáculos completamente pretos que ficavam convulsivamente se batendo e arrastando pelas paredes, teto e chão.")
+     //       "+-----------------------------------------------------------------------------+"
+//   ESCREVAL("De volta Ã  sala de seguranÃ§a, vocÃª tranca a porta da passagem e percebe que a  ")
+//   TEXTO   ("sala nÃ£o estava mais parecendo velha.")
+
+  // TEXTO   ("Ela estava completamente nova, bem iluminada e sem nenhum corpo.")
+
+//   ESCREVAL("VocÃª nÃ£o tem muito tempo para ficar pensando, algo estava batendo na porta da  ")
+  // TEXTO   ("passagem para entrar.")
+  // TEXTO   ("VocÃª corre para o corredor e percebe que o mesmo tinha acontecido com ele.")
+//   TEXTO   ("PorÃ©m tinha um detalhe a mais.")
+  // ESCREVAL("Das janelas completamente estilhaÃ§adas, estravam tentÃ¡culos completamente pre- ")
+  // ESCREVAL("tos que ficavam convulsivamente se batendo e arrastando pelas paredes, teto e  ")
+  // TEXTO   ("chÃ£o.")
    TEXTO("Nem a tempestade estava normal mais.")
-//   TEXTO("No lugar de água, chovia sangue e os raios que cortavam o céu eram verdes.")
-  // FALA ("Me pergunto, será que sua mente tão pequena consegue apreciar a beleza de como o mundo vai ficar depois que o ritual estiver concluído?")
-//   TEXTO("Era Nyarlathotep de novo.")
-  // FALA ("Daqui algumas horas, quando o ritual estiver completo, essa bela visão se estenderá além das montanhas de Arkham e será prazeroso assistir a sua espécie de vermes sendo massacradas pelos filhos de Shub-niggurath sem saber o porquê de isso estar acontecendo com eles.")
-//   FALA ("Provavelmente irão justificar que é uma punição do Deus de vocês ou clamar por Ele, e irão sucumbir a sua tolice ao perceber que não existe Deus.")
-  // FALA ("Espero que goste do show de mortes que irei trazer para esse mundo.")
-//   FALA ("AHAHAHAHAHAHAHAHAAAAAAAAAAA")
-  // TEXTO("Você fala um palavrão e continua o seu caminho o ignorando.")
+//   TEXTO   ("No lugar de Ã¡gua, chovia sangue e os raios que cortavam o cÃ©u eram verdes.")
+
+  // DIALOGO ("     ???????")
+  // FALA    ("Me pergunto, serÃ¡ que sua mente tÃ£o pequena consegue apreciar a beleza de como ")
+  // FALA    ("o mundo vai ficar depois que o ritual estiver concluÃ­do?")
+
+//   TEXTO   ("Era Nyarlathotep de novo.")
+
+  // DIALOGO ("NYARLATHOTEP")
+  // FALA    ("Daqui algumas horas, quando o ritual estiver completo, essa bela visÃ£o se es-  ")
+  // FALA    ("tenderÃ¡ alÃ©m das montanhas de Arkham e serÃ¡ prazeroso assistir a sua espÃ©cie de")
+  // FALA    ("vermes sendo massacradas pelos filhos de Shub-niggurath sem saber o porquÃª de  ")
+  // FALA    ("isso estar acontecendo com eles.")
+
+//   FALA    ("Provavelmente irÃ£o justificar que Ã© uma puniÃ§Ã£o do Deus de vocÃªs ou clamar por ")
+//   FALA    ("Ele, e irÃ£o sucumbir a sua tolice ao perceber que nÃ£o existe Deus.")
+
+  // FALA    ("Espero que goste do show de mortes que irei trazer para esse mundo.")
+//   FALA    ("AHAHAHAHAHAHAHAHAAAAAAAAAAA")
+
+  // TEXTO("VocÃª fala um palavrÃ£o e continua o seu caminho o ignorando.")
 //   FALA ("Ei, espere um minuto.")
-  // TEXTO("Você ignora a voz feminina te chamando.")
+  // TEXTO("VocÃª ignora a voz feminina te chamando.")
 //   FALA ("Ei, espera um minuto.")
-  // TEXTO("Você a ignora de novo.")
-//   FALA ("O¢_L°`H_ªE´ ´¸_P?A~R£a *M¨I^M¬")
-   // ¹²³£¢¬?°°ºª
-//   TEXTO("Você se vira ao perceber a distorção em sua voz.")
-  // TEXTO("Você vê algo quase indescritível.")
-//   TEXTO("Aquela coisa tinha metade de um dorso humano, não tinha olhos, só buracos pretos em seu lugar, um de seus braços era um tentáculo gigantesco e disforme, e parte do corpo que faltava tinha no lugar um monte tentáculos.")
-  // TEXTO("Ela usava uma roupa de enfermeira toda ensanguentada.")
-//   TEXTO("Você começa a correr daquilo e aquilo começa a correr atrás de você.")
-  // TEXTO("Na curva do corredor aquilo derrapa e se bate na parede, o que te dá tempo para abrir a porta.")
-//   TEXTO("Você chega na grade já com o molho de chaves na mão e só tem alguns segundos para abrir a porta.")
-  // TEXTO("Agora é questão de escolher a chave certa.")
-//   TEXTO("Você tem 20 chaves cada uma com um número, de 1 a 20.")
-   
-   PERGUNTA("Qual você vai usar?") // p5
-   
+  // TEXTO("VocÃª a ignora de novo.")
+//   FALA ("OÂ¢_LÂ°`H_ÂªEÂ´ Â´Â¸_P?A~RÂ£a *MÂ¨I^MÂ¬")
+   // Â¹Â²Â³Â£Â¢Â¬?Â°Â°ÂºÂª
+//   TEXTO("VocÃª se vira ao perceber a distorÃ§Ã£o em sua voz.")
+  // TEXTO("VocÃª vÃª algo quase indescritÃ­vel.")
+
+//   ESCREVAL("Aquela coisa tinha metade de um dorso humano, nÃ£o tinha olhos, sÃ³ buracos pre- ")
+//   ESCREVAL("tos em seu lugar, um de seus braÃ§os era um tentÃ¡culo gigantesco e disforme, e  ")
+//   TEXTO   ("parte do corpo que faltava tinha no lugar um monte tentÃ¡culos.")
+
+  // TEXTO   ("Ela usava uma roupa de enfermeira toda ensanguentada.")
+//   TEXTO   ("VocÃª comeÃ§a a correr daquilo e aquilo comeÃ§a a correr atrÃ¡s de vocÃª.")
+
+  // ESCREVAL("Na curva do corredor aquilo derrapa e se bate na parede, o que te dÃ¡ tempo para")
+  // TEXTO   ("abrir a porta.")
+
+//   ESCREVAL("VocÃª chega na grade jÃ¡ com o molho de chaves na mÃ£o e sÃ³ tem alguns segundos   ")
+//   TEXTO   ("para abrir a porta.")
+  // TEXTO("Agora Ã© questÃ£o de escolher a chave certa.")
+//   TEXTO("VocÃª tem 20 chaves cada uma com um nÃºmero, de 1 a 20.")
+
+   PERGUNTA("Qual vocÃª vai usar?") // p5
+
    // chave certa (arbitraria): 19
    ENQUANTO nao acertouChave FACA
-      PerguntaExtra("Qual chave você tenta agora?", erros > 0)
+      PerguntaExtra("Qual chave vocÃª tenta agora?", erros > 0)
       Resposta(entrada)
 
       SE entrada <> "19" ENTAO
          erros <- erros + 1
       SENAO
          acertouChave <- VERDADEIRO
-         Texto("Você coloca chave no trinco e gira.")
+         //       "+-----------------------------------------------------------------------------+"
+         Texto("VocÃª coloca chave no trinco e gira.")
          Texto("A porta se abre.")
-         Texto("Você entra e fecha a porta logo atrás de você.")
+         Texto("VocÃª entra e fecha a porta logo atrÃ¡s de vocÃª.")
          Texto("A criatura se bate enfurecida na grade.")
-         Texto("Você estava segura agora.")
-         Texto("Aquela coisa não poderia te pegar.")
-         Fala ("Ou será que não? AHAHAHAHAHAHAAAA")
-         Texto("A porta na grade começa a se soltar.")
-         Texto("Você pensa em correr para o corredor que está ao seu lado.")
-//         Texto("Mas quando se vira tem uma parede viva formada por tentáculos impedindo sua passagem.")
-  //       Texto("No meio da parede começa a se formar uma silhueta de um ser humanóide com três pernas, dois braços e um tentáculo no lugar da cabeça.")
-    //     Fala ("Eu não vou deixar você sair dessa tão fácil, minha cara Jesse.")
-      //   Fala ("Pelo que eu me lembro, na sua ficha dizia que o seu tratamento era na base de torturas psicológicas constantes, certo?")
-        // Fala ("Pois é só o começo agora! NYAHAHAHAHA!")
-//         Texto("A silhueta some, mas pela voz você sabe que era Nyarlathotep.")
-  //       Texto("A porta na grade se solta.")
+         Texto("VocÃª estava segura agora.")
+         Texto("Aquela coisa nÃ£o poderia te pegar.")
+         Fala ("Ou serÃ¡ que nÃ£o? AHAHAHAHAHAHAAAA")
+         Texto("A porta na grade comeÃ§a a se soltar.")
+         Texto("VocÃª pensa em correr para o corredor que estÃ¡ ao seu lado.")
+//       ESCREVAL("Mas quando se vira tem uma parede viva formada por tentÃ¡culos impedindo sua    ")
+  //       Texto ("passagem.")
+
+  //     ESCREVAL("No meio da parede comeÃ§a a se formar uma silhueta de um ser humanÃ³ide com trÃªs ")
+  //       Texto("pernas, dois braÃ§os e um tentÃ¡culo no lugar da cabeÃ§a.")
+
+    //     Fala  ("Eu nÃ£o vou deixar vocÃª sair dessa tÃ£o fÃ¡cil, minha cara Jesse.")
+      //   Fala  ("Pelo que eu me lembro, na sua ficha dizia que o seu tratamento era na base de  ")
+      //   FALA  ("torturas psicolÃ³gicas constantes, certo?")
+        // Fala  ("Pois Ã© sÃ³ o comeÃ§o agora! NYAHAHAHAHA!")
+//         Texto ("A silhueta some, mas pela voz vocÃª sabe que era Nyarlathotep.")
+  //       Texto ("A porta na grade se solta.")
       FIMSE
-      
+
       ESCOLHA erros
          CASO 1
-            Texto("Você coloca a chave no trinco e gira.")
-            Texto("Mas a porta não abre.")
+            Texto("VocÃª coloca a chave no trinco e gira.")
+            Texto("Mas a porta nÃ£o abre.")
             Texto("A enfermeira se aproxima.")
          CASO 2
             Texto("Nada.")
-            Texto("Você se apavora.")
-            Texto("Sem olhar para trás, você tenta ainda mais uma vez.")
+            Texto("VocÃª se apavora.")
+            Texto("Sem olhar para trÃ¡s, vocÃª tenta ainda mais uma vez.")
          CASO 3
             Texto("O seu tempo acabou e a enfermeira chegou muito perto.")
       FIMESCOLHA
