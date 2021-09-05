@@ -29,9 +29,9 @@ var
 
 inicio
  MOSTRE("Você prepara o seu machado e começa a correr ")
- MOSTRE("na direção de Nyarlathotep.")
+ MOSTRE("em direção ao Nyarlathotep.")
  MOSTRE("Você se desequilibra e quase cai em alguns momentos.")
- MOSTRE("Porém, você  já está na metade do caminho.")
+ MOSTRE("Porém, você já está na metade do caminho.")
  MOSTRE(" Ele abre um grotesco sorriso.")
  MOSTRE("Você não vê, mas sabe que algo está vindo por trás na sua direção.")
  MOSTRE("Você só tem alguns segundos para esquivar.")
@@ -342,7 +342,7 @@ FIMPROCEDIMENTO
 
 Inicio
 MOSTRE("Você entra num corredor delimitado por cercas de grades.")
-MOSTRE("atrás dessas cercas têm vários canos ")
+MOSTRE("Atrás dessas cercas, têm vários canos ")
 MOSTRE("e máquinas de função desconhecida.")
 MOSTRE("O corredor está numa escuridão completa e só dá para ver")
 MOSTRE("o que está à sua frente por causa da lanterna.")
@@ -350,7 +350,7 @@ MOSTRE("Você olha para cima.")
 MOSTRE("Você nota 4 canos de cores diferentes.")
 MOSTRE("Um verde.")
 MOSTRE("Um roxo.")
-MOSTRE("Um petro.")
+MOSTRE("Um preto.")
 MOSTRE("Um cinza.")
 MOSTRE("Após isso, você caminha alguns metros.")
 MOSTRE("Dá para sentir que algo o observa da escuridão.")

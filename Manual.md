@@ -29,6 +29,13 @@ Sai do jogo.
 ## Como Jogar
 
 ## Wiki
+## Criação de mundo:
+
+O mundo de nosso jogo foi criado levando como inspiração e base o horripilante mundo de horror criado Howard Philips Lovecraft. O universo de horror criado H.P.Lovecraft fundou um novo subgênero de horror que ficou conhecido como Horror cósmico. As obras de Lovecraft foram de inspirações para a criação de várias obras de sucesso da atualidade como o livro It, a coisa.
+
+No jogo, nos adaptamos esse universo trazendo monstros icônicos de Lovecraft para a narrativa como também construímos um mundo usando como base o mundo de seus contos. Assim criando um mundo de horror Lovecraftiano ambientado no tempo presente e que se passa e faz referência a localidades existentes nos contos de Lovecraft, e criamos uma localidade nova onde se situa a trama principal do jogo.
+
+seguindo mais a frente nessa parte do manual terá a história dos personagens que aparecem e são citados no jogo, como também a macabra história do sanatório Blackwood. Essa parte do manual é um recorte dos arquivos de um detetive que está trabalhando para solucionar o mistério de desaparecimento da nossa destemida e implacável protagonista. O que será que o nosso habilidoso detetive descobriu sobre o passado de Jesse e dos Angel’s? Que segredos obscuros ele encontrou sobre os deuses antigos enquanto procurava Jesse? Será que o culto o impediu permanentemente de encontrar a resposta para esse mistério?
 
 ## Registro da investigação do desaparecimento/sequestro de Jesse W. Lovecraft:
 
@@ -133,7 +140,13 @@ certo anotado, agora prosiga no seu relato.
 chega por hoje senhora, ja tenho o que preciso e me desculpa por tela feito lembrar disso.
 
 
+### Registro da investigação do sanatoiro Blackwood:
 
+Eu descobre a existencia do sanatorio BlackWood hoje mais cedo depois que minha parceira me falou de um telefonema anonimo que o chefe de policia recebeu ontem a noite a pessoa do telefonema dizia que sabia onde estavá Jesse, porem que não podia contar nem mostraronde era apenas direcionalo logo depois disso a pessoa misteriosa desligou. não sabemos se quem ligou era homem ou uma mulher pois essa pessoa misteriosa usou um modulador de voz, nós tentamos rastrear de onde vinha a ligação, porem dava em coordenadas no meio da floreta e até onde sabiamos não existia nada lá.
+
+Sem ter mais nenhuma pista do paradeiro de Jesse, eu e minha parceira junto com um grupo de policiais fomos até as coordenadas misteriosas. Surpreendentemente nos encontramos um edifício nas coordenadas dadas. O lugar parecia uma zona de guerra, de uma guerra recente, partes inteiras estavam destruídas, outras recentemente carbonizadas e o que restava em pé estava completamente zoneado por dentro, era um caos que o tempo não poderia ser o responsável. 
+
+Mesmo parecendo uma zona de guerra os únicos corpos que encontramos eram esqueletos ou o que parecem ser múmias. Durante a minha investigação do edifício duas perguntas se mantiveram na minha cabeça, “ Será que poderíamos ter salvado Jesse de toda esse caos se tivéssemos vindo investigar mais cedo as coordenadas?” , “ O que aconteceu aqui e com Jesse?”, provavelmente só terem a resposta para essa pergunta quando achá-la.
                                                                
  
  
