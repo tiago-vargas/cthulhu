@@ -1,20 +1,34 @@
 # Guia de Estilo
 
-Palavras chaves serao maiusculas.
+Palavras chaves são maiúsculas.
 
-Identacao de 4 espacos
+Identação padrão de 2 espaços.
+
+`VAR` e `INICIO` em procedimentos ou funções devem ser identadas de 1 espaço.
+
+Veja o exemplo abaixo.
 
 ``` alg
 PROGRAMA "..."
-VAR
-	// ...
+
+VAR <var1> : <tipo>
+    <var2> : <tipo>
+
+PROCEDIMENTO proc
+ VAR <var3> : <tipo>
+     <var4> : <tipo>
+ 
+ INICIO
+
+FIMPROCEDIMENTO
+
 INICIO
-	ESREVAL("...")
-	// ...
+  ESCREVAL("...")
+  // ...
 FIMALGORITMO
 ```
 
-## Escrevendo no Tela
+## Escrevendo na Tela
 
 Use o procedimento `mostre` pra mostrar texto na tela seguido de uma pausa, que o usuario pode pressionar `Enter` pra continuar o programa. Como o usuario pode avancar sem escrever nada, o efeito tambem eh de textos separados de uma linha em branco. Util pra mostrar textos aos poucos.
 
