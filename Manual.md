@@ -85,7 +85,7 @@ Sai do jogo.
   #### Registro dos supeitos/vitimas:
  - Nome: Steve Angel
  - Idade: 36 anos
- - Data de nascimento: 
+ - Data de nascimento: Hospital Memorial Ammi 
  - Local de nascimento: 10/06/1985
  - Nome do pai: George B. Angel
  - nome da mãe: Alex D. Wilcox
@@ -98,8 +98,17 @@ Sai do jogo.
  
  Depois de seu casamento e mudança para a reformada mansão Spencer, Steve se dedicou a mais uma gradução. Ele adicionou ao seu vasto curriculo o as Areas de astronomia e astrofisica, depois disso ele se tornou um dos pesquisadores chefes no observatorio de Arkham. Segundo os funcionarios do observatorio, Steve não fez a sua visita noturna de costume para averiguar o andamento das pesquisas no dia do desaparecimento de Jesse.
  
- Na investigação feita hoje mais cedo no seu escritorio que fica na Mansão Angel foram encontrado coisas cuiriosas. Numa gaveta trancada da mesa de seu escritorio foram encontados papeis sobre uma pesquisa feita pelo Steve no observatorio, a pesquisa era sobre algum tipo de anormal alinhamento de estrelas, normalmente tal tipo decoisa ficaria fora da investigação, porem junto com os papeis da pesquisa tinha trechos de recortados de um conto de H.P.Lovecraft mais especificamente o conto "o chamado de Cthulhu" e tam
+ Na investigação feita hoje mais cedo no seu escritorio que fica na Mansão Angel foram encontrado coisas cuiriosas. Numa gaveta trancada da mesa de seu escritorio foram encontados papeis sobre uma pesquisa feita pelo Steve no observatorio, a pesquisa era sobre algum tipo de anormal alinhamento de estrelas, normalmente tal tipo decoisa ficaria fora da investigação, porem não existe resgistro dessa pesquisa no banco de dados do observatorio e junto com os papeis da pesquisa tinha trechos de recortados de um conto de H.P.Lovecraft mais especificamente o conto "o chamado de Cthulhu". Talvez o motivo dessa pesquisa está escondida tenha alguma relção com o desaparecimento de Jesse. mas qual ainda é um misterio.
  
+  #### Registro dos supeitos/vitimas:
+ - Nome: Lavinia
+ - Idade: 12 anos 
+ - Data de nascimento: 13/10/2009
+ - Local de nascimento: Hospipal Memorial Ammi, cidade de Arkham
+ - Nome do pai: Steve Angel 
+ - Nome da mãe: Alice Angel 
+ - Descrição: 
+ - História da suspeita/vítima:
  
  
   
