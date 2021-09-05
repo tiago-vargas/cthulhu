@@ -2,43 +2,37 @@
 
 Palavras chaves são maiúsculas.
 
-Identação padrão de 2 espaços.
-
-`VAR` e `INICIO` em procedimentos ou funções devem ser identadas de 1 espaço.
-
-Veja o exemplo abaixo.
+As primeiras variáveis são declaradas na mesma linha que `VAR`, não embaixo. Variáveis em linhas subsequentes devem ser alinhadas com base na primeira linha. Todos os dois-pontos `:` devem estar alinhados com relação ao mesmo bloco `VAR`. Coloque 1 espaço antes e após dois-pontos `:`.
 
 ``` alg
-PROGRAMA "..."
-
-VAR <var1> : <tipo>
-    <var2> : <tipo>
-
-PROCEDIMENTO proc
- VAR <var3> : <tipo>
-     <var4> : <tipo>
-
- INICIO
-
-FIMPROCEDIMENTO
-
-INICIO
-  ESCREVAL("...")
-  // ...
-FIMALGORITMO
+VAR <var1>         : <tipo1>
+    <var2>, <var3> : <tipo2>
 ```
+
+`VAR` e `INICIO` em procedimentos ou funções devem ser indentadas de 1 espaço.
+
+
+``` alg
+PROCEDIMENTO proc
+ VAR <var1> : <tipo1>
+     <var2> : <tipo2>
+ INICIO
+  ...
+FIMPROCEDIMENTO
+```
+
+Indentação padrão de 2 espaços dentro de cada bloco.
 
 ## Escrevendo na Tela
 
-Use o procedimento `mostre` pra mostrar texto na tela seguido de uma pausa, que o usuario pode pressionar `Enter` pra continuar o programa. Como o usuario pode avancar sem escrever nada, o efeito tambem eh de textos separados de uma linha em branco. Util pra mostrar textos aos poucos.
+Use o procedimento `Mostre` pra mostrar texto na tela seguido de uma pausa, que o usuario pode pressionar `Enter` pra continuar o programa. Como o usuario pode avancar sem escrever nada, o efeito tambem eh de textos separados de uma linha em branco. Util pra mostrar textos aos poucos.
 
 ``` alg
-PROCEDIMENTO mostre(texto: CARACTERE)
-VAR
-	a: CARACTERE
-INICIO
-	ESCREVAL(texto)
-	LEIA(a)
+PROCEDIMENTO Mostre(texto: CARACTERE)
+ VAR a: CARACTERE
+ INICIO
+  ESCREVAL(texto)
+  LEIA(a)
 FIMPROCEDIMENTO
 ```
 
@@ -90,7 +84,7 @@ Dialogo de linha simples eh implementado com o procedimento `FalaS`.
 PROCEDIMENTO FalaS(text: CARACTERE) // Fala Simples
  VAR a : CARACTERE
  INICIO
-  ESCREVA ("    -- ")
+  ESCREVA ("     — ")
   ESCREVAL(text)
   LEIA(a)
 FIMPROCEDIMENTO
@@ -101,7 +95,7 @@ Dialogo de multiplas linhas eh implementado com `FalaI` pra primeira linha, `Fal
 ```
 PROCEDIMENTO FalaI(text: CARACTERE) // Fala, Inicio
  INICIO
-  ESCREVA ("    -- ") // 4 espaços + 2 hifens + 1 espaço
+  ESCREVA ("     — ") // 4 espaços + 2 hifens + 1 espaço
   ESCREVAL(text)
 FIMPROCEDIMENTO
 
