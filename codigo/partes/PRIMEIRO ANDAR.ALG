@@ -86,15 +86,15 @@ PROCEDIMENTO PrimeiroAndar
   FALA    ("Espero que goste do show de mortes que irei trazer para esse mundo.")
   FALA    ("AHAHAHAHAHAHAHAHAAAAAAAAAAA")
 
-  TEXTO("Você fala um palavrão e continua o seu caminho o ignorando.")
-  FALA ("Ei, espere um minuto.")
-  TEXTO("Você ignora a voz feminina te chamando.")
-  FALA ("Ei, espera um minuto.")
-  TEXTO("Você a ignora de novo.")
-  FALA ("O¢_L°`H_ªE´ ´¸_P?A~R£a *M¨I^M¬")
-  // ¹²³£¢¬?°°ºª
-  TEXTO("Você se vira ao perceber a distorção em sua voz.")
-  TEXTO("Você vê algo quase indescritível.")
+  TEXTO   ("Você fala um palavrão e continua o seu caminho o ignorando.")
+  FALA    ("Ei, espere um minuto.")
+  TEXTO   ("Você ignora a voz feminina te chamando.")
+  FALA    ("Ei, espera um minuto.")
+  TEXTO   ("Você a ignora de novo.")
+  FALA    ("O¢_L°`H_ªE´ ´¸_P?A~R£a *M¨I^M¬")
+  //        ¹²³£¢¬?°°ºª
+  TEXTO   ("Você se vira ao perceber a distorção em sua voz.")
+  TEXTO   ("Você vê algo quase indescritível.")
 
   ESCREVAL("Aquela coisa tinha metade de um dorso humano, não tinha olhos, só buracos pre- ")
   ESCREVAL("tos em seu lugar, um de seus braços era um tentáculo gigantesco e disforme, e  ")
@@ -108,8 +108,8 @@ PROCEDIMENTO PrimeiroAndar
 
   ESCREVAL("Você chega na grade já com o molho de chaves na mão e só tem alguns segundos   ")
   TEXTO   ("para abrir a porta.")
-  TEXTO("Agora é questão de escolher a chave certa.")
-  TEXTO("Você tem 20 chaves cada uma com um número, de 1 a 20.")
+  TEXTO   ("Agora é questão de escolher a chave certa.")
+  TEXTO   ("Você tem 20 chaves cada uma com um número, de 1 a 20.")
 
   PERGUNTA("Qual você vai usar?") // p5
 
