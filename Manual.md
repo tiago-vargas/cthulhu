@@ -28,6 +28,30 @@ Sai do jogo.
 
 ## Como Jogar
 
+O jogo consiste de parágrafos aparecendo na tela sequencialmente, a medida que o jogo segue. A cada momento, é exibido um parágrafo por vez. Ao terminar de ler o parágrafo, aperte a tecla `Enter` para que o jogo prossiga. Dessa forma, será você quem ditará o andamento do jogo. Leia com calma e avance quando desejar.
+
+Algumas vezes será necessário interagir com o jogo. Nesse caso, sempre aparecerão as opções possíveis de interação na tela. A interação é feita digitando a opção desejada.
+
+```
+Exemplo de interação.
+
+Escolha a direção que você deseja seguir:
+- NORTE
+- SUL
+- LESTE
+- OESTE
+
+>> SUL
+```
+
+Aqui, existem quatro escolhas possíveis. O jogador escolheu a opção `SUL`, mas poderia ser qualquer outra listada. Você deve digitar algo sempre que aparecer `>> ` na tela. Digite e aperte `Enter` quando terminar. Não se preocupe, se você digitar errado, a lista aparece novamente.
+
+> **OBSERVAÇÃO:**
+>
+> Você deve digitar com todas as letras MAIÚSCULAS!!
+
+Algumas partes do jogo apresentam diálogo entre as personagens. O nome do loucutor aparece em cima da fala, que segue um travessão `—`. Aqui, as falas também são pausadas, como os parágrafos. Avance pressionando a tecla `Enter`.
+
 ## Wiki
 ## Criação de mundo:
 
