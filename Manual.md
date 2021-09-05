@@ -142,7 +142,7 @@ chega por hoje senhora, ja tenho o que preciso e me desculpa por tela feito lemb
 
 ### Registro da investigação do sanatoiro Blackwood:
 
-Eu descobre a existencia do sanatorio BlackWood hoje mais cedo depois que minha parceira me falou de um telefonema anonimo que o chefe de policia recebeu ontem a noite. não sabemos se quem ligou era homem ou uma mulher pois essa pessoa misteriosa usou um modulador de voz, nós tentamos rastrear de onde vinha a ligação, porem dava em coordenadas no meio da floreta e até onde sabiamos não existia nada lá.
+Eu descobre a existencia do sanatorio BlackWood hoje mais cedo depois que minha parceira me falou de um telefonema anonimo que o chefe de policia recebeu ontem a noite a pessoa do telefonema dizia que sabia onde estavá Jesse, porem que não podia contar nem mostraronde era apenas direcionalo logo depois disso a pessoa misteriosa desligou. não sabemos se quem ligou era homem ou uma mulher pois essa pessoa misteriosa usou um modulador de voz, nós tentamos rastrear de onde vinha a ligação, porem dava em coordenadas no meio da floreta e até onde sabiamos não existia nada lá.
 
 
 
