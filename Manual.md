@@ -41,7 +41,7 @@ Sai do jogo.
  - Local de nascimento: Hospipal Memorial Ammi, cidade de Arkham
  - Nome do pai: James Whaterley Lovecraft
  - Nome da mãe: Sara da Silva Costa
- 
+ - Descrição: mulher branca de estatura media, ela tem cabelo grande ondulado de cor ruiva e pontas pintadas de roxo. Pelas ultimas fotos postadas no seu instagram antes do desaparecimento ela estava utilizando um jaqueta de coro preta, blusa vermelha escuro por baixo da jaqueta, uma calça feminina jeans e botas femininas.
  - História da suspeita/vítima:
  
  Ela é a filha mais nova do norte-americano James Lovecraft e da brasileira Sara Lovecraft. James Whaterley Lovecraft era um renomado astrônomo e muito famoso entre a counidade ciêntifica da Universidade Miskatonic, mesmo lugar onde conheceu Sara, sua futura esposa e mãe de Jesse. Sara da Silva Costa era uma experiente e talentosa oceanógrafa. Sara foi até Arkham para pedir ajuda a uma amiga geóloga que trabalhava na Universidade Mistatonic, e nessa mesma viagem foi quando Sara conheceu James. Pelo que se sabe, ela foi para Arkham na busca de mais informaçoes sobre um misterioso pedaço de pedra que extraira de uma estranha formação geologica submarina que encontrara na sua ultima viagem de exploração do oceano pacifico.
@@ -69,16 +69,20 @@ Sai do jogo.
  - Local de nascimento: New York. (Hospital não consta no resgistro)
  - Nome do pai: Toby M. Spencer
  - nome da mãe: Dasy S. Ashford
- 
+ - Descrição: mulher calcassiana, de estatura media, tem cabelos cabelos lisos e grande de cor preta. Não se tem nenhuma foto ou video que indique qual roupa estivera usando antes de seu sumiço, porem durante suas visitas a cidade ela era sempre vista com vstidos, talvez estivesse usando um vestido durante seu desaparecimento.
  - Historia do suspeito/vitima: 
 
-  A família de Alice era nativa de Arkham, até o pai dela que resolveu tirar as raizes de familia da região e colocar em New York. A única propriedade dos Spencer's mantido pelo avô de Alice foi uma velha mansão, que hoje em dia pertence ao casal Angel e foi completamente reformada e expandida. Eu não tenho nenhuma informçao de como ela conheceu o seu marido, mas tenho o registro de seu casamento, que ocorreu em 2009. Segundo os resgistros, eles tiveram uma filha chamada Lavinia, que também está desaparecida.
+  A família de Alice era nativa de Arkham, até o avô dela que resolveu tirar as raizes de familia da região e colocar em New York. A única propriedade dos Spencer's mantido pelo avô de Alice foi uma velha mansão, que hoje em dia pertence ao casal Angel e foi completamente reformada e expandida. Eu não tenho nenhuma informçao de como ela conheceu o seu marido, mas tenho o registro de seu casamento, que ocorreu em 2009. Segundo os resgistros, eles tiveram uma filha chamada Lavinia, que também está desaparecida.
   
-  Segundo pesquisas, Alice era uma historiadora e arqueóloga. Ela parece demonstrar que não tinha nenhum interesse no negócio da empresa da familia, pelo menos até retornar de uma viagem arqueológica que fez para a Grécia. Consta nos resgistros da universidade ao qual financiou essa expedição que, o objetivo era avaliar os restos de estruturas antigas que encontraram dentro de uma caverna submersa no mar Egeu. O que ela encontrou lá que a fez mudar de arqueóloga para empresária não consta no resgistros da expedição.
+  Segundo pesquisas, Alice era a filha do meio do casal Spencer, o que provavelmente deu a ela a liberdade de poder escolher uma carrreira fora do negocio da familia. Ela se tornou uma historiadora e arqueóloga, além de começar uma graduação extra de em astrofisica, gradução que ela nunca teerminou. 
+  
+  Ela parece demonstrar que não tinha nenhum interesse no negócio da empresa da familia, pelo menos até retornar de uma viagem arqueológica que fez para a Grécia. Consta nos resgistros da universidade ao qual financiou essa expedição que, o objetivo era avaliar os restos de estruturas antigas que encontraram dentro de uma caverna submersa no mar Egeu. O que ela encontrou lá que a fez mudar de arqueóloga para empresária não consta no resgistros da expedição.
   
   Alice se mudou para Arkham depois de seu casamento com Steve Angel. Eles reformaram a antiga Mansão da familia Spencer para ser a sua nova residência. O papel do casal no desaparecimento de Jesse ainda continua um mistério, se é que eles tiveram algum tipo de envolvimento nisso. A unica relação comprovada entre o casal e a psicóloga é que Jesse estava cuidando da Lavinia. 
   
   Durante a investigação na mansão feita mais cedo, se encontrou evidências que o casal também desapareceu algumas horas depois de terem visto Jesse pela última vez. Normalmente, isso indicaria que eles estão envolvidos no caso, toda via, também foram encontrados sinais de arrombamento na Mansão e que muitas pessoas entraram na mansão, próximo da hora estimada ao desaparecimento do casal. Uma lista de nomes estranhos escritos às pressas foi encontrada escondida embaixo da cama. Na lista, também tem um nome que a pouco descobri que pertence a um livro. Pelas minhas pesquisas, parece que existe um exemplar do livro citado, o Necronomicon, guardado na biblioteca privada da Universidade de Miskatonic. Talvez eu tenha uma certa dificuldade em obter o acesso ao livro, mas, qualquer informação importante que estiver contida no livro e que ajude a saber o significado desses nomes e o motivo do desaparecimento de Alice,será anexada no final deste relatório.
+  
+ 
  
   
   
