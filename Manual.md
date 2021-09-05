@@ -65,11 +65,11 @@ Sai do jogo.
  #### Registro dos supeitos/vitimas:
  - Nome: Alice Angel
  - Idade: 40 anos
- - Data de nascimento: 30/3/1981
+ - Data de nascimento: 30/03/1981
  - Local de nascimento: New York. (Hospital não consta no resgistro)
  - Nome do pai: Toby M. Spencer
  - nome da mãe: Dasy S. Ashford
- - Descrição: mulher calcassiana, de estatura media, tem cabelos cabelos lisos e grande de cor preta. Não se tem nenhuma foto ou video que indique qual roupa estivera usando antes de seu sumiço, porem durante suas visitas a cidade ela era sempre vista com vstidos, talvez estivesse usando um vestido durante seu desaparecimento.
+ - Descrição: mulher calcassiana, de estatura media, tem cabelos cabelos lisos e grande de cor preta. Não se tem nenhuma foto ou video que indique qual roupa estivera usando antes de seu sumiço, porem durante suas visitas a cidade ela era sempre vista com vstidos, geralmente de cores variadas, talvez estivesse usando o mesmo tipo de roupa durante seu desaparecimento.
  - Historia do suspeito/vitima: 
 
   A família de Alice era nativa de Arkham, até o avô dela que resolveu tirar as raizes de familia da região e colocar em New York. A única propriedade dos Spencer's mantido pelo avô de Alice foi uma velha mansão, que hoje em dia pertence ao casal Angel e foi completamente reformada e expandida. Eu não tenho nenhuma informçao de como ela conheceu o seu marido, mas tenho o registro de seu casamento, que ocorreu em 2009. Segundo os resgistros, eles tiveram uma filha chamada Lavinia, que também está desaparecida.
@@ -82,6 +82,24 @@ Sai do jogo.
   
   Durante a investigação na mansão feita mais cedo, se encontrou evidências que o casal também desapareceu algumas horas depois de terem visto Jesse pela última vez. Normalmente, isso indicaria que eles estão envolvidos no caso, toda via, também foram encontrados sinais de arrombamento na Mansão e que muitas pessoas entraram na mansão, próximo da hora estimada ao desaparecimento do casal. Uma lista de nomes estranhos escritos às pressas foi encontrada escondida embaixo da cama. Na lista, também tem um nome que a pouco descobri que pertence a um livro. Pelas minhas pesquisas, parece que existe um exemplar do livro citado, o Necronomicon, guardado na biblioteca privada da Universidade de Miskatonic. Talvez eu tenha uma certa dificuldade em obter o acesso ao livro, mas, qualquer informação importante que estiver contida no livro e que ajude a saber o significado desses nomes e o motivo do desaparecimento de Alice,será anexada no final deste relatório.
   
+  #### Registro dos supeitos/vitimas:
+ - Nome: Steve Angel
+ - Idade: 36 anos
+ - Data de nascimento: 
+ - Local de nascimento: 10/06/1985
+ - Nome do pai: George B. Angel
+ - nome da mãe: Alex D. Wilcox
+ - Descrição: Homem calcasiano, de estatura alta, tem cabelo liso curto de cor preta. Não se tem nenhuma foto ou video que indique qual roupa estava usando antes de seu sumiço, porem durante as suas visitas a cidade ele era sempre visto usando terno, geralmente preto, talvez estivesse utilizando o mesmo tipo de roupa durante seu desaparecimento.
+ - Historia do suspeito/vitima:
+   
+ Os Anegel's se estabeleceram pela primeira vez em Arkham no de 1928, o Angel que se estabeleceu na cidade era o avô de Steve e alguns documentos antigos sugerem que ele teria vindo de Rhode Island, esses mesmos documentos sitam que o motivo da vinda do avô de Steve tivesse alguma relação com uma pesquisa em conjunto feita pela Universidade Miskatonic e a Universidade Brown o teor da pesquisa não é registrado nesse documento.
+ 
+ Os pais de Steve intelectuais ricos que em pouco tempo conseguiram se intregar na comunidade de Arkham. Seu filho também seguiu o caminhi da intelectualidade e se formou em varias áreas, muitas delas envolvento o estudo de linguas antigas. Como ele e Alice se conheceram é um misterio, como também é um misterio o motivo da familia de Alice que tem o   historico de casar os seus membros atravez de casamentos arranjados terem aceitado que sua filha se casace com Steve, mesmo sendo rico ele não tem nunhuma posse que ou aparente habilidade excepicional para negocios.
+ 
+ Depois de seu casamento e mudança para a reformada mansão Spencer, Steve se dedicou a mais uma gradução. Ele adicionou ao seu vasto curriculo o as Areas de astronomia e astrofisica, depois disso ele se tornou um dos pesquisadores chefes no observatorio de Arkham. Segundo os funcionarios do observatorio, Steve não fez a sua visita noturna de costume para averiguar o andamento das pesquisas no dia do desaparecimento de Jesse.
+ 
+ Na investigação feita hoje mais cedo no seu escritorio que fica na Mansão Angel foram encontrado coisas cuiriosas. Numa gaveta trancada da mesa de seu escritorio foram encontados papeis sobre uma pesquisa feita pelo Steve no observatorio, a pesquisa era sobre algum tipo de anormal alinhamento de estrelas, normalmente tal tipo decoisa ficaria fora da investigação, porem junto com os papeis da pesquisa tinha trechos de recortados de um conto de H.P.Lovecraft mais especificamente o conto "o chamado de Cthulhu" e tam
+ 
  
  
   
