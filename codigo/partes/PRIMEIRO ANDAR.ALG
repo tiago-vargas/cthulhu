@@ -65,7 +65,7 @@ PROCEDIMENTO PrimeiroAndar
   ESCREVAL("Das janelas completamente estilhaçadas, estravam tentáculos completamente pre- ")
   ESCREVAL("tos que ficavam convulsivamente se batendo e arrastando pelas paredes, teto e  ")
   TEXTO   ("chão.")
-  TEXTO("Nem a tempestade estava normal mais.")
+  TEXTO   ("Nem a tempestade estava normal mais.")
   TEXTO   ("No lugar de água, chovia sangue e os raios que cortavam o céu eram verdes.")
 
   DIALOGO ("     ???????")
@@ -148,15 +148,16 @@ PROCEDIMENTO PrimeiroAndar
 
     ESCOLHA erros
       CASO 1
-        Texto("Você coloca a chave no trinco e gira.")
-        Texto("Mas a porta não abre.")
-        Texto("A enfermeira se aproxima.")
+        //       "+-----------------------------------------------------------------------------+"
+        Texto   ("Você coloca a chave no trinco e gira.")
+        Texto   ("Mas a porta não abre.")
+        Texto   ("A enfermeira se aproxima.")
       CASO 2
-        Texto("Nada.")
-        Texto("Você se apavora.")
-        Texto("Sem olhar para trás, você tenta ainda mais uma vez.")
+        Texto   ("Nada.")
+        Texto   ("Você se apavora.")
+        Texto   ("Sem olhar para trás, você tenta ainda mais uma vez.")
       CASO 3
-        Texto("O seu tempo acabou e a enfermeira chegou muito perto.")
+        Texto   ("O seu tempo acabou e a enfermeira chegou muito perto.")
     FIMESCOLHA
   FIMENQUANTO
 FIMPROCEDIMENTO
