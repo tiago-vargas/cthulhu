@@ -8,14 +8,20 @@ TIPO
 
 VAR entrada: CARACTERE
 
-// ======================================================================
-PROCEDIMENTO LinhaF(texto: CARACTERE)
- VAR a : CARACTERE
+PROCEDIMENTO Linha(texto: CARACTERE)
  INICIO
+  // Dar margem antes.
   ESCREVAL(texto)
-  LEIA(a)
 FIMPROCEDIMENTO
+// ----------------------------------------------------------------------
 
+PROCEDIMENTO LinhaF(texto: CARACTERE)
+ VAR a: CARACTERE
+ INICIO
+  // Dar margem antes.
+  ESCREVAL(texto)
+  LEIA    (a)
+FIMPROCEDIMENTO
 // ----------------------------------------------------------------------
 PROCEDIMENTO Pergunta(texto: CARACTERE)
  INICIO
@@ -23,8 +29,8 @@ PROCEDIMENTO Pergunta(texto: CARACTERE)
   ESCREVAL()
   entrada <- ""
 FIMPROCEDIMENTO
-
 // ----------------------------------------------------------------------
+
 PROCEDIMENTO PerguntaExtra(texto: CARACTERE; condicao: LOGICO)
  INICIO
   SE condicao ENTAO
@@ -33,7 +39,6 @@ PROCEDIMENTO PerguntaExtra(texto: CARACTERE; condicao: LOGICO)
     entrada <- ""
   FIMSE
 FIMPROCEDIMENTO
-
 // ----------------------------------------------------------------------
 PROCEDIMENTO Resposta(var entr: CARACTERE)
  INICIO
@@ -41,7 +46,6 @@ PROCEDIMENTO Resposta(var entr: CARACTERE)
   ESCREVA(">> ")
   LEIA(entr)
 FIMPROCEDIMENTO
-
 // ----------------------------------------------------------------------
 PROCEDIMENTO Dialogo(nomeDaPessoa: CARACTERE)
  VAR i : INTEIRO
@@ -50,7 +54,6 @@ PROCEDIMENTO Dialogo(nomeDaPessoa: CARACTERE)
   ESCREVAL(nomeDaPessoa)
   ESCREVAL()
 FIMPROCEDIMENTO
-
 // ----------------------------------------------------------------------
 PROCEDIMENTO FalaS(texto: CARACTERE) // Fala Simples
  VAR a : CARACTERE
@@ -79,8 +82,8 @@ PROCEDIMENTO FalaF(text: CARACTERE) // Fala, Fim
   ESCREVAL(text)
   LEIA(a)
 FIMPROCEDIMENTO
-
 // ----------------------------------------------------------------------
+
 PROCEDIMENTO ListarSeNaoEscolhida(opcao_rotulo: CARACTERE; opcao_foiEscolhida: LOGICO)
  INICIO
   SE nao opcao_foiEscolhida ENTAO
@@ -88,7 +91,15 @@ PROCEDIMENTO ListarSeNaoEscolhida(opcao_rotulo: CARACTERE; opcao_foiEscolhida: L
     ESCREVAL(opcao_rotulo)
   FIMSE
 FIMPROCEDIMENTO
+// +-----------------------------------------------------------------------------+
 
+PROCEDIMENTO FalaS(text: CARACTERE) // Fala Simples
+ VAR a : CARACTERE
+ INICIO
+  ESCREVA ("     — ")
+  ESCREVAL(text)
+  LEIA(a)
+FIMPROCEDIMENTO
 // +-----------------------------------------------------------------------------+
 PROCEDIMENTO Cela
  VAR terminarLoop : LOGICO
