@@ -1,5 +1,11 @@
 ALGORITMO "Jogo"
 
+TIPO
+  OPCAO = REGISTRO
+    rotulo       : CARACTERE
+    foiEscolhida : LOGICO
+  FIMREGISTRO
+
 VAR entrada      : CARACTERE
     terminarJogo : LOGICO
 
@@ -14,9 +20,10 @@ PROCEDIMENTO Titulo(texto: CARACTERE)
  INICIO
   ESCREVAL("+-----------------------------------------------------------------------------+")
   ESCREVA ("¦                        ") // 24 espacos
-  ESCREVA (texto) // 30 caracteres exatamente
+  ESCREVA (texto)                       // 30 caracteres exatamente
   ESCREVAL("                       ¦")  // 23 espacos
   ESCREVAL("+-----------------------------------------------------------------------------+")
+  ESCREVAL()
 FIMPROCEDIMENTO
 
 PROCEDIMENTO Linha(texto: CARACTERE) // Linha de texto intermediária
@@ -1306,6 +1313,8 @@ FIMPROCEDIMENTO
 
 // ======================================================================== //
 // ------------------------------------------------------------------------ //
+// ======================================================================== //
+
 PROCEDIMENTO MenuDebug
  INICIO
   LIMPATELA()
