@@ -189,6 +189,8 @@ Segundo o Necronomicom o nome escrito aqui para esse deus é apenas uma versão 
 
 - Nyarlathotep:
 
+Segundo o Necronomicom o Nyarlathotep é o deus exterior mais ativo entre os humanos se comunicando na nossa propria lingua e até possuindo alguns individos para serem sua casca na Terra, ele tem um culto proprio e dentre oos cultos dos deuses antigos o de Nyarlathoptep é o mais instavel e caotico criando caos, destruição e morte onde passam, muitos cultos acreditam que essa açoes insequentes se seu culto seja um reflexo da propria personalidade que foi humazida pelo seu costante contato com a humanidade. Suas aparições entre os humnanos datam desde o egito antigo onde se manisfestou como um faraó e ficou conhecido pelos humanos com Nyarlathotep, o faraó das trevas ou também como caos rastejante. Ele assume varias formas entre suas apariçoes registradas.
+
 - Shub-Niggurath:
 
 - Hastur:
