@@ -1,10 +1,22 @@
 # Manual
 
-## Como Instalar
+## Como Iniciar o Jogo
+
+O jogo está hospedado no nosso repositório do GitHub: [aqui](https://github.com/tiago-vargas/cthulhu).
+
+Baixe o arquivo Jogo.ALG, e o execute pelo programa VisuAlg 3.0.7 para Windows, disponível nesse [link](https://visualg3.com.br/baixe-o-visualg-3-0-7/).
+
+Execute o algoritmo apertando a tecla `F9`.
+
+Ao ser executado, uma tela de console aparecerá. Redimensione a tela até que a linha horizontal mostrada apareça por completo. É recomendado que o tamanho vertical da tela seja o maior possível.
 
 ## Sobre o Jogo
 
+Esse jogo foi criado como trabalho da disciplina de Fundamentos da Programação.
+
 ## Menu
+
+O menu do jogo consiste de algumas opções.
 
 ### Jogar
 
@@ -12,9 +24,9 @@ Inicia o jogo.
 
 ### Redimensionar tela
 
-_TERMINAR ISSO AQUI_
+Permite redimensionar a tela novamente, caso você não tenha redimensionado corretamente na inicialização.
 
-Um linha irá aparecer na tela. A tela deve ser redimensionada até que essa linha apareça por completo.
+Uma linha irá aparecer na tela. A tela deve ser redimensionada até que essa linha apareça por completo.
 
 ### Créditos
 
@@ -42,19 +54,19 @@ Escolha a direção que você deseja seguir:
 >> SUL
 ```
 
-Aqui, existem quatro escolhas possíveis. O jogador escolheu a opção SUL, mas poderia ser qualquer outra listada. Você deve digitar algo sempre que aparecer >> na tela. Digite e aperte `Enter` quando terminar. Não se preocupe, se você digitar errado, a lista aparece novamente. 
+Aqui, existem quatro escolhas possíveis. O jogador escolheu a opção SUL, mas poderia ser qualquer outra listada. Você deve digitar algo sempre que aparecer `>>` na tela. Digite e aperte `Enter` quando terminar. Não se preocupe, se você digitar errado, a lista aparece novamente. 
 
 > **OBSERVAÇÃO:**
 >
 >> Você deve digitar com todas as letras MAIÚSCULAS!! 
 
-Algumas partes do jogo apresentam diálogo entre as personagens. O nome do loucutor aparece em cima da fala, que segue um travessão —. Aqui, as falas também são pausadas, como os parágrafos. Avance pressionando a tecla `Enter`.
+Algumas partes do jogo apresentam diálogo entre as personagens. O nome do loucutor aparece em cima da fala, que segue um travessão `—`. Aqui, as falas também são pausadas, como os parágrafos. Avance pressionando a tecla `Enter`.
 
 ## Wiki
 
 ## Criação de mundo:
 
-O mundo de nosso jogo foi criado levando como inspiração em base o horripilante mundo de horror criado Howard Philips Lovecraft. O universo de horror criado H.P.Lovecraft fundou um novo subgênero de horror que ficou conhecido como Horror cósmico. As obras de Lovecraft foram de inspirações para a criação de várias obras de sucesso da atualidade, como o livro It, a coisa. 
+O mundo de nosso jogo foi criado levando como inspiração em base o horripilante mundo de horror criado Howard Philips Lovecraft. O universo de horror criado H. P. Lovecraft fundou um novo subgênero de horror que ficou conhecido como Horror cósmico. As obras de Lovecraft foram de inspirações para a criação de várias obras de sucesso da atualidade, como o livro It, a coisa. 
 
 No jogo, nós adaptamos esse universo trazendo monstros icônicos de Lovecraft para a narrativa como também construímos um mundo usando como base o mundo de seus contos. Assim criando um mundo de horror Lovecraftiano ambientado no tempo presente e que se passa e faz referência a localidades existentes nos contos de Lovecraft, além de que criamos uma localidade nova onde se situa a trama principal do jogo. 
 
@@ -219,12 +231,3 @@ Ela é tão bondosa com seus seguidores que oferece para os mais fiéis uma chan
 Segundo o Necronomicom, Hastur é irmão e rival de Cthulhu, e o único dos deuses antigos que ousa desobedecê-lo. Ele é muito benevolente com os seus fiéis seguidores, realizando seus maiores desejos e vingando qualquer injustiça que eles sofram de forma cruel e impiedosa, e se necessário, ele se vingaria de outros deuses também. Muitos relatos de sua manifestações para seus seguidores diz que ele aparece como um ser encapuzado de amarelo e com uma corola de luz da mesma cor.  
 
 Seus fiéis eram constantemente assediados por cultos de outros deuses antigos por causa do envolvimento de Hastur no fim do reinado de Cthulhu, porem esses assédios não duraram muito pois os cultos que o faziam eram dizimados pela fúria e ódio de Hastur, o rei amarelo.
-
-
-
-
-
-
-
-
-## Dicas
