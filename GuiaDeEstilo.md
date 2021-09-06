@@ -67,7 +67,7 @@ O que voce vai fazer?
 Em cada dialogo deve ser indicado quem fala com `Dialogo`.
 
 ```
-PROCEDIMENTO DIALOGO(nomeDaPessoa: CARACTERE)
+PROCEDIMENTO Dialogo(nomeDaPessoa: CARACTERE)
  VAR i : INTEIRO
  INICIO
   ESCREVA ("        ~ ") // 8 espaços + til + 1 espaço
