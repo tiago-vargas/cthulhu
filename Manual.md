@@ -172,19 +172,8 @@ Sem ter mais nenhuma pista do paradeiro de Jesse, eu e minha parceira junto com 
 Mesmo parecendo uma zona de guerra os únicos corpos que encontramos eram esqueletos ou o que parecem ser múmias. Durante a minha investigação do edifício duas perguntas se mantiveram na minha cabeça, “ Será que poderíamos ter salvado Jesse de toda esse caos se tivéssemos vindo investigar mais cedo as coordenadas?” , “ O que aconteceu aqui e com Jesse?”, provavelmente só terem a resposta para essa pergunta quando achá-la.
 
 Investigando o mais sobre a história do lugar eu cheguei a descobrir coisas que só podem ser descritas como horríveis. Segundo os documentos que encontrei as histórias de horror naquele já começaram com os seus três primeiros fundadores, infelizmente os noves desses três indivíduos estava apagado nos documentos. Porém os relatos documentados dos funcionários do lugar ainda estão bem legíveis, os funcionários  relatam que o lugar era uma fachada criado pelos fundadores do lugar para a prática de rituais e massacres sem que ninguém da cidade soubesse ou pudesse encontrar provas dos atos deles, segundo os funcionários o lugar era cheio de passagens secretas para que a polícia ou hospedes curiosos não pudessem encontrar a câmera ritualística. As suposições dos tipos de rituais realizados mudavam de pessoas para pessoa, porém eu notei que algumas suposições eram mais com que outras, muitos falavam que esses rituais eram praticados por membros da Klan que existiam na  época, essa teoria deveria ser a mais comum devido ao números desaparecimento em massa de pessoas negras na região. A segunda suposição mais comum foi que mais me interessou, eles acreditavam no prédio eram realizados rituais satanistas para invocar demônios exteriores. Essa suposição de o lugar ser uma fachada para rituais satanistas para demônios exteriores se manteve durante os anos e durante as administrações do lugar e a cada reforma feita no lugar mais essa suposição se espalhava e ficava mais forte.
-<<<<<<< HEAD
 
 O motivo de fechamento do lugar é tão macabro quanto as histórias de rituais do lugar. Segundo registros oficiais o lugar foi fechado e abandonado depois de uma  rebelião dos residentes, pelo que constas os pacientes se rebelaram contra os médicos e começaram um massacre muitos médicos foram mortos no processo e a segurança do lugar revidou com muita brutalidade matando quase todos os pacientes do lugar. Quando a polícia chegou para controlar o caos no já era tarde, as coisas ficam muito suspeitas a aparte desse ponto, dizem que dos poucos pacientes que foram a maioria deles não constava nenhum tipo de doença mental e muitos relatavam abusos de todos os tipos praticados pelos médicos e que a maioria dos mortos eram de paciente que não participaram da rebelião. Depois desse caso de rebelião não existe mais nenhum documento sobre o lugar, ele simplesmente sumiu da vida dos habitantes de Arkham.
-
-
-
-
-
-
-
-=======
- 
-O motivo de fechamento do lugar é tão macabro quanto as histórias de rituais do lugar. Segundo registros oficiais o lugar foi fechado e abandonado depois de uma  rebelião dos residentes, pelo que constas os pacientes se rebelaram contra os médicos e começaram um massacre muitos médicos foram mortos no processo e a segurança do lugar revidou com muita brutalidade matando quase todos os pacientes do lugar. Quando a polícia chegou para controlar o caos no já era tarde, as coisas ficam muito suspeitas a aparte desse ponto, dizem que dos poucos pacientes que foram a maioria deles não constava nenhum tipo de doença mental e muitos relatavam abusos de todos os tipos praticados pelos médicos e que a maioria dos mortos eram de paciente que não participaram da rebelião. Depois desse caso de rebelião não existe mais nenhum documento sobre o lugar, ele simplesmente sumiu da vida dos habitantes de Arkham.  
 
 ## Informações do Necronomicon:
 
@@ -194,22 +183,21 @@ Esse livro segundo os bibliotecário da universidade foi escrito por volta de 70
 
 ### Deuses Antigos:
 
-- Cthulhu: 
+- Cthulhu:
 
 Segundo o Necronomicom o nome escrito aqui para esse deus é apenas uma versão mal compriendida de seu verdaderiro nome se ele tiver um, assim qualquer pronuncia é valida ou qualquer outro nome que se escolha, segundo o livro tal coisa não passa de uma nessecidade humana sem sentido para Cthulhu. esse deus é uma criatura colossal e antropomorfica com garras nas suas extremidades com asas mebramnosas saido do que seria suas costas e no lugar de sua boca sai centenas de tentaculos o que lhe da aparencia de lula. Ele é filho de um deus exterior chamado Yog-Sothoth que nasceu a eons imemoriais, ele é o deus mais importante no panteão dos antigos sendo considerado o seu lider, porem ele tem um desitendimento com seu irmão Hasturo qual não obedece as ordens de Cthulhu. Cthulhu viajou pelo universo antes de encontrar a jovem terra e nessa viajem teve dois filhos e uma filha. Quando chegou a terra Cthulhu e seus a dominaram e criaram uma cidade ciclopica chamada de R'lyeh que depois do fim do reinado de cthulhu afundou no e se tornou o seu tumulo o motivo de do fim seu reinado é um misterio.Com o florecer da humanidade Cthulhu teria se comunicado atreves de sonhos com os humanos mais sensiveis psiquicamente e assim criando os seus primeiros cultos. No livro existe uma proceia que diz que quando entranhos eons chegarem e as estralas se alinharem a cidade perdidade de R'lyeh se erguerar e abrir o caminho para o retorno de Cthulhu e dos outros deuses exteriores de seu sono morto.
 
 - Nyarlathotep:
 
- - Shub-Niggurath:
- 
- - Hastur:
-  
-  
-  
-  
-       
- 
- 
->>>>>>> 002c2b6e69befe677c024922929bc231fee82c55
+- Shub-Niggurath:
+
+Z- Hastur:
+
+
+
+
+
+
+
 
 ## Dicas
