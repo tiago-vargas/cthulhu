@@ -405,11 +405,11 @@ Mas, instintivamente você decide que só tinha duas escolhas:
 		Você não consegue ver de que lado eles vem.
 		Você só tem alguns segundos para decidir se vai esquivar para:
 		
--		**>> D-  Direita**
--		**>>E-  Esquerda**
+-		**D-  Direita**
+-		**E-  Esquerda**
 -		**>>P.3: você esquiva para qual lado?**
 		
--			**>>E-esquerda**
+-			**E-esquerda**
 			Você se joga para a esquerda.
 			Após isso, o tentáculo passa de raspão pelo lado direito.
 			Milagrosamente, você consegue chegar na passagem.
@@ -420,7 +420,7 @@ Mas, instintivamente você decide que só tinha duas escolhas:
 			
 -			**>>P.3.2.:o você fará?**
 			        
--			   **>>Cortar**
+-			   **Cortar**
 				Você desce o machado no tentáculo.
 				Porém, aquela parte decepada começa a se multiplicar em  mais tentáculos, que acabam te arrastando de volta para a sala.
 				- Mas quanta ousadia virar as costas e ir embora sem ao menos fazer nenhuma reverência.
@@ -444,7 +444,7 @@ Mas, instintivamente você decide que só tinha duas escolhas:
 				Logo após, você corre o mais rápido possível até a saída.
 				Porém, Nyarlathotep ainda te dá mais um golpe nas costas que te arremessa com força para dentro da passagem.
 		           
--			   **>>Puxar**
+-			   **Puxar**
 				Você tenta puxar a alavanca.
 				Porém, Nyarlathotep é mais rápido.
 				E consequentemente, você é arrastada de volta para a sala
@@ -470,7 +470,7 @@ Mas, instintivamente você decide que só tinha duas escolhas:
 				Porém, Nyarlathotep ainda te dá mais um golpe nas costas que te arremessa com força para dentro da passagem.
 
 
--	    **>>L:**
+-	    **L:**
            	Você prepara o seu machado e começa a correr na direção de Nyarlathotep.
             	Você se desequilibra e quase cai em alguns momentos.
             	Porém, você  já está na metade do caminho.
@@ -480,9 +480,9 @@ Mas, instintivamente você decide que só tinha duas escolhas:
 		E - Esquerda
 		D - Direita
            	
--		**>>p.3.1 Vai esquivar para:**
+-		**>>P.3.1 Vai esquivar para:**
 
--				**>>E-esquerda**
+-				**E-esquerda**
 				Você esquiva para a esquerda, mas o tentáculo te acerta em cheio.
 				Você é lançada com tanta força na grade que seu braço quase quebra com o impacto.
 				- Que… Decepcionante.
@@ -506,7 +506,7 @@ Mas, instintivamente você decide que só tinha duas escolhas:
 				Você olha para frente e aquela figura que te salvou, não está mais lá.
 				Você se levanta e corre até a saída que está logo à frente.
 				Quando você está entrando na passagem, os tentáculos ainda em chamas dão um último golpe de oportunidade nas suas costas, que te arremessa a frente.
--				**>>D-direito**
+-				**D-direito**
 				Você ouve aquele amontoado de vermes em forma de tentáculo passando do seu lado e escuta ele se debatendo fortemente na grade.
 				Você continua na corrida em direção até ele.
 				Falta pouco para chegar em Nyarlathotep.
@@ -520,7 +520,7 @@ Mas, instintivamente você decide que só tinha duas escolhas:
 				
 -				**>>P.3.1.1: Você vai esquivar para qual lado?**
 					
--					**>>Qualquer outra direção**
+-					**Qualquer outra direção**
 					Você tenta esquivar, mas os tentáculos te acertam cheio.
 					O impacto no chão é tão forte que você sente todo o seu ar indo embora dos pulmões, e por muito pouco suas costelas não quebram.
 					-Impressionante, por muito pouco você não é acertada pelos meus tentáculos.
@@ -546,7 +546,7 @@ Mas, instintivamente você decide que só tinha duas escolhas:
 
  
 
--					**>>F - Frente**
+-					**F - Frente**
 					Com todo o impulso acumulado e toda a força que você consegue aplicar nas pernas, você dá um salto para frente numa investida suicida.
 					Você consegue acertar em cheio com toda força. 
 					Você escuta o som dos vermes sendo destroçados pelo fio da lâmina.
@@ -599,13 +599,13 @@ Mas, instintivamente você decide que só tinha duas escolhas:
 
 -					**>>P. 3.1.2: o que você escolherá?**
 						
--						**>>L**
+-						**L**
 						Você lança o sinalizador no tentáculo.
 						Ele se debate de um lado para o outro.
 						Você então passa pelo espaço entre ele e a grade.
 						Porém, antes de sair, você ainda sente algo te acertando com muita força pelas costas e te arremessando dentro da passagem.
 
--						**>>D**
+-						**D**
 						O tentáculo se projeta na sua direção.
 						Você agilmente desvia do tentáculo.
 						Porém do amontoado de onde saiu o primeiro tentáculo, sai outro logo em seguida.
