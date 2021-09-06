@@ -57,7 +57,7 @@ PROCEDIMENTO Creditos
   ESCREVAL("CRIADORES")
   ESCREVAL()
   ESCREVAL("Tiago Vargas Pereira de Oliveira")
-  ESCREVAL("João Vitor Abreu Castro")
+  ESCREVAL("Joao Vitor Abreu Castro")
   ESCREVAL("Joao Victor De Souza Albuquerque")
   ESCREVAL()
   ESCREVA("Aperte Enter para voltar.")
