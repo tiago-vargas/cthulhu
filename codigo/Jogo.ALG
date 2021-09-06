@@ -4,11 +4,20 @@ VAR entrada      : CARACTERE
     terminarJogo : LOGICO
 
 // ======================================================================== //
-// ------------------------------ FRAMEWORK ------------------------------- //
-
+// |----------------------------- FRAMEWORK ------------------------------| //
+// ======================================================================== //
 
 // Textos: ("+-----------------------------------------------------------------------------+")
 // Falas : ("+____________________________________________________________________+")
+
+PROCEDIMENTO Titulo(texto: CARACTERE)
+ INICIO
+  ESCREVAL("+-----------------------------------------------------------------------------+")
+  ESCREVA ("¦                        ") // 24 espacos
+  ESCREVA (texto) // 30 caracteres exatamente
+  ESCREVAL("                       ¦")  // 23 espacos
+  ESCREVAL("+-----------------------------------------------------------------------------+")
+FIMPROCEDIMENTO
 
 PROCEDIMENTO Linha(texto: CARACTERE) // Linha de texto intermediária
  INICIO
@@ -95,16 +104,13 @@ FIMPROCEDIMENTO
 
 // ======================================================================== //
 // -------------------------------- FASES --------------------------------- //
+// ======================================================================== //
 
 PROCEDIMENTO Prologo()
  INICIO
   LIMPATELA()
 
-  //      ("+-----------------------------------------------------------------------------+")
-
-  ESCREVAL("")
-  Linha   ("                                    PRÓLOGO                                    ")
-  ESCREVAL("")
+  Titulo  ("            PRÓLOGO           ")
 
   Linha   ("Você é Jesse Lovecraft, uma brilhante e renomada psicóloga de 26 anos, na qual ")
   Linha   ("se meteu em uma loucura que só se pode ser concebida na sua totalidade por men-")
@@ -137,7 +143,7 @@ PROCEDIMENTO Prologo()
   LinhaF  ("               Ph’nglui mglw’nafh Cthulhu R’lyeh wgah’nagl fhtagn              ")
 FIMPROCEDIMENTO
 
-PROCEDIMENTO Cela
+PROCEDIMENTO Cela()
  VAR terminarLoop : LOGICO
      iteracao, i  : INTEIRO
      opcoes       : vetor[1..6] DE OPCAO
@@ -151,8 +157,8 @@ PROCEDIMENTO Cela
 
   LIMPATELA()
 
-  ESCREVAL("                                    A CELA                                     ")
-  Linha   ("+-----------------------------------------------------------------------------+")
+  Titulo  ("            A CELA            ")
+
   LinhaF  ("CAAARRACK!!!!!!!")
   LinhaF  ("Você desperta com o barulho de um trovão.")
   LinhaF  ("Você está deitada numa cama.")
@@ -273,7 +279,8 @@ FIMPROCEDIMENTO
 PROCEDIMENTO Corredor()
  INICIO
   LIMPATELA()
-  ESCREVAL("                                   CORREDOR                                    ")
+
+  Titulo  ("          O CORREDOR          ")
 
   //      ("+-----------------------------------------------------------------------------+")
   Linha   ("No corredor, em formato de L, dava para ouvir perfeitamente a forte tempestade ")
@@ -391,8 +398,10 @@ FIMPROCEDIMENTO
 
 PROCEDIMENTO PassagemSecreta1()
  INICIO
-  ESCREVAL("                                PASSAGEM SECRETA                               ")
-  //      ("+-----------------------------------------------------------------------------+")
+  LIMPATELA()
+
+  Titulo  ("      A PASSAGEM SECRETA      ")
+
   Linha   ("Vinha um forte cheiro de mofo da passagem, característicos de lugares a muito  ")
   LinhaF  ("tempo isolados do mundo.")
 
@@ -470,8 +479,9 @@ PROCEDIMENTO PassagemSecreta2()
  VAR
  INICIO
   LIMPATELA()
-  ESCREVAL("                                PASSAGEM SECRETA                               ")
-  //      ("+-----------------------------------------------------------------------------+")
+
+  Titulo  ("   A OUTRA PASSAGEM SECRETA   ")
+
   LinhaF  ("Você quase desmaia com o impacto na parede.")
   LinhaF  ("Você corre até a alavanca da porta da sala de máquinas e levanta ela.")
 
@@ -531,8 +541,9 @@ FIMPROCEDIMENTO
 PROCEDIMENTO SalaDeDescanso()
  INICIO
   LIMPATELA()
-  ESCREVAL("                                SALA DE DESCANSO                               ")
-  //      ("+-----------------------------------------------------------------------------+")
+
+  Titulo  ("      A SALA DE DESCANSO      ")
+
   Linha   ("Você analisa a sala e vê três camas em uma das paredes e uma estante de livros ")
   LinhaF  ("na parede oposta à das camas.")
 
@@ -694,8 +705,8 @@ FIMPROCEDIMENTO
 PROCEDIMENTO FimDoMundo()
  INICIO
   LIMPATELA()
-  ESCREVAL("                               FIM DO MUNDO                                    ")
-  ESCREVAL("+-----------------------------------------------------------------------------+")
+
+  Titulo  ("        O FIM DO MUNDO        ")
 
   LinhaF  ("Cidades em chamas.")
 
@@ -763,8 +774,8 @@ FIMPROCEDIMENTO
 PROCEDIMENTO MaisUmDia()
  INICIO
   LIMPATELA()
-  ESCREVAL("                             VIVENDO MAIS UM DIA                               ")
-  ESCREVAL("+-----------------------------------------------------------------------------+")
+
+  Titulo  ("VIVENDO PARA LUTAR MAIS UM DIA")
 
   LinhaF  ("Você acorda com o toque de alguém na sua cabeça.")
 
@@ -907,8 +918,7 @@ PROCEDIMENTO ManipulacaoReligiosa()
  INICIO
   LIMPATELA()
 
-  ESCREVAL("                             MANIPULAÇÃO RELIGIOSA                             ")
-  ESCREVAL("+-----------------------------------------------------------------------------+")
+  Titulo  ("   A MANIPULAÇÃO RELIGIOSA    ")
 
   Linha   ("Você acorda e se vê num lugar que só pode ser descrito como o céu cristão que  ")
   LinhaF  ("você imaginou por toda a vida.")
@@ -1299,8 +1309,9 @@ FIMPROCEDIMENTO
 PROCEDIMENTO MenuDebug
  INICIO
   LIMPATELA()
-  ESCREVAL("-------- Menu de Debug --------")
-  ESCREVAL("+-----------------------------------------------------------------------------+")
+
+  Titulo  ("        MENU DE DEBUG         ")
+
   ESCREVAL()
   ESCREVAL("[1]  - Prologo")
   ESCREVAL("[2]  - Cela")
