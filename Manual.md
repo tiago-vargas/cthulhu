@@ -42,7 +42,7 @@ Escolha a direção que você deseja seguir:
 >> SUL
 ```
 
-Aqui, existem quatro escolhas possíveis. O jogador escolheu a opção `SUL`, mas poderia ser qualquer outra listada. Você deve digitar algo sempre que aparecer `>> ` na tela. Digite e aperte `Enter` quando terminar. Não se preocupe, se você digitar errado, a lista aparece novamente.
+Aqui, existem quatro escolhas possíveis. O jogador escolheu a opção `SUL`, mas poderia ser qualquer outra listada. Você deve digitar algo sempre que aparecer `>>` na tela. Digite e aperte `Enter` quando terminar. Não se preocupe, se você digitar errado, a lista aparece novamente.
 
 > **OBSERVAÇÃO:**
 >
@@ -191,7 +191,7 @@ Segundo o Necronomicom o nome escrito aqui para esse deus é apenas uma versão 
 
 - Shub-Niggurath:
 
-Z- Hastur:
+- Hastur:
 
 
 
