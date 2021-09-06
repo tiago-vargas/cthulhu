@@ -397,223 +397,223 @@ Mas, instintivamente você decide que só tinha duas escolhas:
 	C- Correr 
 	L- Lutar
 -	**>> P.3: qual instinto você vai seguir?**
--        	**>>Correr:**
-        	Você dá as costas para aquele monstro e começa a correr o mais rápido possível.
-         	Porém, Nyarlathotep não te deixará fugir tão facilmente.
-    		Você percebe pelo canto do olho uma movimentação dos vermes nas grades, se juntando em alguma coisa.
-		Eles se juntam em um tentáculo, e está prestes a te atacar.
-		Você não consegue ver de que lado eles vem.
-		Você só tem alguns segundos para decidir se vai esquivar para:
+-        	**Correr:**
+        	-Você dá as costas para aquele monstro e começa a correr o mais rápido possível.
+         	-Porém, Nyarlathotep não te deixará fugir tão facilmente.
+    		-Você percebe pelo canto do olho uma movimentação dos vermes nas grades, se juntando em alguma coisa.
+		-Eles se juntam em um tentáculo, e está prestes a te atacar.
+		-Você não consegue ver de que lado eles vem.
+		-Você só tem alguns segundos para decidir se vai esquivar para:
 		
 -		**D-  Direita**
 -		**E-  Esquerda**
--		**P.3: você esquiva para qual lado?**
+-		**>>P.3: você esquiva para qual lado?**
 		
 -			**E-esquerda**
-			Você se joga para a esquerda.
-			Após isso, o tentáculo passa de raspão pelo lado direito.
-			Milagrosamente, você consegue chegar na passagem.
-			Você não espera nem mais um segundo e já corre para a alavanca.
-			Porém, fugir de Nyarlathotep não é tão fácil.
-			Um de seus tentáculos agarra na sua perna.
-			Você pode CORTAR o tentáculo ou PUXAR a alavanca.
+			-Você se joga para a esquerda.
+			-Após isso, o tentáculo passa de raspão pelo lado direito.
+			-Milagrosamente, você consegue chegar na passagem.
+			-Você não espera nem mais um segundo e já corre para a alavanca.
+			-Porém, fugir de Nyarlathotep não é tão fácil.
+			-Um de seus tentáculos agarra na sua perna.
+			-Você pode CORTAR o tentáculo ou PUXAR a alavanca.
 			
--			**P.3.2.:o você fará?**
+-			**>>P.3.2.:o você fará?**
 			        
 -			   **Cortar**
-				Você desce o machado no tentáculo.
-				Porém, aquela parte decepada começa a se multiplicar em  mais tentáculos, que acabam te arrastando de volta para a sala.
-				- Mas quanta ousadia virar as costas e ir embora sem ao menos fazer nenhuma reverência.
-				Os tentáculos te jogam e te prendem em pé na grade.
+				-Você desce o machado no tentáculo.
+				-Porém, aquela parte decepada começa a se multiplicar em  mais tentáculos, que acabam te arrastando de volta para a sala.
+				-Mas quanta ousadia virar as costas e ir embora sem ao menos fazer nenhuma reverência.
+				-Os tentáculos te jogam e te prendem em pé na grade.
 				-Saiba que eu sou um DEUS, criatura patética!
 				-Você foi uma cachorrinha muito indisciplinada.
 				-Precisa de um adestramento antes de pensar em me servir.
-				Logo após, mais daquele lodo começa a sair de trás da grade.
-				E então, o lodo começa a cobrir todo o seu corpo e entrar nas suas roupas.
-				Você sente os vermes andando por toda a sua pele.
-				Enquanto isso, um dos canos acima de você se rompe e começa a cair mais lodo diretamente em cima da sua cabeça.
-				Os vermes começam a entrar nos seus ouvidos, nariz e boca.
-				*Solte ela Nyarlathotep.
+				-Logo após, mais daquele lodo começa a sair de trás da grade.
+				-E então, o lodo começa a cobrir todo o seu corpo e entrar nas suas roupas.
+				-Você sente os vermes andando por toda a sua pele.
+				-Enquanto isso, um dos canos acima de você se rompe e começa a cair mais lodo diretamente em cima da sua cabeça.
+				-Os vermes começam a entrar nos seus ouvidos, nariz e boca.
+				-*Solte ela Nyarlathotep.
 				-Além de ser um traidor, ainda tem a audácia de interromper o meu momento de diversão com minha cadelinha?.
-				*Por acaso, o Cthulhu sabe sobre essa “brincadeira”?
-				- Tenha um mínimo de decência e suma daqui, seu traidor!.
-				* Como sempre, você não me escuta. Serie obrigado a tomar medidas drásticas. 
-				Do além, você começa a escutar o som inconfundível de um lança-chamas soltando sua língua fogo.
-				Os vermes que antes te cobriam, começam aos poucos a te soltar.
-				Você faz um pouco de esforço e consegue se libertar.
-				Logo após, você corre o mais rápido possível até a saída.
-				Porém, Nyarlathotep ainda te dá mais um golpe nas costas que te arremessa com força para dentro da passagem.
+				-*Por acaso, o Cthulhu sabe sobre essa “brincadeira”?
+				-- Tenha um mínimo de decência e suma daqui, seu traidor!.
+				-* Como sempre, você não me escuta. Serie obrigado a tomar medidas drásticas. 
+				-Do além, você começa a escutar o som inconfundível de um lança-chamas soltando sua língua fogo.
+				-Os vermes que antes te cobriam, começam aos poucos a te soltar.
+				-Você faz um pouco de esforço e consegue se libertar.
+				-Logo após, você corre o mais rápido possível até a saída.
+				-Porém, Nyarlathotep ainda te dá mais um golpe nas costas que te arremessa com força para dentro da passagem.
 		           
 -			   **Puxar**
-				Você tenta puxar a alavanca.
-				Porém, Nyarlathotep é mais rápido.
-				E consequentemente, você é arrastada de volta para a sala
-				- Mas quanta ousadia virar as costas e ir embora sem ao menos fazer nenhuma reverência.
-				Os tentáculos te jogam e te prendem em pé na grade.
-				-Saiba que eu sou um DEUS, criatura patética!
-				-Você foi uma cachorrinha muito indisciplinada.
-				-Precisa de um adestramento antes de pensar em me servir.
-				Logo após, mais daquele lodo começa a sair de trás da grade.
-				E então, o lodo começa a cobrir todo o seu corpo e entrar nas suas roupas.
-				Você sente os vermes andando por toda a sua pele.
-				Enquanto isso, um dos canos acima de você se rompe e começa a cair mais lodo diretamente em cima da sua cabeça.
-				Os vermes começam a entrar nos seus ouvidos, nariz e boca.
-				*Solte ela Nyarlathotep.
-				-Além de ser um traidor, ainda tem a audácia de interromper o meu momento de diversão com minha cadelinha?.
-				*Por acaso, o Cthulhu sabe sobre essa “brincadeira”?
-				- Tenha um mínimo de decência e suma daqui, seu traidor!.
-				* Como sempre, você não me escuta. Serie obrigado a tomar medidas drásticas. 
-				Do além, você começa a escutar o som inconfundível de um lança-chamas soltando sua língua fogo.
-				Os vermes que antes te cobriam, começam aos poucos a te soltar.
-				Você faz um pouco de esforço e consegue se libertar.
-				Logo após, você corre o mais rápido possível até a saída.
-				Porém, Nyarlathotep ainda te dá mais um golpe nas costas que te arremessa com força para dentro da passagem.
+				-Você tenta puxar a alavanca.
+				-Porém, Nyarlathotep é mais rápido.
+				-E consequentemente, você é arrastada de volta para a sala
+				-- Mas quanta ousadia virar as costas e ir embora sem ao menos fazer nenhuma reverência.
+				-Os tentáculos te jogam e te prendem em pé na grade.
+				--Saiba que eu sou um DEUS, criatura patética!
+				--Você foi uma cachorrinha muito indisciplinada.
+				--Precisa de um adestramento antes de pensar em me servir.
+				-Logo após, mais daquele lodo começa a sair de trás da grade.
+				-E então, o lodo começa a cobrir todo o seu corpo e entrar nas suas roupas.
+				-Você sente os vermes andando por toda a sua pele.
+				-Enquanto isso, um dos canos acima de você se rompe e começa a cair mais lodo diretamente em cima da sua cabeça.
+				-Os vermes começam a entrar nos seus ouvidos, nariz e boca.
+				-*Solte ela Nyarlathotep.
+				--Além de ser um traidor, ainda tem a audácia de interromper o meu momento de diversão com minha cadelinha?.
+				-*Por acaso, o Cthulhu sabe sobre essa “brincadeira”?
+				-- Tenha um mínimo de decência e suma daqui, seu traidor!.
+				-* Como sempre, você não me escuta. Serie obrigado a tomar medidas drásticas. 
+				-Do além, você começa a escutar o som inconfundível de um lança-chamas soltando sua língua fogo.
+				-Os vermes que antes te cobriam, começam aos poucos a te soltar.
+				-Você faz um pouco de esforço e consegue se libertar.
+				-Logo após, você corre o mais rápido possível até a saída.
+				-Porém, Nyarlathotep ainda te dá mais um golpe nas costas que te arremessa com força para dentro da passagem.
 
 
 -	    **L:**
-           	Você prepara o seu machado e começa a correr na direção de Nyarlathotep.
-            	Você se desequilibra e quase cai em alguns momentos.
-            	Porém, você  já está na metade do caminho.
-            	Ele abre um grotesco sorriso.
-            	Você não vê, mas sabe que algo está vindo por trás na sua direção.
-		Você só tem alguns segundos para esquivar.
-		E - Esquerda
-		D - Direita
+           	-Você prepara o seu machado e começa a correr na direção de Nyarlathotep.
+            	-Você se desequilibra e quase cai em alguns momentos.
+            	-Porém, você  já está na metade do caminho.
+            	-Ele abre um grotesco sorriso.
+            	-Você não vê, mas sabe que algo está vindo por trás na sua direção.
+		-Você só tem alguns segundos para esquivar.
+		-E - Esquerda
+		-D - Direita
            	
 -		**P.3.1 Vai esquivar para:**
 
 -				**E-esquerda**
-				Você esquiva para a esquerda, mas o tentáculo te acerta em cheio.
-				Você é lançada com tanta força na grade que seu braço quase quebra com o impacto.
-				- Que… Decepcionante.
-				Os vermes começam a te imobilizar e te cobrir.
-				Você tenta se debater para se livrar dos vermes, mas não demonstra muita eficiência.
-				Conforme os vermes vão subindo e entrando na sua roupa, o seu desespero fica maior.
-				Você começa a sentir os milhares de vermes por toda a sua pele.
-				Eles começam a entrar na sua boca, ouvidos e nariz enquanto cobrem por completo a sua cara.
-				*Solte ela, Nyarlathotep.
-				-Eu não obedeço ninguém, ainda mais um traidor como você.
-				*Suspiro* Infelizmente, terei que tomar medidas graves. 
-				Você escuta o inigualável som de um lança-chamas.
-				Logo em seguida, os vermes se dispersam de cima de você, e a primeira coisa que você nota é o teto da sala em chamas.
-				Sem entender nada, você se levanta e corre desesperadamente para a saída.
-				Porém, Nyarlathotep tenta mais ataque com os seus tentáculos.
-				Você vê na porta a silhueta de uma pessoa segurando algo muito grande.
-				Você sabe o que é aquilo.
-				Instintivamente, você se joga no chão.
-				Uma língua de fogo passa por cima de você.
-				Você olha para trás e vê aqueles tentáculos negros se debatendo em agonia.
-				Você olha para frente e aquela figura que te salvou, não está mais lá.
-				Você se levanta e corre até a saída que está logo à frente.
-				Quando você está entrando na passagem, os tentáculos ainda em chamas dão um último golpe de oportunidade nas suas costas, que te arremessa a frente.
+				-Você esquiva para a esquerda, mas o tentáculo te acerta em cheio.
+				-Você é lançada com tanta força na grade que seu braço quase quebra com o impacto.
+				-- Que… Decepcionante.
+				-Os vermes começam a te imobilizar e te cobrir.
+				-Você tenta se debater para se livrar dos vermes, mas não demonstra muita eficiência.
+				-Conforme os vermes vão subindo e entrando na sua roupa, o seu desespero fica maior.
+				-Você começa a sentir os milhares de vermes por toda a sua pele.
+				-Eles começam a entrar na sua boca, ouvidos e nariz enquanto cobrem por completo a sua cara.
+				-*Solte ela, Nyarlathotep.
+				--Eu não obedeço ninguém, ainda mais um traidor como você.
+				-*Suspiro* Infelizmente, terei que tomar medidas graves. 
+				-Você escuta o inigualável som de um lança-chamas.
+				-Logo em seguida, os vermes se dispersam de cima de você, e a primeira coisa que você nota é o teto da sala em chamas.
+				-Sem entender nada, você se levanta e corre desesperadamente para a saída.
+				-Porém, Nyarlathotep tenta mais ataque com os seus tentáculos.
+				-Você vê na porta a silhueta de uma pessoa segurando algo muito grande.
+				-Você sabe o que é aquilo.
+				-Instintivamente, você se joga no chão.
+				-Uma língua de fogo passa por cima de você.
+				-Você olha para trás e vê aqueles tentáculos negros se debatendo em agonia.
+				-Você olha para frente e aquela figura que te salvou, não está mais lá.
+				-Você se levanta e corre até a saída que está logo à frente.
+				-Quando você está entrando na passagem, os tentáculos ainda em chamas dão um último golpe de oportunidade nas suas costas, que te arremessa a frente.
 -				**D-direito**
-				Você ouve aquele amontoado de vermes em forma de tentáculo passando do seu lado e escuta ele se debatendo fortemente na grade.
-				Você continua na corrida em direção até ele.
-				Falta pouco para chegar em Nyarlathotep.
-				Ele tenta mais um ataque.
-				Mas, mais uma vez você tem pouco tempo para reagir, e só uma chance de acertar.
-				Você pode esquivar para:
-				D-direita
-				F-frente
-				E-esquerda
-				T-tras
+				-Você ouve aquele amontoado de vermes em forma de tentáculo passando do seu lado e escuta ele se debatendo fortemente na grade.
+				-Você continua na corrida em direção até ele.
+				-Falta pouco para chegar em Nyarlathotep.
+				-Ele tenta mais um ataque.
+				-Mas, mais uma vez você tem pouco tempo para reagir, e só uma chance de acertar.
+				-Você pode esquivar para:
+				-D-direita
+				-F-frente
+				-E-esquerda
+				-T-tras
 				
 -				**P.3.1.1: Você vai esquivar para qual lado?**
 					
 -					**Qualquer outra direção**
-					Você tenta esquivar, mas os tentáculos te acertam cheio.
-					O impacto no chão é tão forte que você sente todo o seu ar indo embora dos pulmões, e por muito pouco suas costelas não quebram.
-					-Impressionante, por muito pouco você não é acertada pelos meus tentáculos.
-					-A única coisa que te falta para poder te usar é disciplina e uma pitada de loucura.
-					Conforme os vermes vão subindo e entrando na sua roupa, seu desespero fica maior.
-					 Você sente os milhares de vermes na sua pele.
-					Eles começam a entrar na sua boca, ouvidos e nariz enquanto cobrem por completo a sua cara.
-					*Solte ela, Nyarlathotep.
-					-Eu não obedeço ninguém, ainda mais um traidor como você.
-					*Suspiro* Infelizmente, terei que tomar medidas graves. 
-					Você escuta o inigualável som de um lança-chamas.
-					Logo em seguida, os vermes se dispersam de cima de você, e a primeira coisa que você nota é o teto da sala em chamas.
-					Sem entender nada, você se levanta e corre desesperadamente para a saída.
-					Porém, Nyarlathotep tenta mais ataque com os seus tentáculos.
-					Você vê na porta a silhueta de uma pessoa segurando algo muito grande.
-					Você sabe o que é aquilo.
-					Instintivamente, você se joga no chão.
-					Uma língua de fogo passa por cima de você.
-					Você olha para trás e vê aqueles tentáculos negros se debatendo em agonia.
-					Você olha para frente e aquela figura que te salvou, não está mais lá.
-					Você se levanta e corre até a saída que está logo à frente.
-					Quando você está entrando na passagem, os tentáculos ainda em chamas dão um último golpe de oportunidade nas suas costas, que te arremessa a frente.
+					-Você tenta esquivar, mas os tentáculos te acertam cheio.
+					-O impacto no chão é tão forte que você sente todo o seu ar indo embora dos pulmões, e por muito pouco suas costelas não quebram.
+					--Impressionante, por muito pouco você não é acertada pelos meus tentáculos.
+					--A única coisa que te falta para poder te usar é disciplina e uma pitada de loucura.
+					-Conforme os vermes vão subindo e entrando na sua roupa, seu desespero fica maior.
+					- Você sente os milhares de vermes na sua pele.
+					-Eles começam a entrar na sua boca, ouvidos e nariz enquanto cobrem por completo a sua cara.
+					-*Solte ela, Nyarlathotep.
+					--Eu não obedeço ninguém, ainda mais um traidor como você.
+					-*Suspiro* Infelizmente, terei que tomar medidas graves. 
+					-Você escuta o inigualável som de um lança-chamas.
+					-Logo em seguida, os vermes se dispersam de cima de você, e a primeira coisa que você nota é o teto da sala em chamas.
+					-Sem entender nada, você se levanta e corre desesperadamente para a saída.
+					-Porém, Nyarlathotep tenta mais ataque com os seus tentáculos.
+					-Você vê na porta a silhueta de uma pessoa segurando algo muito grande.
+					-Você sabe o que é aquilo.
+					-Instintivamente, você se joga no chão.
+					-Uma língua de fogo passa por cima de você.
+					-Você olha para trás e vê aqueles tentáculos negros se debatendo em agonia.
+					-Você olha para frente e aquela figura que te salvou, não está mais lá.
+					-Você se levanta e corre até a saída que está logo à frente.
+					-Quando você está entrando na passagem, os tentáculos ainda em chamas dão um último golpe de oportunidade nas suas costas, que te arremessa a frente.
 
  
 
 -					**F - Frente**
-					Com todo o impulso acumulado e toda a força que você consegue aplicar nas pernas, você dá um salto para frente numa investida suicida.
-					Você consegue acertar em cheio com toda força. 
-					Você escuta o som dos vermes sendo destroçados pelo fio da lâmina.
-					Blem!
-					O machado bateu no chão.
-					Você olha para frente e vê que cortou o monstro ao meio.
-					As luzes começam a piscar mais intensamente.
-					Os vermes começam a  subir no cabo do seu machado em direção a sua mão.
-					Você rapidamente tira o machado do chão.
-					 Você se vira para voltar e ir em direção à passagem.
-					Porém, você não consegue se mexer.
-					Os vermes a prendiam no chão.
-					Na sua frente, Nyarlathotep se uniu novamente.
-					Ny: Quanta ousadia da sua parte atacar um Deus.
-					Ny: Felizmente, você irá se arrepender por isso.
-					Um tentáculo sai do amontoado de vermes a sua direita e te acerta em cheio.
-					Você bate na grade com força o suficiente para amassar.
-					Em seguida, outro tentáculo surge do amontoado de vermes grudados na grade.
-					Você é arrastado de frente na grade do lado oposto.
-					Dá para sentir o sangue escorrendo da sua testa.
-					Um amontoado de vermes agarram nos seus braços e te levantam.
-					Você é arremessada com toda a força no chão.
-					Os vermes te seguram no chão.
-					-Como é mesmo que disse naquele filme que você gosta? Ah é, “Humano fraco.”
-					-Independente disso, você  precisa de um pouco de disciplina, antes de poder te usar.
-					Os vermes começam a te cobrir toda.
-					Você se debate tentando se livrar dos vermes.
-					Conforme os vermes vão subindo e entrando na sua roupa, seu desespero fica maior.
-					Você sente os milhares de vermes na sua pele.
-					Eles começam a entrar na sua boca, ouvidos e nariz enquanto cobrem por completo a sua cara.
-					*Chega disso, Nyarlathotep.
-					-Ah, então o traidor finalmente deu as caras. Apesar de suas ações questionáveis, você tem sorte. Chegou bem na melhor hora.
-					Os vermes já te cobriram por completo, e você não consegue ver mais nada.
-					- Só nem tente fazer algo. Você já tem os seus brinquedos, ela é minha.
-					*Suspiro* Infelizmente, argumentação nunca foi o seu forte. Você me obriga a ter que apelar para medidas mais drásticas.
-					Você sente que algo cai em você.
-					Em seguida, você escuta o inigualável som de um lança-chamas.
-					Assim que os vermes se dispersam de cima de você, a primeira coisa que vê é o teto da sala em chamas.
-					??: Use o sinalizador para queimá-los.
-					Você pega o sinalizador e o aciona.
-					A chama do sinalizador afasta os vermes de você e você pega o seu machado de volta.
-					Em seguida, você parte em uma fuga desesperada daquela sala cheia de vermes e fogo.
-					Você está quase saindo.
-					Porém, mais um tentáculo de vermes se levanta à sua frente.
-					Você sabe que ele vai te atacar.
+					-Com todo o impulso acumulado e toda a força que você consegue aplicar nas pernas, você dá um salto para frente numa investida suicida.
+					-Você consegue acertar em cheio com toda força. 
+					-Você escuta o som dos vermes sendo destroçados pelo fio da lâmina.
+					-Blem!
+					-O machado bateu no chão.
+					-Você olha para frente e vê que cortou o monstro ao meio.
+					-As luzes começam a piscar mais intensamente.
+					-Os vermes começam a  subir no cabo do seu machado em direção a sua mão.
+					-Você rapidamente tira o machado do chão.
+					- Você se vira para voltar e ir em direção à passagem.
+					-Porém, você não consegue se mexer.
+					-Os vermes a prendiam no chão.
+					-Na sua frente, Nyarlathotep se uniu novamente.
+					-Ny: Quanta ousadia da sua parte atacar um Deus.
+					-Ny: Felizmente, você irá se arrepender por isso.
+					-Um tentáculo sai do amontoado de vermes a sua direita e te acerta em cheio.
+					-Você bate na grade com força o suficiente para amassar.
+					-Em seguida, outro tentáculo surge do amontoado de vermes grudados na grade.
+					-Você é arrastado de frente na grade do lado oposto.
+					-Dá para sentir o sangue escorrendo da sua testa.
+					-Um amontoado de vermes agarram nos seus braços e te levantam.
+					-Você é arremessada com toda a força no chão.
+					-Os vermes te seguram no chão.
+					--Como é mesmo que disse naquele filme que você gosta? Ah é, “Humano fraco.”
+					--Independente disso, você  precisa de um pouco de disciplina, antes de poder te usar.
+					-Os vermes começam a te cobrir toda.
+					-Você se debate tentando se livrar dos vermes.
+					-Conforme os vermes vão subindo e entrando na sua roupa, seu desespero fica maior.
+					-Você sente os milhares de vermes na sua pele.
+					-Eles começam a entrar na sua boca, ouvidos e nariz enquanto cobrem por completo a sua cara.
+					-*Chega disso, Nyarlathotep.
+					--Ah, então o traidor finalmente deu as caras. Apesar de suas ações questionáveis, você tem sorte. Chegou bem na melhor hora.
+					-Os vermes já te cobriram por completo, e você não consegue ver mais nada.
+					-- Só nem tente fazer algo. Você já tem os seus brinquedos, ela é minha.
+					-*Suspiro* Infelizmente, argumentação nunca foi o seu forte. Você me obriga a ter que apelar para medidas mais drásticas.
+					-Você sente que algo cai em você.
+					-Em seguida, você escuta o inigualável som de um lança-chamas.
+					-Assim que os vermes se dispersam de cima de você, a primeira coisa que vê é o teto da sala em chamas.
+					-??: Use o sinalizador para queimá-los.
+					-Você pega o sinalizador e o aciona.
+					-A chama do sinalizador afasta os vermes de você e você pega o seu machado de volta.
+					-Em seguida, você parte em uma fuga desesperada daquela sala cheia de vermes e fogo.
+					-Você está quase saindo.
+					-Porém, mais um tentáculo de vermes se levanta à sua frente.
+					-Você sabe que ele vai te atacar.
 					
-					Você só tem alguns segundos e duas escolhas:
-					D-  Desviar.
-					L-  Lançar o sinalizador.
+					-Você só tem alguns segundos e duas escolhas:
+					-D-  Desviar.
+					-L-  Lançar o sinalizador.
 
 -					**P. 3.1.2: o que você escolherá?**
 						
 -						**L**
-						Você lança o sinalizador no tentáculo.
-						Ele se debate de um lado para o outro.
-						Você então passa pelo espaço entre ele e a grade.
-						Porém, antes de sair, você ainda sente algo te acertando com muita força pelas costas e te arremessando dentro da passagem.
+						-Você lança o sinalizador no tentáculo.
+						-Ele se debate de um lado para o outro.
+						-Você então passa pelo espaço entre ele e a grade.
+						-Porém, antes de sair, você ainda sente algo te acertando com muita força pelas costas e te arremessando dentro da passagem.
 
 -						**D**
-						O tentáculo se projeta na sua direção.
-						Você agilmente desvia do tentáculo.
-						Porém do amontoado de onde saiu o primeiro tentáculo, sai outro logo em seguida.
-						Ele te agarra num ataque surpresa.
-						Sem escolhas, ele enfia o sinalizador no tentáculo.
-						Ele começa a se debater e bater nas grades.
-						Você também é acertada pelas grades
-						Por fim, ele te arremessa com muita força de volta na passagem secreta. 
+						-O tentáculo se projeta na sua direção.
+						-Você agilmente desvia do tentáculo.
+						-Porém do amontoado de onde saiu o primeiro tentáculo, sai outro logo em seguida.
+						-Ele te agarra num ataque surpresa.
+						-Sem escolhas, ele enfia o sinalizador no tentáculo.
+						-Ele começa a se debater e bater nas grades.
+						-Você também é acertada pelas grades
+						-Por fim, ele te arremessa com muita força de volta na passagem secreta. 
 
 
 ## Passagem secreta 2:
