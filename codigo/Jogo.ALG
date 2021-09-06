@@ -10,13 +10,13 @@ VAR entrada      : CARACTERE
 // Textos: ("+-----------------------------------------------------------------------------+")
 // Falas : ("+____________________________________________________________________+")
 
-PROCEDIMENTO Linha(texto: CARACTERE)
+PROCEDIMENTO Linha(texto: CARACTERE) // Linha de texto intermediária
  INICIO
   // Dar margem antes.
   ESCREVAL(texto)
 FIMPROCEDIMENTO
 
-PROCEDIMENTO LinhaF(texto: CARACTERE)
+PROCEDIMENTO LinhaF(texto: CARACTERE) // Linha de texto final
  VAR a: CARACTERE
  INICIO
   // Dar margem antes.
@@ -356,6 +356,8 @@ PROCEDIMENTO Corredor()
 
   LinhaF  ("Clink!")
 FIMPROCEDIMENTO
+
+
 
 // ======================================================================== //
 // ------------------------------------------------------------------------ //
