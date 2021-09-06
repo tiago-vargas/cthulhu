@@ -66,7 +66,7 @@ Algumas partes do jogo apresentam diálogo entre as personagens. O nome do loucu
 
 ## Criação de mundo:
 
-O mundo de nosso jogo foi criado levando como inspiração em base o horripilante mundo de horror criado Howard Philips Lovecraft. O universo de horror criado H. P. Lovecraft fundou um novo subgênero de horror que ficou conhecido como Horror cósmico. As obras de Lovecraft foram de inspirações para a criação de várias obras de sucesso da atualidade, como o livro It, a coisa. 
+O mundo de nosso jogo foi criado levando como inspiração em base o horripilante mundo de horror criado Howard Philips Lovecraft. O universo de horror criado H. P. Lovecraft fundou um novo subgênero de horror que ficou conhecido como Horror cósmico. As obras de Lovecraft foram de inspirações para a criação de várias obras de sucesso da atualidade, como o livro "It, a coisa". 
 
 No jogo, nós adaptamos esse universo trazendo monstros icônicos de Lovecraft para a narrativa como também construímos um mundo usando como base o mundo de seus contos. Assim criando um mundo de horror Lovecraftiano ambientado no tempo presente e que se passa e faz referência a localidades existentes nos contos de Lovecraft, além de que criamos uma localidade nova onde se situa a trama principal do jogo. 
 
