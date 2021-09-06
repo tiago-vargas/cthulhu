@@ -1,0 +1,38 @@
+Algoritmo "logo"
+
+Var
+
+
+
+Inicio
+escreval("````````````````````````````````````````````````````````````````````````````````````````````                                                                            ")
+escreval("                                                                     _        ")
+escreval("                __    ______     _                          _       /       ")
+escreval("|--      --|   /  \     |       / \     |\   |  |    |     / \      \      ")
+escreval("|   \  /   |  |    |    |      /   \    | \  |  |____|    /   \      \      ")
+escreval("|    \/    |  |    |    |     / --- \   |  \ |  |    |   / --- \      \     ")
+escreval("|          |  |    |    |    /       \  |   \|  |    |  /       \   __/     ")
+escreval("|          |   \__/                                                        ")
+escreval("                         ___       _                               ")
+escreval("                        |   \     / \                               ")
+escreval("                        |    |   /   \                                ")
+escreval("                        |    |  / --- \                            ")
+escreval("                        |___/  /       \                                ")
+escreval("                                          _-_-_-_                             ")
+escreval("  ___    ___   __     ___          __        _        __                          ")
+escreval(" |   \  |     |   \  |   \   |    /         / \      /  \                         ")
+escreval(" |    | |     |    | |    |  |   /         /   \    |    |                             ")
+escreval(" |___/  |---  |___/  |    |  |  |         / --- \   |    |                           ")
+escreval(" |      |     | \    |    |  |   \       /       \  |    |                               ")
+escreval(" |      |___  |   \  |___/   |    \__   /         \  \__/                                     ")
+escreval("                                                                      ")
+escreval("                                   |                                                 ")
+escreval("                                    |                                             ")
+escreval("                                   |                                            ")
+escreval("``````````````````````````````````````````````````````````````````````````````````````````````````````````                                                                              ")
+escreval("                                                                       ")
+escreval("                                                                       ")
+escreval("                                                                       ")
+escreval("                                                                           ")
+escreval("                                                                           ")
+Fimalgoritmo
