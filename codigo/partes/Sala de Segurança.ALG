@@ -155,10 +155,10 @@ PROCEDIMENTO SalaDeSeguranca()
     ESCOLHA entrada
       CASO "MESA DA PORTA"
         //      ("+-----------------------------------------------------------------------------+")
-        LinhaF  ("Você olha a mesa e as suas gavetas, mas a única coisa que encontra é poeira.   ")
+        LinhaF  ("Você olha a mesa e as suas gavetas, mas a única coisa que encontra é poeira. ")
 
       CASO "MESA DO CORPO"
-        LinhaF  ("Você pensa em olhar o corpo, mas muda de ideia.                                ")
+        LinhaF  ("Você pensa em olhar o corpo, mas muda de ideia.                              ")
 
         //     ("+____________________________________________________________________+")
         Dialogo ("Jesse")
@@ -256,19 +256,18 @@ PROCEDIMENTO SalaDeSeguranca()
         LinhaF  ("Click!!!                                                           ")
 
         Linha   ("Você percebe que esses livros são apenas alavancas disfarçadas e   ")
-        LinhaF  ("que você acionou algo.                                            ")
+        LinhaF  ("que você acionou algo.                                             ")
 
         Dialogo ("Jesse")
         LinhaF  ("O que acontece quando eu puxo na ordem certa?                      ")
 
-        Pergunta("Você tenta qual ordem?                                             ")
+        Pergunta("Você tenta qual ordem?")
+        
+        ENQUANTO (entrada <> "AMARELO, BRANCO, AZUL, PRETO") FAÇA
         ESCREVAL("Exemplo de ordem - AMARELO, AZUL, BRANCO, PRETO                    ")
-        REPITA
 
-          Resposta(entrada)
-
-
-          ESCOLHA entrada
+        Resposta(entrada)
+        ESCOLHA entrada
             CASO "AMARELO, BRANCO, AZUL, PRETO"
               //      ("+____________________________________________________________________+")
               LIMPATELA()
@@ -283,7 +282,6 @@ PROCEDIMENTO SalaDeSeguranca()
 
               Linha   ("Você enfia seus dedos na fresta e arrasta a estante para frente,    ")
               LinhaF  ("abrindo a passagem.                                                 ")
-              terminarLoop <- VERDADEIRO
             OUTROCASO
               LIMPATELA()
               LinhaF  ("Você puxa os livros na ordem que acha que está certa.               ")
@@ -295,12 +293,11 @@ PROCEDIMENTO SalaDeSeguranca()
               Dialogo ("Jesse")
               FalaI   ("Provavelmente está errada. É melhor eu tentar outra ordem ou        ")
               FalaF   ("procurar mais alguma pista.                                         ")
-
+              
               LIMPATELA()
-
-              PERGUNTA ("Você tenta qual ordem?                                             ")
-              ESCREVAL ("Exemplo de ordem - AMARELO, AZUL, BRANCO, PRETO                    ")
+              Pergunta("Tente outra ordem                                                   ")
               FIMESCOLHA
+  FIMENQUANTO
 
 
       OUTROCASO
