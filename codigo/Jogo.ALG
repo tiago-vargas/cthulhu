@@ -359,6 +359,146 @@ FIMPROCEDIMENTO
 
 
 
+PROCEDIMENTO PassagemSecreta1()
+ INICIO
+  ESCREVAL("                                PASSAGEM SECRETA                               ")
+  //      ("+-----------------------------------------------------------------------------+")
+  Linha   ("Vinha um forte cheiro de mofo da passagem, característicos de lugares a muito  ")
+  LinhaF  ("tempo isolados do mundo.")
+
+  LinhaF  ("Toda a passagem era feita de madeira que parecia ser de muito tempo atrás.")
+
+  Linha   ("Assim que você entra, a primeira coisa que vê é um quadro com a imagem de um   ")
+  Linha   ("prédio enorme em construção e um monte de trabalhadores indo para um lado e pro")
+  LinhaF  ("outro.")
+
+  Linha   ("Você lê na legenda da moldura:")
+  LinhaF  ("                                             Construção do santuário Blackwood.")
+
+  Linha   ("Você fica meio curiosa com o fato de ter um quadro numa passagem secreta, mas  ")
+  LinhaF  ("logo deixa isso de lado e continua seu caminho para baixo.")
+
+  Linha   ("Depois de descer vários lances de degraus, você chega numa alavanca e numa por-")
+  LinhaF  ("ta.")
+
+  Linha   ("Na porta tem uma plaquinha em que está escrito:")
+  LinhaF  ("                                                              Sala de descanso.")
+
+  LinhaF  ("Você aciona a alavanca.")
+  LinhaF  ("Nada.")
+
+  //      ("+____________________________________________________________________+")
+  Dialogo ("??????")
+  FalaS   ("Você precisa de energia, Jesse.")
+
+  FalaI   ("Sério mesmo que você foi burra o suficiente de pensar que iria sair   ")
+  FalaF   ("tão fácil assim?")
+
+  FalaS   ("Parece até que seu diploma foi comprado.")
+
+  LinhaF  ("De novo aquela voz.")
+
+  Dialogo ("Jesse")
+  FalaS   ("Será que estou ficando louca?")
+
+  //      ("+____________________________________________________________________+")
+  Dialogo ("??????")
+  FalaS   ("Todos nós somos um pouco loucos, Jessezinha.")
+
+  FalaS   ("Como o benevolente deus que eu sou, vou te dar uma pequena dica.")
+
+  FalaI   ("Vá até o final da passagem e, quem sabe, você consiga abrir sua passa-")
+  FalaF   ("gem de saída.")
+
+  FalaI   ("Porém, ordeno que espere algumas horinhas. Falta pouco para a minha   ")
+  FalaF   ("surpresa ficar pronta.")
+
+  FalaS   ("AHAHAHA")
+
+  //      ("+-----------------------------------------------------------------------------+")
+  Linha   ("Você começa a sentir como se estivesse tendo um ataque de pânico, mas você logo")
+  LinhaF  ("se acalma.")
+
+  Linha   ("Não importa se essa voz seja de outra pessoa, você está pronta para enfrentar  ")
+  LinhaF  ("qualquer coisa.")
+
+  Linha   ("Você tem habilidades de caça, sobrevivência e de luta com armas, você pode so- ")
+  LinhaF  ("breviver a um louco.")
+
+  Linha   ("Você desce as escadas até o último andar, e enquanto descia, olhava nas paredes")
+  LinhaF  ("em busca de caixas de som.")
+
+  LinhaF  ("Você chega ao último andar e a porta estava entreaberta.")
+
+  Linha   ("Você olha na plaquinha para saber que sala é essa, estava escrito:")
+  Linha   ("                                                              Sala de máquinas.")
+FIMPROCEDIMENTO
+
+
+
+PROCEDIMENTO PassagemSecreta2()
+ VAR
+ INICIO
+  LIMPATELA()
+  ESCREVAL("                                PASSAGEM SECRETA                               ")
+  //      ("+-----------------------------------------------------------------------------+")
+  LinhaF  ("Você quase desmaia com o impacto na parede.")
+  LinhaF  ("Você corre até a alavanca da porta da sala de máquinas e levanta ela.")
+
+  Linha   ("Quando você finalmente se sente em segurança, você recua até a parede e se sen-")
+  LinhaF  ("ta na escada encostando a cabeça na parede.")
+
+  LinhaF  ("Você começa com um choro leve e baixo.")
+
+  //      ("+____________________________________________________________________+")
+  Dialogo ("Jesse")
+  FalaS   ("De todas as pessoas, por que  isso tá acontecendo comigo?")
+  FalaS   ("Por que essa merda tá rolando comigo?")
+  FalaS   ("Ou melhor, mas que porra tá acontecendo aqui?!")
+  FalaS   ("E que merda de sanatório é esse?!")
+
+  Linha   ("Você se levanta.")
+
+  Dialogo ("Jesse")
+  FalaS   ("Tá, eu preciso me acalmar e me limp…")
+
+  //      ("+-----------------------------------------------------------------------------+")
+  Linha   ("Ao olhar para a suas roupas, você vê que elas estão um pouco danificadas, porém")
+  LinhaF  ("limpas, tirando as marcas de sangue em algumas partes.")
+
+  //      ("+____________________________________________________________________+")
+  Dialogo ("Jesse")
+  FalaI   ("Isso... Não faz nenhum sentido, como diabos minha roupa tá toda ferra-")
+  FalaF   ("da, eu to toda ferida, mas as minhas roupas estão limpas??")
+
+  FalaS   ("Será que eu estou ficando louca e me auto mutilei?")
+  FalaS   ("Será que aquela pessoa que me salvou também é coisa da minha cabeça?")
+  FalaS   ("Ou melhor, será que TUDO isso é coisa da minha cabeça?")
+  FalaS   ("...")
+
+  FalaI   ("Jesse, para de falar merda e se acalma, você é a porra de uma psicólo-")
+  FalaF   ("ga.")
+
+  FalaS   ("Só… Foca em encontrar uma forma de sair dessa merda de lugar.")
+
+  FalaS   ("*suspiro*")
+
+  FalaI   ("Queria que o John estivesse aqui, ele com certeza falaria alguma coisa")
+  FalaF   ("para fazer tudo isso ter sentido.")
+
+  //      ("+-----------------------------------------------------------------------------+")
+  Linha   ("Enquanto você sobe a escada até a sala de descanso, você fica pensando em pos- ")
+  LinhaF  ("síveis respostas para o que aconteceu, além da óbvia de que você está louca.")
+
+  Linha   ("Uma música clássica sinistra está invadindo a passagem, vindo da sala de segu- ")
+  LinhaF  ("rança.")
+
+  Linha   ("Você sobe até a sala de descanso que fica no térreo, então aciona a alavanca,  ")
+  Linha   ("entra na sala que também está bem iluminada e que tem uma vitrola na mesa de   ")
+  LinhaF  ("centro, tocando a mesma música que estava no corredor.")
+FIMPROCEDIMENTO
+
+
 // ======================================================================== //
 // ------------------------------------------------------------------------ //
 PROCEDIMENTO MenuDebug
