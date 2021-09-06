@@ -407,7 +407,7 @@ Mas, instintivamente você decide que só tinha duas escolhas:
 		
 -		**D-  Direita**
 -		**E-  Esquerda**
--		**>>P.3: você esquiva para qual lado?**
+-		**P.3: você esquiva para qual lado?**
 		
 -			**E-esquerda**
 			Você se joga para a esquerda.
@@ -418,7 +418,7 @@ Mas, instintivamente você decide que só tinha duas escolhas:
 			Um de seus tentáculos agarra na sua perna.
 			Você pode CORTAR o tentáculo ou PUXAR a alavanca.
 			
--			**>>P.3.2.:o você fará?**
+-			**P.3.2.:o você fará?**
 			        
 -			   **Cortar**
 				Você desce o machado no tentáculo.
@@ -480,7 +480,7 @@ Mas, instintivamente você decide que só tinha duas escolhas:
 		E - Esquerda
 		D - Direita
            	
--		**>>P.3.1 Vai esquivar para:**
+-		**P.3.1 Vai esquivar para:**
 
 -				**E-esquerda**
 				Você esquiva para a esquerda, mas o tentáculo te acerta em cheio.
@@ -518,7 +518,7 @@ Mas, instintivamente você decide que só tinha duas escolhas:
 				E-esquerda
 				T-tras
 				
--				**>>P.3.1.1: Você vai esquivar para qual lado?**
+-				**P.3.1.1: Você vai esquivar para qual lado?**
 					
 -					**Qualquer outra direção**
 					Você tenta esquivar, mas os tentáculos te acertam cheio.
@@ -597,7 +597,7 @@ Mas, instintivamente você decide que só tinha duas escolhas:
 					D-  Desviar.
 					L-  Lançar o sinalizador.
 
--					**>>P. 3.1.2: o que você escolherá?**
+-					**P. 3.1.2: o que você escolherá?**
 						
 -						**L**
 						Você lança o sinalizador no tentáculo.
