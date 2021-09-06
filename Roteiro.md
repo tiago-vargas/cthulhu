@@ -394,9 +394,9 @@ Desse mesmo tentáculo, começa a surgir um sorriso formado por dentes anormalme
 Você paralisa por um segundo vendo aquela aberração que parece ter vindo do espaço.
 
 Mas, instintivamente você decide que só tinha duas escolhas:
-	C- Correr 
-	L- Lutar
--	**>> P.3: qual instinto você vai seguir?**
+C- Correr 
+L- Lutar
+-	**P.3: qual instinto você vai seguir?**
 -        	**Correr:**
         	-Você dá as costas para aquele monstro e começa a correr o mais rápido possível.
          	-Porém, Nyarlathotep não te deixará fugir tão facilmente.
