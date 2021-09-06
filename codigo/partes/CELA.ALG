@@ -82,6 +82,14 @@ PROCEDIMENTO ListarSeNaoEscolhida(opcao_rotulo: CARACTERE; opcao_foiEscolhida: L
 FIMPROCEDIMENTO
 
 // +-----------------------------------------------------------------------------+
+PROCEDIMENTO FalaS(text: CARACTERE) // Fala Simples
+ VAR a : CARACTERE
+ INICIO
+  ESCREVA ("     — ")
+  ESCREVAL(text)
+  LEIA(a)
+FIMPROCEDIMENTO
+// +-----------------------------------------------------------------------------+
 PROCEDIMENTO Cela
  VAR terminarLoop : LOGICO
      iteracao, i  : INTEIRO
@@ -138,12 +146,12 @@ PROCEDIMENTO Cela
         MOSTRE  ("O corredor está cheio de médicos, enfermeiras e pacientes.")
 
         DIALOGO ("JESSE")
-        FALA    ("Alguém me tire daqui!!!")
+        FALAS    ("Alguém me tire daqui!!!")
 
         MOSTRE  ("Apesar do esforço, parece que ninguém te ouviu.")
 
         DIALOGO ("JESSE")
-        FALA    ("Preciso encontrar algo para chamar a atenção deles.")
+        FALAS    ("Preciso encontrar algo para chamar a atenção deles.")
       CASO "BAU"
         MOSTRE  ("Você vai até o baú e tenta abrí-lo.")
         MOSTRE  ("Por sorte, o baú está aberto.")
@@ -163,8 +171,8 @@ PROCEDIMENTO Cela
             CASO "CELA"
               //       "+-----------------------------------------------------------------------------+"
               DIALOGO ("       JESSE")
-              FALA    ("Melhor eu dar mais uma olhada antes de sair.")
-              FALA    ("Talvez tenha alguma outra coisa útil.")
+              FALAI    ("Melhor eu dar mais uma olhada antes de sair.")
+              FALAF    ("Talvez tenha alguma outra coisa útil.")
             CASO "PORTA"
               MOSTRE  ("Você insere a chave e a porta destranca.")
               MOSTRE  ("Raio, BAR-ROOM!!!!!")
