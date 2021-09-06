@@ -3,107 +3,124 @@ ALGORITMO "Corredor"
 VAR
 
 // ======================================================================== //
-PROCEDIMENTO mostrarCorredor
-INICIO
-   MOSTRE("No corredor, em formato de L, dava para ouvir perfeitamente a forte tempestade que caia lá fora. ")
+PROCEDIMENTO Corredor()
+ INICIO
+  LIMPATELA()
+  ESCREVAL("                                   CORREDOR                                    ")
 
-   MOSTRE("Todas as janelas do corredor estavam quebradas e seus cacos espalhados pelo chão, que estava molhado devido a intensa tempestade.")
+  //      ("+-----------------------------------------------------------------------------+")
+  Linha   ("No corredor, em formato de L, dava para ouvir perfeitamente a forte tempestade ")
+  LinhaF  ("que caia lá fora. ")
 
-   MOSTRE("Do seu lado direito tem um enorme grade no caminho, no seu lado esquerdo o corredor continua até chegar em outra grade.")
+  Linha   ("Todas as janelas do corredor estavam quebradas e seus cacos espalhados pelo    ")
+  LinhaF  ("chão, que estava molhado devido a intensa tempestade.")
 
-   MOSTRE("Você vai até a janela primeiro.")
+  Linha   ("Do seu lado direito tem um enorme grade no caminho, no seu lado esquerdo o cor-")
+  LinhaF  ("redor continua até chegar em outra grade.")
 
-   MOSTRE("crack!")
+  LinhaF  ("Você vai até a janela primeiro.")
 
-   MOSTRE("os vidros quebramaos seus passos")
+  LinhaF  ("crack!")
 
-   ESCREVA("Por ela, você consegue ver um pátio arborizado com uma enorme fonte no meio dela, ")
-   MOSTRE("na qual há uma estátua de uma pessoa encapuzada segurando um livro estranho em uma das mãos e uma adaga na outra.")
+  LinhaF  ("os vidros quebramaos seus passos")
 
-   MOSTRE("Você percebe que as plantas do pátio mesmo que estejam verdes   passam uma sensação de estarem doentes e definhando.")
+  Linha   ("Por ela, você consegue ver um pátio arborizado com uma enorme fonte no meio de-")
+  Linha   ("la, na qual há uma estátua de uma pessoa encapuzada segurando um livro estranho")
+  LinhaF  ("em uma das mãos e uma adaga na outra.")
 
-   MOSTRE("Você se afasta da janela e vai até a grade mais próxima.")
+  Linha   ("Você percebe que as plantas do pátio mesmo que estejam verdes passam uma sensa-")
+  LinhaF  ("ção de estarem doentes e definhando.")
 
-   MOSTRE("Você tenta abri-la.")
+  LinhaF  ("Você se afasta da janela e vai até a grade mais próxima.")
 
-   MOSTRE("Mas não consegue.")
+  LinhaF  ("Você tenta abri-la.")
 
-   MOSTRE("'Que ótimo. Vou ter que achar uma chave ou escalar até lá embaixo.'")
+  LinhaF  ("Mas não consegue.")
 
-   MOSTRE("Você vai até a grade do outro lado do corredor.")
+  //      ("+____________________________________________________________________+")
+  Dialogo ("Jesse")
+  FalaS   ("Que ótimo.")
+  FalaS   ("Vou ter que achar uma chave ou escalar até lá embaixo.")
 
-   MOSTRE("Essa você conseguiu abrir.")
+  //      ("+-----------------------------------------------------------------------------+")
+  LinhaF  ("Você vai até a grade do outro lado do corredor.")
 
-   MOSTRE("Depois da grade, o corredor continua sem ter mais nenhuma cela.")
+  LinhaF  ("Essa você conseguiu abrir.")
 
-   MOSTRE("No fim do corredor tinha outra grade trancada e do seu lado uma porta.")
+  LinhaF  ("Depois da grade, o corredor continua sem ter mais nenhuma cela.")
 
-   MOSTRE("No caminho a até o fim do corredor você vê quatro quadros na parede.")
+  LinhaF  ("No fim do corredor tinha outra grade trancada e do seu lado uma porta.")
 
-   MOSTRE("Você para no primeiro e nota que, curiosamente, só a moldura foi afetada pelo tempo,   ")
-   MOSTRE("a pintura, porém, está fresca como se tivesse acabado de ser pintada.")
+  LinhaF  ("No caminho a até o fim do corredor você vê quatro quadros na parede.")
 
-   ESCREVA("No quadro você vê uma figura aparentemente humana, ")
-   ESCREVA("ele é sobrenaturalmente pálido, ")
-   ESCREVA("vestia um manto amarelo com capuz que cobria sua cabeça, ")
-   ESCREVA("o seu rosto é coberto por uma máscara branca bizarra")
-   MOSTRE(" sobre o capuz utilizava uma coroa de ferro amarelado.")
+  //      ("+-----------------------------------------------------------------------------+")
+  Linha   ("Você para no primeiro e nota que, curiosamente, só a moldura foi afetada pelo  ")
+  LinhaF  ("tempo, a pintura, porém, está fresca como se tivesse acabado de ser pintada.")
 
-   MOSTRE("Na moldura você vê algo escrito:")
+  Linha   ("No quadro você vê uma figura aparentemente humana, ele é sobrenaturalmente pá- ")
+  Linha   ("lido, vestia um manto amarelo com capuz que cobria sua cabeça, o seu rosto é   ")
+  Linha   ("coberto por uma máscara branca bizarra sobre o capuz utilizava uma coroa de    ")
+  LinhaF  ("ferro amarelado.")
 
-   MOSTRE("Hastur, o Rei Amarelo.")
+  LinhaF  ("Na moldura você vê algo escrito:")
 
-   ESCREVA("ocê caminha até o segundo quadro que possui o mesmo aspecto, ")
-   MOSTRE("porém sua imagem era diferente.")
+  LinhaF  ("Hastur, o Rei Amarelo.")
 
-   ESCREVA("Você vê um grupo de exploradores posando como se estivessem tirando uma foto na frente de um navio,")
-   MOSTRE(", porém todo o grupo e o navio estavam no meio do deserto congelado que é a Antártida.")
+  Linha   ("Você caminha até o segundo quadro que possui o mesmo aspecto, porém sua imagem ")
+  LinhaF  ("era diferente.")
 
-   ESCREVAL("Na moldura está escrito:")
-   MOSTRE("nas montanhas da loucura, eis a última expedição do navio Dunwich.")
+  Linha   ("Você vê um grupo de exploradores posando como se estivessem tirando uma foto na")
+  Linha   ("frente de um navio, porém todo o grupo e o navio estavam no meio do deserto    ")
+  LinhaF  ("congelado que é a Antártida.")
 
-   MOSTRE("No terceiro quadro, você percebe o mesmo aspecto que os outros e com uma imagem diferente.")
+  Linha   ("Na moldura está escrito:")
+  LinhaF  ("             Nas montanhas da loucura, eis a última expedição do navio Dunwich.")
 
-   ESCREVA("Você vê na imagem uma pequena casa com um poço, ")
-   ESCREVA("rodeada por florestas e montanhas, ")
-   ESCREVA("o céu noturno sem estrelas do quadro era   cortado ao meio por cometa ")
-   MOSTRE("de cores inaturais vindo para o nosso mundo.")
+  Linha   ("No terceiro quadro, você percebe o mesmo aspecto que os outros e com uma imagem")
+  LinhaF  ("diferente.")
 
-   MOSTRE("Na moldura estava escrito:")
+  Linha   ("Você vê na imagem uma pequena casa com um poço, rodeada por florestas e monta- ")
+  Linha   ("nhas, o céu noturno sem estrelas do quadro era cortado ao meio por cometa de   ")
+  LinhaF  ("cores inaturais vindo para o nosso mundo.")
 
-   MOSTRE("A cor vinda do Espaço, e o Início dos Dias Estranhos.")
+  Linha   ("Na moldura estava escrito:")
+  LinhaF  ("                          A cor vinda do Espaço, e o Início dos Dias Estranhos.")
 
-   MOSTRE("No quarto e último quadro de mesmo aspecto, tinha uma imagem completamente preta.")
+  Linha   ("No quarto e último quadro de mesmo aspecto, tinha uma imagem completamente pre-")
+  LinhaF  ("ta.")
 
-   MOSTRE("Você fica olhando estática para o quadro como se estivesse sendo hipnotizada.")
+  LinhaF  ("Você fica olhando estática para o quadro como se estivesse sendo hipnotizada.")
 
-   ESCREVA("Você se sente sendo sugada para dentro do quadro, ")
-   MOSTRE("como se tivesse na frente do abismo de um buraco negro prestes te a engolir.")
+  Linha   ("Você se sente sendo sugada para dentro do quadro, como se tivesse na frente do ")
+  LinhaF  ("abismo de um buraco negro prestes te a engolir.")
 
-   MOSTRE("NYAHUEHEHEHE")
+  //      ("+____________________________________________________________________+")
+  Dialogo ("??????")
+  FalaS   ("NYAHUEHEHEHE")
 
-   ESCREVA("-Cuidado pequena Jesse, ")
-   MOSTRE("quando se olha por muito tempo o abismo exterior, os deuses   de dentro dele te olham de volta.-")
+  FalaI   ("Cuidado pequena Jesse, quando se olha por muito tempo o abismo exteri-")
+  FalaF   ("or, os deuses de dentro dele te olham de volta.")
 
-   MOSTRE("Há! Ah! Ah! Há! Ah! Ah! Há! Ah! Ah! Há! Ah! Ah! Há! Ah! Ah! Há! Ah! Ah!")
+  FalaS   ("Há! Ah! Ah! Há! Ah! Ah! Há! Ah! Ah! Há! Ah! Ah! Há! Ah! Ah! Há! Ah! A!")
 
-   MOSTRE("Você olha ao redor procurando de onde veio essa gargalhada e essa voz")
+  //      ("+-----------------------------------------------------------------------------+")
+  LinhaF  ("Você olha ao redor procurando de onde veio essa gargalhada e essa voz.")
 
-   MOSTRE(" mas você não vê ninguém.")
+  LinhaF  ("Mas você não vê ninguém...")
 
-   ESCREVA("Ao olhar de novo para o quadro,")
-   MOSTRE(" você percebe o que está escrito na moldura do quarto quadro:")
+  Linha   ("Ao olhar de novo para o quadro, você percebe o que está escrito na moldura do  ")
+  LinhaF  ("quarto quadro:")
 
-   MOSTRE("O sussurro nas trevas")
+  LinhaF  ("                                                          O sussurro nas trevas")
 
-   MOSTRE("crack!crack!")
+  LinhaF  ("Crack! Crack!")
 
-   MOSTRE("Um pouco assustada você continua até chegar na porta desconhecida.")
+  LinhaF  ("Um pouco assustada você continua até chegar na porta desconhecida.")
 
-   MOSTRE("clink!")
+  LinhaF  ("Clink!")
 FIMPROCEDIMENTO
 
 // ======================================================================== //
 INICIO
-   mostrarCorredor()
+  Corredor()
 FIMALGORITMO
