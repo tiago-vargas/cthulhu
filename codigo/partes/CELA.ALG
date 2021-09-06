@@ -8,23 +8,30 @@ TIPO
 
 VAR entrada: CARACTERE
 
-// ======================================================================
-PROCEDIMENTO MOSTRE(trecho: CARACTERE)
- VAR a : CARACTERE
+PROCEDIMENTO Linha(texto: CARACTERE)
  INICIO
-  ESCREVAL(trecho)
-  LEIA(a)
+  // Dar margem antes.
+  ESCREVAL(texto)
 FIMPROCEDIMENTO
-
 // ----------------------------------------------------------------------
+
+PROCEDIMENTO LinhaF(texto: CARACTERE)
+ VAR a: CARACTERE
+ INICIO
+  // Dar margem antes.
+  ESCREVAL(texto)
+  LEIA    (a)
+FIMPROCEDIMENTO
+// ----------------------------------------------------------------------
+
 PROCEDIMENTO PERGUNTA(texto: CARACTERE)
  INICIO
   ESCREVAL(texto)
   ESCREVAL()
   entrada <- ""
 FIMPROCEDIMENTO
-
 // ----------------------------------------------------------------------
+
 PROCEDIMENTO PerguntaExtra(texto: CARACTERE; condicao: LOGICO)
  INICIO
   SE condicao ENTAO
@@ -33,16 +40,16 @@ PROCEDIMENTO PerguntaExtra(texto: CARACTERE; condicao: LOGICO)
     entrada <- ""
   FIMSE
 FIMPROCEDIMENTO
-
 // ----------------------------------------------------------------------
+
 PROCEDIMENTO RESPOSTA(var entr: CARACTERE)
  INICIO
   ESCREVAL()
   ESCREVA(">> ")
   LEIA(entr)
 FIMPROCEDIMENTO
-
 // ----------------------------------------------------------------------
+
 PROCEDIMENTO DIALOGO(nomeDaPessoa: CARACTERE)
  VAR i : INTEIRO
  INICIO
@@ -50,29 +57,29 @@ PROCEDIMENTO DIALOGO(nomeDaPessoa: CARACTERE)
   ESCREVAL(nomeDaPessoa)
   ESCREVAL()
 FIMPROCEDIMENTO
-
 // ----------------------------------------------------------------------
+
 PROCEDIMENTO FalaI(text: CARACTERE)
  INICIO
   ESCREVA ("    -- ") // 4 espaços + 2 hifens + 1 espaço
   ESCREVAL(text)
 FIMPROCEDIMENTO
-
 // ----------------------------------------------------------------------
+
 PROCEDIMENTO FalaC(text: CARACTERE)
  INICIO
   ESCREVA ("       ") // 7 espaços
   ESCREVAL(text)
 FIMPROCEDIMENTO
-
 // ----------------------------------------------------------------------
+
 PROCEDIMENTO FalaF(text: CARACTERE)
  INICIO
   ESCREVA ("    -- ")
   ESCREVAL(text)
 FIMPROCEDIMENTO
-
 // ----------------------------------------------------------------------
+
 PROCEDIMENTO ListarSeNaoEscolhida(opcao_rotulo: CARACTERE; opcao_foiEscolhida: LOGICO)
  INICIO
   SE nao opcao_foiEscolhida ENTAO
@@ -80,8 +87,8 @@ PROCEDIMENTO ListarSeNaoEscolhida(opcao_rotulo: CARACTERE; opcao_foiEscolhida: L
     ESCREVAL(opcao_rotulo)
   FIMSE
 FIMPROCEDIMENTO
-
 // +-----------------------------------------------------------------------------+
+
 PROCEDIMENTO FalaS(text: CARACTERE) // Fala Simples
  VAR a : CARACTERE
  INICIO
@@ -104,22 +111,23 @@ PROCEDIMENTO Cela
 
   LIMPATELA()
 
-  MOSTRE  ("                                    A CELA                                     ")
-  ESCREVAL("+-----------------------------------------------------------------------------+")
-  MOSTRE  ("CAAARRACK!!!!!!!")
-  MOSTRE  ("Você desperta com o barulho de um trovão.")
-  MOSTRE  ("Você está deitada numa cama.")
+  LINHA  ("                                    A CELA                                      ")
+  LINHAF ("+------------------------------------------------------------------------------+")
+  LINHAF ("CAAARRACK!!!!!!!")
+  LINHAF ("Você desperta com o barulho de um trovão.                                     ")
 
-  ESCREVAL("Ao olhar para os lados, se vê presa numa cela trancada por uma porta de aço, na")
-  MOSTRE  ("qual tem uma janelinha.")
+  LINHAF ("Você está deitada numa cama.                                                  ")
 
-  ESCREVAL("Ao analisar o ambiente novo e desconhecido, você vê um baú que está na parede a")
-  MOSTRE  ("sua frente.")
+  LINHA  ("Ao olhar para os lados, se vê presa numa cela trancada por uma porta de aço,  ")
+  LINHAF ("na qual tem uma janelinha.                                                    ")
 
-  ESCREVAL("No lado de sua cama tem uma mesinha e em um dos cantos da cela está a privada e")
-  MOSTRE  ("a pia.")
+  LINHA  ("Ao analisar o ambiente novo e desconhecido, você vê um baú que está na parede ")
+  LINHAF ("a sua frente.                                                                   ")
 
-  PERGUNTA("No que você vai mexer primeiro?") // P1
+  LINHA  ("No lado de sua cama tem uma mesinha e em um dos cantos da cela está a privada ")
+  LINHAF ("e a pia.                                                                        ")
+
+  PERGUNTA("No que você vai mexer primeiro?                                              ") // P1
 
   terminarLoop <- FALSO
   iteracao <- 1
@@ -137,27 +145,27 @@ PROCEDIMENTO Cela
     ESCOLHA entrada
       CASO "PORTA"
         //       "+-----------------------------------------------------------------------------+"
-        ESCREVAL("Do lado da cama tem uma mesinha e em um dos cantos da cela está a privada e a  ")
-        MOSTRE  ("pia.")
+        LINHA   ("Do lado da cama tem uma mesinha e em um dos cantos da cela está a privada e a")
+        LINHAF  ("pia.                                                                         ")
 
-        ESCREVAL("Você consegue visualizar um corredor de sanatório que parece ter sido construí-")
-        MOSTRE  ("do no início do séc. XX.")
+        LINHA   ("Você consegue visualizar um corredor de sanatório que parece ter sido        ")
+        LINHAF  ("construído no início do séc. XX.                                             ")
 
-        MOSTRE  ("O corredor está cheio de médicos, enfermeiras e pacientes.")
+        LINHAF  ("O corredor está cheio de médicos, enfermeiras e pacientes.                   ")
 
-        DIALOGO ("JESSE")
-        FALAS    ("Alguém me tire daqui!!!")
+        DIALOGO ("JESSE                                                                        ")
+        FALAS   ("Alguém me tire daqui!!!                                                      ")
 
-        MOSTRE  ("Apesar do esforço, parece que ninguém te ouviu.")
+        LINHAF  ("Apesar do esforço, parece que ninguém te ouviu.                              ")
 
-        DIALOGO ("JESSE")
-        FALAS    ("Preciso encontrar algo para chamar a atenção deles.")
+        DIALOGO ("JESSE                                                                        ")
+        FALAS   ("Preciso encontrar algo para chamar a atenção deles.                          ")
       CASO "BAU"
-        MOSTRE  ("Você vai até o baú e tenta abrí-lo.")
-        MOSTRE  ("Por sorte, o baú está aberto.")
-        MOSTRE  ("Você encontra dentro dele uma bolsa, uma lanterna e a chave da cela.")
+        LINHAF  ("Você vai até o baú e tenta abrí-lo.                                          ")
+        LINHAF  ("Por sorte, o baú está aberto.                                                ")
+        LINHAF  ("Você encontra dentro dele uma bolsa, uma lanterna e a chave da cela.         ")
 
-        pergunta("Você quer abrir a porta ou vasculhar o resto da cela?") // p1.2
+        PERGUNTA("Você quer abrir a porta ou vasculhar o resto da cela?                        ") // p1.2
         REPITA
           ESCREVAL("- CELA")
           ESCREVAL("- PORTA")
@@ -170,46 +178,46 @@ PROCEDIMENTO Cela
           ESCOLHA entrada
             CASO "CELA"
               //       "+-----------------------------------------------------------------------------+"
-              DIALOGO ("       JESSE")
-              FALAI    ("Melhor eu dar mais uma olhada antes de sair.")
-              FALAF    ("Talvez tenha alguma outra coisa útil.")
+              DIALOGO ("       JESSE                                                                 ")
+              FALAI   ("Melhor eu dar mais uma olhada antes de sair.                                 ")
+              FALAF   ("Talvez tenha alguma outra coisa útil.                                        ")
             CASO "PORTA"
-              MOSTRE  ("Você insere a chave e a porta destranca.")
-              MOSTRE  ("Raio, BAR-ROOM!!!!!")
-              MOSTRE  ("Você fica atordoada por um segundo.")
+              LINHAF  ("Você insere a chave e a porta destranca.                                     ")
+              LINHAF  ("Raio, BAR-ROOM!!!!!                                                          ")
+              LINHAF  ("Você fica atordoada por um segundo.                                          ")
 
-              ESCREVAL("Ao abrir os olhos, você nota que todo o lugar mudou; tudo estava velho e acaba-")
-              ESCREVAL("do pelo tempo, a porta que antes trancava sua cela agora está no chão, toda    ")
-              MOSTRE  ("corroída pela ferrugem.")
+              LINHA   ("Ao abrir os olhos, você nota que todo o lugar mudou; tudo estava velho e     ")
+              LINHA   ("acabado pelo tempo, a porta que antes trancava sua cela agora está no chão,  ")
+              LINHAF  ("toda corroída pela ferrugem.                                                 ")
               terminarLoop <- VERDADEIRO
             OUTROCASO
-              MOSTRE  ("So há duas opções...")
-              PERGUNTA("O que você vai fazer?") // p1.2+
+              LINHA  ("So há duas opções...")
+              LINHAF ("O que você vai fazer?") // p1.2+
           FIMESCOLHA
         ATE (entrada = "CELA") OU (entrada = "PORTA") FACA
       CASO "PIA"
-        MOSTRE  ("Não é hora para isso.")
+        LINHAF  ("Não é hora para isso.")
       CASO "PRIVADA"
-        MOSTRE  ("Não é hora para isso.")
+        LINHAF  ("Não é hora para isso.")
       CASO "MESA"
         //       "+-----------------------------------------------------------------------------+"
-          MOSTRE  ("Você se encaminha até a mesa.")
+          LINHAF  ("Você se encaminha até a mesa.")
 
-        ESCREVAL("Nela, você encontra uma ficha médica com seu nome, sua idade, descrição física ")
-        ESCREVAL("e dizendo que estava internada devido a problemas psicológicos no sanatório    ")
-          MOSTRE  ("Blackwood.")
+          LINHA   ("Nela, você encontra uma ficha médica com seu nome, sua idade, descrição    ")
+          LINHA   ("física e dizendo que estava internada devido a problemas psicológicos no   ")
+          LINHAF  ("sanatório Blackwood.                                                       ")
 
-        ESCREVAL("Segundo o laudo de um doutor San-Nity, Jesse sofre de sanidade aguda e deveria ")
-        MOSTRE  ("ser tratada com torturas psicológicas constantes.")
-        MOSTRE  ("Você fica um pouco assustada e confusa.")
+        LINHA("Segundo o laudo de um doutor San-Nity, Jesse sofre de sanidade aguda e deveria  ")
+        LINHA  ("ser tratada com torturas psicológicas constantes.                             ")
+        LINHAF  ("Você fica um pouco assustada e confusa.                                      ")
       CASO "CAMA"
-        ESCREVAL("Você olha embaixo da cama sem esperança de encontrar alguma coisa, porém suas  ")
-        MOSTRE  ("expectativas estavam erradas.")
+        LINHA("Você olha embaixo da cama sem esperança de encontrar alguma coisa, porém suas   ")
+        LINHAF  ("expectativas estavam erradas.                                                ")
 
-        MOSTRE  ("Você encontra uma maleta velha debaixo da cama.")
-        MOSTRE  ("Dentro dela tinha inúmeros mapas, que você os guarda consigo.")
+        LINHA  ("Você encontra uma maleta velha debaixo da cama.                               ")
+        LINHAF  ("Dentro dela tinha inúmeros mapas, que você os guarda consigo.                ")
       OUTROCASO
-        MOSTRE  ("Escolha inválida.")
+        LINHAF  ("Escolha inválida.")
     FIMESCOLHA
 
     PARA i de 1 ate 6 FACA
