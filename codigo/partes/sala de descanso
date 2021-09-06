@@ -1,4 +1,4 @@
-ALGORITMO "sala_de_descanso"
+ALGORITMO "Sala de Descanso"
 
 VAR
 
@@ -19,146 +19,148 @@ PROCEDIMENTO SalaDeDescanso
 
   Pergunta("Você vai para a porta ou para a poltrona?")
 
-  ESCREVAL("- PORTA")
-  ESCREVAL("- POLTRONA")
+  ENQUANTO (entrada <> "PORTA") OU (entrada <> "POLTRONA")
+    ESCREVAL("- PORTA")
+    ESCREVAL("- POLTRONA")
 
-  ENQUANTO entrada <>
+    Resposta(entrada)
+    ESCOLHA entrada
+      CASO "PORTA"
+        //      ("+-----------------------------------------------------------------------------+")
+        LinhaF  ("Você vai até a porta, gira a maçaneta e escuta o barulho do trinco se abrindo.")
 
+        LinhaF  ("Mas a porta não abre.")
+
+        LinhaF  ("Tinha algo do outro lado a barrando.")
+        LinhaF  ("Você bate com força várias vezes na porta, mas só uma frestinha se abre.")
+
+        //      ("+____________________________________________________________________+")
+        Dialogo ("???????")
+        FalaI   ("Como é a sensação da frustação de saber que a única saída que você co-")
+        FalaF   ("nhece está trancada?")
+
+        FalaI   ("Você vai simplesmente se deitar no chão, chorar em posição fetal na   ")
+        FalaF   ("falsa esperança que os meus bichinhos de estimação não irão te matar?")
+
+        FalaI   ("Ou você vai subir as escadas e se jogar de cabeça no pátio lá embaixo,")
+        FalaF   ("morrendo de uma maneira completamente estúpida, algo que você é?")
+
+        LinhaF  ("Era de novo aquela voz jovial que escutou no corredor.")
+
+        Dialogo ("Jesse")
+        Linha   ("Vá pro inferno, sua voz de merda!")
+
+        Dialogo ("???????")
+        FalaI   ("Ora, ora, parece que a pobre indefesa Jesse finalmente mostrou suas   ")
+        FalaF   ("garras!")
+
+        FalaI   ("Mas saiba que isso não são modos para meros mortais desprezíveis de   ")
+        FalaF   ("falar com o grande deus Nyarlathotep, o caos rastejante.")
+
+        FalaI   ("Por causa dessa insolência, quando eu estiver por completo nesse mun- ")
+        FalaC   ("do, eu vou ter o prazer em trazer um inferno especial para a vida da  ")
+        FalaF   ("sua família e todos aqueles que você ama.")
+
+        LinhaF  ("CRASH!!!")
+
+        //      ("+-----------------------------------------------------------------------------+")
+        LinhaF  ("Você desce o machado com toda a força na vitrola, despedaçando-a por inteira.")
+
+        Dialogo ("Jesse")
+        FalaS   ("Cala a boca!")
+
+        LinhaF  ("Você dá outra machadada nos resto da vitrola.")
+
+        Dialogo ("Jesse")
+        FalaS   ("Cala a boca!!")
+
+        Linha   ("E mais outra quebrando a mesinha ao meio.")
+
+        Dialogo ("Jesse")
+        FalaS   ("CALA A BOCAAAA!!!")
+
+        Linha   ("Você cai no chão cansada, mas logo se levanta e vai até o esqueleto que está na")
+        LinhaF  ("poltrona.")
+
+        Linha   ("Você pega o molho de chaves que estava na mão que pendia para fora da poltrona,")
+        Linha   ("seu instinto lhe dizia que poderia abrir as grades do andar de cima com essas  ")
+        LinhaF  ("chaves.")
+
+        Linha   ("Você coloca sua mão na empunhadura da adaga que está enfiada no peito do esque-")
+        LinhaF  ("leto e retira a adaga.")
+
+        LinhaF  ("O esqueleto vira pó, só sobrando a roupa de segurança para contar a história.")
+
+        LinhaF  ("Em meio à nuvem de pó formada, uma bainha cai no chão.")
+
+        LinhaF  ("Você pega a bainha, guarda a adaga e prende ela na calça.")
+        LinhaF  ("Você olha para o molho de chaves na sua mão.")
+
+        //      ("+____________________________________________________________________+")
+        Dialogo ("Jesse")
+        FalaS   ("Tá na hora de mostrar praquele merda quem é a indefesa.")
+      CASO "POLTRONA"
+        //      ("+-----------------------------------------------------------------------------+")
+        LinhaF  ("Você vai até a poltrona e vê que nela descansa um esqueleto")
+
+        Linha   ("Chegando mais perto, você percebe uma adaga cravada no peito, a qual brilha com")
+        LinhaF  ("uma cor psicodélica.")
+
+        LinhaF  ("A mão que estirava para fora segurava um molho de chaves.")
+
+        Linha   ("Você pega as chaves, pois seu instinto lhe dizia que poderia abrir as grades do")
+        LinhaF  ("andar.")
+
+        Linha   ("Um pouco hesitante, você segura a empunhadura da adaga que está enfiada no pei-")
+        LinhaF  ("to do esqueleto e a retira.")
+
+        LinhaF  ("O esqueleto vira pó, só sobrando a roupa de segurança para contar a história.")
+
+        LinhaF  ("Em meio à nuvem de pó formada, uma bainha cai no chão.")
+
+        LinhaF  ("Você pega a bainha, guarda a adaga na bainha e a prende na calça.")
+
+        LinhaF  ("...")
+
+        LinhaF  ("Da vitrola começa a sair uma voz:")
+
+        //      ("+____________________________________________________________________+")
+        Dialogo ("Vitrola")
+        FalaS   ("Cuidado com Nyarlathotep.")
+
+        FalaI   ("Ele é muito manipulador e vai usar tudo que for necessário para te   ")
+        FalaF   ("enganar.")
+
+        FalaI   ("Tome muito cuidado com os seus seguidores, eles não podem ser facil- ")
+        FalaF   ("mente mortos depois da passagem.")
+
+        //      ("+-----------------------------------------------------------------------------+")
+        Linha   ("Era aquela voz rouca que te ajudara a sair da sala de máquinas.")
+
+        Linha   ("De tudo o que aquela voz falou, a única coisa que você compreendeu por completo")
+        LinhaF  ("foi o nome Nyarlathotep.")
+
+        LinhaF  ("Era o mesmo nome de uma das personalidades da Lavinia.")
+
+        Linha   ("Se aquela voz que a atormenta desde que acordou for essa personalidade da garo-")
+        LinhaF  ("ta, como é que você a está ouvindo?")
+
+        LinhaF  ("A voz sumiu de vez depois de seu último alerta.")
+
+        LinhaF  ("A música voltou.")
+
+        Linha   ("Você vai até a porta e tenta abrí-la, mas ver que ela está barricada pelo outro")
+        LinhaF  ("lado.")
+
+        Linha   ("Você olha para o molho de chaves na sua mão.")
+
+        Dialogo ("Jesse")
+        Linha   ("Espero que os meus extintos estejam certos...")
+        OUTROCASO
+          LinhaF  ("Você não se importa com outras opções.")
+          Pergunta("O que você vai conferir?")
+    FIMESCOLHA
   FIMENQUANTO
-
-  Resposta(entrada)
-  SE entrada = "PORTA" ENTAO
-    //      ("+-----------------------------------------------------------------------------+")
-    LinhaF  ("Você vai até a porta, gira a maçaneta e escuta o barulho do trinco se abrindo.")
-
-    LinhaF  ("Mas a porta não abre.")
-
-    LinhaF  ("Tinha algo do outro lado a barrando.")
-    LinhaF  ("Você bate com força várias vezes na porta, mas só uma frestinha se abre.")
-
-    //      ("+____________________________________________________________________+")
-    Dialogo ("???????")
-    FalaI   ("Como é a sensação da frustação de saber que a única saída que você co-")
-    FalaF   ("nhece está trancada?")
-
-    FalaI   ("Você vai simplesmente se deitar no chão, chorar em posição fetal na   ")
-    FalaF   ("falsa esperança que os meus bichinhos de estimação não irão te matar?")
-
-    FalaI   ("Ou você vai subir as escadas e se jogar de cabeça no pátio lá embaixo,")
-    FalaF   ("morrendo de uma maneira completamente estúpida, algo que você é?")
-
-    LinhaF  ("Era de novo aquela voz jovial que escutou no corredor.")
-
-    Dialogo ("Jesse")
-    Linha   ("Vá pro inferno, sua voz de merda!")
-
-    Dialogo ("???????")
-    FalaI   ("Ora, ora, parece que a pobre indefesa Jesse finalmente mostrou suas   ")
-    FalaF   ("garras!")
-
-    FalaI   ("Mas saiba que isso não são modos para meros mortais desprezíveis de   ")
-    FalaF   ("falar com o grande deus Nyarlathotep, o caos rastejante.")
-
-    FalaI   ("Por causa dessa insolência, quando eu estiver por completo nesse mun- ")
-    FalaC   ("do, eu vou ter o prazer em trazer um inferno especial para a vida da  ")
-    FalaF   ("sua família e todos aqueles que você ama.")
-
-    LinhaF  ("CRASH!!!")
-
-    //      ("+-----------------------------------------------------------------------------+")
-    LinhaF  ("Você desce o machado com toda a força na vitrola, despedaçando-a por inteira.")
-
-    Dialogo ("Jesse")
-    FalaS   ("Cala a boca!")
-
-    LinhaF  ("Você dá outra machadada nos resto da vitrola.")
-
-    Dialogo ("Jesse")
-    FalaS   ("Cala a boca!!")
-
-    Linha   ("E mais outra quebrando a mesinha ao meio.")
-
-    Dialogo ("Jesse")
-    FalaS   ("CALA A BOCAAAA!!!")
-
-    Linha   ("Você cai no chão cansada, mas logo se levanta e vai até o esqueleto que está na")
-    LinhaF  ("poltrona.")
-
-    Linha   ("Você pega o molho de chaves que estava na mão que pendia para fora da poltrona,")
-    Linha   ("seu instinto lhe dizia que poderia abrir as grades do andar de cima com essas  ")
-    LinhaF  ("chaves.")
-
-    Linha   ("Você coloca sua mão na empunhadura da adaga que está enfiada no peito do esque-")
-    LinhaF  ("leto e retira a adaga.")
-
-    LinhaF  ("O esqueleto vira pó, só sobrando a roupa de segurança para contar a história.")
-
-    LinhaF  ("Em meio à nuvem de pó formada, uma bainha cai no chão.")
-
-    LinhaF  ("Você pega a bainha, guarda a adaga e prende ela na calça.")
-    LinhaF  ("Você olha para o molho de chaves na sua mão.")
-
-    //      ("+____________________________________________________________________+")
-    Dialogo ("Jesse")
-    FalaS   ("Tá na hora de mostrar praquele merda quem é a indefesa.")
-  SENAO
-    //      ("+-----------------------------------------------------------------------------+")
-    LinhaF  ("Você vai até a poltrona e vê que nela descansa um esqueleto")
-
-    Linha   ("Chegando mais perto, você percebe uma adaga cravada no peito, a qual brilha com")
-    LinhaF  ("uma cor psicodélica.")
-
-    LinhaF  ("A mão que estirava para fora segurava um molho de chaves.")
-
-    Linha   ("Você pega as chaves, pois seu instinto lhe dizia que poderia abrir as grades do")
-    LinhaF  ("andar.")
-
-    Linha   ("Um pouco hesitante, você segura a empunhadura da adaga que está enfiada no pei-")
-    LinhaF  ("to do esqueleto e a retira.")
-
-    LinhaF  ("O esqueleto vira pó, só sobrando a roupa de segurança para contar a história.")
-
-    LinhaF  ("Em meio à nuvem de pó formada, uma bainha cai no chão.")
-
-    LinhaF  ("Você pega a bainha, guarda a adaga na bainha e a prende na calça.")
-
-    LinhaF  ("...")
-
-    LinhaF  ("Da vitrola começa a sair uma voz:")
-
-    //      ("+____________________________________________________________________+")
-    Dialogo ("Vitrola")
-    FalaS   ("Cuidado com Nyarlathotep.")
-
-    FalaI   ("Ele é muito manipulador e vai usar tudo que for necessário para te   ")
-    FalaF   ("enganar.")
-
-    FalaI   ("Tome muito cuidado com os seus seguidores, eles não podem ser facil- ")
-    FalaF   ("mente mortos depois da passagem.")
-
-    //      ("+-----------------------------------------------------------------------------+")
-    Linha   ("Era aquela voz rouca que te ajudara a sair da sala de máquinas.")
-
-    Linha   ("De tudo o que aquela voz falou, a única coisa que você compreendeu por completo")
-    LinhaF  ("foi o nome Nyarlathotep.")
-
-    LinhaF  ("Era o mesmo nome de uma das personalidades da Lavinia.")
-
-    Linha   ("Se aquela voz que a atormenta desde que acordou for essa personalidade da garo-")
-    LinhaF  ("ta, como é que você a está ouvindo?")
-
-    LinhaF  ("A voz sumiu de vez depois de seu último alerta.")
-
-    LinhaF  ("A música voltou.")
-
-    Linha   ("Você vai até a porta e tenta abrí-la, mas ver que ela está barricada pelo outro")
-    LinhaF  ("lado.")
-
-    Linha   ("Você olha para o molho de chaves na sua mão.")
-
-    Dialogo ("Jesse")
-    Linha   ("Espero que os meus extintos estejam certos...")
-  FIMSE
 FIMPROCEDIMENTO
 
 INICIO
