@@ -197,6 +197,8 @@ Segundo o necronomicom ela é mais querida entre os humanos dos deuses exteriore
 
 - Hastur:
 
+Segundo o necronomicom Hastur é irmão e rival de Cthulhu e o único dos deuses antigos que ousa desobedecê-lo. Ele é muito benevolente com os seus fiéis seguidores realizando seus maiores desejos e vingando qualquer injustiça que eles sofram de forma cruel e impiedosa, se necessário ele se vingaria de outros deuses também. Muitos relatos de sua manifestações para seus seguidores diz que ele aparece como um ser encapuzado de amarelo e com uma corola de luz de mesma cor.  Seus fies eram constantemente assediados por cultos de outros deuses antigos por causa do envolvimento de Hastur no fim do reinado de Cthulhu, porem esses assédios não duraram muito pois os cultos que o faziam eram dizimados pela fúria e ódio de Hastur, o rei amarelo.
+
 
 
 
