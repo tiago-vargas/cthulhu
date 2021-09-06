@@ -94,14 +94,6 @@ PROCEDIMENTO ListarSeNaoEscolhida(opcao_rotulo: CARACTERE; opcao_foiEscolhida: L
 FIMPROCEDIMENTO
 // +-----------------------------------------------------------------------------+
 
-PROCEDIMENTO FalaS(text: CARACTERE) // Fala Simples
- VAR a : CARACTERE
- INICIO
-  ESCREVA ("     — ")
-  ESCREVAL(text)
-  LEIA(a)
-FIMPROCEDIMENTO
-// +-----------------------------------------------------------------------------+
 PROCEDIMENTO Cela
  VAR terminarLoop : LOGICO
      iteracao, i  : INTEIRO
