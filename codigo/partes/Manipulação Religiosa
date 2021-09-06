@@ -1,0 +1,698 @@
+ALGORITMO "A Manipulação Religiosa"
+
+TIPO
+  OPCAO = REGISTRO
+    rotulo       : CARACTERE
+    foiEscolhida : LOGICO
+  FIMREGISTRO
+
+VAR entrada: CARACTERE
+
+PROCEDIMENTO Linha(texto: CARACTERE)
+ INICIO
+  // Dar margem antes.
+  ESCREVAL(texto)
+FIMPROCEDIMENTO
+// ----------------------------------------------------------------------
+
+PROCEDIMENTO LinhaF(texto: CARACTERE)
+ VAR a: CARACTERE
+ INICIO
+  // Dar margem antes.
+  ESCREVAL(texto)
+  LEIA    (a)
+FIMPROCEDIMENTO
+// ----------------------------------------------------------------------
+
+PROCEDIMENTO Pergunta(texto: CARACTERE)
+ INICIO
+  Linha   (texto)
+  ESCREVAL()
+  entrada <- ""
+FIMPROCEDIMENTO
+// ----------------------------------------------------------------------
+
+PROCEDIMENTO PerguntaExtra(texto: CARACTERE; condicao: LOGICO)
+ INICIO
+  SE condicao ENTAO
+    ESCREVAL(texto)
+    ESCREVAL()
+    entrada <- ""
+  FIMSE
+FIMPROCEDIMENTO
+// ----------------------------------------------------------------------
+
+PROCEDIMENTO Resposta(var entr: CARACTERE)
+ INICIO
+  ESCREVAL()
+  ESCREVA(">> ")
+  LEIA(entr)
+FIMPROCEDIMENTO
+// ----------------------------------------------------------------------
+
+PROCEDIMENTO Dialogo(nomeDaPessoa: CARACTERE)
+ VAR i : INTEIRO
+ INICIO
+  ESCREVA ("        ~ ") // 8 espaços + til + 1 espaço
+  ESCREVA (nomeDaPessoa)
+  ESCREVAL(" ~")
+  //ESCREVAL()
+FIMPROCEDIMENTO
+// ----------------------------------------------------------------------
+
+PROCEDIMENTO FalaS(texto: CARACTERE) // Fala Simples
+ VAR a : CARACTERE
+ INICIO
+  ESCREVA ("     — ")
+  ESCREVAL(texto)
+  LEIA(a)
+FIMPROCEDIMENTO
+
+PROCEDIMENTO FalaI(text: CARACTERE) // Fala, Inicio
+ INICIO
+  ESCREVA ("     — ") // 4 espaços + 2 hifens + 1 espaço
+  ESCREVAL(text)
+FIMPROCEDIMENTO
+
+PROCEDIMENTO FalaC(text: CARACTERE) // Fala, Continuacao
+ INICIO
+  ESCREVA ("       ") // 7 espaços
+  ESCREVAL(text)
+FIMPROCEDIMENTO
+
+PROCEDIMENTO FalaF(text: CARACTERE) // Fala, Fim
+ VAR a : CARACTERE
+ INICIO
+  ESCREVA ("       ")
+  ESCREVAL(text)
+  LEIA(a)
+FIMPROCEDIMENTO
+// ----------------------------------------------------------------------
+
+PROCEDIMENTO ListarSeNaoEscolhida(opcao_rotulo: CARACTERE; opcao_foiEscolhida: LOGICO)
+ INICIO
+  SE nao opcao_foiEscolhida ENTAO
+    ESCREVA("- ")
+    ESCREVAL(opcao_rotulo)
+  FIMSE
+FIMPROCEDIMENTO
+// +-----------------------------------------------------------------------------+
+PROCEDIMENTO Manipulacao
+ VAR terminarLoop : LOGICO
+     iteracao, i  : INTEIRO
+     opcoes       : vetor[1..2] DE OPCAO
+ INICIO
+  opcoes[1].rotulo <- "SIM"
+  opcoes[2].rotulo <- "NAO"
+
+  LIMPATELA()
+
+  ESCREVAL("                              MANIPULAÇÃO RELIGIOSA                          ")
+  LINHAF  ("+-----------------------------------------------------------------------------+")
+
+  LINHA   ("Você acorda e se vê num lugar que só pode ser descrito como o céu cristão que")
+  LINHAF  ("você imaginou por toda a vida.")
+
+  LINHA   ("Um grande portão de ouro se abre atrás de você e de dentro sai uma figura")
+  LINHAF  ("muito bela, que exalava tranquilidade, paz e que você conhecia muito.")
+
+  LINHAF   ("Era Jesus")
+
+  DIALOGO ("Jesus")
+  FALAS   ("Se levante, minha filha.")
+
+  FALAI   ("Você lutou muito nessa vida, foi uma boa cristã em cada segundo dela e")
+  FALAF   ("seguiu fielmente os meus passos.")
+
+  FALAS   ("Você, agora, merece nada mais que o seu merecido lugar no Céu")
+
+  DIALOGO ("Jesse")
+  FALAS   ("Pera, eu... eu... eu tô morta?")
+  
+  DIALOGO ("Jesus")
+  FalaI   ("Sim, minha filha, mas não tema, porque como Eu disse, sua alma está ")
+  FALAC   ("salva e poderá descansar por toda eternidade do lado de Deus, nos")
+  FALAF   ("grandes salões de R’lyeh.")
+
+  DIALOGO ("Jesse")
+  FALAS  ("Desculpe, meu Senhor, mas descansar onde?")
+  
+  DIALOGO ("Jesus")
+  FALAS   ("Em R’lyeh, minha filha.")
+  
+  LINHAF  ("Você se afasta suspeitando que algo está errado")
+  
+  DIALOGO ("Jesse")
+  FALAS   ("Eu nunca ouvi alguém chamar o céu por esse nome.")
+  
+  DIALOGO ("JESUS")
+  FALAI   ("Minha criança, vocês humanos deram muitos nomes diferentes ao longo")
+  FALAC   ("da história para o céu. Vocês já chamaram esse lugar de Valhalla,")
+  FALAF   ("Campos Elísios, Campos de Junco, Orum, Céu, dentre outros nomes.")
+  
+  DIALOGO ("???")
+  FALAI   ("Não acredite em nada que ele diga, ele só quer usar as suas crenças")
+  FALAF   ("contra você.")
+  
+  LINHA   ("Do seu lado apareceu uma figura alta e bonita com um par de asas")
+  LINHAF  ("gigantescas e brancas.")
+  
+  DIALOGO ("Jesus")
+  FALAI   ("Hastur, é incrível como você é muito inconveniente e chato.")
+  FALAF   ("Por isso que Cthulhu te baniu.")
+  
+  DIALOGO ("Jesse")
+  FALAS   ("Cthlulhu?")
+  
+  DIALOGO ("Jesus")
+  FALAI   ("É o nome verdadeiro do Deus que você e sua espécie cultuaram por")
+  FALAC   ("toda a sua história. Se for mais fácil para você falar, pode chamar")
+  FALAC   ("de Odin, Zeus, Amon-Rá, Jeová, Olorum ou qualquer nome que você")
+  FALAF   ("queira inventar. Ele não liga de como suas crianças o chamam.")
+  
+  DIALOGO ("Hastur")
+  FALAI   ("Como eu disse, ele só quer brincar com suas crenças. Tome, use isso para")
+  FALAF   ("sair daqui, basta enfiar isso no peito dele que você consegue sair.")
+  
+  LINHAF   ("Hastur te deu sua adaga de brilho estranho.")
+  
+  LINHAF   ("Você começa a se aproximar aos poucos da figura que se chama de Jesus.")
+
+  DIALOGO  ("Jesus")
+  FALAI    ("‘Minha criança, você realmente vai acreditar nesse disfarce que Lúcifer")
+  FALAF    ("está usando para te persuadir em vez de acreditar em seu Salvador?")
+
+  
+  Pergunta("Você vai acreditar em Jesus?") // P1
+
+  terminarLoop <- FALSO
+  iteracao <- 1
+  ENQUANTO NAO terminarLoop FACA
+    PerguntaExtra("Você vai acreditar em Jesus?", iteracao > 1)
+
+    PARA i de 1 ate 2 FACA
+      ListarSeNaoEscolhida(opcoes[i].rotulo, opcoes[i].foiEscolhida)
+    FIMPARA
+
+    Resposta(entrada)
+
+    LIMPATELA()
+
+    ESCOLHA entrada
+      CASO "SIM"
+        //      ("+-----------------------------------------------------------------------------+")
+        DIALOGO ("Jesse")
+        FALAS   ("É melhor confiar nele do que em você.")
+
+        LINHA   ("Você avança numa investida e enfia com toda a força a faca na barriga da")
+        LINHAF  ("figura que se chama de salvador.")
+
+        DIALOGO ("Jesus")
+        FALAS   ("GYAHAHAHAHAHAHAAAAAA")
+        
+        FALAS   ("Você realmente acha que essa faca de cortar pão é o suficiente?")
+        
+        LINHAF  ("Você gira a lâmina dentro da ferida, tira e dá outra apunhalada no peito dele")
+        
+        LINHAF  ("Você, por um segundo, vê a verdadeira forma do falso santo.")
+        
+        LINHA   ("Você vê um tronco humanoide com três pernas, dois braços e um tentáculo no ")
+        LINHAF  ("lugar da cabeça")
+        
+        DIALOGO ("Jesus?")
+        FALAI   ("Você pode me esfaquear o quanto quiser com esse brinquedinho, você nunca")
+        FALAF   ("vai conseguir me matar. Olhe o que irá acontecer onde você me feriu!")
+        
+        LINHAF  ("Você se afasta. O que ele te falou te intimidou um pouco.")
+        
+        LINHAF  ("Ele faz o gesto, mas nada acontece.")
+        
+        LINHAF  ("Ele repete o gesto e nada acontece de novo.")
+        
+        DIALOGO ("Jesus?")
+        FALAI   ("Mas... Como assim... O QUE VOCÊ FEZ COMIGO SUA CRIATURA DEPLORÁVEL?!!")
+        FALAF   ("ISSO ERA PRA SER IMPOSSÍVEL!")
+        
+        DIALOGO ("Hastur")
+        FALAI   ("Isso, Nyarlathotep, é o poder desse brinquedinho que eu criei com")
+        FALAF   ("magia e com o meteorito que caiu em Arkham.")
+        
+        FALAS   ("Acabe com ele, essa é sua chance de se livrar dele de uma vez por todas.")
+        
+        LINHAF  ("Nyarlathotep cai de joelhos pelo sangramento.")
+        
+        DIALOGO ("Nyarlathotep")
+        FALAI   ("Se você tiver o mínimo de massa cerebral você não faria isso, pois ao")
+        FALAC   ("invés de destruir todo o mundo, eu te dou um pedaço dele para governar")
+        FALAF   ("e ser uma deusa entre esses humanos nojentos")
+
+        LINHAF  ("Você se aproxima aos poucos. Ele vai se arrastando de costas para longe")
+        
+        DIALOGO ("Nyarlathotep")
+        FALAI   ("Eu posso trazer de volta os seus amáveis pais e seu adorável irmão")
+        FALAC   ("que você tanto ama que morreram naquele trágico acidente de carro.")
+        FALAC   ("Eu posso te dar o que você quiser, basta você não ser burra e enfiar")
+        FALAF   ("essa adaga no pescoço do Hastur. O que você acha?")
+        
+        LINHA   ("Você chega nele. Puxa os seus cabelos para obrigar lhe a te olhar no")
+        LINHAF  ("rosto enquanto você dá a sua resposta")
+        
+        LINHAF  ("Você enfia a adaga no pescoço dele.")
+        
+        LINHA   ("Tudo em sua volta começa a se transformar na sua frente, alternando")
+        LINHA   ("entre a descrições de vários paraísos e infernos de várias religiões")
+        LINHAF  ("que já existiram, existem e existirão na história.")
+        
+        LINHA   ("Nyarlathotep está na sua forma original, enquanto grita de dor uma")
+        LINHA   ("luz verde começa a sair da ferida e de sua boca, ficando cada vez mais")
+        LINHAF  ("intensa como se ele fosse explodir.")
+        
+        LINHAF  ("Você escuta um barulho de pano se mexendo.")
+        
+        LINHAF  ("Uma escuridão te envolve.")
+        
+        LINHAF  ("VOOOOOOOUP!!!!!!!!!!!!")
+        
+        LIMPATELA()
+        
+
+  ESCREVAL("                             VIVENDO MAIS UM DIA                               ")
+  LINHAF  ("+-----------------------------------------------------------------------------+")
+
+  LINHAF  ("Você acorda com o toque de alguém na sua cabeça.")
+
+  LINHA   ("Você consegue ver que quem está te tocando é uma figura que você não vê desde")
+  LINHAF  ("que entrou nessa loucura.")
+
+  DIALOGO ("Jesse")
+  FALAI   ("S-senhora... Alice Angel?")
+  FALAF   ("O que você tá fazendo aqui?")
+
+  DIALOGO ("Alice")
+  FALAS   ("Eu tô costurando seus machucados e enfaixando outros.")
+
+  FALAI   ("Por falar nisso, você precisa ser mais cuidadosa. Já é a segunda vez que")
+  FALAF   ("tô te ajudando hoje.")
+
+  FALAS   ("E era pra você ajudar a salvar minha filha.")
+  
+  DIALOGO ("Jesse")
+  FALAS   ("Salvar... a sua filha?")
+
+  FALAS   ("Calma, onde eu tô? E cadê aquele anjo e aquele Jesus farsante?")
+
+  DIALOGO ("Alice")
+  FALAS   ("Neste exato momento, você está no meio do pátio do sanatório Blackwood.")
+
+  FALAS   ("E o Hastur está logo ali.")
+
+  LINHA   ("Você percebe que apesar de algumas manchas de sangue que ainda estavam sendo")
+  LINHAF ("lavadas pela chuva, o pátio estava normal.")
+  
+  LINHAF  ("Olhando na mesma direção que a Alice, você vê uma figura.")
+
+  LINHA   ("Ele é alto, encapuzado, veste roupas amarelas e tem uma pele")
+  LINHAF  ("inumanamente pálida.")
+  
+  LINHAF  ("Era a figura do quadro que você vira mais cedo.")
+  
+  LINHAF  ("Era Hastur.")
+  
+  DIALOGO ("Hastur")
+  FALAS   ("Parabéns humana, você conseguiu vencer o caos rastejante.")
+
+  FALAS   ("Mas não se anime, pois o seu mundo ainda não está a salvo.")
+
+  LINHAF  ("BAR-ROOM!!!!!")
+
+  LINHAF  ("Um raio verde atravessou o céu.")
+
+  DIALOGO ("Hastur")
+  FALAS   ("A conjunção das estrelas ainda está em andamento.")
+
+  FALAS   ("Nyarlathotep era apenas um mero peão de Cthulhu")
+
+  FALAS   ("Que apesar disso,tinha os seus próprios planos.")
+
+  FALAI   ("Você terá que enfrentar mais servos de Cthulhu, antes de conseguir para-lo")
+  FALAF   ("e salvar a filha de Alice.")
+
+  FALAS   ("Porém, para parar Cthulhu, você vai precisar de um livro, o Necronomicon.")
+
+  DIALOGO ("Jesse")
+  FALAI   ("Pera lá... Como a filha de Alice entra nessa loucura, e por que eu")
+  FALAF   ("tenho que salvá-la?")
+
+  DIALOGO ("Hastur")
+  FALAI   ("Ela vai ser o grande sacrifício que servirá de porta para o retorno")
+  FALAF   ("dos antigos.")
+
+  FALAI   ("Você tem que salvá-la para impedir que seu mundo acabe e, assim, pagar")
+  FALAF   ("a sua dívida com Alice.")
+  
+  DIALOGO ("Jesse")
+  FALAI   ("“Calma… Isso é me parece muito familiar… Necronomicon, Cthulhu… Não…")
+  FALAC   ("Não é possível que as histórias do meu descendente são todas")
+  FALAF   ("verdadeiras...")
+
+  FALAI   ("Supondo que eu acredite que tudo isso não é só mais um pesadelo,")
+  FALAF   ("ou que eu simplesmente não estou louca...")
+
+  FALAI   ("Ainda não faz sentido, tanto o motivo de você está me ajudando e porque")
+  FALAF   ("você iria salvar o mundo, visto que aparentemente é um deles.")
+
+  DIALOGO ("Hastur")
+  FALAS   ("Saiba que eu não desejo governar o mundo.")
+
+  FALAS   ("Sabe, você deveria seguir mais os ensinamentos do seu irmão.")
+
+  FALAI   ("Apesar de também ser um psicólogo, ele não duvidaria dos fatos a sua frente")
+  FALAF   ("e muito menos escolheria uma mentira em vez de aceitar a verdade.")
+
+  DIALOGO ("Jesse")
+  FALAS   ("Pera, o que você acabou de falar?")
+  
+  
+  LINHAF  ("Hastur desapareceu no meio do flash esverdeado.")
+
+  DIALOGO ("Jesse")
+  FALAS   ("Mas que maravilha. Agora sei como o comissário Gordon se sente.")
+
+  DIALOGO ("Alice")
+  FALAI   ("Agora que todas as suas dúvidas foram respondidas, se sente aqui para eu")
+  FALAF   ("terminar de te remendar.")
+
+  DIALOGO ("Jesse")
+  FALAS   ("Mas… Ele não falou o que temos que fazer agora.")
+
+  DIALOGO ("Alice")
+  FALAI   ("Quando eu terminar com você, a gente vai atrás do Necronomicon, e esse livro")
+  FALAF   ("é o único jeito de parar o ritual.")
+
+  FALAI   ("É melhor você aproveitar esse tempinho para aproveitar e rezar para os seus")
+  FALAF   ("deuses, ou o seu Deus, não sei..")
+
+  DIALOGO ("Jesse")
+  FALAS   ("O que… Vamos ter que lutar pra pegar esse livro?")
+
+  DIALOGO ("Alice")
+  FALAI   ("Espere um exército de monstros e cãos. Acredite, qualquer coisa seria melhor")
+  FALAF   ("que encarar  Shub-niggurath.")
+
+  LINHAF  ("Um tempo depois você e Alice entram de novo no sanatório.")
+
+  LINHAF  ("Você sabe que isso te levará de volta para o horror inominável.")
+  
+  LIMPATELA()
+  
+  LINHAF  ("Obrigado por jogar a Demo de 'Montanhas da Perdição!'")
+  FIMALGORITMO
+
+  
+
+  
+        
+
+
+      CASO "NAO"
+        //      ("+-----------------------------------------------------------------------------+")
+         DIALOGO ("Jesse")
+         FALAS   ("Mas… Você nã-… E-eu… Eu… Não sei... ")
+
+         LINHAF  ("Cling")
+         
+         LINHA   ("Sua mão amolece por um segundo.")
+         LINHAF  ("O suficiente para a sua adaga cair.")
+
+         DIALOGO ("Jesse")
+         FALAS   ("O.. O que… O que tá acontecendo?")
+
+         FALAS   ("Isso... Não é real")
+
+         FALAS   ("Não, isso não é deve ser real!")
+
+         FALAS   ("ISSO NÃO É REAL!!")
+
+         LINHAF  ("Você se afasta de Jesus e Hastur enquanto grita consigo mesma.")
+
+         LINHA   ("Distraída, você tropeça e cai de costas, logo se encolhendo em")
+         LINHAF  ("posição fetal.")
+
+         LINHAF  ("Com o rosto encharcado de lágrimas, começa a balbuciar coisas desconexas.")
+
+         DIALOGO ("Jesse")
+         FALAS   ("Eu to louca")
+         
+         FALAS   ("Não, eu não tô louca")
+
+         FALAS   ("Eu devo estar louca")
+
+         FALAS   ("Nãonãonãonãonãonãonão")
+
+         FALAS   ("Os reptilianos, aqueles malditos reptilianos")
+
+         FALAS   ("Foram eles, com certeza foram eles, aqueles ghouls malditos")
+
+         FALAI   ("Eu fui drogada, claro, foi isso que aconteceu, não devia ter")
+         FALAF   ("aceitado o drink...")
+         
+         LINHAF  ("Ainda atordoada, você se levanta e olha para eles.")
+
+         LINHA   ("Ao olhar para Jesus, você nota um sorriso medonho, indo de bochecha")
+         LINHAF  ("a bochecha.")
+
+         DIALOGO ("Jesus")
+         FALAI   ("Acalme-se minha filha, Eu estou aqui, não tenha medo, vou curá-la,")
+         FALAC   ("assim como fiz com o cego e todos aqueles que Eu encontrei durante a")
+         FALAF   (" minha vida terrena.")
+
+         LINHAF  ("Enquanto fala com você, Jesus se ajoelha na sua frente.")
+
+         LINHAF  ("Hastur se vira e começa ir embora na direção da imensidão branca do céu.")
+
+         DIALOGO ("Jesse")
+         FALAF   ("*Suspiro*")
+
+         FALAS   ("Está tudo acabado.")
+
+         LINHAF  ("Ele se cobriu com suas asas, e um piscar de olhos, desapareceu.")
+
+         LINHAF  ("Jesus toca delicadamente o seu rosto.")
+
+         DIALOGO ("Jesus")
+         FALAS   ("Levanta-te e anda, minha filha, assim como Lázaro fez.")
+
+         FALAS   ("Agora, não tenha medo, e venha até m-")
+
+         LINHAF  ("Jesus dá um passo para trás.")
+
+         LINHAF  ("RAAARGH")
+
+         LINHA   ("O braço direito de Jesus começa a se transformar em um")
+         LINHAF  ("tentáculo, semelhante ao da criatura que te perseguiu")
+
+         DIALOGO ("Jesus")
+         FALAS   ("GYAHAHAHAHAHAHAAAAAA")
+
+         LINHAF  ("Você consegue notar o prazer na risada ao Ele ver sua cara de horror.")
+
+         LINHAF  ("Sua boca fica cada vez mais escancarada.")
+
+         LINHA   ("A carne da face de Jesus começa a definhar, abrindo enormes feridas que")
+         LINHAF  ("jorram sangue para todo lado..")
+
+         LINHAF  ("GLOOOOB")
+
+         LINHAF  ("CRACK! CRACK! CRACK!")
+         
+         LINHAF  ("Os ossos de sua mandíbula começaram a se quebrar.")
+
+         LINHA   ("E dentro de onde até instantes atrás era sua boca, começa a sair")
+         LINHAF  ("tentáculo completamente preto")
+
+         LINHAF  ("SLAAAAARGH")
+
+         LINHA   ("Ele joga a da carne de seu torso em você, surgindo um corpo completamente")
+         LINHAF  ("preto")
+
+         LINHA  ("Você se sente como um caçador vestindo a pele de um animal que acabou de")
+         LINHAF  ("caçar, mas este animal era Jesus..")
+
+         LINHAF  ("Lentamente, ele começa a se aproximar de você.")
+
+         LINHA   ("A cada passo que “Jesus” dava, você conseguia notar toda sua pele e carne")
+         LINHA   ("expostas, penduradas no que restou de sua mandíbula, balançando de um lado")
+         LINHAF  ("para o outro, manchando ainda mais o peito de Nyarlathotep com sangue.")
+
+         LINHA   ("Você nota uma sinistra mistura entre a suave e calma voz de “Jesus”,")
+         LINHAF  ("e a caótica louca voz de Nyarlathotep")
+
+         DIALOGO ("Nyarlathotep")
+         FALAI   ("O que foi, minha criança? Porque estás tão assustada? Não gostou da")
+         FALAC   ("minha aparência? Não era isso que você queria, quando me crucificou")
+         FALAF   ("para a morte?")
+
+         LINHA  ("Você tenta se afastar, mas a cena é horrível demais para você")
+         LINHAF  ("conseguir, e simplesmente despenca no chão.")
+
+         LINHAF  ("Ele segura o resto da mandíbula com a mão esquerda e a arranca.")
+
+         LINHAF  ("Ainda com a mandíbula na mão, ele estende a mão, entregando para você")
+
+         DIALOGO ("Nyarlathotep")
+         FALAI   ("Coma da minha carne e beba do meu sangue, assim terá a vida eterna,")
+         FALAC   ("e eu a ressuscitarei no último dia. Porque a minha carne")
+         FALAC   ("verdadeimente é comida, e o meu sangue verdadeiramente é bebida. Aquele que")
+         FALAF   ("come da minha carne e bebe do meu sangue permanece em mim e eu nele.")
+
+         LINHA   ("No seu último suspiro de sanidade diante daquele horror, você corre entre")
+         LINHAF  ("muitos tropeços e quedas no sangue e pedaços de carne do falso jesus")
+
+         LINHAF  ("E logo depois, se joga e pega a sua adaga.")
+
+         LINHAF  ("Segura o cabo com muita força com as duas mãos.")
+
+         DIALOGO ("Jesse")
+         FALAS   ("Eu.. eu.. devo estar em um pesadelo")
+
+         FALAS   ("Eu preciso morrer")
+
+         FALAS   ("É a única maneira de se acordar de pesadelos")
+
+         LINHAF  ("Você encosta a lâmina quente e latente na sua garganta.")
+
+         DIALOGO ("Jesse")
+         FALAS   ("AHAHAHAHAHAHAAAAAA")
+
+         FALAS   ("HAHAHAHAHAHAAAAAA")
+
+         FALAS   ("HAHAHAHAHAHAAAAAA")
+
+         LINHAF  ("Sua sanidade agora é inexistente.")
+
+         LINHAF  ("Você puxa a adaga, cortando o próprio pescoço.")
+
+         LINHAF  ("Você cai no chão ainda segurando a adaga.")
+
+         DIALOGO ("Jesse")
+         FALAS   ("GAHAHAHAHAHAAAAAA")
+
+         DIALOGO ("Nyarlathotep")
+         FALAS   ("HUAHAHAH, AHAHAAAAAA")
+
+         DIALOGO ("Ambos")
+         FALAS   ("HAHAHAHAHAHAAAAAA")
+
+         LINHA   ("Lentamente,suas gargalhadas de loucura e agonia se misturam")
+         LINHAF  ("com as gargalhadas loucas de Nyarlathotep.")
+
+         LINHAF  ("Nyarlathotep chega perto de seu corpo.")
+
+         LINHA  ("Ele fica maravilhado com tudo aquilo, com o macabro sorriso")
+         LINHAF  ("louco em seu rosto.")
+
+         DIALOGO ("Nyarlathotep")
+         FALAS   ("Isso, beba do meu sangue e renasça como minha leal filha")
+
+         LINHAF  ("Ele derrama um pouco de sangue na sua boca.")
+
+         LINHAF  ("Você começa a convulsionar no chão.")
+
+         LINHAF  ("O corte na garganta começou a se encher de um líquido preto como piche.")
+
+         LINHAF  ("Você, involuntariamente, começa a flutuar e fica em pé.")
+
+         DIALOGO ("Nyarlathotep")
+         FALAS   ("Seja bem vinda de volta, minha filha.")
+
+         FALAS   ("GYAHAHAHAHAHAHAAAAAA")
+
+         FALAS   ("HAHAHAHAHAHAAAAAA")
+
+         FALAS   ("HAHAHAHAHAHAAAAAA")
+         
+         LIMPATELA()
+
+
+  ESCREVAL("                               FIM DO MUNDO                                    ")
+  LinhaF  ("+-----------------------------------------------------------------------------+")
+  
+  LINHAF  ("Cidades em chamas.")
+
+  LINHA   ("Pessoas sendo estraçalhadas nas ruas por monstros meio humanos e meio coisas")
+  LINHAF  ("que vão além da capacidade humana de descrição.")
+
+  LINHA   ("Cultistas encapuzados invadindo casas e matando quem tenta inútilmente se")
+  LINHAF  ("esconder atrás da ilusória segurança de uma casa.")
+  
+  LINHA   ("Pais e mães acorrentados completamente catatônicos enquanto são obrigados a")
+  LINHAF  ("ver seus filhos e filhas sofrendo horrores indescritíveis.")
+
+  LINHA   ("Gritos de crianças sendo queimadas vivas ecoam por todo esse ")
+  LINHAF  ("cenário apocalíptico.")
+  
+  LINHAF  ("Você fez as escolhas erradas nos momentos certos.")
+
+  LINHAF  ("Você se tornou a arauta do Nyarlathotep.")
+
+  LINHAF  ("Nyarlathotep está livre.")
+
+  LINHAF  ("Ele corrompeu o ritual de invocação e veio sozinho para o nosso mundo.")
+
+  LINHAF  ("Não existem mais deuses antigos ou novos que possam pará-lo agora.")
+
+  LINHAF  ("Agora só existe Nyarlathotep.")
+
+  LINHAF  ("Esse é o fim do nosso mundo.")
+
+  DIALOGO ("Nyarlathotep")
+  FALAI   ("‘Pfff, mas que drama desnecessário. Escolhas erradas?")
+  FALAC   ("Por favor, ela foi inteligente em ficar ao meu lado. Além do mais,")
+  FALAC   ("quem liga pra esse mundinho medíocre? Vocês devem agradecer, pois")
+  FALAF   ("irei fazer desta terra vil um paraíso ao meu olhar.")
+  
+  FALAS   ("GYAHAHAHAHAHAHAAAAAA")
+
+  FALAS   ("HAHAHAHAHAHAAAAAA")
+  
+  FALAS   ("HAHAHAHAHAHAAAAAA")
+  
+  LIMPATELA()
+  
+  LINHAF  ("Obrigado por jogar a demo de Montanhas da Loucura!")
+  
+  LINHAF  ("...")
+  
+  LINHAF  ("...")
+  
+  LINHAF  ("...")
+  
+  DIALOGO ("Nyarlathotep")
+  FALAI   ("Obrigado? Meus arautos estão agradecendo um mero mortal por jogar?")
+  FALAF   ("Por favor, eles deviam ter A OBRIGAÇÃO de jogar isso!")
+
+  LIMPATELA()
+  
+  LINHAF  ("Você realizou o final: Nyarlathotep domina o mundo")
+  
+  FIMALGORITMO
+
+
+      OUTROCASO
+        LinhaF  ("Escolha inválida.")
+    FIMESCOLHA
+
+    PARA i de 1 ate 2 FACA
+      SE entrada = opcoes[i].rotulo ENTAO
+        opcoes[i].foiEscolhida <- VERDADEIRO
+      FIMSE
+    FIMPARA
+
+    iteracao <- iteracao + 1
+  FIMENQUANTO
+FIMPROCEDIMENTO
+
+// ======================================================================
+INICIO
+  Manipulacao()
+FIMALGORITMO
