@@ -4,10 +4,6 @@ O guia de estilos tá desatualizado. Depois resolvo isso.
 
 * **Terminar o Manual.**
  
-    Nomes possiveis:
-    
-  - As Montanhas da Loucura
-  - Call of Madness
 
 ## Adicionando Arquivos
 
