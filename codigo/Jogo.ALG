@@ -25,6 +25,14 @@ PROCEDIMENTO LinhaF(texto: CARACTERE) // Linha de texto final
 FIMPROCEDIMENTO
 
 // ----------------------------------------------------------------------
+PROCEDIMENTO Dialogo(nomeDaPessoa: CARACTERE)
+ INICIO
+  ESCREVA ("        ~ ") // 8 espaços + til + 1 espaço
+  ESCREVA (nomeDaPessoa)
+  ESCREVAL(" ~")
+  //ESCREVAL()
+FIMPROCEDIMENTO
+
 PROCEDIMENTO FalaS(texto: CARACTERE) // Fala Simples
  VAR a : CARACTERE
  INICIO
@@ -33,26 +41,49 @@ PROCEDIMENTO FalaS(texto: CARACTERE) // Fala Simples
   LEIA(a)
 FIMPROCEDIMENTO
 
-PROCEDIMENTO FalaI(text: CARACTERE) // Fala, Inicio
+PROCEDIMENTO FalaI(texto: CARACTERE) // Fala, Inicio
  INICIO
   ESCREVA ("     — ") // 5 espaços + 1 travessao + 1 espaço
-  ESCREVAL(text)
+  ESCREVAL(texto)
 FIMPROCEDIMENTO
 
-PROCEDIMENTO FalaC(text: CARACTERE) // Fala, Continuacao
+PROCEDIMENTO FalaC(texto: CARACTERE) // Fala, Continuacao
  INICIO
   ESCREVA ("       ") // 7 espaços
-  ESCREVAL(text)
+  ESCREVAL(texto)
 FIMPROCEDIMENTO
 
-PROCEDIMENTO FalaF(text: CARACTERE) // Fala, Fim
+PROCEDIMENTO FalaF(texto: CARACTERE) // Fala, Fim
  VAR a : CARACTERE
  INICIO
   ESCREVA ("       ") // 7 espaços
-  ESCREVAL(text)
+  ESCREVAL(texto)
   LEIA(a)
 FIMPROCEDIMENTO
 
+// ----------------------------------------------------------------------
+PROCEDIMENTO Pergunta(texto: CARACTERE)
+ INICIO
+  Linha   (texto)
+  ESCREVAL()
+  entrada <- ""
+FIMPROCEDIMENTO
+
+PROCEDIMENTO PerguntaExtra(texto: CARACTERE; condicao: LOGICO)
+ INICIO
+  SE condicao ENTAO
+    ESCREVAL(texto)
+    ESCREVAL()
+    entrada <- ""
+  FIMSE
+FIMPROCEDIMENTO
+
+PROCEDIMENTO Resposta(var entr: CARACTERE)
+ INICIO
+  ESCREVAL()
+  ESCREVA(">> ")
+  LEIA(entr)
+FIMPROCEDIMENTO
 // ----------------------------------------------------------------------
 PROCEDIMENTO ListarSeNaoEscolhida(opcao_rotulo: CARACTERE; opcao_foiEscolhida: LOGICO)
  INICIO
@@ -106,7 +137,6 @@ PROCEDIMENTO Prologo()
   LinhaF  ("               Ph’nglui mglw’nafh Cthulhu R’lyeh wgah’nagl fhtagn              ")
 FIMPROCEDIMENTO
 
-// ------------------------------------------------------------------------ //
 PROCEDIMENTO Cela
  VAR terminarLoop : LOGICO
      iteracao, i  : INTEIRO
@@ -665,21 +695,21 @@ PROCEDIMENTO FimDoMundo()
  INICIO
   LIMPATELA()
   ESCREVAL("                               FIM DO MUNDO                                    ")
-  LinhaF  ("+-----------------------------------------------------------------------------+")
+  ESCREVAL("+-----------------------------------------------------------------------------+")
 
   LinhaF  ("Cidades em chamas.")
 
-  Linha   ("Pessoas sendo estraçalhadas nas ruas por monstros meio humanos e meio coisas")
+  Linha   ("Pessoas sendo estraçalhadas nas ruas por monstros meio humanos e meio coisas   ")
   LinhaF  ("que vão além da capacidade humana de descrição.")
 
-  Linha   ("Cultistas encapuzados invadindo casas e matando quem tenta inútilmente se")
-  LinhaF  ("esconder atrás da ilusória segurança de uma casa.")
+  Linha   ("Cultistas encapuzados invadindo casas e matando quem tenta inútilmente se es-  ")
+  LinhaF  ("conder atrás da ilusória segurança de uma casa.")
 
-  Linha   ("Pais e mães acorrentados completamente catatônicos enquanto são obrigados a")
-  LinhaF  ("ver seus filhos e filhas sofrendo horrores indescritíveis.")
+  Linha   ("Pais e mães acorrentados completamente catatônicos enquanto são obrigados a ver")
+  LinhaF  ("seus filhos e filhas sofrendo horrores indescritíveis.")
 
-  Linha   ("Gritos de crianças sendo queimadas vivas ecoam por todo esse ")
-  LinhaF  ("cenário apocalíptico.")
+  Linha   ("Gritos de crianças sendo queimadas vivas ecoam por todo esse cenário apocalíp- ")
+  LinhaF  ("tico.")
 
   LinhaF  ("Você fez as escolhas erradas nos momentos certos.")
 
@@ -695,17 +725,19 @@ PROCEDIMENTO FimDoMundo()
 
   LinhaF  ("Esse é o fim do nosso mundo.")
 
+  //      ("+____________________________________________________________________+")
   Dialogo ("Nyarlathotep")
-  FalaI   ("‘Pfff, mas que drama desnecessário. Escolhas erradas?")
-  FalaC   ("Por favor, ela foi inteligente em ficar ao meu lado. Além do mais,")
-  FalaC   ("quem liga pra esse mundinho medíocre? Vocês devem agradecer, pois")
-  FalaF   ("irei fazer desta terra vil um paraíso ao meu olhar.")
+  FalaS   ("Pfff, mas que drama desnecessário. Escolhas erradas?")
+
+  FalaI   ("Por favor, ela foi inteligente em ficar ao meu lado. Além do mais,    ")
+  FalaC   ("quem liga pra esse mundinho medíocre? Vocês devem agradecer, pois irei")
+  FalaF   ("fazer desta terra vil um paraíso ao meu olhar.")
 
   FalaS   ("GYAHAHAHAHAHAHAAAAAA")
 
   FalaS   ("HAHAHAHAHAHAAAAAA")
 
-  FalaS   ("HAHAHAHAHAHAAAAAA")
+  FalaS   ("HmhahaHAHAAAhAAA")
 
   LIMPATELA()
 
@@ -1151,7 +1183,7 @@ PROCEDIMENTO ManipulacaoReligiosa()
         LinhaF  ("to.")
 
         Linha   ("Você se sente como um caçador vestindo a pele de um animal que acabou de caçar,")
-        LinhaF  (" mas esse animal era Jesus...")
+        LinhaF  ("mas esse animal era Jesus...")
 
         LinhaF  ("Lentamente, ele começa a se aproximar de você.")
 
@@ -1268,6 +1300,7 @@ PROCEDIMENTO MenuDebug
  INICIO
   LIMPATELA()
   ESCREVAL("-------- Menu de Debug --------")
+  ESCREVAL("+-----------------------------------------------------------------------------+")
   ESCREVAL()
   ESCREVAL("[1]  - Prologo")
   ESCREVAL("[2]  - Cela")
@@ -1284,7 +1317,7 @@ PROCEDIMENTO MenuDebug
   ESCREVAL("[13] - Vivendo para Lutar Mais um Dia")
   ESCREVAL("[00] - Sair do Programa")
   ESCREVAL()
-  Reposta(entrada)
+  Resposta(entrada)
 
   ESCOLHA entrada
     CASO "1"
