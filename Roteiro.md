@@ -410,7 +410,8 @@ Mas, instintivamente você decide que só tinha duas escolhas:
 -		**>>P.3: você esquiva para qual lado?**
 		
 -			**E-esquerda**
-			-Você se joga para a esquerda.
+		
+- 			-Você se joga para a esquerda.
 			-Após isso, o tentáculo passa de raspão pelo lado direito.
 			-Milagrosamente, você consegue chegar na passagem.
 			-Você não espera nem mais um segundo e já corre para a alavanca.
