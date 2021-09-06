@@ -1,4 +1,4 @@
-ALGORITMO "Sala de Segurança"
+ALGORITMO "Sala de SeguranÃ§a"
 
 TIPO
   OPCAO = REGISTRO
@@ -50,7 +50,7 @@ FIMPROCEDIMENTO
 PROCEDIMENTO Dialogo(nomeDaPessoa: CARACTERE)
  VAR i : INTEIRO
  INICIO
-  ESCREVA ("        ~ ") // 8 espaços + til + 1 espaço
+  ESCREVA ("        ~ ") // 8 espaÃ§os + til + 1 espaÃ§o
   ESCREVA (nomeDaPessoa)
   ESCREVAL(" ~")
   //ESCREVAL()
@@ -59,20 +59,20 @@ FIMPROCEDIMENTO
 PROCEDIMENTO FalaS(texto: CARACTERE) // Fala Simples
  VAR a : CARACTERE
  INICIO
-  ESCREVA ("     — ")
+  ESCREVA ("     â€” ")
   ESCREVAL(texto)
   LEIA(a)
 FIMPROCEDIMENTO
 
 PROCEDIMENTO FalaI(text: CARACTERE) // Fala, Inicio
  INICIO
-  ESCREVA ("     — ") // 4 espaços + 2 hifens + 1 espaço
+  ESCREVA ("     â€” ") // 4 espaÃ§os + 2 hifens + 1 espaÃ§o
   ESCREVAL(text)
 FIMPROCEDIMENTO
 
 PROCEDIMENTO FalaC(text: CARACTERE) // Fala, Continuacao
  INICIO
-  ESCREVA ("       ") // 7 espaços
+  ESCREVA ("       ") // 7 espaÃ§os
   ESCREVAL(text)
 FIMPROCEDIMENTO
 
@@ -94,7 +94,7 @@ PROCEDIMENTO ListarSeNaoEscolhida(opcao_rotulo: CARACTERE; opcao_foiEscolhida: L
 FIMPROCEDIMENTO
 // +-----------------------------------------------------------------------------+
 
-PROCEDIMENTO Seguranca
+PROCEDIMENTO SalaDeSeguranca()
  VAR terminarLoop : LOGICO
      iteracao, i  : INTEIRO
      opcoes       : vetor[1..5] DE OPCAO
@@ -107,9 +107,9 @@ PROCEDIMENTO Seguranca
 
   LIMPATELA()
 
-  ESCREVAL("                                   SALA DE SEGURANÇA                           ")
+  ESCREVAL("                                   SALA DE SEGURANÃ‡A                           ")
   Linha   ("+-----------------------------------------------------------------------------+")
-  LINHAF ("Você utiliza sua lanterna para expurgar a escuridão que tomava conta do lugar.")
+  LINHAF ("VocÃª utiliza sua lanterna para expurgar a escuridÃ£o que tomava conta do lugar.")
 
   LINHA  ("A sala, assim como todo o lugar, estava toda deteriorada, suja e infestada")
   LINHAF ("de mofo.")
@@ -119,19 +119,19 @@ PROCEDIMENTO Seguranca
   LINHA  ("Duas mesas, uma na parede da porta e a outra na adjacente com um corpo com")
   LINHAF ("a parte de cima apoiada como se estivesse tirando um cochilo.")
 
-  LINHAF ("Quatro armários na parede oposta à porta.")
+  LINHAF ("Quatro armÃ¡rios na parede oposta Ã  porta.")
 
-  LINHAF ("Na parede oposta à mesa do corpo, tem uma estante com apenas quatro livros")
+  LINHAF ("Na parede oposta Ã  mesa do corpo, tem uma estante com apenas quatro livros")
 
-  LINHA  ("Do lado da estante, tem uma cômoda com um machado encravado e três")
+  LINHA  ("Do lado da estante, tem uma cÃ´moda com um machado encravado e trÃªs")
   LINHAF ("bustos em cima.")
 
-  Pergunta("Por onde você vai começar a investigar?") // P1
+  Pergunta("Por onde vocÃª vai comeÃ§ar a investigar?") // P1
 
   terminarLoop <- FALSO
   iteracao <- 1
   ENQUANTO NAO terminarLoop FACA
-    PerguntaExtra("Por onde você vai começar a investigar?", iteracao > 1)
+    PerguntaExtra("Por onde vocÃª vai comeÃ§ar a investigar?", iteracao > 1)
 
     PARA i de 1 ate 5 FACA
       ListarSeNaoEscolhida(opcoes[i].rotulo, opcoes[i].foiEscolhida)
@@ -144,110 +144,110 @@ PROCEDIMENTO Seguranca
     ESCOLHA entrada
       CASO "MESA DA PORTA"
         //      ("+-----------------------------------------------------------------------------+")
-        LINHAF ("Você olha a mesa e as suas gavetas, mas a única coisa que encontra é poeira.")
+        LINHAF ("VocÃª olha a mesa e as suas gavetas, mas a Ãºnica coisa que encontra Ã© poeira.")
         
       CASO "MESA DO CORPO"
-        LINHAF ("Você pensa em olhar o corpo, mas muda de ideia.")
+        LINHAF ("VocÃª pensa em olhar o corpo, mas muda de ideia.")
 
         DIALOGO("Jesse")
-        FALAS  ("É melhor eu ter respeito pelos mortos.")
+        FALAS  ("Ã‰ melhor eu ter respeito pelos mortos.")
 
         DIALOGO("???")
-        FALAI  ("Ora mais porque? Não seja tola, ele já está morto, não sente")
-        FALAF  ("mais nada. Não tem porque você não mexer.")
+        FALAI  ("Ora mais porque? NÃ£o seja tola, ele jÃ¡ estÃ¡ morto, nÃ£o sente")
+        FALAF  ("mais nada. NÃ£o tem porque vocÃª nÃ£o mexer.")
 
-        FALAS  ("Talvez você encontre algo, quem sabe.")
+        FALAS  ("Talvez vocÃª encontre algo, quem sabe.")
 
-        LINHAF ("Você percebe que essa é a mesma voz que ouviu no corredor.")
+        LINHAF ("VocÃª percebe que essa Ã© a mesma voz que ouviu no corredor.")
 
-        LINHAF ("Você tenta procurar de onde ela vem, mas não encontra.")
+        LINHAF ("VocÃª tenta procurar de onde ela vem, mas nÃ£o encontra.")
 
-        LINHAF ("Apesar de ficar tentada, você decide ignorar o que a voz te disse.")
+        LINHAF ("Apesar de ficar tentada, vocÃª decide ignorar o que a voz te disse.")
 
-        LINHA  ("Procurando na mesa, em uma das gavetas, você encontra um revólver de")
-        LINHAF ("tambor com espaço para 6 balas.")
+        LINHA  ("Procurando na mesa, em uma das gavetas, vocÃª encontra um revÃ³lver de")
+        LINHAF ("tambor com espaÃ§o para 6 balas.")
 
-        LINHAF ("Porém a arma estava descarregada. Você a guarda na bolsa.")
+        LINHAF ("PorÃ©m a arma estava descarregada. VocÃª a guarda na bolsa.")
 
-        LINHA  ("Você também encontra um bilhete dizendo que há uma passagem")
-        LINHAF ("secreta na estante e que leva até o térreo.")
+        LINHA  ("VocÃª tambÃ©m encontra um bilhete dizendo que hÃ¡ uma passagem")
+        LINHAF ("secreta na estante e que leva atÃ© o tÃ©rreo.")
         
       CASO "ARMARIO"
       
-        LINHAF ("Dos quatro armários você só consegue abrir um.")
+        LINHAF ("Dos quatro armÃ¡rios vocÃª sÃ³ consegue abrir um.")
 
-        LINHAF ("Dentro você encontra um kit de primeiro socorros")
+        LINHAF ("Dentro vocÃª encontra um kit de primeiro socorros")
 
       CASO "COMODA"
 
-        LINHAF ("Você vai até a cômoda velha e desgastada.")
+        LINHAF ("VocÃª vai atÃ© a cÃ´moda velha e desgastada.")
 
         LINHAF ("Procura por algo em suas gavetas.")
 
-        LINHAF ("Mas não encontra nada.")
+        LINHAF ("Mas nÃ£o encontra nada.")
 
-        LINHA  ("Você olha para o machado e torce que o cabo não esteja podre demais")
-        LINHAF ("para arrancá-lo dali.")
+        LINHA  ("VocÃª olha para o machado e torce que o cabo nÃ£o esteja podre demais")
+        LINHAF ("para arrancÃ¡-lo dali.")
 
-        LINHAF ("Você coloca as duas mãos no cabo.")
+        LINHAF ("VocÃª coloca as duas mÃ£os no cabo.")
 
-        LINHA  ("Você faz força para cima com uma das mãos e deixa a outra parada")
+        LINHA  ("VocÃª faz forÃ§a para cima com uma das mÃ£os e deixa a outra parada")
         LINHAF ("como ponto de apoio.")
 
         LINHAF ("CRREEECK!")
 
-        LINHA  ("Apesar dos barulhos feitos pela cômoda, você consegue tirar o")
-        LINHAF ("machado sem quebrá-lo.")
+        LINHA  ("Apesar dos barulhos feitos pela cÃ´moda, vocÃª consegue tirar o")
+        LINHAF ("machado sem quebrÃ¡-lo.")
 
-        LINHAF ("Você tem agora uma arma para se proteger.")
+        LINHAF ("VocÃª tem agora uma arma para se proteger.")
 
-        LINHA  ("Logo após, você analisa aqueles bustos que pertenciam a três homens")
+        LINHA  ("Logo apÃ³s, vocÃª analisa aqueles bustos que pertenciam a trÃªs homens")
         LINHAF ("diferentes, de idades muito diferentes.")
 
-        LINHA  ("No busto mais à direita está escrito o nome James Marcus,")
-        LINHAF ("ele tinha feições de um homem adulto de 30 e poucos.")
+        LINHA  ("No busto mais Ã  direita estÃ¡ escrito o nome James Marcus,")
+        LINHAF ("ele tinha feiÃ§Ãµes de um homem adulto de 30 e poucos.")
 
         LINHA  ("No do meio tem o nome Edward Ashford, ele aparentava ser o mais")
-        LINHAF ("novo dos três, parecia ter acabado de entrar na vida adulta.")
+        LINHAF ("novo dos trÃªs, parecia ter acabado de entrar na vida adulta.")
 
         LINHA  ("No da esquerda tinha a figura de um homem muito velho, estava escrito")
         LINHAF ("que seu nome era Oswell Spencer.")
 
-        LINHA  ("Você não tem certeza se esse nomes poderão ou não ser úteis no futuro,")
-        LINHAF ("mas os guarda na memória.")
+        LINHA  ("VocÃª nÃ£o tem certeza se esse nomes poderÃ£o ou nÃ£o ser Ãºteis no futuro,")
+        LINHAF ("mas os guarda na memÃ³ria.")
         
       CASO "ESTANTE"
-        LINHAF ("Você vai até a estante e percebe algo muito suspeito e curioso.")
+        LINHAF ("VocÃª vai atÃ© a estante e percebe algo muito suspeito e curioso.")
 
-        LINHA  ("Na estante tem apenas quatro livros, cada um em um andar e em posições")
+        LINHA  ("Na estante tem apenas quatro livros, cada um em um andar e em posiÃ§Ãµes")
         LINHAF ("bem separadas.")
 
         LINHA  ("Cada livro tinha uma cor diferente, sendo um era azul, o outro era amarelo,")
-        LINHAF ("outro era branco encardido e o último era preto.")
+        LINHAF ("outro era branco encardido e o Ãºltimo era preto.")
 
-        LINHAF ("Você lê o nome dos livros um por um:")
+        LINHAF ("VocÃª lÃª o nome dos livros um por um:")
 
         LINHAF ("Livro amarelo: O Rei de Amarelo por Robert W. Chambers.")
 
-        LINHAF ("Livro azul: A cor vindo do Espaço e outros Contos por H.P.Lovecraft.")
+        LINHAF ("Livro azul: A cor vindo do EspaÃ§o e outros Contos por H.P.Lovecraft.")
 
         LINHAF ("Livro branco: Nas montanhas da Loucura e outros Contos por H.P.Lovecraft.")
 
         LINHAF ("Livro preto: O sussurro nas trevas e outros Contos por H.P.Lovecraft.")
 
-        LINHA  ("Você tenta puxar o livro branco encardido, pois ele era um dos seus contos")
-        LINHA  ("favoritos de H.P.Lovecraft, e te dava orgulho de dizer que é")
+        LINHA  ("VocÃª tenta puxar o livro branco encardido, pois ele era um dos seus contos")
+        LINHA  ("favoritos de H.P.Lovecraft, e te dava orgulho de dizer que Ã©")
         LINHAF ("uma parente dele.")
 
         LINHAF ("Click!!!")
 
-        LINHA  ("Você percebe que esses livros são apenas alavancas disfarçadas e que você")
+        LINHA  ("VocÃª percebe que esses livros sÃ£o apenas alavancas disfarÃ§adas e que vocÃª")
         LINHAF ("acionou algo.")
 
         DIALOGO("Jesse")
         LINHAF ("O que acontece quando eu puxo na ordem certa?")
         
-        Pergunta("Você tenta qual ordem?")
+        Pergunta("VocÃª tenta qual ordem?")
         ESCREVAL("Exemplo de ordem - AMARELO, AZUL, BRANCO, PRETO")
         REPITA
 
@@ -258,39 +258,39 @@ PROCEDIMENTO Seguranca
             CASO "AMARELO, BRANCO, AZUL, PRETO"
               //      ("+____________________________________________________________________+")
               LIMPATELA()
-              LINHAF ("Você puxa os livros na ordem que estava no enigma.")
+              LINHAF ("VocÃª puxa os livros na ordem que estava no enigma.")
 
-              LINHAF ("Você se afasta um pouco esperando por algo.")
+              LINHAF ("VocÃª se afasta um pouco esperando por algo.")
 
-              LINHAF ("Você escuta sons abafados de engrenagem.")
+              LINHAF ("VocÃª escuta sons abafados de engrenagem.")
 
-              LINHA  ("A estante vai milímetros para frente, deixando uma frestinha que")
+              LINHA  ("A estante vai milÃ­metros para frente, deixando uma frestinha que")
               LINHAF ("cabia seus dedos.")
 
-              LINHA  ("Você enfia seus dedos na fresta e arrasta a estante para frente,")
+              LINHA  ("VocÃª enfia seus dedos na fresta e arrasta a estante para frente,")
               LINHAF ("abrindo a passagem.")
               terminarLoop <- VERDADEIRO
             OUTROCASO
               LIMPATELA()
-              LINHAF ("Você puxa os livros na ordem que acha que está certa.")
+              LINHAF ("VocÃª puxa os livros na ordem que acha que estÃ¡ certa.")
 
-              LINHAF ("Você se afasta um pouco esperando por algo.")
+              LINHAF ("VocÃª se afasta um pouco esperando por algo.")
 
               LINHAF ("Mas nada acontece, a ordem colocada era a errada")
 
               DIALOGO("Jesse")
-              FALAI  ("Provavelmente está errada. É melhor eu tentar outra ordem ou")
+              FALAI  ("Provavelmente estÃ¡ errada. Ã‰ melhor eu tentar outra ordem ou")
               FALAF  ("procurar mais alguma pista.")
 
               LIMPATELA()
 
-              PERGUNTA ("Você tenta qual ordem?")
+              PERGUNTA ("VocÃª tenta qual ordem?")
               ESCREVAL ("Exemplo de ordem - AMARELO, AZUL, BRANCO, PRETO")
               FIMESCOLHA
 
               
       OUTROCASO
-        LinhaF  ("Escolha inválida.")
+        LinhaF  ("Escolha invÃ¡lida.")
     FIMESCOLHA
 
 
@@ -308,5 +308,5 @@ FIMPROCEDIMENTO
 
 // ======================================================================
 INICIO
-  Seguranca()
+  SalaDeSeguranca()
 FIMALGORITMO
