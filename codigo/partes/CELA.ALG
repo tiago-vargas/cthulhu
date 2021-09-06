@@ -50,9 +50,10 @@ FIMPROCEDIMENTO
 PROCEDIMENTO Dialogo(nomeDaPessoa: CARACTERE)
  VAR i : INTEIRO
  INICIO
-  ESCREVA ("            ~ ") // 12 espaços + til + 1 espaço
-  ESCREVAL(nomeDaPessoa)
-  ESCREVAL()
+  ESCREVA ("        ~ ") // 8 espaços + til + 1 espaço
+  ESCREVA (nomeDaPessoa)
+  ESCREVAL(" ~")
+  //ESCREVAL()
 FIMPROCEDIMENTO
 // ----------------------------------------------------------------------
 PROCEDIMENTO FalaS(texto: CARACTERE) // Fala Simples
@@ -186,6 +187,7 @@ PROCEDIMENTO Cela
               FalaS   ("Melhor eu dar mais uma olhada antes de sair.")
               FalaS   ("Talvez tenha alguma outra coisa útil.")
             CASO "PORTA"
+              //      ("+-----------------------------------------------------------------------------+")
               LinhaF  ("Você insere a chave e a porta destranca.")
               LinhaF  ("Raio, BAR-ROOM!!!!!")
               LinhaF  ("Você fica atordoada por um segundo.")
