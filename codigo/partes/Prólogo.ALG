@@ -2,54 +2,61 @@ ALGORITMO "Prólogo"
 
 VAR
 
-PROCEDIMENTO mostrarPrologo
-  VAR
-   void: INTEIRO
-  INICIO
-   ESCREVA(" Você é Jesse Lovecraft, uma brilhante e renomada psicóloga de 26 ")
-   ESCREVA("anos, na qual se meteu em uma loucura que só se pode ser ")
-   ESCREVA("concebida na sua totalidade por mentes insanas, perturbadas e doentias.")
-   LEIA(void)
+PROCEDIMENTO Linha(texto: CARACTERE)
+ INICIO
+  // Dar margem antes.
+  ESCREVAL(texto)
+FIMPROCEDIMENTO
 
-   ESCREVAL()
-   ESCREVA(" Você só se lembra que entrou nessa loucura depois de ter ido até ")
-   ESCREVA("as estranhas e sobrenaturais montanhas de Arkham, ")
-   ESCREVA("para investigar um caso de múltipla personalidade de uma garotinha.")
-   LEIA(void)
+PROCEDIMENTO LinhaF(texto: CARACTERE)
+ VAR a: CARACTERE
+ INICIO
+  // Dar margem antes.
+  ESCREVAL(texto)
+  LEIA    (a)
+FIMPROCEDIMENTO
 
-   ESCREVAL()
-   ESCREVA(" Sua missão a levou para uma mansão localizada no meio das ")
-   ESCREVA("montanhas; seus donos eram o senhor e senhora Angell, um renomado ")
-   ESCREVA("casal muito rico e que tinham uma filha, a pequena Lavinia.")
-   LEIA(void)
+PROCEDIMENTO Prologo()
+ INICIO
+  LIMPATELA()
 
-   ESCREVAL()
-   ESCREVA(" Aquela docemente perturbada garotinha lhe disse que suas personalidades ")
-   ESCREVA("pertenciam a um grandioso panteão de deuses cósmicos; dentre suas ")
-   ESCREVA("personalidades, uma se destacava das outras por ser a única que não ")
-   ESCREVA("se expressava por meio de sons guturais e inumanos, seu nome era ")
-   ESCREVA("Nyarlathotep.")
-   LEIA(void)
+  //      ("+-----------------------------------------------------------------------------+")
 
-   ESCREVAL()
-   ESCREVA(" Apesar da estranha coincidência de que todas as personalidades da ")
-   ESCREVA("garotinha te lembrarem das histórias vinda da mente perturbada de ")
-   ESCREVA("seu antepassado, H.P. Lovecraft, tudo estava indo perfeitamente bem, ")
-   ESCREVA("até a pequena Lavinia dá para você uma pequena estátua que parecia ")
-   ESCREVA("ter saído direto de um dos contos de seu antepassado.")
-   LEIA(void)
+  ESCREVAL("")
+  Linha   ("                                    PRÓLOGO                                    ")
+  ESCREVAL("")
 
-   ESCREVAL
-   ESCREVA(" Na base da estátua da criatura com cabeça de polvo e asas de dragão, ")
-   ESCREVA("tinha uma escritura numa língua desconhecida.")
-   LEIA(void)
+  Linha   ("Você é Jesse Lovecraft, uma brilhante e renomada psicóloga de 26 anos, na qual ")
+  Linha   ("se meteu em uma loucura que só se pode ser concebida na sua totalidade por men-")
+  LinhaF  ("tes insanas, perturbadas e doentias.")
 
-   ESCREVAL
-   ESCREVA(" Essa escritura é sua última memória antes do início do pesadelo: ")
-   ESCREVA("Ph’nglui mglw’nafh Cthulhu R’lyeh wgah’nagl fhtagn")
-   LEIA(void)
+  Linha   ("Você só se lembra que entrou nessa loucura depois de ter ido até as estranhas e")
+  Linha   ("sobrenaturais montanhas de Arkham, para investigar um caso de múltipla persona-")
+  LinhaF  ("lidade de uma garotinha.")
+
+  Linha   ("Sua missão a levou para uma mansão localizada no meio das montanhas; seus donos")
+  Linha   ("eram o senhor e senhora Angell, um renomado casal muito rico e que tinham uma  ")
+  LinhaF  ("filha, a pequena Lavinia.")
+
+  Linha   ("Aquela docemente perturbada garotinha lhe disse que suas personalidades perten-")
+  Linha   ("ciam a um grandioso panteão de deuses cósmicos; dentre suas personalidades, uma")
+  Linha   ("se destacava das outras por ser a única que não se expressava por meio de sons ")
+  LinhaF  ("guturais e inumanos, seu nome era Nyarlathotep.")
+
+  Linha   ("Apesar da estranha coincidência de que todas as personalidades da garotinha te ")
+  Linha   ("lembrarem das histórias vinda da mente perturbada de seu antepassado, H.P. Lo- ")
+  Linha   ("vecraft, tudo estava indo perfeitamente bem, até a pequena Lavinia dá para você")
+  Linha   ("uma pequena estátua que parecia ter saído direto de um dos contos de seu ante- ")
+  LinhaF  ("passado.")
+
+  Linha   ("Na base da estátua da criatura com cabeça de polvo e asas de dragão, tinha uma ")
+  LinhaF  ("escritura numa língua desconhecida.")
+
+  Linha   ("Essa escritura é sua última memória antes do início do pesadelo:               ")
+  Linha   ("")
+  LinhaF  ("               Ph’nglui mglw’nafh Cthulhu R’lyeh wgah’nagl fhtagn              ")
 FIMPROCEDIMENTO
 
 INICIO
-   mostrarPrologo()
+  Prologo()
 FIMALGORITMO
