@@ -149,7 +149,7 @@ PROCEDIMENTO SalaDeMaquinas
   LinhaF  ("Você percebe que tem alguma coisa se movendo dentro do cano.")
 
   //      ("+____________________________________________________________________+")
-  DIALOGO ("??????")
+  Dialogo ("??????")
   FalaS   ("Jesse, você é surda ou não escutou que eu te mandei esperar?")
 
   //      ("+-----------------------------------------------------------------------------+")
@@ -188,7 +188,7 @@ PROCEDIMENTO SalaDeMaquinas
   LinhaF  ("mente brancos que gera um contraste com o preto absoluto do corpo.")
 
   //      ("+____________________________________________________________________+")
-  DIALOGO ("??????")
+  Dialogo ("??????")
   FalaS   ("Olá Jesse, saiba que é um desprazer de te conhecer pessoalmente.")
 
   //      ("+-----------------------------------------------------------------------------+")
@@ -570,7 +570,7 @@ PROCEDIMENTO SalaDeMaquinas
                       LinhaF ("Na sua frente, a criatura se uniu novamente.")
 
                       //     ("+____________________________________________________________________+")
-                      DIALOGO("??????")
+                      Dialogo("??????")
                       FalaS  ("Quanta ousadia da sua parte atacar um Deus.")
 
                       FalaS  ("Felizmente, você irá se arrepender por isso.")
@@ -593,7 +593,7 @@ PROCEDIMENTO SalaDeMaquinas
                       LinhaF ("Os vermes te seguram no chão.")
 
                       //     ("+____________________________________________________________________+")
-                      DIALOGO("???????")
+                      Dialogo("???????")
                       FalaS  ("Como é mesmo que disse naquele filme que você gosta? ")
 
                       FalaS  ("Ah é, “Humano fraco.”")
@@ -615,10 +615,10 @@ PROCEDIMENTO SalaDeMaquinas
                       LinhaF ("a sua cara.")
 
                       //     ("+____________________________________________________________________+")
-                      DIALOGO("???")
+                      Dialogo("???")
                       FalaS  ("Chega disso, Nyarlathotep.")
 
-                      DIALOGO("Nyarlathotep")
+                      Dialogo("Nyarlathotep")
                       FalaS  ("Ah, então o traidor finalmente deu as caras.")
 
                       FalaS  ("Apesar de suas ações questionáveis, você tem sorte.")
@@ -629,12 +629,12 @@ PROCEDIMENTO SalaDeMaquinas
 
                       //     ("+____________________________________________________________________+")
 
-                      DIALOGO("Nyarlathotep")
+                      Dialogo("Nyarlathotep")
                       FalaS  ("Só nem tente fazer algo.")
 
                       FalaS  ("Você já tem os seus brinquedos, ela é minha.")
 
-                      DIALOGO("Hastur")
+                      Dialogo("Hastur")
                       FalaS  ("*Suspiro* Infelizmente, argumentação nunca foi o seu forte.")
 
                       FalaS  ("Você me obriga a ter que apelar para medidas mais drásticas.")
@@ -648,7 +648,7 @@ PROCEDIMENTO SalaDeMaquinas
                       Linha  ("Assim que os vermes se dispersam de cima de você, a primeira coisa que vê é o  ")
                       LinhaF ("teto da sala em chamas.")
 
-                      DIALOGO("???")
+                      Dialogo("???")
                       FalaS  ("Use o sinalizador para queimá-los.")
 
                       //     ("+-----------------------------------------------------------------------------+")
@@ -733,7 +733,7 @@ PROCEDIMENTO SalaDeMaquinas
                       LinhaF ("mões, e por muito pouco suas costelas não quebram.")
 
                       //     ("+____________________________________________________________________+")
-                      DIALOGO("??????")
+                      Dialogo("??????")
 
                       FalaI  ("Impressionante,por muito pouco você não é acertada pelos meus tentácu-")
                       FalaF  ("los.")
@@ -753,15 +753,15 @@ PROCEDIMENTO SalaDeMaquinas
 
                       //     ("+____________________________________________________________________+")
 
-                      DIALOGO("??????")
+                      Dialogo("??????")
                       FalaS  ("Solte ela, Nyarlathotep.")
 
-                      DIALOGO ("Nyarlathotep")
+                      Dialogo ("Nyarlathotep")
                       FalaS   ("Eu não obedeço ninguém, ainda mais um traidor como você.")
 
                       //      ("+____________________________________________________________________+")
 
-                      DIALOGO ("???????")
+                      Dialogo ("???????")
                       FalaS   ("*Suspiro* Infelizmente, terei que tomar medidas graves")
 
                       //      ("+-----------------------------------------------------------------------------+")
@@ -825,70 +825,69 @@ PROCEDIMENTO SalaDeMaquinas
                 Linha   ("Conforme os vermes vão subindo e entrando na sua roupa, o seu desespero fica   ")
                 LinhaF  ("maior.")
 
-                 LinhaF  ("Você começa a sentir os milhares de vermes por toda a sua pele.")
+                LinhaF  ("Você começa a sentir os milhares de vermes por toda a sua pele.")
 
-                 Linha   ("Eles começam a entrar na sua boca, ouvidos e nariz enquanto cobrem por completo")
-                 LinhaF  ("sua cara.")
+                Linha   ("Eles começam a entrar na sua boca, ouvidos e nariz enquanto cobrem por completo")
+                LinhaF  ("sua cara.")
 
-                 //      ("+____________________________________________________________________+")
-                 DIALOGO ("???")
-                 FalaS   ("Solte ela, Nyarlathotep.")
+                //      ("+____________________________________________________________________+")
+                Dialogo ("???")
+                FalaS   ("Solte ela, Nyarlathotep.")
 
-                 DIALOGO ("Nyarlathotep")
-                 FalaS   ("Eu não obedeço ninguém, ainda mais um traidor como você.")
+                Dialogo ("Nyarlathotep")
+                FalaS   ("Eu não obedeço ninguém, ainda mais um traidor como você.")
 
-                 DIALOGO ("???")
-                 FalaS   ("*Suspiro*")
-                 FalaS   ("Infelizmente, terei que tomar medidas graves.")
+                Dialogo ("???")
+                FalaS   ("*Suspiro*")
+                FalaS   ("Infelizmente, terei que tomar medidas graves.")
 
-                 //      ("+-----------------------------------------------------------------------------+")
-                 LinhaF  ("Você escuta o inigualável som de um lança-chamas.")
+                //      ("+-----------------------------------------------------------------------------+")
+                LinhaF  ("Você escuta o inigualável som de um lança-chamas.")
 
-                 Linha   ("Logo em seguida, os vermes se dispersam de cima de você, e a primeira coisa que")
-                 LinhaF  ("você nota é o teto da sala em chamas.")
+                Linha   ("Logo em seguida, os vermes se dispersam de cima de você, e a primeira coisa que")
+                LinhaF  ("você nota é o teto da sala em chamas.")
 
-                 LinhaF  ("Sem entender nada, você se levanta e corre desesperadamente para a saída.      ")
+                LinhaF  ("Sem entender nada, você se levanta e corre desesperadamente para a saída.      ")
 
-                 LinhaF  ("Porém, Nyarlathotep tenta mais ataque com os seus tentáculos.                  ")
+                LinhaF  ("Porém, Nyarlathotep tenta mais ataque com os seus tentáculos.                  ")
 
-                 LinhaF  ("Você vê na porta a silhueta de uma pessoa segurando algo muito grande.         ")
+                LinhaF  ("Você vê na porta a silhueta de uma pessoa segurando algo muito grande.         ")
 
-                 LinhaF  ("Você sabe o que é aquilo.")
+                LinhaF  ("Você sabe o que é aquilo.")
 
-                 LinhaF  ("Instintivamente, você se joga no chão.")
+                LinhaF  ("Instintivamente, você se joga no chão.")
 
-                 LinhaF  ("Uma língua de fogo passa por cima de você.")
+                LinhaF  ("Uma língua de fogo passa por cima de você.")
 
-                 LinhaF  ("Você olha para trás e vê aqueles tentáculos negros se debatendo em agonia.     ")
+                LinhaF  ("Você olha para trás e vê aqueles tentáculos negros se debatendo em agonia.     ")
 
-                 LinhaF  ("Você olha para frente e aquela figura que te salvou, não está mais lá.         ")
+                LinhaF  ("Você olha para frente e aquela figura que te salvou, não está mais lá.         ")
 
-                 LinhaF  ("Você se levanta e corre até a saída que está logo à frente.")
+                LinhaF  ("Você se levanta e corre até a saída que está logo à frente.")
 
-                 Linha   ("Quando você está entrando na passagem, os tentáculos ainda em chamas dão um úl-")
-                 LinhaF  ("timo golpe de oportunidade nas suas costas, que te arremessa pra frente.       ")
-               OUTROCASO
-                 LIMPATELA()
+                Linha   ("Quando você está entrando na passagem, os tentáculos ainda em chamas dão um úl-")
+                LinhaF  ("timo golpe de oportunidade nas suas costas, que te arremessa pra frente.       ")
+              OUTROCASO
+                LIMPATELA()
 
-                 LinhaF  ("Você não tem escolha!")
-                 Pergunta("Qual lado você vai se esquivar?")
-                 ESCREVAL("- ESQUERDA")
-                 ESCREVAL("- DIREITA")
-               FIMESCOLHA
-             FIMENQUANTO
+                LinhaF  ("Você não tem escolha!")
+                Pergunta("Qual lado você vai se esquivar?")
+                ESCREVAL("- ESQUERDA")
+                ESCREVAL("- DIREITA")
+              FIMESCOLHA
+            FIMENQUANTO
 
+          OUTROCASO
+            LIMPATELA()
+            LinhaF  ("Você não tem outra opção além de seguir o seu instinto.")
 
-           OUTROCASO
-             LIMPATELA()
-             LinhaF ("Você não tem outra opção além de seguir o seu instinto.")
+        FIMESCOLHA
 
-         FIMESCOLHA
-
-         PARA i de 1 ate 2 FACA
-           SE entrada = opcoes[i].rotulo ENTAO
-             opcoes[i].foiEscolhida <- VERDADEIRO
-           FIMSE
-         FIMPARA
+        PARA i de 1 ate 2 FACA
+          SE entrada = opcoes[i].rotulo ENTAO
+            opcoes[i].foiEscolhida <- VERDADEIRO
+          FIMSE
+        FIMPARA
 
     iteracao <- iteracao + 1
   FIMENQUANTO
