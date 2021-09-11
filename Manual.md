@@ -66,7 +66,7 @@ Algumas partes do jogo apresentam diálogo entre as personagens. O nome do loucu
 
 ## Criação de mundo:
 
-O mundo de nosso jogo foi criado levando como inspiração em base o horripilante mundo de horror criado Howard Philips Lovecraft. O universo de horror criado H. P. Lovecraft fundou um novo subgênero de horror que ficou conhecido como Horror cósmico. As obras de Lovecraft foram de inspirações para a criação de várias obras de sucesso da atualidade, como o livro "It, a coisa".
+O mundo de nosso jogo foi criado levando como inspiração em base o horripilante mundo de horror criado Howard Philips Lovecraft, ele foi um escritor norte-americano do inicio do seculo 20 que morreu jovem e deixou para o mundo um universo de horrores comsicos indescritiveis como legado, o qual com o passar das decadas foram ficando cada vez mais rico e unico atraves das contribuições dados por outros escritores com o passar dos anos, esse universo de Lovecraft com o tempo e contribuições de outros autores se tornou um universo expandido de horrores exteriores. O universo de horror criado H. P. Lovecraft fundou um novo subgênero de horror que ficou conhecido como Horror cósmico. As obras de Lovecraft foram de inspirações para a criação de várias obras de sucesso da atualidade, como o livro "It, a coisa".
 
 Outra grande inspiração para a criação do mundo do nosso jogo foi a franquia Resident Evill. As personagens Clarie Redfield e Jill Valentine seviram de inspiração para criar a protagonista de nosso, Jesse tras muito da força e coragem dessas duas personagens de Resident Evill para a historia de nosso jogo e como Clare e Jill, Jesse infrentarar o pesadelo dos antigos deuses de forma determinada e implacavel.
 
