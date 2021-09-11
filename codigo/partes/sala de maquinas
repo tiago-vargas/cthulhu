@@ -1,5 +1,109 @@
 ALGORITMO "Sala de Maquinas"
 
+TIPO
+  OPCAO = REGISTRO
+    rotulo       : CARACTERE
+    foiEscolhida : LOGICO
+  FIMREGISTRO
+
+VAR entrada: CARACTERE
+
+PROCEDIMENTO Titulo(texto: CARACTERE)
+ INICIO
+  ESCREVAL("+-----------------------------------------------------------------------------+")
+  ESCREVA ("¦                        ") // 24 espacos
+  ESCREVA (texto) // 30 caracteres exatamente
+  ESCREVAL("                       ¦")  // 23 espacos
+  ESCREVAL("+-----------------------------------------------------------------------------+")
+FIMPROCEDIMENTO
+// ----------------------------------------------------------------------
+
+PROCEDIMENTO Linha(texto: CARACTERE)
+ INICIO
+  // Dar margem antes.
+  ESCREVAL(texto)
+FIMPROCEDIMENTO
+// ----------------------------------------------------------------------
+
+PROCEDIMENTO LinhaF(texto: CARACTERE)
+ VAR a: CARACTERE
+ INICIO
+  // Dar margem antes.
+  ESCREVAL(texto)
+  LEIA    (a)
+FIMPROCEDIMENTO
+// ----------------------------------------------------------------------
+PROCEDIMENTO Pergunta(texto: CARACTERE)
+ INICIO
+  Linha   (texto)
+  ESCREVAL()
+  entrada <- ""
+FIMPROCEDIMENTO
+// ----------------------------------------------------------------------
+
+PROCEDIMENTO PerguntaExtra(texto: CARACTERE; condicao: LOGICO)
+ INICIO
+  SE condicao ENTAO
+    ESCREVAL(texto)
+    ESCREVAL()
+    entrada <- ""
+  FIMSE
+FIMPROCEDIMENTO
+// ----------------------------------------------------------------------
+PROCEDIMENTO Resposta(var entr: CARACTERE)
+ INICIO
+  ESCREVAL()
+  ESCREVA(">> ")
+  LEIA(entr)
+FIMPROCEDIMENTO
+// ----------------------------------------------------------------------
+PROCEDIMENTO Dialogo(nomeDaPessoa: CARACTERE)
+ VAR i : INTEIRO
+ INICIO
+  ESCREVA ("        ~ ") // 8 espaços + til + 1 espaço
+  ESCREVA (nomeDaPessoa)
+  ESCREVAL(" ~")
+  //ESCREVAL()
+FIMPROCEDIMENTO
+// ----------------------------------------------------------------------
+PROCEDIMENTO FalaS(texto: CARACTERE) // Fala Simples
+ VAR a : CARACTERE
+ INICIO
+  ESCREVA ("     — ")
+  ESCREVAL(texto)
+  LEIA(a)
+FIMPROCEDIMENTO
+
+PROCEDIMENTO FalaI(text: CARACTERE) // Fala, Inicio
+ INICIO
+  ESCREVA ("     — ") // 4 espaços + 2 hifens + 1 espaço
+  ESCREVAL(text)
+FIMPROCEDIMENTO
+
+PROCEDIMENTO FalaC(text: CARACTERE) // Fala, Continuacao
+ INICIO
+  ESCREVA ("       ") // 7 espaços
+  ESCREVAL(text)
+FIMPROCEDIMENTO
+
+PROCEDIMENTO FalaF(text: CARACTERE) // Fala, Fim
+ VAR a : CARACTERE
+ INICIO
+  ESCREVA ("       ")
+  ESCREVAL(text)
+  LEIA(a)
+FIMPROCEDIMENTO
+// ----------------------------------------------------------------------
+
+PROCEDIMENTO ListarSeNaoEscolhida(opcao_rotulo: CARACTERE; opcao_foiEscolhida: LOGICO)
+ INICIO
+  SE nao opcao_foiEscolhida ENTAO
+    ESCREVA("- ")
+    ESCREVAL(opcao_rotulo)
+  FIMSE
+FIMPROCEDIMENTO
+// +-----------------------------------------------------------------------------+
+
 PROCEDIMENTO SalaDeMaquinas
  VAR terminarLoop : LOGICO
      iteracao, i  : INTEIRO
@@ -387,7 +491,7 @@ PROCEDIMENTO SalaDeMaquinas
           //      ("+-----------------------------------------------------------------------------+")
           LinhaF  ("Você prepara o seu machado e começa a correr em direção ao Nyarlathotep.       ")
 
-          LinhaF  ("Você se desequilibra e quase cai em alguns momentos, porém, você já está na me-")
+          Linha   ("Você se desequilibra e quase cai em alguns momentos, porém, você já está na me-")
           LinhaF  ("tade do caminho.")
 
           LinhaF  ("Ele abre um grotesco sorriso.")
@@ -420,7 +524,7 @@ PROCEDIMENTO SalaDeMaquinas
 
                 LinhaF  ("Ele tenta mais um ataque.")
 
-                LinhaF   ("Mas, mais uma vez você tem pouco tempo para reagir, e só uma chance de acertar ")
+                LinhaF  ("Mas, mais uma vez você tem pouco tempo para reagir, e só uma chance de acertar.")
 
                 LinhaF  ("Você pode esquivar para:")
 
