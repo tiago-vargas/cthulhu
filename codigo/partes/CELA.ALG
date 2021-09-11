@@ -13,7 +13,6 @@ PROCEDIMENTO Linha(texto: CARACTERE)
   // Dar margem antes.
   ESCREVAL(texto)
 FIMPROCEDIMENTO
-// ----------------------------------------------------------------------
 
 PROCEDIMENTO LinhaF(texto: CARACTERE)
  VAR a: CARACTERE
@@ -29,7 +28,6 @@ PROCEDIMENTO Pergunta(texto: CARACTERE)
   ESCREVAL()
   entrada <- ""
 FIMPROCEDIMENTO
-// ----------------------------------------------------------------------
 
 PROCEDIMENTO PerguntaExtra(texto: CARACTERE; condicao: LOGICO)
  INICIO
