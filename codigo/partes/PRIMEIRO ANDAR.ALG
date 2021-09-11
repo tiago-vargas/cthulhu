@@ -1,25 +1,124 @@
 ALGORITMO "Primeiro Andar"
 
-VAR
+TIPO
+  OPCAO = REGISTRO
+    rotulo       : CARACTERE
+    foiEscolhida : LOGICO
+  FIMREGISTRO
+
+VAR entrada : CARACTERE
+
+PROCEDIMENTO Titulo(texto: CARACTERE)
+ INICIO
+  ESCREVAL("+-----------------------------------------------------------------------------+")
+  ESCREVA ("¦                        ") // 24 espacos
+  ESCREVA (texto)                       // 30 caracteres exatamente
+  ESCREVAL("                       ¦")  // 23 espacos
+  ESCREVAL("+-----------------------------------------------------------------------------+")
+  ESCREVAL()
+FIMPROCEDIMENTO
+
+PROCEDIMENTO Linha(texto: CARACTERE) // Linha de texto intermediária
+ INICIO
+  // Dar margem antes.
+  ESCREVAL(texto)
+FIMPROCEDIMENTO
+
+PROCEDIMENTO LinhaF(texto: CARACTERE) // Linha de texto final
+ VAR a : CARACTERE
+ INICIO
+  // Dar margem antes.
+  ESCREVAL(texto)
+  LEIA    (a)
+FIMPROCEDIMENTO
 
 // ----------------------------------------------------------------------
+PROCEDIMENTO Dialogo(nomeDaPessoa: CARACTERE)
+ INICIO
+  ESCREVA ("        ~ ") // 8 espaços + til + 1 espaço
+  ESCREVA (nomeDaPessoa)
+  ESCREVAL(" ~")
+  //ESCREVAL()
+FIMPROCEDIMENTO
+
+PROCEDIMENTO FalaS(texto: CARACTERE) // Fala Simples
+ VAR a : CARACTERE
+ INICIO
+  ESCREVA ("     — ")
+  ESCREVAL(texto)
+  LEIA(a)
+FIMPROCEDIMENTO
+
+PROCEDIMENTO FalaI(texto: CARACTERE) // Fala, Inicio
+ INICIO
+  ESCREVA ("     — ") // 5 espaços + 1 travessao + 1 espaço
+  ESCREVAL(texto)
+FIMPROCEDIMENTO
+
+PROCEDIMENTO FalaC(texto: CARACTERE) // Fala, Continuacao
+ INICIO
+  ESCREVA ("       ") // 7 espaços
+  ESCREVAL(texto)
+FIMPROCEDIMENTO
+
+PROCEDIMENTO FalaF(texto: CARACTERE) // Fala, Fim
+ VAR a : CARACTERE
+ INICIO
+  ESCREVA ("       ") // 7 espaços
+  ESCREVAL(texto)
+  LEIA(a)
+FIMPROCEDIMENTO
+
+// ----------------------------------------------------------------------
+PROCEDIMENTO Pergunta(texto: CARACTERE)
+ INICIO
+  Linha   (texto)
+  ESCREVAL()
+  entrada <- ""
+FIMPROCEDIMENTO
+
 PROCEDIMENTO PerguntaExtra(texto: CARACTERE; condicao: LOGICO)
  INICIO
   SE condicao ENTAO
-    Linha   (texto)
-    Linha   ()
+    ESCREVAL(texto)
+    ESCREVAL()
     entrada <- ""
+  FIMSE
+FIMPROCEDIMENTO
+
+PROCEDIMENTO Resposta(var entr: CARACTERE)
+ INICIO
+  ESCREVAL()
+  ESCREVA(">> ")
+  LEIA(entr)
+FIMPROCEDIMENTO
+
+// ----------------------------------------------------------------------
+PROCEDIMENTO ListarSeNaoEscolhida(opcao_rotulo: CARACTERE; opcao_foiEscolhida: LOGICO)
+ INICIO
+  SE nao opcao_foiEscolhida ENTAO
+    ESCREVA("- ")
+    ESCREVAL(opcao_rotulo)
   FIMSE
 FIMPROCEDIMENTO
 
 
 // ----------------------------------------------------------------------
 PROCEDIMENTO PrimeiroAndar()
- VAR terminarLoop: LOGICO
-     erros       : INTEIRO
-     acertouChave: LOGICO
+ VAR terminarLoop       : LOGICO
+     erros, i, iteracao : INTEIRO
+     acertouChave       : LOGICO
+     chaves             : vetor[1..6] de OPCAO
+     chaveCerta         : CARACTERE
  INICIO
-  ESCREVAL("                          DE VOLTA AO PRIMEIRO ANDAR                           ")
+  chaves[1].rotulo <- "1"
+  chaves[2].rotulo <- "2"
+  chaves[3].rotulo <- "3"
+  chaves[4].rotulo <- "4"
+  chaves[5].rotulo <- "5"
+
+  LIMPATELA()
+  Titulo  ("  DE VOLTA AO PRIMEIRO ANDAR  ")
   //      ("+-----------------------------------------------------------------------------+")
   Linha   ("De volta à sala de segurança, você tranca a porta da passagem e percebe que a  ")
   LinhaF  ("sala não estava mais com aparência velha.")
@@ -43,7 +142,7 @@ PROCEDIMENTO PrimeiroAndar()
   //      ("+____________________________________________________________________+")
   Dialogo ("???????")
   FalaI   ("Me pergunto, será que sua mente tão pequena consegue apreciar a beleza")
-  FalaF   ("de como o mundo vai ficar depois que o ritual estiver concluído?")
+  FalaF   ("de como o mundo vai ficar depois que o ritual estiver concluído?      ")
 
   LinhaF  ("Era Nyarlathotep de novo.")
 
@@ -57,22 +156,24 @@ PROCEDIMENTO PrimeiroAndar()
   FalaC   ("clamar por Ele, e irão sucumbir a sua tolice ao perceber que não exis-")
   FalaF   ("te Deus.")
 
-  FalaS   ("Espero que goste do show de mortes que irei trazer para esse mundo.")
+  FalaS   ("Espero que goste do show de mortes que irei trazer para esse mundo.   ")
 
   FalaS   ("AHAHAHAHAHAHAHAHAAAAAAAAAAA")
 
   LinhaF  ("Você fala um palavrão e continua o seu caminho o ignorando.")
 
+  Dialogo ("??????")
   FalaS   ("Ei, espere um minuto.")
 
   LinhaF  ("Você ignora a voz feminina te chamando.")
 
+  Dialogo ("??????")
   FalaS   ("Ei, espera um minuto.")
 
   LinhaF  ("Você a ignora de novo.")
 
-  FalaS   ("O¢_L°`H_ªE´ ´¸_P?A~R£a *M¨I^M¬")  // ----------------------------------------------------
-  //        ¹²³£¢¬?°°ºª
+  Dialogo ("??????")
+  FalaS   ("O¢_L°`H_ªE´ ´¸_P¹,A~RºA *M¨I^M¬!!³!")
 
   //      ("+-----------------------------------------------------------------------------+")
   LinhaF  ("Você se vira ao perceber a distorção em sua voz.")
@@ -95,60 +196,95 @@ PROCEDIMENTO PrimeiroAndar()
 
   LinhaF  ("Agora é questão de escolher a chave certa.")
 
-  LinhaF  ("Você tem 7 chaves cada uma com um número, de 1 a 7.") // --------------------------------
+  LinhaF  ("Você tem 5 chaves cada uma com um número, de 1 a 5.") // --------------------------------
 
   Pergunta("Qual você vai usar?") // p5
 
-  // chave certa (arbitraria): 6
-  ENQUANTO nao acertouChave FACA
-    PerguntaExtra("Qual chave você tenta agora?", erros > 0)
+  chaveCerta <- "5"  // escolhida arbitrariamente
+  ENQUANTO (nao acertouChave) E (erros < 3) FACA
+    PerguntaExtra("Qual chave você tenta agora?", iteracao > 0)
+
+    PARA i de 1 ate 5 FACA
+      ListarSeNaoEscolhida(chaves[i].rotulo, chaves[i].foiEscolhida)
+    FIMPARA
+
     Resposta(entrada)
 
-    SE entrada <> "6" ENTAO
-      erros <- erros + 1
+    SE (entrada <> "1") E (entrada <> "2") E (entrada <> "3") E (entrada <> "4") E (entrada <> "5") ENTAO
+      LIMPATELA()
+      LinhaF  ("Número inválido.")
     SENAO
-      acertouChave <- VERDADEIRO
-      //       "+-----------------------------------------------------------------------------+"
-      Texto   ("Você coloca chave no trinco e gira.")
-      Texto   ("A porta se abre.")
-      Texto   ("Você entra e fecha a porta logo atrás de você.")
-      Texto   ("A criatura se bate enfurecida na grade.")
-      Texto   ("Você estava segura agora.")
-      Texto   ("Aquela coisa não poderia te pegar.")
-      Fala    ("Ou será que não? AHAHAHAHAHAHAAAA")
-      Texto   ("A porta na grade começa a se soltar.")
-      Texto   ("Você pensa em correr para o corredor que está ao seu lado.")
-      Linha   ("Mas quando se vira tem uma parede viva formada por tentáculos impedindo sua    ")
-      Texto   ("passagem.")
+      SE entrada <> chaveCerta ENTAO
+        erros <- erros + 1
 
-      Linha   ("No meio da parede começa a se formar uma silhueta de um ser humanóide com três ")
-      Texto   ("pernas, dois braços e um tentáculo no lugar da cabeça.")
+        PARA i de 1 ate 5 FACA
+          SE entrada = chaves[i].rotulo ENTAO
+            chaves[i].foiEscolhida <- VERDADEIRO
+          FIMSE
+        FIMPARA
 
-      Fala    ("Eu não vou deixar você sair dessa tão fácil, minha cara Jesse.")
-      Fala    ("Pelo que eu me lembro, na sua ficha dizia que o seu tratamento era na base de  ")
-      FalaF   ("torturas psicológicas constantes, certo?")
-      Fala    ("Pois é só o começo agora! NYAHAHAHAHA!")
-      Texto   ("A silhueta some, mas pela voz você sabe que era Nyarlathotep.")
-      Texto   ("A porta na grade se solta.")
+        ESCOLHA erros
+          CASO 1
+            LIMPATELA()
+            //      ("+-----------------------------------------------------------------------------+")
+            LinhaF  ("Você coloca a chave no trinco e gira.")
+            LinhaF  ("Mas a porta não abre.")
+            LinhaF  ("A enfermeira se aproxima.")
+          CASO 2
+            LIMPATELA()
+            LinhaF  ("Nada.")
+            LinhaF  ("Você se apavora.")
+            LinhaF  ("Sem olhar para trás, você tenta ainda mais uma vez.")
+          CASO 3
+            LIMPATELA()
+            LinhaF  ("O seu tempo acabou. A enfermeira chegou muito perto.")
+        FIMESCOLHA
+      SENAO
+        acertouChave <- VERDADEIRO
+
+        LIMPATELA()
+        //      ("+-----------------------------------------------------------------------------+")
+        LinhaF  ("Você coloca chave no trinco e gira.")
+
+        LinhaF  ("A porta se abre. Você entra e fecha a porta logo atrás de você.                ")
+
+        LinhaF  ("A criatura se bate enfurecida na grade.")
+
+        LinhaF  ("Você esta segura agora. Aquela coisa não poderia te pegar.                     ")
+
+        Dialogo ("Nyarlathotep")
+        FalaS   ("Ou será que pode? AHAHAHAHAHAHAAAA")
+
+        LinhaF  ("A porta na grade começa a se soltar.")
+
+        Linha   ("Você pensa em correr para o corredor que está ao seu lado, mas quando se vira  ")
+        LinhaF  ("tem uma parede viva formada por tentáculos impedindo sua passagem.")
+
+        Linha   ("No meio da parede começa a se formar uma silhueta de um ser humanóide com três ")
+        LinhaF  ("pernas, dois braços e um tentáculo no lugar da cabeça.")
+
+        //      ("+____________________________________________________________________+")
+        Dialogo ("Nyarlathotep")
+        FalaS   ("Eu não vou deixar você sair dessa tão fácil, minha cara Jesse.        ")
+
+        FalaI   ("Pelo que eu me lembro, na sua ficha dizia que o seu tratamento era na ")
+        FalaF   ("base de torturas psicológicas constantes, certo?")
+
+        FalaS   ("Pois é só o começo agora! NYAHAHAHAHA!")
+
+        //      ("+-----------------------------------------------------------------------------+")
+        LinhaF  ("A silhueta some, mas pela voz você sabe que era Nyarlathotep.")
+
+        LinhaF  ("A porta na grade se solta.")
+      FIMSE
     FIMSE
 
-    ESCOLHA erros
-      CASO 1
-        //       "+-----------------------------------------------------------------------------+"
-        Texto   ("Você coloca a chave no trinco e gira.")
-        Texto   ("Mas a porta não abre.")
-        Texto   ("A enfermeira se aproxima.")
-      CASO 2
-        Texto   ("Nada.")
-        Texto   ("Você se apavora.")
-        Texto   ("Sem olhar para trás, você tenta ainda mais uma vez.")
-      CASO 3
-        Texto   ("O seu tempo acabou e a enfermeira chegou muito perto.")
-    FIMESCOLHA
+    iteracao <- iteracao + 1
   FIMENQUANTO
 FIMPROCEDIMENTO
 
 // ======================================================================
+
 INICIO
-  PrimeiroAndar
+  PrimeiroAndar()
 FIMALGORITMO
