@@ -1190,7 +1190,7 @@ PROCEDIMENTO ManipulacaoReligiosa()
 
         LinhaF  ("Hastur se vira e começa ir embora na direção da imensidão branca do céu.")
 
-        Dialogo ("Jesse")
+        Dialogo ("Hastur")
         FalaS   ("*Suspiro*")
 
         FalaS   ("Está tudo acabado.")
