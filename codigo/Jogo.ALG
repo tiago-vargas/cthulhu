@@ -118,7 +118,7 @@ PROCEDIMENTO Prologo()
   LIMPATELA()
 
   Titulo  ("            PRÓLOGO           ")
-
+  //      ("+-----------------------------------------------------------------------------+")
   Linha   ("Você é Jesse Lovecraft, uma brilhante e renomada psicóloga de 26 anos, na qual ")
   Linha   ("se meteu em uma loucura que só se pode ser concebida na sua totalidade por men-")
   LinhaF  ("tes insanas, perturbadas e doentias.")
@@ -128,7 +128,7 @@ PROCEDIMENTO Prologo()
   LinhaF  ("lidade de uma garotinha.")
 
   Linha   ("Sua missão a levou para uma mansão localizada no meio das montanhas; seus donos")
-  Linha   ("eram o senhor e senhora Angell, um renomado casal muito rico e que tinham uma  ")
+  Linha   ("eram o senhor e senhora Angel, um renomado casal muito rico e que tinham uma   ")
   LinhaF  ("filha, a pequena Lavinia.")
 
   Linha   ("Aquela docemente perturbada garotinha lhe disse que suas personalidades perten-")
@@ -147,7 +147,7 @@ PROCEDIMENTO Prologo()
 
   Linha   ("Essa escritura é sua última memória antes do início do pesadelo:               ")
   Linha   ("")
-  LinhaF  ("               Ph’nglui mglw’nafh Cthulhu R’lyeh wgah’nagl fhtagn              ")
+  LinhaF  ("                             Ph’nglui mglw’nafh Cthulhu R’lyeh wgah’nagl fhtagn")
 FIMPROCEDIMENTO
 
 PROCEDIMENTO Cela()
@@ -165,9 +165,11 @@ PROCEDIMENTO Cela()
   LIMPATELA()
 
   Titulo  ("            A CELA            ")
-
+  //      ("+-----------------------------------------------------------------------------+")
   LinhaF  ("CAAARRACK!!!!!!!")
+
   LinhaF  ("Você desperta com o barulho de um trovão.")
+
   LinhaF  ("Você está deitada numa cama.")
 
   Linha   ("Ao olhar para os lados, se vê presa numa cela trancada por uma porta de aço, na")
@@ -207,18 +209,24 @@ PROCEDIMENTO Cela()
 
         //      ("+____________________________________________________________________+")
         Dialogo ("Jesse")
-        FalaS   ("Alguém me tire daqui!!!")
+        FalaS   ("ALGUÉM ME TIRA DAQUI!!!")
 
-        LinhaF  ("Apesar do esforço, parece que ninguém te ouviu.")
+        LinhaF  ("...")
+
+        LinhaF  ("Apesar do seu esforço, parece que ninguém te ouviu.")
 
         Dialogo ("Jesse")
         FalaS   ("Preciso encontrar algo para chamar a atenção deles.")
+
       CASO "BAU"
         LinhaF  ("Você vai até o baú e tenta abrí-lo.")
+
         LinhaF  ("Por sorte, o baú está aberto.")
+
         LinhaF  ("Você encontra dentro dele uma bolsa, uma lanterna e a chave da cela.")
 
         Pergunta("Você quer abrir a porta ou vasculhar o resto da cela?") // p1.2
+
         REPITA
           ESCREVAL("- CELA")
           ESCREVAL("- PORTA")
@@ -231,46 +239,69 @@ PROCEDIMENTO Cela()
           ESCOLHA entrada
             CASO "CELA"
               //      ("+____________________________________________________________________+")
+              LIMPATELA()
+
               Dialogo ("Jesse")
               FalaS   ("Melhor eu dar mais uma olhada antes de sair.")
+
               FalaS   ("Talvez tenha alguma outra coisa útil.")
+
             CASO "PORTA"
+              //      ("+-----------------------------------------------------------------------------+")
+              LIMPATELA()
+
               LinhaF  ("Você insere a chave e a porta destranca.")
-              LinhaF  ("Raio, BAR-ROOM!!!!!")
-              LinhaF  ("Você fica atordoada por um segundo.")
+
+              LinhaF  ("BAR-ROOM!!!!!")
+
+              LinhaF  ("Você fica atordoada por um segundo pelo raio.")
 
               Linha   ("Ao abrir os olhos, você nota que todo o lugar mudou; tudo estava velho e acaba-")
               Linha   ("do pelo tempo, a porta que antes trancava sua cela agora está no chão, toda    ")
               LinhaF  ("corroída pela ferrugem.")
+
               terminarLoop <- VERDADEIRO
             OUTROCASO
+              LIMPATELA()
+
               LinhaF  ("So há duas opções...")
+
               Pergunta("O que você vai fazer?") // p1.2+
           FIMESCOLHA
         ATE (entrada = "CELA") OU (entrada = "PORTA") FACA
       CASO "PIA"
+
         LinhaF  ("Não é hora para isso.")
       CASO "PRIVADA"
+
         LinhaF  ("Não é hora para isso.")
       CASO "MESA"
+
         //      ("+-----------------------------------------------------------------------------+")
+
         LinhaF  ("Você se encaminha até a mesa.")
 
         Linha   ("Nela, você encontra uma ficha médica com seu nome, sua idade, descrição física ")
         Linha   ("e dizendo que estava internada devido a problemas psicológicos no sanatório    ")
         LinhaF  ("Blackwood.")
 
-        Linha   ("Segundo o laudo de um doutor San-Nity, Jesse sofre de sanidade aguda e deveria ")
-        LinhaF  ("ser tratada com torturas psicológicas constantes.")
+        Linha   ("Segundo o laudo de um doutor chamado San-Nity, Jesse sofre de sanidade aguda e ")
+        LinhaF  ("deveria ser tratada com torturas psicológicas constantes.")
+
         LinhaF  ("Você fica um pouco assustada e confusa.")
+
       CASO "CAMA"
+
         Linha   ("Você olha embaixo da cama sem esperança de encontrar alguma coisa, porém suas  ")
         LinhaF  ("expectativas estavam erradas.")
 
         LinhaF  ("Você encontra uma maleta velha debaixo da cama.")
+
         LinhaF  ("Dentro dela tinha inúmeros mapas, que você os guarda consigo.")
       OUTROCASO
+
         LinhaF  ("Escolha inválida.")
+
     FIMESCOLHA
 
     PARA i de 1 ate 6 FACA
@@ -290,27 +321,28 @@ PROCEDIMENTO Corredor()
   Titulo  ("          O CORREDOR          ")
 
   //      ("+-----------------------------------------------------------------------------+")
+
   Linha   ("No corredor, em formato de L, dava para ouvir perfeitamente a forte tempestade ")
-  LinhaF  ("que caia lá fora. ")
+  LinhaF  ("que caia lá fora.")
 
   Linha   ("Todas as janelas do corredor estavam quebradas e seus cacos espalhados pelo    ")
   LinhaF  ("chão, que estava molhado devido a intensa tempestade.")
 
-  Linha   ("Do seu lado direito tem um enorme grade no caminho, no seu lado esquerdo o cor-")
-  LinhaF  ("redor continua até chegar em outra grade.")
+  Linha   ("Do seu lado direito tem uma enorme grade no caminho, no seu lado esquerdo o    ")
+  LinhaF  ("corredor continua até chegar em outra grade.")
 
   LinhaF  ("Você vai até a janela primeiro.")
 
   LinhaF  ("crack!")
 
-  LinhaF  ("os vidros quebramaos seus passos")
+  LinhaF  ("Os vidros se quebram aos seus passos.")
 
   Linha   ("Por ela, você consegue ver um pátio arborizado com uma enorme fonte no meio de-")
   Linha   ("la, na qual há uma estátua de uma pessoa encapuzada segurando um livro estranho")
   LinhaF  ("em uma das mãos e uma adaga na outra.")
 
-  Linha   ("Você percebe que as plantas do pátio mesmo que estejam verdes passam uma sensa-")
-  LinhaF  ("ção de estarem doentes e definhando.")
+  Linha   ("Você percebe que as plantas do pátio, mesmo que estejam verdes, passam uma sen-")
+  LinhaF  ("sação de estarem doentes e definhando.")
 
   LinhaF  ("Você se afasta da janela e vai até a grade mais próxima.")
 
@@ -321,38 +353,37 @@ PROCEDIMENTO Corredor()
   //      ("+____________________________________________________________________+")
   Dialogo ("Jesse")
   FalaS   ("Que ótimo.")
-  FalaS   ("Vou ter que achar uma chave ou escalar até lá embaixo.")
+
+  FalaS   ("Vou ter que achar uma chave ou escalar até lá embaixo.                ")
 
   //      ("+-----------------------------------------------------------------------------+")
   LinhaF  ("Você vai até a grade do outro lado do corredor.")
 
   LinhaF  ("Essa você conseguiu abrir.")
 
-  LinhaF  ("Depois da grade, o corredor continua sem ter mais nenhuma cela.")
+  LinhaF  ("Depois da grade, o corredor continua sem ter mais nenhuma cela.                ")
 
-  LinhaF  ("No fim do corredor tinha outra grade trancada e do seu lado uma porta.")
+  LinhaF  ("No fim do corredor tinha outra grade trancada e do seu lado uma porta.         ")
 
-  LinhaF  ("No caminho a até o fim do corredor você vê quatro quadros na parede.")
+  LinhaF  ("No caminho até o fim do corredor, você vê quatro quadros na parede.            ")
 
-  //      ("+-----------------------------------------------------------------------------+")
   Linha   ("Você para no primeiro e nota que, curiosamente, só a moldura foi afetada pelo  ")
-  LinhaF  ("tempo, a pintura, porém, está fresca como se tivesse acabado de ser pintada.")
+  LinhaF  ("tempo. A pintura, porém, está fresca como se tivesse acabado de ser pintada.   ")
 
-  Linha   ("No quadro você vê uma figura aparentemente humana, ele é sobrenaturalmente pá- ")
-  Linha   ("lido, vestia um manto amarelo com capuz que cobria sua cabeça, o seu rosto é   ")
-  Linha   ("coberto por uma máscara branca bizarra sobre o capuz utilizava uma coroa de    ")
+  Linha   ("No quadro você vê uma figura aparentemente humana: ela é sobrenaturalmente pá- ")
+  Linha   ("lida, vestia um manto amarelo com capuz que cobria sua cabeça, o seu rosto é   ")
+  Linha   ("coberto por uma máscara branca bizarra e, sobre o capuz, utilizava uma coroa de")
   LinhaF  ("ferro amarelado.")
 
-  LinhaF  ("Na moldura você vê algo escrito:")
-
-  LinhaF  ("Hastur, o Rei Amarelo.")
+  Linha   ("Na moldura você vê algo escrito:")
+  LinhaF  ("                                                         Hastur, o Rei Amarelo.")
 
   Linha   ("Você caminha até o segundo quadro que possui o mesmo aspecto, porém sua imagem ")
   LinhaF  ("era diferente.")
 
   Linha   ("Você vê um grupo de exploradores posando como se estivessem tirando uma foto na")
-  Linha   ("frente de um navio, porém todo o grupo e o navio estavam no meio do deserto    ")
-  LinhaF  ("congelado que é a Antártida.")
+  Linha   ("frente de um navio, porém todo o grupo e o navio estavam no meio de um deserto ")
+  LinhaF  ("congelado, que é a Antártida.")
 
   Linha   ("Na moldura está escrito:")
   LinhaF  ("             Nas montanhas da loucura, eis a última expedição do navio Dunwich.")
@@ -370,7 +401,7 @@ PROCEDIMENTO Corredor()
   Linha   ("No quarto e último quadro de mesmo aspecto, tinha uma imagem completamente pre-")
   LinhaF  ("ta.")
 
-  LinhaF  ("Você fica olhando estática para o quadro como se estivesse sendo hipnotizada.")
+  LinhaF  ("Você fica olhando estática para o quadro como se estivesse sendo hipnotizada.  ")
 
   Linha   ("Você se sente sendo sugada para dentro do quadro, como se tivesse na frente do ")
   LinhaF  ("abismo de um buraco negro prestes te a engolir.")
@@ -380,7 +411,7 @@ PROCEDIMENTO Corredor()
   FalaS   ("NYAHUEHEHEHE")
 
   FalaI   ("Cuidado pequena Jesse, quando se olha por muito tempo o abismo exteri-")
-  FalaF   ("or, os deuses de dentro dele te olham de volta.")
+  FalaF   ("or, os deuses de dentro dele te olham de volta.                       ")
 
   FalaS   ("Há! Ah! Ah! Há! Ah! Ah! Há! Ah! Ah! Há! Ah! Ah! Há! Ah! Ah! Há! Ah! A!")
 
@@ -390,11 +421,12 @@ PROCEDIMENTO Corredor()
   LinhaF  ("Mas você não vê ninguém...")
 
   Linha   ("Ao olhar de novo para o quadro, você percebe o que está escrito na moldura do  ")
-  LinhaF  ("quarto quadro:")
+  Linha   ("quarto quadro:")
+  LinhaF  ("                                                         O sussurro nas trevas.")
 
-  LinhaF  ("                                                          O sussurro nas trevas")
+  LinhaF  ("Crack!")
 
-  LinhaF  ("Crack! Crack!")
+  LinhaF  ("Crack!")
 
   LinhaF  ("Um pouco assustada você continua até chegar na porta desconhecida.")
 
@@ -408,15 +440,15 @@ PROCEDIMENTO PassagemSecreta1()
   LIMPATELA()
 
   Titulo  ("      A PASSAGEM SECRETA      ")
-
+  //      ("+-----------------------------------------------------------------------------+")
   Linha   ("Vinha um forte cheiro de mofo da passagem, característicos de lugares a muito  ")
   LinhaF  ("tempo isolados do mundo.")
 
   LinhaF  ("Toda a passagem era feita de madeira que parecia ser de muito tempo atrás.")
 
   Linha   ("Assim que você entra, a primeira coisa que vê é um quadro com a imagem de um   ")
-  Linha   ("prédio enorme em construção e um monte de trabalhadores indo para um lado e pro")
-  LinhaF  ("outro.")
+  Linha   ("prédio enorme em construção e um monte de trabalhadores indo de um lado pro ou-")
+  LinhaF  ("tro.")
 
   Linha   ("Você lê na legenda da moldura:")
   LinhaF  ("                                             Construção do santuário Blackwood.")
@@ -431,9 +463,11 @@ PROCEDIMENTO PassagemSecreta1()
   LinhaF  ("                                                              Sala de descanso.")
 
   LinhaF  ("Você aciona a alavanca.")
+
   LinhaF  ("Nada.")
 
   //      ("+____________________________________________________________________+")
+
   Dialogo ("??????")
   FalaS   ("Você precisa de energia, Jesse.")
 
@@ -451,7 +485,7 @@ PROCEDIMENTO PassagemSecreta1()
   Dialogo ("??????")
   FalaS   ("Todos nós somos um pouco loucos, Jessezinha.")
 
-  FalaS   ("Como o benevolente deus que eu sou, vou te dar uma pequena dica.")
+  FalaS   ("Como o benevolente deus que eu sou, vou te dar uma pequena dica.      ")
 
   FalaI   ("Vá até o final da passagem e, quem sabe, você consiga abrir sua passa-")
   FalaF   ("gem de saída.")
@@ -483,14 +517,14 @@ FIMPROCEDIMENTO
 
 
 PROCEDIMENTO PassagemSecreta2()
- VAR
  INICIO
   LIMPATELA()
 
   Titulo  ("   A OUTRA PASSAGEM SECRETA   ")
-
+  //      ("+-----------------------------------------------------------------------------+")
   LinhaF  ("Você quase desmaia com o impacto na parede.")
-  LinhaF  ("Você corre até a alavanca da porta da sala de máquinas e levanta ela.")
+
+  LinhaF  ("Você corre até a alavanca da porta da sala de máquinas e levanta ela.          ")
 
   Linha   ("Quando você finalmente se sente em segurança, você recua até a parede e se sen-")
   LinhaF  ("ta na escada encostando a cabeça na parede.")
@@ -499,15 +533,15 @@ PROCEDIMENTO PassagemSecreta2()
 
   //      ("+____________________________________________________________________+")
   Dialogo ("Jesse")
-  FalaS   ("De todas as pessoas, por que  isso tá acontecendo comigo?")
+  FalaS   ("De todas as pessoas, por que isso tá acontecendo COMIGO?")
   FalaS   ("Por que essa merda tá rolando comigo?")
   FalaS   ("Ou melhor, mas que porra tá acontecendo aqui?!")
   FalaS   ("E que merda de sanatório é esse?!")
 
-  Linha   ("Você se levanta.")
+  LinhaF  ("Você se levanta.")
 
   Dialogo ("Jesse")
-  FalaS   ("Tá, eu preciso me acalmar e me limp…")
+  FalaS   ("Tá, eu preciso me acalmar e me limp...")
 
   //      ("+-----------------------------------------------------------------------------+")
   Linha   ("Ao olhar para a suas roupas, você vê que elas estão um pouco danificadas, porém")
@@ -516,17 +550,20 @@ PROCEDIMENTO PassagemSecreta2()
   //      ("+____________________________________________________________________+")
   Dialogo ("Jesse")
   FalaI   ("Isso... Não faz nenhum sentido, como diabos minha roupa tá toda ferra-")
-  FalaF   ("da, eu to toda ferida, mas as minhas roupas estão limpas??")
+  FalaF   ("da, eu tô toda ferida... Mas as minhas roupas estão limpas??          ")
 
-  FalaS   ("Será que eu estou ficando louca e me auto mutilei?")
-  FalaS   ("Será que aquela pessoa que me salvou também é coisa da minha cabeça?")
-  FalaS   ("Ou melhor, será que TUDO isso é coisa da minha cabeça?")
+  FalaS   ("Será que eu estou ficando louca e me auto mutilei?                    ")
+
+  FalaS   ("Será que aquela pessoa que me salvou também é coisa da minha cabeça?  ")
+
+  FalaS   ("Ou melhor, será que TUDO isso é coisa da minha cabeça?                ")
+
   FalaS   ("...")
 
   FalaI   ("Jesse, para de falar merda e se acalma, você é a porra de uma psicólo-")
   FalaF   ("ga.")
 
-  FalaS   ("Só… Foca em encontrar uma forma de sair dessa merda de lugar.")
+  FalaS   ("Só... Foca em encontrar uma forma de sair dessa merda de lugar.       ")
 
   FalaS   ("*suspiro*")
 
@@ -535,10 +572,10 @@ PROCEDIMENTO PassagemSecreta2()
 
   //      ("+-----------------------------------------------------------------------------+")
   Linha   ("Enquanto você sobe a escada até a sala de descanso, você fica pensando em pos- ")
-  LinhaF  ("síveis respostas para o que aconteceu, além da óbvia de que você está louca.")
+  LinhaF  ("síveis respostas para o que aconteceu, além da óbvia de que você está louca.   ")
 
-  Linha   ("Uma música clássica sinistra está invadindo a passagem, vindo da sala de segu- ")
-  LinhaF  ("rança.")
+  Linha   ("Uma música clássica sinistra está invadindo a passagem, vindo da sala de des-  ")
+  LinhaF  ("canso.")
 
   Linha   ("Você sobe até a sala de descanso que fica no térreo, então aciona a alavanca,  ")
   Linha   ("entra na sala que também está bem iluminada e que tem uma vitrola na mesa de   ")
