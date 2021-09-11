@@ -33,7 +33,7 @@ PROCEDIMENTO Linha(texto: CARACTERE) // Linha de texto intermediária
 FIMPROCEDIMENTO
 
 PROCEDIMENTO LinhaF(texto: CARACTERE) // Linha de texto final
- VAR a: CARACTERE
+ VAR a : CARACTERE
  INICIO
   // Dar margem antes.
   ESCREVAL(texto)
@@ -1352,13 +1352,123 @@ FIMPROCEDIMENTO
 // ------------------------------------------------------------------------ //
 // ======================================================================== //
 
+PROCEDIMENTO RedimensionarTela()
+ VAR a : CARACTERE
+ INICIO
+  LIMPATELA()
+  ESCREVAL()
+  //      ("|<----------------------------------------------------------------------------->|")
+  ESCREVAL("+-----------------------------------------------------------------------------+") // largura dos textos
+  ESCREVAL()
+  ESCREVAL("Redimensione esta janela até que a linha tracejada caiba numa única linha.")
+  ESCREVAL()
+  ESCREVAL("É recomendado que o tamanho vertical da janela seja o máximo possível.")
+  ESCREVAL()
+  ESCREVAL()
+  ESCREVAL("Presione a tecla ENTER para continuar...")
+  LEIA(a)
+FIMPROCEDIMENTO
+
+PROCEDIMENTO Avisos()
+ INICIO
+  LIMPATELA()
+  Titulo  ("            AVISOS            ")
+  //      ("+-----------------------------------------------------------------------------+")
+  ESCREVAL("- Este jogo contém textos que descrevem violência.")
+  ESCREVAL("- Pessoas religiosas podem se sentir ofendidas com determinadas partes do jogo.")
+  ESCREVAL("  Se você não se sente confortável com algum dos ítens acima, é aconselhado que")
+  ESCREVAL("  não jogue.")
+  ESCREVAL("- Este jogo é uma versão de demonstração.")
+  ESCREVAL("- Leia o manual antes de jogar.")
+FIMPROCEDIMENTO
+
+PROCEDIMENTO Logo()
+ INICIO
+  ESCREVAL("       ___  ___ _____  _   _  _____   ___   _   _  _   _   ___   _____ ")
+  ESCREVAL("       |  \/  ||  _  || \ | ||_   _| / _ \ | \ | || | | | / _ \ /  ___|")
+  ESCREVAL("       | .  . || | | ||  \| |  | |  / /_\ \|  \| || |_| |/ /_\ \\ `--. ")
+  ESCREVAL("       | |\/| || | | || . ` |  | |  |  _  || . ` ||  _  ||  _  | `--. \")
+  ESCREVAL("       | |  | |\ \_/ /| |\  |  | |  | | | || |\  || | | || | | |/\__/ /")
+  ESCREVAL("       \_|  |_/ \___/ \_| \_/  \_/  \_| |_/\_| \_/\_| |_/\_| |_/\____/ ")
+  ESCREVAL("")
+  ESCREVAL("")
+  ESCREVAL("                                ______   ___  ")
+  ESCREVAL("                                |  _  \ / _ \ ")
+  ESCREVAL("                                | | | |/ /_\ \")
+  ESCREVAL("                                | | | ||  _  |")
+  ESCREVAL("                                | |/ / | | | |")
+  ESCREVAL("                                |___/  \_| |_/")
+  ESCREVAL("")
+  ESCREVAL("")
+  ESCREVAL("           ______  _____ ______ ______  _____  _____   ___   _____ ")
+  ESCREVAL("           | ___ \|  ___|| ___ \|  _  \|_   _|/  __ \ / _ \ |  _  |")
+  ESCREVAL("           |  __/ |  __| |    / | | | |  | |  | |    |  _  || | | |")
+  ESCREVAL("           | |    | |___ | |\ \ | |/ /  _| |_ | \__/\| | | |\ \_/ /")
+  ESCREVAL("           \_|    \____/ \_| \_||___/   \___/  \____/\_| |_/ \___/ ")
+  ESCREVAL("")
+FIMPROCEDIMENTO
+
+PROCEDIMENTO Creditos()
+ INICIO
+  LIMPATELA()
+
+  Titulo  ("           CRÉDITOS           ")
+  ESCREVAL("Criadores")
+  ESCREVAL("- TIAGO VARGAS PEREIRA DE OLIVEIRA")
+  ESCREVAL("- JOÃO VITOR ABREU CASTRO")
+  ESCREVAL("- JOÃO VICTOR DE SOUZA ALBUQUERQUE")
+  ESCREVAL()
+  ESCREVAL("Coordenador do Curso")
+  ESCREVAL("- BRUNO CORREIA DA SILVA")
+  ESCREVAL()
+  ESCREVAL("Esse jogo foi criado como trabalho da disciplina de Fundamentos de Programação.")
+  //      ("+-----------------------------------------------------------------------------+")
+FIMPROCEDIMENTO
+
+PROCEDIMENTO Menu()
+ INICIO
+  LIMPATELA()
+
+  Logo()
+  ESCREVAL("[1] - JOGAR")
+  ESCREVAL("[2] - DEBUG")
+  ESCREVAL("[3] - REDIMENSIONAR TELA")
+  ESCREVAL("[4] - CREDITOS")
+  ESCREVAL("[0] - SAIR")
+  ESCREVAL()
+  Resposta(entrada)
+
+  ESCOLHA entrada
+    CASO "1"
+      Prologo()
+      Cela()
+      Corredor()
+      SalaDeSeguranca()
+      PassagemSecreta1()
+      SalaDeMaquinas()
+      PassagemSecreta2()
+      SalaDeDescanso()
+      PrimeiroAndar()
+      EncarandoOBicho()
+      ManipulacaoReligiosa()
+    Caso "2"
+      MenuDebug()
+    CASO "3"
+      RedimensionarTela()
+    CASO "4"
+      Creditos()
+    CASO "0"
+      terminarJogo <- VERDADEIRO
+    OUTROCASO
+      Menu()
+  FIMESCOLHA
+FIMPROCEDIMENTO
+
 PROCEDIMENTO MenuDebug
  INICIO
   LIMPATELA()
 
   Titulo  ("        MENU DE DEBUG         ")
-
-  ESCREVAL()
   ESCREVAL("[1]  - Prologo")
   ESCREVAL("[2]  - Cela")
   ESCREVAL("[3]  - Corredor")
@@ -1372,6 +1482,8 @@ PROCEDIMENTO MenuDebug
   ESCREVAL("[11] - Manipulação Religiosa")
   ESCREVAL("[12] - Fim do Mundo")
   ESCREVAL("[13] - Vivendo para Lutar Mais um Dia")
+  ESCREVAL("[14] - Avisos")
+  ESCREVAL("[15] - Menu")
   ESCREVAL("[00] - Sair do Programa")
   ESCREVAL()
   Resposta(entrada)
@@ -1403,6 +1515,10 @@ PROCEDIMENTO MenuDebug
       FimDoMundo()
     CASO "13"
       MaisUmDia()
+    CASO "14"
+      Avisos()
+    CASO "15"
+      Menu()
     CASO "00"
       terminarJogo <- VERDADEIRO
   FIMESCOLHA
@@ -1411,6 +1527,8 @@ FIMPROCEDIMENTO
 // ======================================================================== //
 
 INICIO
+  RedimensionarTela()
+
   ENQUANTO nao terminarJogo FACA
     MenuDebug()
   FIMENQUANTO
