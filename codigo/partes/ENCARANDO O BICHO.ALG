@@ -36,61 +36,73 @@ PROCEDIMENTO RESPOSTA(var entr: CARACTERE)
 FIMPROCEDIMENTO
 
 // ----------------------------------------------------------------------
-PROCEDIMENTO Bicho
+PROCEDIMENTO EncarandoOBicho()
  INICIO
-  //       "+-----------------------------------------------------------------------------+"
-  TEXTO   ("O tentáculo que fica no lugar do braço de enfermeira te agarra e puxa.")
-  TEXTO   ("Ela está te apertando muito forte, você começa a ficar sem ar.")
-  TEXTO   ("Ela te bate com muita força na parede onde ficam as celas.")
-  TEXTO   ("Com essa pancada você quase desmaia.")
+  LIMPATELA()
+  Titulo  ("       ENCARANDO O BICHO      ")
+  //      ("+-----------------------------------------------------------------------------+")
+  LinhaF  ("O tentáculo que fica no lugar do braço de enfermeira te agarra e puxa.         ")
 
-  DIALOGO ("     ???????")
-  FALA    ("Use a adaga.")
+  LinhaF  ("Ele está te apertando com tanta força que você começa a ficar sem ar.          ")
 
-  TEXTO   ("Era aquela voz rouca de novo.")
+  LinhaF  ("Ele te joga na parede onde ficam as celas. Você quase desmaia com a pancada   .")
 
-  PERGUNTA("Usar agora ou esperar?")
+  Dialogo ("??????")
+  FalaS   ("Use a adaga.")
+
+  LinhaF  ("Era aquela voz rouca de novo.")
+
+  Pergunta("Você vai usar a adaga agora ou vai esperar?")
 
   REPITA
     ESCREVAL("- USAR")
     ESCREVAL("- ESPERAR")
+
     Resposta(entrada)
-    LIMPATELA()
+
     ESCOLHA entrada
-    CASO "USAR"
-      //       "+-----------------------------------------------------------------------------+"
-      TEXTO   ("Você enfia a adaga no tentáculo.")
-      TEXTO   ("Ela te solta e se afasta urrando de dor.")
-      TEXTO   ("Você pega o seu machado e disfere um golpe.")
-      TEXTO   ("Você acerta bem no peito da criatura.")
-      TEXTO   ("Ela te bate, te jogando contra a grade.")
-      TEXTO   ("Você se levanta e vai para cima dela para dar mais um golpe.")
+      CASO "USAR"
+        LIMPATELA()
+        //      ("+-----------------------------------------------------------------------------+")
+        LinhaF  ("Você enfia a adaga no tentáculo. Ele te solta e se afasta, urrando de dor.     ")
 
-      ESCREVAL("Porém ela te dá um golpe horizontal com o tentáculo te jogando para fora da ja-")
-      TEXTO   ("nela.")
-    CASO "ESPERAR"
-      TEXTO   ("Você a espera chegar mais próxima.")
-      TEXTO   ("Ela já está quase com o rosto colado no seu.")
-      TEXTO   ("Você enfia a adaga no pescoço dela e ela dá um urro de dor.")
-      TEXTO   ("Ela te solta e se afasta indo para mais perto da janela.")
-      TEXTO   ("Você pega o seu machado e desce no peito dela")
-      TEXTO   ("Ela dá mais um urro de dor e chega no parapeito da janela.")
+        LinhaF  ("Você pega o seu machado e disfere um golpe, acertando bem no peito da criatura.")
 
-      ESCREVAL("Você corre para cima dela e desfere um último golpe que a faz ir mais para traz")
-      TEXTO   ("batendo no parapeito e caindo.")
+        LinhaF  ("Ela te bate, te jogando contra a grade.")
 
-      ESCREVAL("Porém ela era mais rápida que você e te agarra antes de cair, levando você jun-")
-      TEXTO   ("to com ela.")
-    OUTROCASO
-      TEXTO   ("Não há outras opções!!")
-      PERGUNTA("O que você faz??")
+        LinhaF  ("Você se levanta, mancando, e vai para cima dela para dar mais um golpe.        ")
+
+        Linha   ("Porém a criatura te dá um golpe com o tentáculo, te jogando ppara fora pela ja-")
+        LinhaF  ("nela.")
+
+      CASO "ESPERAR"
+        LIMPATELA()
+        //      ("+-----------------------------------------------------------------------------+")
+        LinhaF  ("Você espera a criatura chegar mais perto de você.")
+
+        LinhaF  ("Ela já está quase com o rosto colado no seu.")
+
+        Linha   ("Você enfia a adaga no pescoço dela e ela dá um urro de dor. Ela te solta e se  ")
+        LinhaF  ("afasta indo para mais perto da janela.")
+
+        LinhaF  ("Você pega o seu machado e o desce no peito dela.")
+
+        LinhaF  ("Ela urra mais uma vez e chega no parapeito da janela.")
+
+        Linha   ("Você corre para cima dela e desfere um último golpe que a faz ir para trás, ba-")
+        LinhaF  ("tendo no parapeito e caindo para fora.")
+
+        Linha   ("Porém, ela era mais rápida que você e te agarra antes de cair, levando você    ")
+        LinhaF  ("junto com ela.")
+      OUTROCASO
+
+        LinhaF  ("Matematicamente, só há essas duas opções!!")
+        Pergunta("O que você faz??")
     FIMESCOLHA
   ATE (entrada = "USAR") ou (entrada = "ESPERAR")
-
-
 FIMPROCEDIMENTO
 
 // ======================================================================
 INICIO
-  Bicho
+  EncarandoOBicho()
 FIMALGORITMO
