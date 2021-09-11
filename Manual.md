@@ -70,7 +70,7 @@ O mundo de nosso jogo foi criado levando como inspiração em base o horripilant
 
 Outra grande inspiração para a criação do mundo do nosso jogo foi a franquia Resident Evill. As personagens Clarie Redfield e Jill Valentine seviram de inspiração para criar a protagonista de nosso, Jesse tras muito da força e coragem dessas duas personagens de Resident Evill para a historia de nosso jogo e como Clare e Jill, Jesse infrentarar o pesadelo dos antigos deuses de forma determinada e implacavel. Os mapas iconicos dessa franquia tambem foram de inspiração para a criação de nosso cenario pricipal, o qual traz misterios e horrores que se intensificam quando se descobri o seu passado e que acontece nele até os dias presentes.
 
-A inspiração para a historia principal foi a loucara e liberade do horror cosmico do universo Lovecraftiano.
+A inspiração para a historia principal foi a loucara e liberade do horror cosmico do universo Lovecraftiano, junto da vontade de criar uma historia que fosse instigante e ao mesmo tempo horripilante, então tenha cuidado porque em alguns momentos os deuses antigos podem fazer ter pesadelos com o que verar enquanto joga.
 
 No jogo, nós adaptamos esse universo trazendo monstros icônicos de Lovecraft para a narrativa como também construímos um mundo usando como base o mundo de seus contos. Assim criando um mundo de horror Lovecraftiano ambientado no tempo presente e que se passa e faz referência a localidades existentes nos contos de Lovecraft, além de que criamos uma localidade nova onde se situa a trama principal do jogo. 
 
