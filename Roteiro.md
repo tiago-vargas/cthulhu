@@ -415,16 +415,16 @@ L- Lutar
 		
 	- Você só tem alguns segundos para decidir se vai esquivar para:
 		
-	- **>> D-  Direita**
-	- **>> E-  Esquerda**
+	- **>> Esquerda**
+	- **>> Direita**
 
 	- **>> P.3: você esquiva para qual lado?**
 	
-	- **>> E-esquerda**
+	- **>> Esquerda**
 	 	
-		- Você se joga para a esquerda.
+		- Você esquiva para a esquerda.
 	 	
-		- Após isso, o tentáculo passa de raspão pelo lado direito
+		- Após isso, o tentáculo passa de raspão pelo seu lado direito.
 	 	
 		- Milagrosamente, você consegue chegar na passagem.
 	 	
@@ -433,108 +433,47 @@ L- Lutar
 		- Porém, fugir de Nyarlathotep não é tão fácil.
 	 	
 		- Um de seus tentáculos agarra na sua perna.
-	 	
-		- Você pode CORTAR o tentáculo ou PUXAR a alavanca 
-			
-		- **>> P.3.2.:o você fará?**
-		  
-			        
-			- **>> Cortar**
-			  	
-			- Você desce o machado no tentáculo.
-				
-			- Porém, aquela parte decepada começa a se multiplicar em  mais tentáculos, que acabam te arrastando de volta para a sala.
-				
-			- Nyarlathotep: : Mas quanta ousadia virar as costas e ir embora sem ao menos fazer nenhuma reverência.
-				
-			- Os tentáculos te jogam e te prendem em pé na grade.
-				
-			- Nyarlathotep: Saiba que eu sou um DEUS, criatura patética!
-			
-			- Nyarlathotep: Você foi uma cachorrinha muito indisciplinada.
-				
-			- Nyarlathotep: Precisa de um adestramento antes de pensar em me servir.
 		
-			- Logo após, mais daquele lodo começa a sair de trás da grade.
-				
-			- E então, o lodo começa a cobrir todo o seu corpo e entrar nas suas roupas.
-				
-			- Você sente os vermes andando por toda a sua pele.
-				
-			- Enquanto isso, um dos canos acima de você se rompe e começa a cair mais lodo diretamente em cima da sua cabeça.
-			
-			- Os vermes começam a entrar nos seus ouvidos, nariz e boca.
-			
-			- ??: Solte ela Nyarlathotep.
-			
-			- Nyarlathotep: Além de ser um traidor, ainda tem a audácia de interromper o meu momento de diversão com minha cadelinha?.
-			
-			- ??: Por acaso, o Cthulhu sabe sobre essa “brincadeira”?
-			
-			- Nyarlathotep: Tenha um mínimo de decência e suma daqui, seu traidor!.
-			
-			- ??: Como sempre, você não me escuta. Serie obrigado a tomar medidas drásticas.
-			
-			- Do além, você começa a escutar o som inconfundível de um lança-chamas soltando sua língua fogo.
-			
-			- Os vermes que antes te cobriam, começam aos poucos a te soltar.
-			
-			- Você faz um pouco de esforço e consegue se libertar.
-			
-			- Logo após, você corre o mais rápido possível até a saída.
-			
-			- Porém, Nyarlathotep ainda te dá mais um golpe nas costas que te arremessa com força para dentro da passagem.
-			
-		          
+		- Nyarlathotep tenta mais um golpe, mas você sente uma onda de vento, e ao olhar para trás, percebe uma silhueta misteriosa te protegendo do ataque. 
 		
-		- **>>Puxar**  
-				
-			- Você tenta puxar a alavanca.
-			
-			- Porém, Nyarlathotep é mais rápido.
-			
-			- E consequentemente, você é arrastada de volta para a sala
-			
-			- Nyarlathotep: Mas quanta ousadia virar as costas e ir embora sem ao menos fazer nenhuma reverência.
-			
-			- Os tentáculos te jogam e te prendem em pé na grade.
-			
-			- Nyarlathotep: Saiba que eu sou um DEUS, criatura patética!
-			
-			- Nyarlathotep: Você foi uma cachorrinha muito indisciplinada.
-			
-			- Nyarlathotep: Precisa de um adestramento antes de pensar em me servir.
-			
-			- Logo após, mais daquele lodo começa a sair de trás da grade.
-			
-			- E então, o lodo começa a cobrir todo o seu corpo e entrar nas suas roupas.
-			
-			- Você sente os vermes andando por toda a sua pele.
-			
-			- Enquanto isso, um dos canos acima de você se rompe e começa a cair mais lodo diretamente em cima da sua cabeça.
-			
-			- Os vermes começam a entrar nos seus ouvidos, nariz e boca.
-			
-			- ??: Solte ela Nyarlathotep.
-			
-			- Nyarlathotep: Além de ser um traidor, ainda tem a audácia de interromper o meu momento de diversão com minha cadelinha?.
-			
-			- ??: Por acaso, o Cthulhu sabe sobre essa “brincadeira”?
-			
-			- Nyarlathotep: Tenha um mínimo de decência e suma daqui, seu traidor!.
-			
-			- ??: Como sempre, você não me escuta. Serie obrigado a tomar medidas drásticas. 
-			
-			- Do além, você começa a escutar o som inconfundível de um lança-chamas soltando sua língua fogo.
-			
-			- Os vermes que antes te cobriam, começam aos poucos a te soltar.
-			
-			- Você faz um pouco de esforço e consegue se libertar.
-			
-			- Logo após, você corre o mais rápido possível até a saída.
-			
-			- Porém, Nyarlathotep ainda te dá mais um golpe nas costas que te arremessa com força para dentro da passagem.
-			- 
+		- ???: Vá em frente, Jesse. Eu cuido do Nyarlathotep."
+		
+		- Ny: COMO OUSAS ATRAPALHAR MEU PLANO, SEU TRAIDOR?"
+		
+		- De repente, você é jogada para frente, contra a parede da passagem por uma onda de vento.
+
+	- **>> Direita**
+		
+		- Você esquiva para a direita, mas o tentáculo te acerta em cheio.
+		
+		- Você é lançada com tanta força na grade que seu braço quase quebra com o impacto.
+		
+		- ??????: Que... Decepcionante.
+		
+		- Os vermes começam a te cobrir e a te imobilizar.
+		
+		- Você tenta se debater para se livrar dos vermes, mas não demonstra muita eficiência.
+		
+		- Conforme os vermes vão subindo e entrando na sua roupa, o seu desespero fica maior.
+		
+		- Você começa a sentir os milhares de vermes por toda a sua pele.
+		
+		- Eles começam a entrar na sua boca, ouvidos e nariz enquanto cobrem por completo seu rosto.
+		
+		- ???: Solte ela, Nyarlathotep.
+		
+		- Ny: Eu não obedeço a ninguém, ainda a mais um traidor como você.
+		
+		- ???: *Suspiro* Infelizmente, terei que tomar medidas graves.
+		
+		- Você escuta o inigualável som de um lança-chamas.
+		
+		- Logo em seguida, os vermes se dispersam de cima de você, e a primeira coisa que você nota é o teto da sala em chamas.
+		
+		- Sem entender nada, você se levanta e corre desesperadamente para a saída.
+		
+		- Quando você está entrando pela passagem, os tentáculos ainda em chamas te dão um último golpe de oportunidade em suas costas, que te arremessa para frente. 
+
 
 
 - **>> L:** 
@@ -562,256 +501,37 @@ L- Lutar
 			
 		- Você é lançada com tanta força na grade que seu braço quase quebra com o impacto.
 			
-		- Nyarlathotep: Que… Decepcionante.
-			
-		- Os vermes começam a te imobilizar e te cobrir.
-			
-		- Você tenta se debater para se livrar dos vermes, mas não demonstra muita eficiência.
-			
-		- Conforme os vermes vão subindo e entrando na sua roupa, o seu desespero fica maior.
-			
-		- Você começa a sentir os milhares de vermes por toda a sua pele.
-			
-		- Eles começam a entrar na sua boca, ouvidos e nariz enquanto cobrem por completo a sua cara.
-			
-		- ??: Solte ela, Nyarlathotep.
-			
-		- Nyarlathotep: Eu não obedeço ninguém, ainda mais um traidor como você.
-			
-		- ???: *Suspiro* Infelizmente, terei que tomar medidas graves. 
-			
-		- Você escuta o inigualável som de um lança-chamas.
-			
-		- Logo em seguida, os vermes se dispersam de cima de você, e a primeira coisa que você nota é o teto da sala em chamas.
+		- ??????: Que… Decepcionante.
 		
-		- Sem entender nada, você se levanta e corre desesperadamente para a saída.
-			
-		- Porém, Nyarlathotep tenta mais ataque com os seus tentáculos.
+		- A criatura vai em direção a você, preparando para dar um golpe final, até que surge uma silhueta misteriosa que defende o golpe.
 		
-		- Você vê na porta a silhueta de uma pessoa segurando algo muito grande.
+		- ??????: O que você está fazendo aqui, seu traidor?
 		
-		- Você sabe o que é aquilo.
+		- ???: Apenas o correto a se fazer, Nyarlathotep.")
 		
-		- Instintivamente, você se joga no chão.
+		- Ny: Já não basta ser um traídor, agora tem que atrapalhar os meus planos.
 		
-		- Uma língua de fogo passa por cima de você.
-		
-		- Você olha para trás e vê aqueles tentáculos negros se debatendo em agonia.
-		
-		- Você olha para frente e aquela figura que te salvou, não está mais lá.
-		
-		- Você se levanta e corre até a saída que está logo à frente.
-		
-		- Quando você está entrando na passagem, os tentáculos ainda em chamas dão um último golpe de oportunidade nas suas costas, que te arremessa a frente.
+		- De repente, você é jogada para frente, contra a parede da passagem por uma onda de vento.
 			
 		
 		
 	- **>>D - Direita**
 		
-		- Você ouve aquele amontoado de vermes em forma de tentáculo passando do seu lado e escuta ele se debatendo fortemente na grade.
+		- Você vai para direita e esquiva com sucesso dos vermes, passando do seu lado e se debatendo fortemente na grade pelo impacto.
 			
 		- Você continua na corrida em direção até ele.
 		
-		- Falta pouco para chegar em Nyarlathotep.
-			
-		- Ele tenta mais um ataque.
-			
-		- Mas, mais uma vez você tem pouco tempo para reagir, e só uma chance de acertar.
-			
-		- Você pode esquivar para: 
-				
+		- Você levanta o machado e corta o tentáculo
 		
-		- **>> D - Direita**
-		- **>> F - Frente**
-		- **>> E - Esquerda**
-		- **>> T - Atrás**
-				
+		- Porém, a criatura não expressa nenhuma reação e prepara outro golpe, que é bloqueado por uma silhueta misteriosa.
 		
-		- **>> P.3.1.1: Você vai esquivar para qual lado?** 
- 
-		- **>> Qualquer outra direção** 
-		 
-			- Você tenta esquivar, mas os tentáculos te acertam cheio.
- 
-			- O impacto no chão é tão forte que você sente todo o seu ar indo embora dos pulmões, e por muito pouco suas costelas não quebram.
-
-			- Nyarlathotep: Impressionante, por muito pouco você não é acertada pelos meus tentáculos.
-
-			- Nyarlathotep: A única coisa que te falta para poder te usar é disciplina e uma pitada de loucura.
-
-			- Conforme os vermes vão subindo e entrando na sua roupa, seu desespero fica maior.
-
-			- Você sente os milhares de vermes na sua pele.
-
-			- Eles começam a entrar na sua boca, ouvidos e nariz enquanto cobrem por completo a sua cara.
-
-			- ??: Solte ela, Nyarlathotep.
-
-			- Nyarlathotep: Eu não obedeço ninguém, ainda mais um traidor como você.
-
-			- ??: *Suspiro* Infelizmente, terei que tomar medidas graves. 
-
-			- Você escuta o inigualável som de um lança-chamas.
-
-			- Logo em seguida, os vermes se dispersam de cima de você, e a primeira coisa que você nota é o teto da sala em chamas.
-
-			- Sem entender nada, você se levanta e corre desesperadamente para a saída.
-
-			- Porém, Nyarlathotep tenta mais ataque com os seus tentáculos.
-
-			- Você vê na porta a silhueta de uma pessoa segurando algo muito grande.
-
-			- Você sabe o que é aquilo.
-
-			- Instintivamente, você se joga no chão.
-
-			- Uma língua de fogo passa por cima de você.
-
-			- Você olha para trás e vê aqueles tentáculos negros se debatendo em agonia.
-
-			- Você olha para frente e aquela figura que te salvou, não está mais lá.
-
-			- Você se levanta e corre até a saída que está logo à frente.
-
-			- Quando você está entrando na passagem, os tentáculos ainda em chamas dão um último golpe de oportunidade nas suas costas, que te arremessa a frente.
-
- 
-
+		- ???: Vá em frente, Jesse. Eu cuido do Nyarlathotep.
+		
+		- Ny: COMO OUSAS ATRAPALHAR MEU PLANO, SEU TRAIDOR
+		
+		- De repente, você é jogada para frente, contra a parede da passagem por uma onda de vento.
+		
 			
-		- **>> F - Frente** 
-				
-			- Com todo o impulso acumulado e toda a força que você consegue aplicar nas pernas, você dá um salto para frente numa investida suicida.
-				
-			- Você consegue acertar em cheio com toda força. 
-				
-			- Você escuta o som dos vermes sendo destroçados pelo fio da lâmina.
-				
-			- Blem!
-				
-			- O machado bateu no chão.
-				
-			- Você olha para frente e vê que cortou o monstro ao meio.
-				
-			- As luzes começam a piscar mais intensamente.
-				
-			- Os vermes começam a  subir no cabo do seu machado em direção a sua mão.
-				
-			- Você rapidamente tira o machado do chão.
-				
-			- Você se vira para voltar e ir em direção à passagem.
-				
-			- Porém, você não consegue se mexer.
-				
-			- Os vermes a prendiam no chão.
-				
-			- Na sua frente, Nyarlathotep se uniu novamente.
-				
-			- Nyarlathotep: Quanta ousadia da sua parte atacar um Deus.
-				
-			- Nyarlathotep: Felizmente, você irá se arrepender por isso.
-				
-			- Um tentáculo sai do amontoado de vermes a sua direita e te acerta em cheio.
-				
-			- Você bate na grade com força o suficiente para amassar.
-				
-			- Em seguida, outro tentáculo surge do amontoado de vermes grudados na grade.
-				
-			- Você é arrastado de frente na grade do lado oposto.
-				
-			- Dá para sentir o sangue escorrendo da sua testa.
-				
-			- Um amontoado de vermes agarram nos seus braços e te levantam.
-				
-			- Você é arremessada com toda a força no chão.
-				
-			- Os vermes te seguram no chão.
-				
-			- Nyarlathotep: Como é mesmo que disse naquele filme que você gosta? Ah é, “Humano fraco.”
-				
-			- Nyarlathotep: Independente disso, você  precisa de um pouco de disciplina, antes de poder te usar.
-				
-			- Os vermes começam a te cobrir toda.
-				
-			- Você se debate tentando se livrar dos vermes.
-				
-			- Conforme os vermes vão subindo e entrando na sua roupa, seu desespero fica maior.
-				
-			- Você sente os milhares de vermes na sua pele.
-				
-			- Eles começam a entrar na sua boca, ouvidos e nariz enquanto cobrem por completo a sua cara.
-				
-			- ??: Chega disso, Nyarlathotep.
-				
-			- Nyarlathotep: Ah, então o traidor finalmente deu as caras. Apesar de suas ações questionáveis, você tem sorte. Chegou bem na melhor hora.
-				
-			- Os vermes já te cobriram por completo, e você não consegue ver mais nada.
-				
-			- Nyarlathotep: Só nem tente fazer algo. Você já tem os seus brinquedos, ela é minha.
-			
-			- ??: *Suspiro* Infelizmente, argumentação nunca foi o seu forte. Você me obriga a ter que apelar para medidas mais drásticas.
-				
-			- Você sente que algo cai em você.
-				
-			- Em seguida, você escuta o inigualável som de um lança-chamas.
-			
-			- Assim que os vermes se dispersam de cima de você, a primeira coisa que vê é o teto da sala em chamas.
-				
-			- ??: Use o sinalizador para queimá-los.
-				
-			- Você pega o sinalizador e o aciona.
-				
-			- A chama do sinalizador afasta os vermes de você e você pega o seu machado de volta.
-				
-			- Em seguida, você parte em uma fuga desesperada daquela sala cheia de vermes e fogo.
-				
-			- Você está quase saindo.
-				
-			- Porém, mais um tentáculo de vermes se levanta à sua frente.
-				
-			- Você sabe que ele vai te atacar. 
-				
-				
-				
-			- Você só tem alguns segundos e duas escolha
-				
-			- **>> D -  Desvia**
-				
-			- **>> L -  Lançar o sinalizador**
-
-				
-				
-			- **>> P. 3.1.2: o que você escolherá?** 
-						
-					
-			- **>> L** 
-						
-				- Você lança o sinalizador no tentáculo.
-						
-				- Ele se debate de um lado para o outro.
-						
-				- Você então passa pelo espaço entre ele e a grade.
-						
-				- Porém, antes de sair, você ainda sente algo te acertando com muita força pelas costas e te arremessando dentro da passagem. 
-
-						
-					
-			- **>> D**
-						
-				- O tentáculo se projeta na sua direção.
-						
-				- Você agilmente desvia do tentáculo
-						
-				- Porém do amontoado de onde saiu o primeiro tentáculo, sai outro logo em seguida.
-						
-				- Ele te agarra num ataque surpresa.
-					
-				- Sem escolhas, ele enfia o sinalizador no tentáculo.
-					
-				- Ele começa a se debater e bater nas grades.
-						
-				- Você também é acertada pelas grades
-						
-				- Por fim, ele te arremessa com muita força de volta na passagem secreta.  
 
 
 ## Passagem secreta 2:
@@ -874,48 +594,89 @@ E no lado oposto de onde você está tem uma porta que dá para fora do quarto n
 - **>>Porta:**
 
 	- Você vai até a porta
+	
 	- Gira a maçaneta. 
+	
 	- Escuta o barulho do trinco se abrindo.
+	
 	- Mas a porta não abre.
+	
 	- Tinha algo do outro lado  barrando-a.
+	
 	- Você bate com força várias vezes na porta, mas só uma frestinha se abre.
- 	- De dentro da vitrola sai uma voz: 
+ 	
+	- De dentro da vitrola sai uma voz: 
+	
 	- Nyarlathotep: Como é a sensação da frustação de saber que a única saída que você conhece está trancada? Você vai simplesmente se deitar no chão, chorar em posição fetal na falsa esperança que os meus bichinhos de estimação não irão te matar? Ou você vai subir as escadas e se jogar de cabeça no pátio lá embaixo, morrendo de uma maneira completamente estúpida, algo que você é?
+	
 	- Era de novo aquela voz jovial que escutara no corredor.
+	
 	- Jesse: “Vá para o inferno, sua voz de merda!”
+	
 	- Nyarlathotep: Ora ora, parece que a pobre indefesa Jesse finalmente mostrou suas garras!
+	
 	- Nyarlathotep: Mas saiba que esse não são modos para meros mortais desprezíveis de falar com o grande deus Nyarlathotep, o caos rastejante.
+	
 	- Nyarlathotep: Por causa dessa insolência,  quando eu estiver por completo nesse mundo, eu vou ter o prazer em trazer um inferno especial para a vida da sua família e todos aqueles que você ama.
+	
 	- CRASH!!!
+	
 	- Você desce o machado com toda a força na vitrola, despedaçando-a por inteira.
+	
 	- Jesse: “Cala a boca!”
+	
 	- Você dá outra machadada nos resto da vitrola.
+	
 	- Jesse: “Cala a boca!!”
+	
 	- E mais outra quebrando a mesinha ao meio. 
+	
 	- Jesse: “CALA A BOCA!!!”
+	
 	- Você cai no chão cansada.
+	
 	- Mas logo se levanta e vai até o esqueleto que está na poltrona.
+	
 	- Você pega a chave que estava na mão que pendia para fora da poltrona, seu instinto lhe dizia que poderia abrir as grades do andar de cima com essas chaves.
+	
 	- Você coloca sua mão na empunhadura da adaga que está enfiada no peito do esqueleto e retira a adaga.
+	
 	- O esqueleto vira pó, só sobrando a roupa de segurança para contar a história.
+	
 	- Uma bainha cai no chão quando ele vira pó, você pega a bainha, guarda a adaga e prende ela na calça.
 	
 - **>> Poltrona:**
+	
 	- Você vai até a poltrona e vê que tem um esqueleto nela e no seu peito tem uma adaga que brilha com uma cor estranha encravada no seu peito e na mão que pede para fora uma chave.
+	
 	- Você pega a chave que estava na mão que pendia para fora da poltrona, seu instinto lhe dizia que poderia abrir as grades do andar de cima com essas chaves.
+	
 	- Você coloca sua mão na empunhadura da adaga que está enfiada no peito do esqueleto e tira a adaga.
+	
 	- O esqueleto vira pó, só sobrando a roupa de segurança para contar a história.
+	
 	- Uma bainha cai no chão quando ele vira pó, você pega a bainha, guarda a adaga e prende ela na calça.
+	
 	- Da vitrola começa a sair uma voz:
+	
 	- ??: Cuidado com Nyarlathotep.
+	
 	- ??: Ele é muito manipulador e vai usar tudo que for necessário para te enganar.
+	
 	- ??: Tome muito cuidado com os seus seguidores, eles não podem ser facilmente mortos depois da passagem.
+	
 	- Era aquela voz rouca que lhe ajudara a sair da sala de máquinas.
+	
 	- De todo o que aquela voz falou, a única coisa que você compreendeu por completo foi o nome Nyarlathotep. era o mesmo nome de uma das personalidades da Lavinia. 
+	
 	- Jesse: Se aquela voz que a atormenta desde que acordou for essa personalidade da garota, como é que você o está ouvindo? Se aquela voz que a atormenta desde que acordou for essa personalidade da garota, como é que você o está ouvindo?
+	
 	- A voz sumiu de vez depois de seu último alerta e a música voltou.
+	
 	- Você vai até a porta e tenta abri-la.
+	
 	- Mas ver que ela está barricada pelo outro lado.)
+	
 	- Então, volta para a passagem.
 
 
@@ -978,26 +739,43 @@ Você tem 20 chaves cada uma com um número, de 1 a 20.)
 
 - **>> P.5: Qual você vai usar?**
 - **>> Certo:** 
+	
 	- Você coloca chave no trinco e gira.
+	
 	- A porta se abre.
+	
 	- Você entra e fecha a porta logo atrás de você. 
+	
 	- A criatura se bate enfurecida na grade.
+	
 	- Você estava segura agora.
+	
 	- Aquela coisa não poderia te pegar.
+	
 	- Nyarlathotep: Ou será que não? AHAHAHAHAHAHAAAA
+	
 	- A porta na grade começa a se soltar.
+	
 	- Você pensa em correr para o corredor que está ao seu lado.
+	
 	- Mas quando se vira tem uma parede viva formada por tentáculos impedindo sua passagem.
+	
 	- No meio da parede começa a se formar uma silhueta de um ser humanóide com três pernas, dois braços e um tentáculo no lugar da cabeça.
+	
 	- Nyarlathotep: Eu não vou deixar você sair dessa tão fácil, minha cara Jesse. Pelo que eu me lembro, na sua ficha dizia que o seu tratamento era na base de torturas psicológicas constantes, certo? Pois é só o começo agora! NYAHAHAHAHA!
+	
 	- A silhueta some, mas pela voz você sabe que era Nyarlathotep.
+	
 	- A porta na grade se solta.
 
 - **>> Errado:**
+	
 	- Você coloca a chave no trinco e gira.
+	
 	- Mas a porta não abre.
 	
 - **>> Errando 3x :**
+	
 	- O seu tempo acabou e a enfermeira chegou muito perto.
 
 
@@ -1096,111 +874,213 @@ Você começa a se aproximar aos poucos da figura que se chama de Jesus.)
 - **>> P.7 Jesus: Minha criança, você realmente vai acreditar nesse disfarce que Lúcifer está usando para te persuadir em vez de acreditar em seu Salvador?**
 - **>>Sim:**
 
+	
 	- Jesse: É melhor confiar nele do que em você.”
+	
 	- Você avança numa investida e enfia com toda a força a faca na barriga da figura que se chama de salvador.
+	
 	- Jesus: GYAHAHAHAHAHAHAAAAAA
+	
 	- Jesus: Você realmente acha que essa faca de cortar pão é o suficiente?’
+	
 	- Você gira a lâmina dentro da ferida e tira e dá outra apunhalada no peito dele.
+	
 	- Você, por um segundo, vê a verdadeira forma do falso santo.
+	
 	- Você vê um tronco humanoide com três pernas, dois braços e um tentáculo no lugar da cabeça.
+	
 	- Jesus: Você pode me esfaquear o quanto quiser com esse brinquedinho, você nunca vai conseguir me matar. Olhe o que irá acontecer onde você tentou me ferir.’
+	
 	- Você se afasta. O que ele te falou te intimidou um pouco.
+	
 	- Ele faz o gesto, mas nada acontece.
+	
 	- Ele repete o gesto e nada acontece de novo.
+	
 	- Jesus: Mas... Como assim... O QUE VOCÊ FEZ COMIGO SUA CRIATURA DEPLORÁVEL?!! ISSO ERA PRA SER IMPOSSÍVEL!’
+	
 	- Hastur: Isso, Nyarlathotep, é o poder desse brinquedinho que eu criei com magia e com o meteorito que caiu em Arkham *
+	
 	- Hastur: Acabe com ele, essa é sua chance de se livrar dele de uma vez por todas. *
+	
 	- Nyarlathotep cai de joelhos pelo sangramento.
+	
 	- Nyarlathotep: Se você tiver o mínimo de massa cerebral você não faria isso, pois ao invés de destruir todo o mundo, eu te dou um pedaço dele para governar e ser uma deusa entre esses humanos nojentos.’
+	
 	- Você vai se aproximando aos poucos. Ele vai se arrastando de costas para longe.
+	
 	- Nyarlathotep: Eu posso trazer de volta os seus amáveis pais e seu adorável irmão que você tanto ama que morreram naquele trágico acidente de carro. Eu posso te dar o que você quiser, basta você não ser burra e enfiar essa adaga no pescoço do Hastur. O que você acha?’
+	
 	- Você chega nele. Puxa os seus cabelos para obrigar lhe a te olhar no rosto enquanto você dá a sua resposta.
+	
 	- Você enfia a adaga no pescoço dele.
+	
 	- Tudo em sua volta começa a se transformar na sua frente, alternando entre a descrições de vários paraísos e infernos de várias religiões que já existiram, existem e 	existirão na história.
+	
 	- Nyarlathotep está na sua forma original, enquanto grita de dor uma luz verde começa a sair da ferida e de sua boca, ficando cada vez mais intensa como se ele fosse explodir.
+	
 	- Você escuta um barulho de pano se mexendo.
+	
 	- Uma escuridão te envolve.
+	
 	- VOOOOOOOUP!!!!!!!!!!!!
 
 - **>>Não:**
 
 	- Jesse: Mas… Você nã-… E-eu… Eu… Não sei... 
+	
 	- (onomatopeia de metal caindo no chão)
+	
 	- Sua mão amolece por um segundo.
+	
 	- O suficiente para a sua adaga cair.
+	
 	- Jesse: O.. O que… O que tá acontecendo?
+	
 	- Jesse: Isso... Não é real
+	
 	- Jesse: Não, isso não é deve ser real!
+	
 	- Jesse: ISSO NÃO É REAL!!
+	
 	- Você se afasta de Jesus e Hastur enquanto grita consigo mesma.
+	
 	- Distraída, você tropeça e cai de costas, logo se encolhendo em posição fetal.
+	
 	- Com o rosto encharcado de lágrimas, começa a balbuciar coisas desconexas.
+	
 	- Jesse: Eu to louca”
+	
 	- Jesse: Não, eu não tô louca
+	
 	- Jesse: Eu devo estar louca
+	
 	- Jesse: Nãonãonãonãonãonãonão
+	
 	- Jesse: Os reptilianos, aqueles malditos reptilianos
+	
 	- Jesse: Foram eles, com certeza foram eles, aqueles ghouls malditos
+	
 	- Jesse: Eu fui drogada, claro, foi isso que aconteceu, não devia ter aceitado o drink...
+	
 	- Ainda atordoada, você se levanta e olha para eles.
+	
 	- Ao olhar para Jesus, você nota um sorriso medonho, indo de bochecha a bochecha.
+	
 	- Jesus: Acalme-se minha filha, Eu estou aqui, não tenha medo, vou curá-la, assim como fiz com o cego e todos aqueles que Eu encontrei durante a minha vida terrena.’
+	
 	- Enquanto fala com você, Jesus se ajoelha na sua frente.
+	
 	- Hastur se vira e começa ir embora na direção da imensidão branca do céu.
+	
 	- Hastur: Suspiro Está tudo acabado.
+	
 	- Ele se cobriu com suas asas, e um piscar de olhos, desapareceu.
+	
 	- Jesus toca delicadamente o seu rosto
+	
 	- Jesus: Levanta-te e anda, minha filha, assim como Lázaro fez.
+	
 	- Jesus: Agora, não tenha medo, e venha até m-
+	
 	- Jesus dá um passo para trás.
+	
 	- (onomatopeia de carne se rasgando)
+	
 	- O braço direito de Jesus começa a se transformar em um tentáculo, semelhante ao da criatura que te perseguiu
+	
 	- Jesus?: GYAHAHAHAHAHAHAAAAAA
+	
 	- Você consegue notar o prazer na risada ao Ele ver sua cara de horror.
+	
 	- Sua boca fica cada vez mais escancarada.
+	
 	- A carne da face de Jesus começa a definhar, abrindo enormes feridas que jorram sangue para todo lado..
+	
 	- (onomatopeia de líquido caindo no chão)
+	
 	- (onomatopeia de ossos quebrando)
+	
 	- Os ossos de sua mandíbula começaram a se quebrar.
+	
 	- E dentro de onde até instantes atrás era sua boca, começa a sair um tentáculo completamente preto
+	
 	- (onomatopeia de carne derretendo)
+	
 	- Ele joga a da carne de seu torso em você, surgindo um corpo completamente preto
+	
 	- Você se sente como um caçador vestindo a pele de um animal que acabou de caçar, mas este animal era Jesus..
+	
 	- Lentamente, ele começa a se aproximar de você.
+	
 	- A cada passo que “Jesus” dava, você conseguia notar toda sua pele e carne expostas, penduradas no que restou de sua mandíbula, balançando de um lado para o outro, 		manchando ainda mais o peito de Nyarlathotep com sangue.
+	
 	- Você nota uma sinistra mistura entre a suave e calma voz de “Jesus”, e a caótica louca voz de Nyarlathotep
+	
 	- Nyarlathotep: O que foi, minha criança? Porque estás tão assustada? Não gostou da minha aparência? Não era isso que você queria, quando me crucificou para a morte?
+	
 	- Você tenta se afastar, mas a cena é horrível demais para você conseguir e simplesmente despenca no chão.
+	
 	- Ele segura o resto da mandíbula com a mão esquerda e a arranca.
+	
 	- Ainda com a mandíbula na mão, ele estende a mão, entregando para você	
+	
 	- Nyarlathotep: Coma da minha carne e beba do meu sangue, assim terá a vida eterna, e eu a ressuscitarei no último dia. Porque a minha carne verdadeiramente é comida, e o meu sangue verdadeiramente é bebida. Aquele que come a minha carne e bebe o meu sangue permanece em mim e eu nele.
+	
 	- No seu último suspiro de sanidade diante daquele horror, você corre entre muitos tropeços e quedas no sangue e pedaços de carne do falso jesus.
+	
 	- E logo depois, se joga em cima da sua adaga.
+	
 	- Segura o cabo com muita força com as duas mãos.
+	
 	- Jesse: Eu.. eu.. devo estar em um pesadelo
+	
 	- Jesse: Eu preciso morrer
+	
 	- Jesse: É a única maneira de se acordar de pesadelos
+	
 	- Você encosta a lâmina quente e latente na sua garganta.
+	
 	- Nyarlathotep: AHAHAHAHAHAHAAAAAA
+	
 	- Nyarlathotep: HAHAHAHAHAHAAAAAA
+	
 	- Nyarlathotep: HAHAHAHAHAHAAAAAA
+	
 	- Sua sanidade agora é inexistente.
+	
 	- Você puxa a adaga, cortando o próprio pescoço.
+	
 	- Você cai no chão ainda segurando a adaga.
+	
 	- Jesse: GAHAHAHAHAHAAAAAA
+	
 	- Nyarlathotep: HUAHAHAH, AHAHAAAAAA
+	
 	- Ambos: HAHAHAHAHAHAAAAAA
+	
 	- Lentamente,suas gargalhadas de loucura e agonia se misturam com as gargalhadas loucas de Nyarlathotep.
+	
 	- Nyarlathotep chega perto de seu corpo.
+	
 	- Ele fica maravilhado com tudo aquilo, com o macabro sorriso louco em seu rosto.
+	
 	- Nyarlathotep: Isso, beba do meu sangue e renasça como minha leal filha
+	
 	- Ele derrama um pouco de sangue na sua boca.
+	
 	- Você começa a convulsionar no chão.
+	
 	- O corte na garganta começou a se encher de um líquido preto como piche.
+	
 	- Você, involuntariamente, começa a flutuar e fica em pé.
+	
 	- Nyarlathotep: Seja bem vinda de volta, minha filha.
+	
 	- Nyarlathotep: GYAHAHAHAHAHAHAAAAAA
+	
 	- Nyarlathotep: HAHAHAHAHAHAAAAAA
+	
 	- Nyarlathotep: HAHAHAHAHAHAAAAAA
 
 
