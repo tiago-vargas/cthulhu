@@ -512,7 +512,287 @@ PROCEDIMENTO PassagemSecreta1()
   Linha   ("                                                              Sala de máquinas.")
 FIMPROCEDIMENTO
 
+PROCEDIMENTO SalaDeMaquinas()
+ INICIO
+  LIMPATELA()
 
+  Titulo  ("      A SALA DE MÁQUINAS      ")
+  //      ("+-----------------------------------------------------------------------------+")
+  LinhaF  ("Você entra num corredor delimitado por grades.")
+
+  LinhaF  ("Atrás dessas cercas existem vários canos e máquinas de funções desconhecidas   ")
+
+  Linha   ("O corredor está numa escuridão completa e só dá para ver o que está à sua fren-")
+  LinhaF  ("te por causa da lanterna.")
+
+  LinhaF  ("Você olha para cima.")
+
+  LinhaF  ("Você nota vários canos perto do teto.")
+
+  LinhaF  ("Após isso, você caminha mais alguns metros.")
+
+  LinhaF  ("Dá para sentir que algo te observa da escuridão.")
+
+  LinhaF  ("Você ouve barulhos de motores sendo ligados.")
+
+  LinhaF  ("De repente, todas as luzes se acendem.")
+
+  LinhaF  ("Você percebe que tem alguma coisa se movendo dentro do cano.")
+
+  //      ("+____________________________________________________________________+")
+  Dialogo ("??????")
+  FalaS   ("Jesse, você é surda ou não escutou que eu te mandei esperar?")
+
+  //      ("+-----------------------------------------------------------------------------+")
+  LinhaF  ("A movimentação nos canos fica cada vez mais intensa.")
+
+  LinhaF  ("As luzes começaram a piscar mais rapidamente.")
+
+  LinhaF  ("Os canos começam a se romper. De dentro deles, começa a escorrer um lodo preto.")
+
+  LinhaF  ("Aquele lodo, de textura muito viscosa, começa a se espalhar por todo o chão.   ")
+
+  LinhaF  ("Você sente um filete daquele lodo caindo nos seus ombros e cabelos.            ")
+
+  LinhaF  ("Você começa a tentar se limpar enquanto anda de costas pelo caminho que veio.  ")
+
+  LinhaF  ("Ao passar a mão no lodo, você sente milhares de coisas se contorcendo.         ")
+
+  LinhaF  ("Estranhando a sensação, você olha de perto, e percebe que aquilo não é lodo.   ")
+
+  LinhaF  ("Era na verdade uma amálgama de milhares de vermes pretos.")
+
+  LinhaF  ("Ao notar isso, você se desespera e dá um grito")
+
+  Linha   ("A alguns metros de você, uma montanha de vermes começa a surgir, aos poucos ga-")
+  LinhaF  ("nhando forma.")
+
+  LinhaF  ("Primeiro, surgem 3 pernas.")
+
+  LinhaF  ("Logo depois, um tronco humanóide.")
+
+  LinhaF  ("Em seguida, do tronco sai um braço humano e um tentáculo no lugar do outro.    ")
+
+  LinhaF  ("E por fim, um enorme tentáculo no lugar da cabeça.")
+
+  Linha   ("Desse mesmo tentáculo, começa a surgir um sorriso formado por dentes extrema-  ")
+  LinhaF  ("mente brancos que gera um contraste com o preto absoluto do corpo.")
+
+  //      ("+____________________________________________________________________+")
+  Dialogo ("??????")
+  FalaS   ("Olá Jesse, saiba que é um desprazer de te conhecer pessoalmente.")
+
+  //      ("+-----------------------------------------------------------------------------+")
+  Linha   ("Você paralisa por um segundo vendo aquela aberração que parece ter vindo do es-")
+  LinhaF  ("paço.")
+
+  LinhaF  ("Mas, instintivamente você decide que só tinha duas escolhas: correr ou lutar.  ")
+
+  Pergunta("Qual instinto você vai seguir?")
+
+  ENQUANTO (entrada <> "DIREITA") e (entrada <> "ESQUERDA") FACA
+    ESCREVAL("- CORRER")
+    ESCREVAL("- LUTAR")
+
+    Resposta(entrada)
+
+    ESCOLHA entrada
+      CASO "CORRER"
+        LIMPATELA()
+        //      ("+-----------------------------------------------------------------------------+")
+        LinhaF  ("Você dá as costas para o monstro e começa a correr o mais rápido possível.     ")
+
+        LinhaF  ("Porém, Nyarlathotep não te deixará fugir tão facilmente.")
+
+        Linha   ("Você percebe pelo canto do olho uma movimentação dos vermes nas grades, se jun-")
+        LinhaF  ("tando em alguma coisa.")
+
+        LinhaF  ("Eles se juntam em um tentáculo, e está prestes a te atacar.")
+
+        LinhaF  ("Você não consegue ver de que lado eles vem.")
+
+        LinhaF  ("Você só tem alguns segundos para decidir para que lado esquivar.")
+
+        Pergunta("Para qual lado você se esquiva?")
+
+        ENQUANTO (entrada <> "DIREITA") e (entrada <> "ESQUERDA") FACA
+          ESCREVAL(" - ESQUERDA")
+          ESCREVAL(" - DIREITA")
+
+          Resposta(entrada)
+
+          ESCOLHA entrada
+            CASO "DIREITA"
+              LIMPATELA()
+              //      ("+-----------------------------------------------------------------------------+")
+              LinhaF  ("Você esquiva para a direita, mas o tentáculo te acerta em cheio.")
+
+              Linha   ("Você é lançada com tanta força na grade que seu braço quase quebra com o impac-")
+              LinhaF  ("to.")
+
+              //      ("+____________________________________________________________________+")
+              Dialogo ("??????")
+              FalaS   ("Que... Decepcionante.")
+
+              //      ("+-----------------------------------------------------------------------------+")
+              LinhaF  ("Os vermes começam a te cobrir e a te imobilizar.")
+
+              Linha   ("Você tenta se debater para se livrar dos vermes, mas não demonstra muita efici-")
+              LinhaF  ("ência.")
+
+              Linha   ("Conforme os vermes vão subindo e entrando na sua roupa, o seu desespero fica   ")
+              LinhaF  ("maior.")
+
+              LinhaF  ("Você começa a sentir os milhares de vermes por toda a sua pele.")
+
+              Linha   ("Eles começam a entrar na sua boca, ouvidos e nariz enquanto cobrem por completo")
+              LinhaF  ("seu rosto.")
+
+              //      ("+____________________________________________________________________+")
+              Dialogo ("??????")
+              FalaS   ("Solte ela, Nyarlathotep.")
+
+              Dialogo ("Nyarlathotep")
+              FalaS   ("Eu não obedeço a ninguém, ainda a mais um traidor como você.")
+
+              Dialogo ("??????")
+              FalaS   ("*Suspiro*")
+              FalaS   ("Infelizmente, terei que tomar medidas graves.")
+
+              //      ("+-----------------------------------------------------------------------------+")
+              LinhaF  ("Você escuta o inigualável som de um lança-chamas.")
+
+              Linha   ("Logo em seguida, os vermes se dispersam de cima de você, e a primeira coisa que")
+              LinhaF  ("você nota é o teto da sala em chamas.")
+
+              LinhaF  ("Sem entender nada, você se levanta e corre desesperadamente para a saída.      ")
+
+              Linha   ("Quando você está entrando pela passagem, os tentáculos ainda em chamas te dão  ")
+              LinhaF  ("um último golpe de oportunidade em suas costas, que te arremessa para frente.  ")
+
+            CASO "ESQUERDA"
+              LIMPATELA()
+              //      ("+-----------------------------------------------------------------------------+")
+              LinhaF  ("Você esquiva para a esquerda.")
+
+              LinhaF  ("Após isso, o tentáculo passa de raspão pelo seu lado direito.")
+
+              LinhaF  ("Milagrosamente, você consegue chegar até a passagem.")
+
+              LinhaF  ("Você não espera nem mais um segundo e já corre para a alavanca.")
+
+              Linha   ("Nyarlathotep tenta mais um golpe, mas você sente uma onda de vento, e ao olhar ")
+              LinhaF  ("para trás, percebe uma silhueta misteriosa te protegendo do ataque.            ")
+
+              //      ("+____________________________________________________________________+")
+              Dialogo ("??????")
+              FalaS   ("Vá em frente, Jesse. Eu cuido do Nyarlathotep.")
+
+              Dialogo ("Nyarlathotep")
+              FalaS   ("COMO OUSAS ATRAPALHAR MEU PLANO, SEU TRAIDOR?")
+
+              //      ("+-----------------------------------------------------------------------------+")
+              Linha   ("De repente, você é jogada para frente, contra a parede da passagem por uma on- ")
+              LinhaF  ("da de vento.")
+
+            OUTROCASO
+              LIMPATELA()
+              LinhaF  ("Só existem esses dois lados...")
+              Pergunta("Para qual lado você vai se esquivar?")
+          FIMESCOLHA
+        FIMENQUANTO
+      CASO "LUTAR"
+        LIMPATELA()
+        //      ("+-----------------------------------------------------------------------------+")
+        LinhaF  ("Você prepara o seu machado e começa a correr em direção a criatura.            ")
+
+        Linha   ("Você se desequilibra e quase cai em alguns momentos, porém, você já está na me-")
+        LinhaF  ("tade do caminho.")
+
+        LinhaF  ("A criatura abre um grotesco sorriso.")
+
+        LinhaF  ("Você não vê, mas sabe que algo está vindo por trás na sua direção.")
+
+        LinhaF  ("Você só tem alguns segundos para esquivar.")
+
+        Pergunta("Você vai se esquivar para que lado?")
+
+        ENQUANTO (entrada <> "DIREITA") e (entrada <> "ESQUERDA") FACA
+          ESCREVAL("- DIREITA")
+          ESCREVAL("- ESQUERDA")
+
+          Resposta(entrada)
+
+          ESCOLHA entrada
+            CASO "DIREITA"
+              LIMPATELA()
+              //      ("+-----------------------------------------------------------------------------+")
+              Linha   ("Você vai para direita e esquiva com sucesso dos vermes, passando do seu lado e ")
+              LinhaF  ("se debatendo fortemente na grade pelo impacto.")
+
+              LinhaF  ("Você continua na corrida em direção até ele.")
+
+              LinhaF  ("Você levanta o machado e corta o tentáculo")
+
+              Linha   ("Porém, a criatura não expressa nenhuma reação e prepara outro golpe, que é blo-")
+              LinhaF  ("queado por uma silhueta misteriosa")
+
+              //      ("+____________________________________________________________________+")
+              Dialogo ("??????")
+              FalaS   ("Vá em frente, Jesse. Eu cuido do Nyarlathotep.")
+
+              Dialogo ("Nyarlathotep")
+              FalaS   ("COMO OUSAS ATRAPALHAR MEU PLANO, SEU TRAIDOR?")
+
+              //      ("+-----------------------------------------------------------------------------+")
+              Linha   ("De repente, você é jogada para frente, contra a parede da passagem por uma onda")
+              LinhaF  ("de vento.")
+
+            CASO "ESQUERDA"
+              LIMPATELA()
+              //      ("+-----------------------------------------------------------------------------+")
+              LinhaF  ("Você esquiva para a esquerda, mas o tentáculo te acerta em cheio.")
+
+              Linha   ("Você é lançada com tanta força na grade que seu braço quase quebra com o impac-")
+              LinhaF  ("to.")
+
+              //      ("+____________________________________________________________________+")
+              Dialogo ("??????")
+              FalaS   ("Que... Decepcionante.")
+
+              Linha   ("A criatura vai em direção a você, preparando para dar um golpe final, até que  ")
+              LinhaF  ("surge uma silhueta misteriosa que defende o golpe")
+
+              //      ("+____________________________________________________________________+")
+              Dialogo ("??????")
+              FalaS   ("O que você está fazendo aqui, seu traidor?")
+
+              Dialogo ("??????")
+              FalaS   ("Apenas o correto a se fazer, Nyarlathotep.")
+
+              Dialogo ("Nyarlathotep")
+              FalaS   ("Já não basta ser um traídor, agora tem que atrapalhar os meus planos.")
+
+              //      ("+-----------------------------------------------------------------------------+")
+              Linha   ("De repente, você é jogada para frente, contra a parede da passagem por uma onda")
+              LinhaF  ("de vento.")
+
+            OUTROCASO
+              LIMPATELA()
+              LinhaF  ("Não existe esse lado!")
+              Pergunta("Para qual lado você vai se esquivar?")
+          FIMESCOLHA
+        FIMENQUANTO
+
+      OUTROCASO
+        LIMPATELA()
+        LinhaF  ("Você não tem outra opção além de seguir o seu instinto.")
+        Pergunta("Qual deles você vai seguir?")
+    FIMESCOLHA
+
+  FIMENQUANTO
+
+FIMPROCEDIMENTO
 
 PROCEDIMENTO PassagemSecreta2()
  INICIO
