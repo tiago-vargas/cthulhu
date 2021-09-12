@@ -198,7 +198,7 @@ PROCEDIMENTO Cela()
   Linha   ("Ao analisar o ambiente novo e desconhecido, você vê um baú que está na parede a")
   LinhaF  ("sua frente.")
 
-  Linha   ("No lado de sua cama tem uma mesinha e em um dos cantos da cela está a privada e")
+  Linha   ("Do lado de sua cama tem uma mesinha e em um dos cantos da cela está a privada e")
   LinhaF  ("a pia.")
 
   Pergunta("No que você vai mexer primeiro?") // P1
@@ -218,9 +218,6 @@ PROCEDIMENTO Cela()
     ESCOLHA entrada
       CASO "PORTA"
         //      ("+-----------------------------------------------------------------------------+")
-        Linha   ("Do lado da cama tem uma mesinha e em um dos cantos da cela está a privada e a  ")
-        LinhaF  ("pia.")
-
         Linha   ("Você consegue visualizar um corredor de sanatório que parece ter sido construí-")
         LinhaF  ("do no início do séc. XX.")
 
@@ -748,7 +745,7 @@ PROCEDIMENTO PassagemSecreta1()
   LinhaF  ("Você chega ao último andar e a porta estava entreaberta.")
 
   Linha   ("Você olha na plaquinha para saber que sala é essa, estava escrito:")
-  Linha   ("                                                              Sala de máquinas.")
+  LinhaF  ("                                                              Sala de máquinas.")
 FIMPROCEDIMENTO
 
 PROCEDIMENTO SalaDeMaquinas()
