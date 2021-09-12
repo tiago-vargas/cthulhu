@@ -6,8 +6,9 @@ TIPO
     foiEscolhida : LOGICO
   FIMREGISTRO
 
-VAR entrada      : CARACTERE
-    terminarJogo : LOGICO
+VAR entrada        : CARACTERE
+    terminarJogo   : LOGICO
+    margemEsquerda : CARACTERE
 
 // ======================================================================== //
 // |----------------------------- FRAMEWORK ------------------------------| //
@@ -15,9 +16,11 @@ VAR entrada      : CARACTERE
 
 // Textos: ("+-----------------------------------------------------------------------------+")
 // Falas : ("+____________________________________________________________________+")
+// Obs: A barra de scroll do terminal é de 2 espaços de largura
 
 PROCEDIMENTO Titulo(texto: CARACTERE)
  INICIO
+  ESCREVA ("  ") // margem
   ESCREVAL("+-----------------------------------------------------------------------------+")
   ESCREVA ("¦                        ") // 24 espacos
   ESCREVA (texto)                       // 30 caracteres exatamente
@@ -28,14 +31,14 @@ FIMPROCEDIMENTO
 
 PROCEDIMENTO Linha(texto: CARACTERE) // Linha de texto intermediária
  INICIO
-  // Dar margem antes.
+  ESCREVA ("  ") // margem
   ESCREVAL(texto)
 FIMPROCEDIMENTO
 
 PROCEDIMENTO LinhaF(texto: CARACTERE) // Linha de texto final
  VAR a : CARACTERE
  INICIO
-  // Dar margem antes.
+  ESCREVA ("  ") // margem
   ESCREVAL(texto)
   LEIA    (a)
 FIMPROCEDIMENTO
@@ -43,6 +46,7 @@ FIMPROCEDIMENTO
 // ----------------------------------------------------------------------
 PROCEDIMENTO Dialogo(nomeDaPessoa: CARACTERE)
  INICIO
+  ESCREVA ("  ") // margem
   ESCREVA ("        ~ ") // 8 espaços + til + 1 espaço
   ESCREVA (nomeDaPessoa)
   ESCREVAL(" ~")
@@ -52,19 +56,22 @@ FIMPROCEDIMENTO
 PROCEDIMENTO FalaS(texto: CARACTERE) // Fala Simples
  VAR a : CARACTERE
  INICIO
-  ESCREVA ("     — ")
+  ESCREVA ("  ") // margem
+  ESCREVA ("     — ") // 5 espaços + 1 travessao + 1 espaço
   ESCREVAL(texto)
   LEIA(a)
 FIMPROCEDIMENTO
 
 PROCEDIMENTO FalaI(texto: CARACTERE) // Fala, Inicio
  INICIO
+  ESCREVA ("  ") // margem
   ESCREVA ("     — ") // 5 espaços + 1 travessao + 1 espaço
   ESCREVAL(texto)
 FIMPROCEDIMENTO
 
 PROCEDIMENTO FalaC(texto: CARACTERE) // Fala, Continuacao
  INICIO
+  ESCREVA ("  ") // margem
   ESCREVA ("       ") // 7 espaços
   ESCREVAL(texto)
 FIMPROCEDIMENTO
@@ -72,6 +79,7 @@ FIMPROCEDIMENTO
 PROCEDIMENTO FalaF(texto: CARACTERE) // Fala, Fim
  VAR a : CARACTERE
  INICIO
+  ESCREVA ("  ") // margem
   ESCREVA ("       ") // 7 espaços
   ESCREVAL(texto)
   LEIA(a)
@@ -88,6 +96,7 @@ FIMPROCEDIMENTO
 PROCEDIMENTO PerguntaExtra(texto: CARACTERE; condicao: LOGICO)
  INICIO
   SE condicao ENTAO
+    ESCREVA ("  ") // margem
     ESCREVAL(texto)
     ESCREVAL()
     entrada <- ""
@@ -97,14 +106,16 @@ FIMPROCEDIMENTO
 PROCEDIMENTO Resposta(var entr: CARACTERE)
  INICIO
   ESCREVAL()
-  ESCREVA(">> ")
+  ESCREVA ("  ") // margem
+  ESCREVA (">> ")
   LEIA(entr)
 FIMPROCEDIMENTO
 // ----------------------------------------------------------------------
 PROCEDIMENTO ListarSeNaoEscolhida(opcao_rotulo: CARACTERE; opcao_foiEscolhida: LOGICO)
  INICIO
   SE nao opcao_foiEscolhida ENTAO
-    ESCREVA("- ")
+    ESCREVA ("  ") // margem
+    ESCREVA ("- ")
     ESCREVAL(opcao_rotulo)
   FIMSE
 FIMPROCEDIMENTO
@@ -137,7 +148,7 @@ PROCEDIMENTO Prologo()
   LinhaF  ("guturais e inumanos, seu nome era Nyarlathotep.")
 
   Linha   ("Apesar da estranha coincidência de que todas as personalidades da garotinha te ")
-  Linha   ("lembrarem das histórias vinda da mente perturbada de seu antepassado, H.P. Lo- ")
+  Linha   ("lembrarem das histórias vinda da mente perturbada de seu antepassado, H. P. Lo-")
   Linha   ("vecraft, tudo estava indo perfeitamente bem, até a pequena Lavinia dá para você")
   Linha   ("uma pequena estátua que parecia ter saído direto de um dos contos de seu ante- ")
   LinhaF  ("passado.")
@@ -146,14 +157,14 @@ PROCEDIMENTO Prologo()
   LinhaF  ("escritura numa língua desconhecida.")
 
   Linha   ("Essa escritura é sua última memória antes do início do pesadelo:               ")
-  Linha   ("")
+  ESCREVAL()
   LinhaF  ("                             Ph’nglui mglw’nafh Cthulhu R’lyeh wgah’nagl fhtagn")
 FIMPROCEDIMENTO
 
 PROCEDIMENTO Cela()
  VAR terminarLoop : LOGICO
      iteracao, i  : INTEIRO
-     opcoes       : vetor[1..6] DE OPCAO
+     opcoes       : vetor[1..6] de OPCAO
  INICIO
   opcoes[1].rotulo <- "PORTA"
   opcoes[2].rotulo <- "BAU"
@@ -185,7 +196,7 @@ PROCEDIMENTO Cela()
 
   terminarLoop <- FALSO
   iteracao <- 1
-  ENQUANTO NAO terminarLoop FACA
+  ENQUANTO nao terminarLoop FACA
     PerguntaExtra("No que você vai mexer agora?", iteracao > 1)
 
     PARA i de 1 ate 6 FACA
@@ -195,7 +206,6 @@ PROCEDIMENTO Cela()
     Resposta(entrada)
 
     LIMPATELA()
-
     ESCOLHA entrada
       CASO "PORTA"
         //      ("+-----------------------------------------------------------------------------+")
@@ -233,21 +243,19 @@ PROCEDIMENTO Cela()
 
           Resposta(entrada)
 
-              // O codigo a seguir garante que "BAU" seja sempre mostrado,
-              // porque so se pode sair dessa ESCOLHA, se mudar entrada de
-              // "BAU" pra "CELA" ou "PORTA"
+          // O codigo a seguir garante que "BAU" seja sempre mostrado,
+          // porque so se pode sair dessa ESCOLHA se mudar entrada de
+          // "BAU" pra "CELA" ou "PORTA"
+          LIMPATELA()
           ESCOLHA entrada
             CASO "CELA"
               //      ("+____________________________________________________________________+")
-              LIMPATELA()
-
               Dialogo ("Jesse")
               FalaS   ("Melhor eu dar mais uma olhada antes de sair.")
 
               FalaS   ("Talvez tenha alguma outra coisa útil.")
 
             CASO "PORTA"
-              LIMPATELA()
               //      ("+-----------------------------------------------------------------------------+")
               LinhaF  ("Você insere a chave e a porta destranca.")
 
@@ -261,21 +269,19 @@ PROCEDIMENTO Cela()
 
               terminarLoop <- VERDADEIRO
             OUTROCASO
-              LIMPATELA()
-
               LinhaF  ("So há duas opções...")
 
               Pergunta("O que você vai fazer?") // p1.2+
           FIMESCOLHA
-        ATE (entrada = "CELA") OU (entrada = "PORTA") FACA
+        ATE (entrada = "CELA") ou (entrada = "PORTA")
+
       CASO "PIA"
+        LinhaF  ("Não há nada aqui.")
 
-        LinhaF  ("Não é hora para isso.")
       CASO "PRIVADA"
-
         LinhaF  ("Não é hora para isso.")
-      CASO "MESA"
 
+      CASO "MESA"
         //      ("+-----------------------------------------------------------------------------+")
         LinhaF  ("Você se encaminha até a mesa.")
 
@@ -289,15 +295,14 @@ PROCEDIMENTO Cela()
         LinhaF  ("Você fica um pouco assustada e confusa.")
 
       CASO "CAMA"
-
         Linha   ("Você olha embaixo da cama sem esperança de encontrar alguma coisa, porém suas  ")
         LinhaF  ("expectativas estavam erradas.")
 
         LinhaF  ("Você encontra uma maleta velha debaixo da cama.")
 
         LinhaF  ("Dentro dela tinha inúmeros mapas, que você os guarda consigo.")
-      OUTROCASO
 
+      OUTROCASO
         LinhaF  ("Escolha inválida.")
 
     FIMESCOLHA
@@ -317,9 +322,7 @@ PROCEDIMENTO Corredor()
   LIMPATELA()
 
   Titulo  ("          O CORREDOR          ")
-
   //      ("+-----------------------------------------------------------------------------+")
-
   Linha   ("No corredor, em formato de L, dava para ouvir perfeitamente a forte tempestade ")
   LinhaF  ("que caia lá fora.")
 
@@ -447,7 +450,6 @@ PROCEDIMENTO SalaDeSeguranca()
   LIMPATELA()
 
   Titulo  ("     A SALA DE SEGURANÇA      ")
-
   //      ("+-----------------------------------------------------------------------------+")
   LinhaF  ("Você utiliza sua lanterna para expurgar a escuridão que tomava conta do lugar. ")
 
@@ -467,7 +469,6 @@ PROCEDIMENTO SalaDeSeguranca()
 
   Pergunta("Por onde você vai começar a investigar?") // P1
 
-  terminarLoop <- FALSO
   iteracao <- 1
   ENQUANTO nao terminarLoop FACA
     PerguntaExtra("O que você vai investigar agora?", iteracao > 1)
@@ -478,6 +479,7 @@ PROCEDIMENTO SalaDeSeguranca()
 
     Resposta(entrada)
 
+    // esconde a opcao escolhida
     PARA i de 1 ate 5 FACA
       SE entrada = opcoes[i].rotulo ENTAO
         opcoes[i].foiEscolhida <- VERDADEIRO
@@ -485,7 +487,6 @@ PROCEDIMENTO SalaDeSeguranca()
     FIMPARA
 
     LIMPATELA()
-
     ESCOLHA entrada
       CASO "MESA DA PORTA"
         //      ("+-----------------------------------------------------------------------------+")
@@ -592,7 +593,6 @@ PROCEDIMENTO SalaDeSeguranca()
         Linha   ("Você puxa os outros livros aleatoriamente. Escuta um som baixo de um mecanismo,")
         LinhaF  ("mas nada acontece. Os livros voltam às posições originais.")
 
-        // OK ATE AQUI!!
         //      ("+____________________________________________________________________+")
         Dialogo ("Jesse")
         LinhaF  ("O que será que acontece se eu puxar na ordem certa?")
@@ -605,6 +605,7 @@ PROCEDIMENTO SalaDeSeguranca()
           ESCREVAL("- BRANCO")
           ESCREVAL("- PRETO")
 
+          // pergunta qual livro ate a entrada ser valida
           PARA i de 1 ate 4 FACA
             REPITA
               ESCREVA ("Livro", i, " :  ")
@@ -617,9 +618,9 @@ PROCEDIMENTO SalaDeSeguranca()
             ATE (livros[i] = "AMARELO") ou (livros[i] = "AZUL") ou (livros[i] = "BRANCO") ou (livros[i] = "PRETO")
           FIMPARA
 
+          LIMPATELA()
           SE (livros[1] = "AMARELO") e (livros[2] = "BRANCO") e (livros[3] = "AZUL") e (livros[4] = "PRETO") ENTAO
             acertouOrdem <- VERDADEIRO
-            LIMPATELA()
             //      ("+-----------------------------------------------------------------------------+")
             LinhaF  ("Você se afasta um pouco esperando por alguma coisa acontecer.")
 
@@ -635,8 +636,8 @@ PROCEDIMENTO SalaDeSeguranca()
             Linha   ("Você enfia seus dedos na fresta e arrasta a estante para frente, abrindo a pas-")
             LinhaF  ("sagem.")
             terminarLoop <- VERDADEIRO
+
           SENAO
-            LIMPATELA()
             //      ("+-----------------------------------------------------------------------------+")
             LinhaF  ("Você se afasta um pouco esperando por alguma coisa.")
 
@@ -656,6 +657,7 @@ PROCEDIMENTO SalaDeSeguranca()
 
       OUTROCASO
         LinhaF  ("Esse móvel não existe na sala.")
+
     FIMESCOLHA
 
     iteracao <- iteracao + 1
@@ -694,7 +696,6 @@ PROCEDIMENTO PassagemSecreta1()
   LinhaF  ("Nada.")
 
   //      ("+____________________________________________________________________+")
-
   Dialogo ("??????")
   FalaS   ("Você precisa de energia, Jesse.")
 
@@ -749,7 +750,7 @@ PROCEDIMENTO SalaDeMaquinas()
   //      ("+-----------------------------------------------------------------------------+")
   LinhaF  ("Você entra num corredor delimitado por grades.")
 
-  LinhaF  ("Atrás dessas cercas existem vários canos e máquinas de funções desconhecidas   ")
+  LinhaF  ("Atrás dessas cercas existem vários canos e máquinas de funções desconhecidas.  ")
 
   Linha   ("O corredor está numa escuridão completa e só dá para ver o que está à sua fren-")
   LinhaF  ("te por causa da lanterna.")
@@ -789,7 +790,7 @@ PROCEDIMENTO SalaDeMaquinas()
 
   LinhaF  ("Estranhando a sensação, você olha de perto, e percebe que aquilo não é lodo.   ")
 
-  LinhaF  ("Era na verdade uma amálgama de milhares de vermes pretos.")
+  LinhaF  ("Era, na verdade, uma amálgama de milhares de vermes pretos.")
 
   LinhaF  ("Ao notar isso, você se desespera e dá um grito")
 
@@ -825,9 +826,9 @@ PROCEDIMENTO SalaDeMaquinas()
 
     Resposta(entrada)
 
+    LIMPATELA()
     ESCOLHA entrada
       CASO "CORRER"
-        LIMPATELA()
         //      ("+-----------------------------------------------------------------------------+")
         LinhaF  ("Você dá as costas para o monstro e começa a correr o mais rápido possível.     ")
 
@@ -850,9 +851,9 @@ PROCEDIMENTO SalaDeMaquinas()
 
           Resposta(entrada)
 
+          LIMPATELA()
           ESCOLHA entrada
             CASO "DIREITA"
-              LIMPATELA()
               //      ("+-----------------------------------------------------------------------------+")
               LinhaF  ("Você esquiva para a direita, mas o tentáculo te acerta em cheio.")
 
@@ -900,7 +901,6 @@ PROCEDIMENTO SalaDeMaquinas()
               LinhaF  ("um último golpe de oportunidade em suas costas, que te arremessa para frente.  ")
 
             CASO "ESQUERDA"
-              LIMPATELA()
               //      ("+-----------------------------------------------------------------------------+")
               LinhaF  ("Você esquiva para a esquerda.")
 
@@ -925,13 +925,13 @@ PROCEDIMENTO SalaDeMaquinas()
               LinhaF  ("da de vento.")
 
             OUTROCASO
-              LIMPATELA()
               LinhaF  ("Só existem esses dois lados...")
               Pergunta("Para qual lado você vai se esquivar?")
+
           FIMESCOLHA
         FIMENQUANTO
+
       CASO "LUTAR"
-        LIMPATELA()
         //      ("+-----------------------------------------------------------------------------+")
         LinhaF  ("Você prepara o seu machado e começa a correr em direção a criatura.            ")
 
@@ -952,9 +952,9 @@ PROCEDIMENTO SalaDeMaquinas()
 
           Resposta(entrada)
 
+          LIMPATELA()
           ESCOLHA entrada
             CASO "DIREITA"
-              LIMPATELA()
               //      ("+-----------------------------------------------------------------------------+")
               Linha   ("Você vai para direita e esquiva com sucesso dos vermes, passando do seu lado e ")
               LinhaF  ("se debatendo fortemente na grade pelo impacto.")
@@ -978,7 +978,6 @@ PROCEDIMENTO SalaDeMaquinas()
               LinhaF  ("de vento.")
 
             CASO "ESQUERDA"
-              LIMPATELA()
               //      ("+-----------------------------------------------------------------------------+")
               LinhaF  ("Você esquiva para a esquerda, mas o tentáculo te acerta em cheio.")
 
@@ -1007,20 +1006,19 @@ PROCEDIMENTO SalaDeMaquinas()
               LinhaF  ("de vento.")
 
             OUTROCASO
-              LIMPATELA()
               LinhaF  ("Não existe esse lado!")
               Pergunta("Para qual lado você vai se esquivar?")
+
           FIMESCOLHA
         FIMENQUANTO
 
       OUTROCASO
-        LIMPATELA()
         LinhaF  ("Você não tem outra opção além de seguir o seu instinto.")
         Pergunta("Qual deles você vai seguir?")
+
     FIMESCOLHA
 
   FIMENQUANTO
-
 FIMPROCEDIMENTO
 
 PROCEDIMENTO PassagemSecreta2()
@@ -1094,7 +1092,6 @@ PROCEDIMENTO SalaDeDescanso()
   LIMPATELA()
 
   Titulo  ("      A SALA DE DESCANSO      ")
-
   //      ("+-----------------------------------------------------------------------------+")
   Linha   ("Você analisa a sala e vê três camas em uma das paredes e uma estante de livros ")
   LinhaF  ("na parede oposta à das camas.")
@@ -1112,10 +1109,10 @@ PROCEDIMENTO SalaDeDescanso()
     ESCREVAL("- PORTA")
     ESCREVAL("- POLTRONA")
 
+    LIMPATELA()
     Resposta(entrada)
     ESCOLHA entrada
       CASO "PORTA"
-        LIMPATELA()
         //      ("+-----------------------------------------------------------------------------+")
         LinhaF  ("Você vai até a porta, gira a maçaneta e escuta o barulho do trinco se abrindo. ")
 
@@ -1189,8 +1186,8 @@ PROCEDIMENTO SalaDeDescanso()
         //      ("+____________________________________________________________________+")
         Dialogo ("Jesse")
         FalaS   ("Tá na hora de mostrar praquele merda quem é a indefesa.")
+
       CASO "POLTRONA"
-        LIMPATELA()
         //      ("+-----------------------------------------------------------------------------+")
         LinhaF  ("Você vai até a poltrona e vê que nela descansa um esqueleto")
 
@@ -1247,10 +1244,11 @@ PROCEDIMENTO SalaDeDescanso()
 
         Dialogo ("Jesse")
         FalaS   ("Espero que os meus instintos estejam certos...")
+
       OUTROCASO
-        LIMPATELA()
         LinhaF  ("Você não se importa com outras opções.")
         Pergunta("O que você vai conferir?")
+
     FIMESCOLHA
   FIMENQUANTO
 FIMPROCEDIMENTO
@@ -1269,6 +1267,7 @@ PROCEDIMENTO PrimeiroAndar()
   chaves[5].rotulo <- "5"
 
   LIMPATELA()
+
   Titulo  ("  DE VOLTA AO PRIMEIRO ANDAR  ")
   //      ("+-----------------------------------------------------------------------------+")
   Linha   ("De volta à sala de segurança, você tranca a porta da passagem e percebe que a  ")
@@ -1347,12 +1346,12 @@ PROCEDIMENTO PrimeiroAndar()
 
   LinhaF  ("Agora é questão de escolher a chave certa.")
 
-  LinhaF  ("Você tem 5 chaves cada uma com um número, de 1 a 5.") // --------------------------------
+  LinhaF  ("Você tem 5 chaves cada uma com um número, de 1 a 5.")
 
   Pergunta("Qual você vai usar?") // p5
 
   chaveCerta <- "5"  // escolhida arbitrariamente
-  ENQUANTO (nao acertouChave) E (erros < 3) FACA
+  ENQUANTO (nao acertouChave) e (erros < 3) FACA
     PerguntaExtra("Qual chave você tenta agora?", iteracao > 0)
 
     PARA i de 1 ate 5 FACA
@@ -1361,13 +1360,15 @@ PROCEDIMENTO PrimeiroAndar()
 
     Resposta(entrada)
 
+    LIMPATELA()
     SE (entrada <> "1") E (entrada <> "2") E (entrada <> "3") E (entrada <> "4") E (entrada <> "5") ENTAO
-      LIMPATELA()
       LinhaF  ("Número inválido.")
+
     SENAO
       SE entrada <> chaveCerta ENTAO
         erros <- erros + 1
 
+        // nao listar mais a chave escolhida
         PARA i de 1 ate 5 FACA
           SE entrada = chaves[i].rotulo ENTAO
             chaves[i].foiEscolhida <- VERDADEIRO
@@ -1376,24 +1377,23 @@ PROCEDIMENTO PrimeiroAndar()
 
         ESCOLHA erros
           CASO 1
-            LIMPATELA()
             //      ("+-----------------------------------------------------------------------------+")
             LinhaF  ("Você coloca a chave no trinco e gira.")
             LinhaF  ("Mas a porta não abre.")
             LinhaF  ("A enfermeira se aproxima.")
+
           CASO 2
-            LIMPATELA()
             LinhaF  ("Nada.")
             LinhaF  ("Você se apavora.")
             LinhaF  ("Sem olhar para trás, você tenta ainda mais uma vez.")
+
           CASO 3
-            LIMPATELA()
-            LinhaF  ("O seu tempo acabou. A enfermeira chegou muito perto.")
+            LinhaF  ("O seu tempo acabou. A enfermeira chegou muito perto...")
+
         FIMESCOLHA
       SENAO
         acertouChave <- VERDADEIRO
 
-        LIMPATELA()
         //      ("+-----------------------------------------------------------------------------+")
         LinhaF  ("Você coloca chave no trinco e gira.")
 
@@ -1427,6 +1427,7 @@ PROCEDIMENTO PrimeiroAndar()
         LinhaF  ("A silhueta some, mas pela voz você sabe que era Nyarlathotep.")
 
         LinhaF  ("A porta na grade se solta.")
+
       FIMSE
     FIMSE
 
@@ -1437,6 +1438,7 @@ FIMPROCEDIMENTO
 PROCEDIMENTO EncarandoOBicho()
  INICIO
   LIMPATELA()
+
   Titulo  ("       ENCARANDO O BICHO      ")
   //      ("+-----------------------------------------------------------------------------+")
   LinhaF  ("O tentáculo que fica no lugar do braço de enfermeira te agarra e puxa.         ")
@@ -1458,9 +1460,9 @@ PROCEDIMENTO EncarandoOBicho()
 
     Resposta(entrada)
 
+    LIMPATELA()
     ESCOLHA entrada
       CASO "USAR"
-        LIMPATELA()
         //      ("+-----------------------------------------------------------------------------+")
         LinhaF  ("Você enfia a adaga no tentáculo. Ele te solta e se afasta, urrando de dor.     ")
 
@@ -1474,7 +1476,6 @@ PROCEDIMENTO EncarandoOBicho()
         LinhaF  ("nela.")
 
       CASO "ESPERAR"
-        LIMPATELA()
         //      ("+-----------------------------------------------------------------------------+")
         LinhaF  ("...")
 
@@ -1496,10 +1497,11 @@ PROCEDIMENTO EncarandoOBicho()
 
         Linha   ("Porém, ela era mais rápida que você e te agarra antes de cair, levando você    ")
         LinhaF  ("junto com ela.")
+
       OUTROCASO
-        LIMPATELA()
         LinhaF  ("Matematicamente, só há essas duas opções!!")
         Pergunta("O que você faz??")
+
     FIMESCOLHA
   ATE (entrada = "USAR") ou (entrada = "ESPERAR")
 FIMPROCEDIMENTO
@@ -1509,7 +1511,7 @@ PROCEDIMENTO FimDoMundo()
   LIMPATELA()
 
   Titulo  ("        O FIM DO MUNDO        ")
-
+  //      ("+-----------------------------------------------------------------------------+")
   LinhaF  ("Cidades em chamas.")
 
   Linha   ("Pessoas sendo estraçalhadas nas ruas por monstros meio humanos e meio coisas   ")
@@ -1551,24 +1553,6 @@ PROCEDIMENTO FimDoMundo()
   FalaS   ("HAHAHAHAHAHAAAAAA")
 
   FalaS   ("HmhahaHAHAAAhAAA")
-
-  LIMPATELA()
-
-  LinhaF  ("Obrigado por jogar a demo de Montanhas da Loucura!")
-
-  LinhaF  ("...")
-
-  LinhaF  ("...")
-
-  LinhaF  ("...")
-
-  Dialogo ("Nyarlathotep")
-  FalaI   ("Obrigado? Meus arautos estão agradecendo um mero mortal por jogar?")
-  FalaF   ("Por favor, eles deviam ter A OBRIGAÇÃO de jogar isso!")
-
-  LIMPATELA()
-
-  LinhaF  ("Você realizou o final: Nyarlathotep domina o mundo")
 
   FIMALGORITMO
 FIMPROCEDIMENTO
@@ -1710,10 +1694,6 @@ PROCEDIMENTO MaisUmDia()
 
   LinhaF  ("Você sabe que isso te levará de volta para o horror inominável.")
 
-  LIMPATELA()
-
-  LinhaF  ("Obrigado por jogar a Demo de 'Montanhas da Perdição!'")
-  FIMALGORITMO
 FIMPROCEDIMENTO
 
 PROCEDIMENTO ManipulacaoReligiosa()
@@ -1721,7 +1701,7 @@ PROCEDIMENTO ManipulacaoReligiosa()
   LIMPATELA()
 
   Titulo  ("   A MANIPULAÇÃO RELIGIOSA    ")
-
+  //      ("+-----------------------------------------------------------------------------+")
   Linha   ("Você acorda e se vê num lugar que só pode ser descrito como o céu cristão que  ")
   LinhaF  ("você imaginou por toda a vida.")
 
@@ -1767,7 +1747,7 @@ PROCEDIMENTO ManipulacaoReligiosa()
   FalaI   ("Não acredite em nada que ele diga, ele só quer usar as suas crenças   ")
   FalaF   ("contra você.")
 
-  ESCREVAL("+-----------------------------------------------------------------------------+")
+  //      ("+-----------------------------------------------------------------------------+")
   Linha   ("Do seu lado apareceu uma figura alta e bonita com um par de asas gigantescas e ")
   LinhaF  ("brancas.")
 
@@ -1798,16 +1778,15 @@ PROCEDIMENTO ManipulacaoReligiosa()
   FalaI   ("Minha criança, você realmente vai acreditar nesse disfarce que Lúcifer")
   FalaF   ("está usando para te persuadir em vez de acreditar em seu Salvador?")
 
-  Pergunta("Você vai acreditar em Jesus?") // P1
+  Pergunta("Você vai acreditar em Jesus?")
 
-  ENQUANTO (entrada <> "SIM") OU (entrada <> "NAO") FACA
+  ENQUANTO (entrada <> "SIM") e (entrada <> "NAO") FACA
     ESCREVAL("- SIM")
     ESCREVAL("- NAO")
 
     Resposta(entrada)
 
     LIMPATELA()
-
     ESCOLHA entrada
       CASO "SIM"
         Dialogo ("Jesse")
@@ -1855,11 +1834,11 @@ PROCEDIMENTO ManipulacaoReligiosa()
         LinhaF  ("Nyarlathotep cai de joelhos pelo sangramento.")
 
         Dialogo ("Nyarlathotep")
-        FalaI   ("Se você tiver o mínimo de massa cerebral você não faria isso, pois ao ")
-        FalaC   ("invés de destruir todo o mundo, eu te dou um pedaço dele para governar")
-        FalaF   ("e ser uma deusa entre esses humanos nojentos.") // ---------------------------------------------
+        FalaI   ("Se você tiver o mínimo de massa cerebral você não vai fazer isso, pois")
+        FalaC   ("ao invés de eu dominar todo o mundo, eu te dou um pedaço dele pra você")
+        FalaF   (" governar e ser uma deusa entre esses humanos nojentos.")
 
-        LinhaF  ("Você se aproxima aos poucos. Ele vai se arrastando de costas para longe.")
+        LinhaF  ("Você se aproxima aos poucos. Ele vai se arrastando de costas para longe.       ")
 
         Dialogo ("Nyarlathotep")
         FalaI   ("Eu posso trazer de volta os seus amáveis pais e seu adorável irmão que")
@@ -1910,11 +1889,12 @@ PROCEDIMENTO ManipulacaoReligiosa()
 
         FalaS   ("ISSO NÃO É REAL!!")
 
-        LinhaF  ("Você se afasta de Jesus e Hastur enquanto grita consigo mesma.")
+        //      ("+-----------------------------------------------------------------------------+")
+        LinhaF  ("Você se afasta de Jesus e Hastur enquanto grita consigo mesma.                 ")
 
-        LinhaF  ("Distraída, você tropeça e cai de costas, logo se encolhendo em posição fetal.")
+        LinhaF  ("Distraída, você tropeça e cai de costas, logo se encolhendo em posição fetal.  ")
 
-        LinhaF  ("Com o rosto encharcado de lágrimas, começa a balbuciar coisas desconexas.")
+        LinhaF  ("Com o rosto encharcado de lágrimas, começa a balbuciar coisas desconexas.      ")
 
         //      ("+____________________________________________________________________+")
         Dialogo ("Jesse")
@@ -2035,6 +2015,7 @@ PROCEDIMENTO ManipulacaoReligiosa()
 
         LinhaF  ("Segura o cabo com muita força com as duas mãos.")
 
+        //      ("+____________________________________________________________________+")
         Dialogo ("Jesse")
         FalaS   ("Eu... eu... devo tar num pesadelo.")
 
@@ -2101,10 +2082,28 @@ PROCEDIMENTO ManipulacaoReligiosa()
       OUTROCASO
         LinhaF  ("Ou você acredita, ou não acredita. Não tem meio termo...")
         Pergunta("E aí, você acredita em Jesus ou não??")
+
     FIMESCOLHA
   FIMENQUANTO
 FIMPROCEDIMENTO
 
+PROCEDIMENTO FimDeJogo()
+ INICIO
+  Titulo  ("             FIM              ")
+  //      ("+-----------------------------------------------------------------------------+")
+  LinhaF  ("Obrigado por jogar 'Montanhas da Perdição!")
+
+  LinhaF  ("...")
+
+  LinhaF  ("...")
+
+  LinhaF  ("...")
+
+  //      ("+____________________________________________________________________+")
+  Dialogo ("Nyarlathotep")
+  FalaI   ("Obrigado? Meus arautos estão agradecendo um mero mortal por jogar?    ")
+  FalaF   ("Por favor, eles deviam ter A OBRIGAÇÃO de jogar isso!                 ")
+FIMPROCEDIMENTO
 
 // ======================================================================== //
 // ------------------------------------------------------------------------ //
@@ -2115,8 +2114,10 @@ PROCEDIMENTO RedimensionarTela()
  INICIO
   LIMPATELA()
   ESCREVAL()
-  //      ("|<----------------------------------------------------------------------------->|")
-  ESCREVAL("+-----------------------------------------------------------------------------+") // largura dos textos
+  // a largura da scroll bar eh de 2 espacos
+  // tamanho : 2 espaços + largura dos textos + 2 espaços
+  ESCREVAL("|<+-----------------------------------------------------------------------------+>|")
+  //      ("+-----------------------------------------------------------------------------+") largura dos textos
   ESCREVAL()
   ESCREVAL("Redimensione esta janela até que a linha tracejada caiba numa única linha.")
   ESCREVAL()
@@ -2128,16 +2129,26 @@ PROCEDIMENTO RedimensionarTela()
 FIMPROCEDIMENTO
 
 PROCEDIMENTO Avisos()
+ VAR a : CARACTERE
  INICIO
   LIMPATELA()
+
   Titulo  ("            AVISOS            ")
   //      ("+-----------------------------------------------------------------------------+")
-  ESCREVAL("- Este jogo contém textos que descrevem violência.")
-  ESCREVAL("- Pessoas religiosas podem se sentir ofendidas com determinadas partes do jogo.")
-  ESCREVAL("  Se você não se sente confortável com algum dos ítens acima, é aconselhado que")
-  ESCREVAL("  não jogue.")
-  ESCREVAL("- Este jogo é uma versão de demonstração.")
-  ESCREVAL("- Leia o manual antes de jogar.")
+  ESCREVAL("1 - Este jogo contém textos que descrevem violência e que apresentam palavrões.")
+  ESCREVAL()
+  ESCREVAL("2 - Pessoas religiosas podem se sentir ofendidas com determinadas partes do jo-")
+  ESCREVAL("    go.")
+  ESCREVAL()
+  ESCREVAL("Se você não se sente confortável com algum dos ítens acima, é aconselhado que  ")
+  ESCREVAL("NÃO jogue.")
+  ESCREVAL()
+  ESCREVAL()
+  ESCREVAL("- É recomendado que se leia o manual antes de jogar.")
+  ESCREVAL()
+  ESCREVAL()
+  ESCREVAL("Pressione a tecla ENTER para voltar...")
+  LEIA    (a)
 FIMPROCEDIMENTO
 
 PROCEDIMENTO Logo()
@@ -2167,79 +2178,40 @@ PROCEDIMENTO Logo()
 FIMPROCEDIMENTO
 
 PROCEDIMENTO Creditos()
+ VAR a : CARACTERE
  INICIO
   LIMPATELA()
 
   Titulo  ("           CRÉDITOS           ")
+  //      ("+-----------------------------------------------------------------------------+")
   ESCREVAL("Criadores")
   ESCREVAL("- TIAGO VARGAS PEREIRA DE OLIVEIRA")
   ESCREVAL("- JOÃO VITOR ABREU CASTRO")
   ESCREVAL("- JOÃO VICTOR DE SOUZA ALBUQUERQUE")
   ESCREVAL()
-  ESCREVAL("Coordenador do Curso")
-  ESCREVAL("- BRUNO CORREIA DA SILVA")
   ESCREVAL()
-  ESCREVAL("Esse jogo foi criado como trabalho da disciplina de Fundamentos de Programação.")
-  //      ("+-----------------------------------------------------------------------------+")
+  ESCREVAL("Pressione a tecla ENTER para voltar...")
+  LEIA    (a)
 FIMPROCEDIMENTO
 
-PROCEDIMENTO Menu()
- INICIO
-  LIMPATELA()
-
-  Logo()
-  ESCREVAL("[1] - JOGAR")
-  ESCREVAL("[2] - DEBUG")
-  ESCREVAL("[3] - REDIMENSIONAR TELA")
-  ESCREVAL("[4] - CREDITOS")
-  ESCREVAL("[0] - SAIR")
-  ESCREVAL()
-  Resposta(entrada)
-
-  ESCOLHA entrada
-    CASO "1"
-      Prologo()
-      Cela()
-      Corredor()
-      SalaDeSeguranca()
-      PassagemSecreta1()
-      SalaDeMaquinas()
-      PassagemSecreta2()
-      SalaDeDescanso()
-      PrimeiroAndar()
-      EncarandoOBicho()
-      ManipulacaoReligiosa()
-    Caso "2"
-      MenuDebug()
-    CASO "3"
-      RedimensionarTela()
-    CASO "4"
-      Creditos()
-    CASO "0"
-      terminarJogo <- VERDADEIRO
-    OUTROCASO
-      Menu()
-  FIMESCOLHA
-FIMPROCEDIMENTO
-
-PROCEDIMENTO MenuDebug
+PROCEDIMENTO MenuDebug()
  INICIO
   LIMPATELA()
 
   Titulo  ("        MENU DE DEBUG         ")
-  ESCREVAL("[1]  - Prologo")                         // presente
-  ESCREVAL("[2]  - Cela")                            // presente
-  ESCREVAL("[3]  - Corredor")                        // presente
-  ESCREVAL("[4]  - Sala de Segurança")               // presente
-  ESCREVAL("[5]  - Passagem Secreta 1")              // presente
-  ESCREVAL("[6]  - Sala de Máquinas")                // presente
-  ESCREVAL("[7]  - Passagem Secreta 2")              // presente
-  ESCREVAL("[8]  - Sala de Descanso")                // presente
-  ESCREVAL("[9]  - De Volta ao Primeiro Andar")      // presente
-  ESCREVAL("[10] - Encarando o Bicho")               // presente
-  ESCREVAL("[11] - Manipulação Religiosa")           // presente
-  ESCREVAL("[12] - Fim do Mundo")                    // presente
-  ESCREVAL("[13] - Vivendo para Lutar Mais um Dia")  // presente
+  ESCREVAL("[1]  - Prologo")
+  ESCREVAL("[2]  - Cela")
+  ESCREVAL("[3]  - Corredor")
+  ESCREVAL("[4]  - Sala de Segurança")
+  ESCREVAL("[5]  - Passagem Secreta 1")
+  ESCREVAL("[6]  - Sala de Máquinas")
+  ESCREVAL("[7]  - Passagem Secreta 2")
+  ESCREVAL("[8]  - Sala de Descanso")
+  ESCREVAL("[9]  - De Volta ao Primeiro Andar")
+  ESCREVAL("[10] - Encarando o Bicho")
+  ESCREVAL("[11] - Manipulação Religiosa")
+  ESCREVAL("[12] - Fim do Mundo")
+  ESCREVAL("[13] - Vivendo para Lutar Mais um Dia")
   ESCREVAL("[14] - Avisos")
   ESCREVAL("[15] - Menu")
   ESCREVAL("[00] - Sair do Programa")
@@ -2282,12 +2254,54 @@ PROCEDIMENTO MenuDebug
   FIMESCOLHA
 FIMPROCEDIMENTO
 
+PROCEDIMENTO Menu()
+ INICIO
+  LIMPATELA()
+
+  Logo()
+  ESCREVAL("[1] - JOGAR")
+  ESCREVAL("[2] - REDIMENSIONAR TELA")
+  ESCREVAL("[3] - CREDITOS")
+  ESCREVAL("[0] - SAIR")
+  ESCREVAL()
+  Resposta(entrada)
+
+  ESCOLHA entrada
+    CASO "1"
+      Prologo()
+      Cela()
+      Corredor()
+      SalaDeSeguranca()
+      PassagemSecreta1()
+      SalaDeMaquinas()
+      PassagemSecreta2()
+      SalaDeDescanso()
+      PrimeiroAndar()
+      EncarandoOBicho()
+      ManipulacaoReligiosa()
+
+      FimDeJogo()
+      Creditos()
+    Caso "2"
+      RedimensionarTela()
+    CASO "3"
+      Creditos()
+    CASO "DEBUG"
+      MenuDebug()
+    CASO "0"
+      terminarJogo <- VERDADEIRO
+    OUTROCASO
+      Menu()
+  FIMESCOLHA
+FIMPROCEDIMENTO
+
 // ======================================================================== //
 
 INICIO
   RedimensionarTela()
+  Avisos()
 
   ENQUANTO nao terminarJogo FACA
-    MenuDebug()
+    Menu()
   FIMENQUANTO
 FIMALGORITMO
