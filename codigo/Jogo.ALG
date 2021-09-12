@@ -2122,21 +2122,19 @@ PROCEDIMENTO RedimensionarTela()
  VAR a : CARACTERE
  INICIO
   LIMPATELA()
-  ESCREVAL()
   // a largura da scroll bar eh de 2 espacos
   // tamanho : 2 espaços + largura dos textos + 2 espaços + 2 espaços
-  //      ("|<+-------------------------------------------------------------------------------+>|")
-  ESCREVAL("|<+------------------------------- Largura da tela -------------------------------+>|")
+  ESCREVAL("                                 +-----------------+                                 ")
+  ESCREVAL("|<+------------------------------¦ Largura da tela ¦------------------------------+>|")
+  ESCREVAL("                                 +-----------------+                                 ")
+  ESCREVAL()
   //      ("+-----------------------------------------------------------------------------+") largura dos textos
+  Linha   ("Redimensione esta janela até que a linha tracejada caiba numa única linha.")
   ESCREVAL()
-  ESCREVAL("Redimensione esta janela até que a linha tracejada caiba numa única linha.")
-  ESCREVAL()
-  ESCREVAL("É recomendado que o tamanho vertical da janela seja o máximo possível.")
+  Linha   ("É recomendado que o tamanho vertical da janela seja o máximo possível.")
   ESCREVAL()
   ESCREVAL()
-  ESCREVAL("Presione a tecla ENTER para continuar...")
-  ESCREVA ("  ") // margem
-  LEIA(a)
+  LinhaF  ("Presione a tecla ENTER para continuar...")
 FIMPROCEDIMENTO
 
 PROCEDIMENTO Avisos()
@@ -2146,28 +2144,19 @@ PROCEDIMENTO Avisos()
 
   Titulo  ("            AVISOS            ")
   //      ("+-----------------------------------------------------------------------------+")
-  ESCREVA ("  ") // margem
-  ESCREVAL("1 - Este jogo contém textos que descrevem violência e que apresentam palavrões.")
+  Linha   ("1 - Este jogo contém textos que descrevem violência e que apresentam palavrões.")
   ESCREVAL()
-  ESCREVA ("  ") // margem
-  ESCREVAL("2 - Pessoas religiosas podem se sentir ofendidas com determinadas partes do jo-")
-  ESCREVA ("  ") // margem
-  ESCREVAL("    go.")
+  Linha   ("2 - Pessoas religiosas podem se sentir ofendidas com determinadas partes do jo-")
+  Linha   ("    go.")
   ESCREVAL()
-  ESCREVA ("  ") // margem
-  ESCREVAL("Se você não se sente confortável com algum dos ítens acima, é aconselhado que  ")
-  ESCREVA ("  ") // margem
-  ESCREVAL("NÃO jogue.")
+  Linha   ("Se você não se sente confortável com algum dos ítens acima, é aconselhado que  ")
+  Linha   ("NÃO jogue.")
   ESCREVAL()
   ESCREVAL()
-  ESCREVA ("  ") // margem
-  ESCREVAL("- É recomendado que se leia o manual antes de jogar.")
+  Linha   ("- É recomendado que se leia o manual antes de jogar.")
   ESCREVAL()
   ESCREVAL()
-  ESCREVA ("  ") // margem
-  ESCREVAL("Pressione a tecla ENTER para voltar...")
-  ESCREVA ("  ") // margem
-  LEIA    (a)
+  LinhaF  ("Pressione a tecla ENTER para voltar...")
 FIMPROCEDIMENTO
 
 PROCEDIMENTO Logo()
@@ -2203,15 +2192,13 @@ PROCEDIMENTO Creditos()
 
   Titulo  ("           CRÉDITOS           ")
   //      ("+-----------------------------------------------------------------------------+")
-  ESCREVAL("Criadores")
-  ESCREVAL("- TIAGO VARGAS PEREIRA DE OLIVEIRA")
-  ESCREVAL("- JOÃO VITOR ABREU CASTRO")
-  ESCREVAL("- JOÃO VICTOR DE SOUZA ALBUQUERQUE")
+  Linha   ("Criadores")
+  Linha   ("- TIAGO VARGAS PEREIRA DE OLIVEIRA")
+  Linha   ("- JOÃO VITOR ABREU CASTRO")
+  Linha   ("- JOÃO VICTOR DE SOUZA ALBUQUERQUE")
   ESCREVAL()
   ESCREVAL()
-  ESCREVAL("Pressione a tecla ENTER para voltar...")
-  ESCREVA ("  ") // margem
-  LEIA    (a)
+  LinhaF  ("Pressione a tecla ENTER para voltar...")
 FIMPROCEDIMENTO
 
 PROCEDIMENTO MenuDebug()
