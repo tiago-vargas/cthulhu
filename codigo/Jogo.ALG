@@ -995,7 +995,7 @@ PROCEDIMENTO SalaDeMaquinas()
               FalaS   ("Que... Decepcionante.")
 
               Linha   ("A criatura vai em direção a você, preparando para dar um golpe final, até que  ")
-              LinhaF  ("surge uma silhueta misteriosa que bloqueia o golpe")
+              LinhaF  ("surge uma silhueta misteriosa que bloqueia o golpe.")
 
               //      ("+____________________________________________________________________+")
               Dialogo ("??????")
