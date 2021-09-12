@@ -2124,12 +2124,12 @@ PROCEDIMENTO RedimensionarTela()
   LIMPATELA()
   // a largura da scroll bar eh de 2 espacos
   // tamanho : 2 espaços + largura dos textos + 2 espaços + 2 espaços
-  ESCREVAL("                                 +-----------------+                                 ")
-  ESCREVAL("|<+------------------------------¦ Largura da tela ¦------------------------------+>|")
-  ESCREVAL("                                 +-----------------+                                 ")
+  ESCREVAL("                                 +-----------------+")
+  ESCREVAL("|<-------------------------------¦ Largura da tela ¦------------------------------->|")
+  ESCREVAL("                                 +-----------------+")
   ESCREVAL()
   //      ("+-----------------------------------------------------------------------------+") largura dos textos
-  Linha   ("Redimensione esta janela até que a linha tracejada caiba numa única linha.")
+  Linha   ("Ajuste esta janela até você ver um retângulo acima escrito 'Largura da tela'.  ")
   ESCREVAL()
   Linha   ("É recomendado que o tamanho vertical da janela seja o máximo possível.")
   ESCREVAL()
