@@ -8,7 +8,6 @@ TIPO
 
 VAR entrada        : CARACTERE
     terminarJogo   : LOGICO
-    margemEsquerda : CARACTERE
 
 // ======================================================================== //
 // |----------------------------- FRAMEWORK ------------------------------| //
@@ -16,12 +15,12 @@ VAR entrada        : CARACTERE
 
 // Textos: ("+-----------------------------------------------------------------------------+")
 // Falas : ("+____________________________________________________________________+")
-// Obs: A barra de scroll do terminal é de 2 espaços de largura
 
 PROCEDIMENTO Titulo(texto: CARACTERE)
  INICIO
   ESCREVA ("  ") // margem
   ESCREVAL("+-----------------------------------------------------------------------------+")
+
   ESCREVA ("  ") // margem
   ESCREVA ("¦                        ") // 24 espacos
   ESCREVA (texto)                       // 30 caracteres exatamente
@@ -1116,6 +1115,7 @@ PROCEDIMENTO SalaDeDescanso()
     ESCREVAL("- POLTRONA")
 
     Resposta(entrada)
+
     LIMPATELA()
     ESCOLHA entrada
       CASO "PORTA"
@@ -1559,8 +1559,6 @@ PROCEDIMENTO FimDoMundo()
   FalaS   ("HAHAHAHAHAHAAAAAA")
 
   FalaS   ("HmhahaHAHAAAhAAA")
-
-  FIMALGORITMO
 FIMPROCEDIMENTO
 
 PROCEDIMENTO MaisUmDia()
