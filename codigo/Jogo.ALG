@@ -586,32 +586,33 @@ PROCEDIMENTO SalaDeDescanso()
 
   Titulo  ("      A SALA DE DESCANSO      ")
 
+  //      ("+-----------------------------------------------------------------------------+")
   Linha   ("Você analisa a sala e vê três camas em uma das paredes e uma estante de livros ")
   LinhaF  ("na parede oposta à das camas.")
 
-  LinhaF  ("No centro da sala tem uma mesinha e em sua volta, um sofá e uma poltrona.")
+  LinhaF  ("No centro da sala tem uma mesinha e em sua volta, um sofá e uma poltrona.      ")
 
-  LinhaF  ("Mesmo a poltrona estando de costas, você vê uma mão pendendo para fora dela.")
+  LinhaF  ("Mesmo a poltrona estando de costas, você vê uma mão pendendo para fora dela.   ")
 
   Linha   ("Do lado oposto de onde você está há uma porta que dá para fora do quarto no    ")
   LinhaF  ("térreo.")
 
   Pergunta("Você vai para a porta ou para a poltrona?")
 
-  ENQUANTO (entrada <> "PORTA") OU (entrada <> "POLTRONA")
+  ENQUANTO (entrada <> "PORTA") e (entrada <> "POLTRONA") FACA
     ESCREVAL("- PORTA")
     ESCREVAL("- POLTRONA")
 
     Resposta(entrada)
     ESCOLHA entrada
       CASO "PORTA"
+        LIMPATELA()
         //      ("+-----------------------------------------------------------------------------+")
-        LinhaF  ("Você vai até a porta, gira a maçaneta e escuta o barulho do trinco se abrindo.")
+        LinhaF  ("Você vai até a porta, gira a maçaneta e escuta o barulho do trinco se abrindo. ")
 
-        LinhaF  ("Mas a porta não abre.")
+        LinhaF  ("Mas a porta não abre. Tinha algo do outro lado a barrando.")
 
-        LinhaF  ("Tinha algo do outro lado a barrando.")
-        LinhaF  ("Você bate com força várias vezes na porta, mas só uma frestinha se abre.")
+        LinhaF  ("Você bate com força várias vezes na porta, mas só uma frestinha se abre.       ")
 
         //      ("+____________________________________________________________________+")
         Dialogo ("???????")
@@ -619,15 +620,15 @@ PROCEDIMENTO SalaDeDescanso()
         FalaF   ("nhece está trancada?")
 
         FalaI   ("Você vai simplesmente se deitar no chão, chorar em posição fetal na   ")
-        FalaF   ("falsa esperança que os meus bichinhos de estimação não irão te matar?")
+        FalaF   ("falsa esperança que os meus bichinhos de estimação não irão te matar? ")
 
         FalaI   ("Ou você vai subir as escadas e se jogar de cabeça no pátio lá embaixo,")
-        FalaF   ("morrendo de uma maneira completamente estúpida, algo que você é?")
+        FalaF   ("morrendo de uma maneira completamente estúpida, algo que você é?      ")
 
         LinhaF  ("Era de novo aquela voz jovial que escutou no corredor.")
 
         Dialogo ("Jesse")
-        Linha   ("Vá pro inferno, sua voz de merda!")
+        FalaS   ("Vá pro inferno, sua voz de merda!")
 
         Dialogo ("???????")
         FalaI   ("Ora, ora, parece que a pobre indefesa Jesse finalmente mostrou suas   ")
@@ -643,7 +644,7 @@ PROCEDIMENTO SalaDeDescanso()
         LinhaF  ("CRASH!!!")
 
         //      ("+-----------------------------------------------------------------------------+")
-        LinhaF  ("Você desce o machado com toda a força na vitrola, despedaçando-a por inteira.")
+        LinhaF  ("Você desce o machado com toda a força na vitrola, despedaçando-a por inteira.  ")
 
         Dialogo ("Jesse")
         FalaS   ("Cala a boca!")
@@ -653,11 +654,12 @@ PROCEDIMENTO SalaDeDescanso()
         Dialogo ("Jesse")
         FalaS   ("Cala a boca!!")
 
-        Linha   ("E mais outra quebrando a mesinha ao meio.")
+        LinhaF  ("E mais outra quebrando a mesinha ao meio.")
 
         Dialogo ("Jesse")
         FalaS   ("CALA A BOCAAAA!!!")
 
+        //      ("+-----------------------------------------------------------------------------+")
         Linha   ("Você cai no chão cansada, mas logo se levanta e vai até o esqueleto que está na")
         LinhaF  ("poltrona.")
 
@@ -668,7 +670,7 @@ PROCEDIMENTO SalaDeDescanso()
         Linha   ("Você coloca sua mão na empunhadura da adaga que está enfiada no peito do esque-")
         LinhaF  ("leto e retira a adaga.")
 
-        LinhaF  ("O esqueleto vira pó, só sobrando a roupa de segurança para contar a história.")
+        LinhaF  ("O esqueleto vira pó, só sobrando a roupa de segurança para contar a história.  ")
 
         LinhaF  ("Em meio à nuvem de pó formada, uma bainha cai no chão.")
 
@@ -679,6 +681,7 @@ PROCEDIMENTO SalaDeDescanso()
         Dialogo ("Jesse")
         FalaS   ("Tá na hora de mostrar praquele merda quem é a indefesa.")
       CASO "POLTRONA"
+        LIMPATELA()
         //      ("+-----------------------------------------------------------------------------+")
         LinhaF  ("Você vai até a poltrona e vê que nela descansa um esqueleto")
 
@@ -693,7 +696,7 @@ PROCEDIMENTO SalaDeDescanso()
         Linha   ("Um pouco hesitante, você segura a empunhadura da adaga que está enfiada no pei-")
         LinhaF  ("to do esqueleto e a retira.")
 
-        LinhaF  ("O esqueleto vira pó, só sobrando a roupa de segurança para contar a história.")
+        LinhaF  ("O esqueleto vira pó, só sobrando a roupa de segurança para contar a história.  ")
 
         LinhaF  ("Em meio à nuvem de pó formada, uma bainha cai no chão.")
 
@@ -731,13 +734,14 @@ PROCEDIMENTO SalaDeDescanso()
         Linha   ("Você vai até a porta e tenta abrí-la, mas ver que ela está barricada pelo outro")
         LinhaF  ("lado.")
 
-        Linha   ("Você olha para o molho de chaves na sua mão.")
+        LinhaF  ("Você olha para o molho de chaves na sua mão.")
 
         Dialogo ("Jesse")
-        Linha   ("Espero que os meus extintos estejam certos...")
-        OUTROCASO
-          LinhaF  ("Você não se importa com outras opções.")
-          Pergunta("O que você vai conferir?")
+        FalaS   ("Espero que os meus instintos estejam certos...")
+      OUTROCASO
+        LIMPATELA()
+        LinhaF  ("Você não se importa com outras opções.")
+        Pergunta("O que você vai conferir?")
     FIMESCOLHA
   FIMENQUANTO
 FIMPROCEDIMENTO
