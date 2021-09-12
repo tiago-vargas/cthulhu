@@ -10,6 +10,8 @@ Execute o algoritmo apertando a tecla `F9`.
 
 Ao ser executado, uma tela de console aparecerá. Redimensione a tela até que a linha horizontal mostrada apareça por completo. É recomendado que o tamanho vertical da tela seja o maior possível.
 
+Além disso, é recomendável você desligar o "sons do sistema" no seu mixer de volume do seu computador, localizado na barra inferior do Windows.
+
 
 
 ## Sobre o Jogo
