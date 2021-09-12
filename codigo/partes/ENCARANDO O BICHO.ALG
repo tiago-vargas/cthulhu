@@ -2,33 +2,85 @@ ALGORITMO "Encarando o Bicho"
 
 VAR entrada: CARACTERE
 
-// ======================================================================
-PROCEDIMENTO TEXTO(trecho: CARACTERE)
- VAR a: CARACTERE
+PROCEDIMENTO Titulo(texto: CARACTERE)
  INICIO
-  ESCREVAL(trecho)
+  ESCREVAL("+-----------------------------------------------------------------------------+")
+  ESCREVA ("¦                        ") // 24 espacos
+  ESCREVA (texto)                       // 30 caracteres exatamente
+  ESCREVAL("                       ¦")  // 23 espacos
+  ESCREVAL("+-----------------------------------------------------------------------------+")
+  ESCREVAL()
+FIMPROCEDIMENTO
+
+PROCEDIMENTO Linha(texto: CARACTERE) // Linha de texto intermediária
+ INICIO
+  // Dar margem antes.
+  ESCREVAL(texto)
+FIMPROCEDIMENTO
+
+PROCEDIMENTO LinhaF(texto: CARACTERE) // Linha de texto final
+ VAR a : CARACTERE
+ INICIO
+  // Dar margem antes.
+  ESCREVAL(texto)
+  LEIA    (a)
+FIMPROCEDIMENTO
+
+// ----------------------------------------------------------------------
+PROCEDIMENTO Dialogo(nomeDaPessoa: CARACTERE)
+ INICIO
+  ESCREVA ("        ~ ") // 8 espaços + til + 1 espaço
+  ESCREVA (nomeDaPessoa)
+  ESCREVAL(" ~")
+  //ESCREVAL()
+FIMPROCEDIMENTO
+
+PROCEDIMENTO FalaS(texto: CARACTERE) // Fala Simples
+ VAR a : CARACTERE
+ INICIO
+  ESCREVA ("     — ")
+  ESCREVAL(texto)
+  LEIA(a)
+FIMPROCEDIMENTO
+
+PROCEDIMENTO FalaI(texto: CARACTERE) // Fala, Inicio
+ INICIO
+  ESCREVA ("     — ") // 5 espaços + 1 travessao + 1 espaço
+  ESCREVAL(texto)
+FIMPROCEDIMENTO
+
+PROCEDIMENTO FalaC(texto: CARACTERE) // Fala, Continuacao
+ INICIO
+  ESCREVA ("       ") // 7 espaços
+  ESCREVAL(texto)
+FIMPROCEDIMENTO
+
+PROCEDIMENTO FalaF(texto: CARACTERE) // Fala, Fim
+ VAR a : CARACTERE
+ INICIO
+  ESCREVA ("       ") // 7 espaços
+  ESCREVAL(texto)
   LEIA(a)
 FIMPROCEDIMENTO
 
 // ----------------------------------------------------------------------
-PROCEDIMENTO FALA(trecho: CARACTERE)
- VAR a: CARACTERE
+PROCEDIMENTO Pergunta(texto: CARACTERE)
  INICIO
-  ESCREVA ("    -- ")
-  ESCREVAL(trecho)
-  LEIA(a)
-FIMPROCEDIMENTO
-
-// ----------------------------------------------------------------------
-PROCEDIMENTO PERGUNTA(trecho: CARACTERE)
- INICIO
-  ESCREVAL(trecho)
+  Linha   (texto)
   ESCREVAL()
   entrada <- ""
 FIMPROCEDIMENTO
 
-// ----------------------------------------------------------------------
-PROCEDIMENTO RESPOSTA(var entr: CARACTERE)
+PROCEDIMENTO PerguntaExtra(texto: CARACTERE; condicao: LOGICO)
+ INICIO
+  SE condicao ENTAO
+    ESCREVAL(texto)
+    ESCREVAL()
+    entrada <- ""
+  FIMSE
+FIMPROCEDIMENTO
+
+PROCEDIMENTO Resposta(var entr: CARACTERE)
  INICIO
   ESCREVAL()
   ESCREVA(">> ")
@@ -72,13 +124,17 @@ PROCEDIMENTO EncarandoOBicho()
 
         LinhaF  ("Você se levanta, mancando, e vai para cima dela para dar mais um golpe.        ")
 
-        Linha   ("Porém a criatura te dá um golpe com o tentáculo, te jogando ppara fora pela ja-")
+        Linha   ("Porém a criatura te dá um golpe com o tentáculo, te jogando para fora pela ja- ")
         LinhaF  ("nela.")
 
       CASO "ESPERAR"
         LIMPATELA()
         //      ("+-----------------------------------------------------------------------------+")
+        LinhaF  ("...")
+
         LinhaF  ("Você espera a criatura chegar mais perto de você.")
+
+        LinhaF  ("...")
 
         LinhaF  ("Ela já está quase com o rosto colado no seu.")
 
@@ -95,7 +151,7 @@ PROCEDIMENTO EncarandoOBicho()
         Linha   ("Porém, ela era mais rápida que você e te agarra antes de cair, levando você    ")
         LinhaF  ("junto com ela.")
       OUTROCASO
-
+        LIMPATELA()
         LinhaF  ("Matematicamente, só há essas duas opções!!")
         Pergunta("O que você faz??")
     FIMESCOLHA
