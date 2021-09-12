@@ -1,115 +1,9 @@
-ALGORITMO "Sala de Segurança"
-
-TIPO
-  OPCAO = REGISTRO
-    rotulo       : CARACTERE
-    foiEscolhida : LOGICO
-  FIMREGISTRO
-
-VAR entrada: CARACTERE
-
-PROCEDIMENTO Titulo(texto: CARACTERE)
- INICIO
-  ESCREVAL("+-----------------------------------------------------------------------------+")
-  ESCREVA ("¦                        ") // 24 espacos
-  ESCREVA (texto) // 30 caracteres exatamente
-  ESCREVAL("                       ¦")  // 23 espacos
-  ESCREVAL("+-----------------------------------------------------------------------------+")
-FIMPROCEDIMENTO
-// ----------------------------------------------------------------------
-
-PROCEDIMENTO Linha(texto: CARACTERE)
- INICIO
-  // Dar margem antes.
-  ESCREVAL(texto)
-FIMPROCEDIMENTO
-// ----------------------------------------------------------------------
-
-PROCEDIMENTO LinhaF(texto: CARACTERE)
- VAR a: CARACTERE
- INICIO
-  // Dar margem antes.
-  ESCREVAL(texto)
-  LEIA    (a)
-FIMPROCEDIMENTO
-// ----------------------------------------------------------------------
-PROCEDIMENTO Pergunta(texto: CARACTERE)
- INICIO
-  Linha   (texto)
-  ESCREVAL()
-  entrada <- ""
-FIMPROCEDIMENTO
-// ----------------------------------------------------------------------
-
-PROCEDIMENTO PerguntaExtra(texto: CARACTERE; condicao: LOGICO)
- INICIO
-  SE condicao ENTAO
-    ESCREVAL(texto)
-    ESCREVAL()
-    entrada <- ""
-  FIMSE
-FIMPROCEDIMENTO
-// ----------------------------------------------------------------------
-PROCEDIMENTO Resposta(var entr: CARACTERE)
- INICIO
-  ESCREVAL()
-  ESCREVA(">> ")
-  LEIA(entr)
-FIMPROCEDIMENTO
-// ----------------------------------------------------------------------
-PROCEDIMENTO Dialogo(nomeDaPessoa: CARACTERE)
- VAR i : INTEIRO
- INICIO
-  ESCREVA ("        ~ ") // 8 espaços + til + 1 espaço
-  ESCREVA (nomeDaPessoa)
-  ESCREVAL(" ~")
-  //ESCREVAL()
-FIMPROCEDIMENTO
-// ----------------------------------------------------------------------
-PROCEDIMENTO FalaS(texto: CARACTERE) // Fala Simples
- VAR a : CARACTERE
- INICIO
-  ESCREVA ("     — ")
-  ESCREVAL(texto)
-  LEIA(a)
-FIMPROCEDIMENTO
-
-PROCEDIMENTO FalaI(text: CARACTERE) // Fala, Inicio
- INICIO
-  ESCREVA ("     — ") // 4 espaços + 2 hifens + 1 espaço
-  ESCREVAL(text)
-FIMPROCEDIMENTO
-
-PROCEDIMENTO FalaC(text: CARACTERE) // Fala, Continuacao
- INICIO
-  ESCREVA ("       ") // 7 espaços
-  ESCREVAL(text)
-FIMPROCEDIMENTO
-
-PROCEDIMENTO FalaF(text: CARACTERE) // Fala, Fim
- VAR a : CARACTERE
- INICIO
-  ESCREVA ("       ")
-  ESCREVAL(text)
-  LEIA(a)
-FIMPROCEDIMENTO
-// ----------------------------------------------------------------------
-
-PROCEDIMENTO ListarSeNaoEscolhida(opcao_rotulo: CARACTERE; opcao_foiEscolhida: LOGICO)
- INICIO
-  SE nao opcao_foiEscolhida ENTAO
-    ESCREVA("- ")
-    ESCREVAL(opcao_rotulo)
-  FIMSE
-FIMPROCEDIMENTO
-// +-----------------------------------------------------------------------------+
-
 PROCEDIMENTO SalaDeSeguranca()
  VAR terminarLoop : LOGICO
      iteracao, i  : INTEIRO
-     opcoes       : vetor[1..5] DE OPCAO
-     livros       : vetor[1..4] DE CARACTERE
-     acertou      : LOGICO
+     opcoes       : vetor[1..5] de OPCAO
+     livros       : vetor[1..4] de CARACTERE
+     acertouOrdem : LOGICO
  INICIO
   opcoes[1].rotulo <- "MESA DA PORTA"
   opcoes[2].rotulo <- "MESA DO CORPO"
@@ -125,32 +19,37 @@ PROCEDIMENTO SalaDeSeguranca()
   LinhaF  ("Você utiliza sua lanterna para expurgar a escuridão que tomava conta do lugar. ")
 
   Linha   ("A sala, assim como todo o lugar, estava toda deteriorada, suja e infestada de  ")
-  LinhaF  ("mofo.                                                                          ")
+  LinhaF  ("mofo.")
 
-  LinhaF  ("Na sala tem:                                                                   ")
+  Linha   ("Na sala tem:")
+  Linha   ("- Duas mesas: uma na parede da porta e a outra na parede adjacente, com um corpo")
+  LinhaF  ("  apoiado como se estivesse tirando um cochilo.")
 
-  Linha   ("Duas mesas: uma na parede da porta e a outra na adjacente com um corpo com a   ")
-  LinhaF  ("parte de cima apoiada como se estivesse tirando um cochilo.                    ")
+  LinhaF  ("- Quatro armários na parede oposta à porta.")
 
-  LinhaF  ("Quatro armários na parede oposta à porta.                                      ")
+  LinhaF  ("- Uma estante com apenas quatro livros na parede oposta à mesa do corpo.        ")
 
-  LinhaF  ("Na parede oposta à mesa do corpo, tem uma estante com apenas quatro livros.    ")
+  Linha   ("- Uma cômoda, do lado da estante, com um machado encravado e três bustos em ci- ")
+  LinhaF  ("  ma.")
 
-  Linha   ("Do lado da estante, tem uma cômoda com um machado encravado e três bustos em   ")
-  LinhaF  ("cima.                                                                          ")
-
-  Pergunta("Por onde você vai começar a investigar?                                        ") // P1
+  Pergunta("Por onde você vai começar a investigar?") // P1
 
   terminarLoop <- FALSO
   iteracao <- 1
-  ENQUANTO NAO terminarLoop FACA
-    PerguntaExtra("Por onde você vai começar a investigar?", iteracao > 1)
+  ENQUANTO nao terminarLoop FACA
+    PerguntaExtra("O que você vai investigar agora?", iteracao > 1)
 
     PARA i de 1 ate 5 FACA
       ListarSeNaoEscolhida(opcoes[i].rotulo, opcoes[i].foiEscolhida)
     FIMPARA
 
     Resposta(entrada)
+
+    PARA i de 1 ate 5 FACA
+      SE entrada = opcoes[i].rotulo ENTAO
+        opcoes[i].foiEscolhida <- VERDADEIRO
+      FIMSE
+    FIMPARA
 
     LIMPATELA()
 
@@ -160,18 +59,19 @@ PROCEDIMENTO SalaDeSeguranca()
         LinhaF  ("Você olha a mesa e as suas gavetas, mas a única coisa que encontra é poeira.   ")
 
       CASO "MESA DO CORPO"
-        LinhaF  ("Você pensa em olhar o corpo, mas muda de ideia.                                ")
+        LinhaF  ("Você pensa em olhar o corpo, mas muda de ideia.")
 
         //      ("+____________________________________________________________________+")
         Dialogo ("Jesse")
-        FalaS   ("É melhor eu ter respeito pelos mortos.                                ")
+        FalaS   ("É melhor eu ter respeito pelos mortos.")
 
-        Dialogo ("???")
-        FalaI   ("Ora mais porque? Não seja tola, ele já está morto, não sente mais na- ")
-        FalaF   ("da. Não tem porque você não mexer.                                    ")
+        Dialogo ("??????")
+        FalaI   ("Ora, mas por quê? Não seja tola, ele já está morto, não sente mais na-")
+        FalaF   ("da. Não tem porquê você não mexer.")
 
-        FalaS   ("Talvez você encontre algo, quem sabe.                                 ")
+        FalaS   ("Talvez você encontre algo, quem sabe.")
 
+        //      ("+-----------------------------------------------------------------------------+")
         LinhaF  ("Você percebe que essa é a mesma voz que ouviu no corredor.                     ")
 
         LinhaF  ("Você tenta procurar de onde ela vem, mas não encontra.                         ")
@@ -181,148 +81,152 @@ PROCEDIMENTO SalaDeSeguranca()
         Linha   ("Procurando na mesa, em uma das gavetas você encontra um revólver de tambor com ")
         LinhaF  ("espaço para 6 balas.")
 
-        LinhaF  ("Porém a arma estava descarregada. Você a guarda na bolsa.                      ")
+        LinhaF  ("Porém a arma estava descarregada. Você a guarda na bolsa, mesmo assim.         ")
 
         Linha   ("Você também encontra um bilhete dizendo que há uma passagem secreta na estante ")
-        LinhaF  ("e que leva até o térreo.                                                       ")
+        LinhaF  ("e que leva até o térreo.")
 
       CASO "ARMARIO"
+        //      ("+-----------------------------------------------------------------------------+")
+        LinhaF  ("Dos quatro armários você só consegue abrir um.")
 
-        LinhaF  ("Dos quatro armários você só consegue abrir um.                                 ")
-
-        LinhaF  ("Dentro você encontra um kit de primeiro socorros.                              ")
+        LinhaF  ("Dentro dele você encontra um kit de primeiro socorros.")
 
       CASO "COMODA"
+        //      ("+-----------------------------------------------------------------------------+")
+        LinhaF  ("Você vai até a cômoda velha e desgastada.")
 
-        LinhaF  ("Você vai até a cômoda velha e desgastada.                                      ")
+        LinhaF  ("Procura por algo em suas gavetas, mas não encontra nada.")
 
-        LinhaF  ("Procura por algo em suas gavetas, as não encontra nada.                        ")
+        Linha   ("Você olha para o machado e torce para que o cabo não esteja podre demais para  ")
+        LinhaF  ("arrancá-lo dali.")
 
-        Linha   ("Você olha para o machado e torce que o cabo não esteja podre demais para arran-")
-        LinhaF  ("cá-lo dali.                                                                    ")
-
-        LinhaF  ("Você coloca as duas mãos no cabo.                                              ")
+        LinhaF  ("Você coloca as duas mãos no cabo.")
 
         Linha   ("Você faz força para cima com uma das mãos e deixa a outra parada como ponto de ")
-        LinhaF  ("apoio.                                                                         ")
+        LinhaF  ("apoio.")
 
         LinhaF  ("CRREEECK!")
 
         Linha   ("Apesar dos barulhos feitos pela cômoda, você consegue tirar o machado sem que- ")
         LinhaF  ("brá-lo.")
 
-        LinhaF  ("Você tem agora uma arma para se proteger.                                      ")
+        LinhaF  ("Você tem agora uma arma para se proteger.")
 
-        Linha   ("Logo após, você analisa aqueles bustos que pertenciam a três homens diferentes,")
-        LinhaF  ("de idades muito diferentes.                                                    ")
+        Linha   ("Logo após, você analisa aqueles bustos que pertenciam a três homens diferentes ")
+        LinhaF  ("de idades também muito diferentes.")
 
-        Linha   ("No busto mais à direita está escrito o nome James Marcus, ele tinha feições de ")
-        LinhaF  ("um homem adulto de trinta e poucos anos.                                       ")
+        Linha   ("No busto mais à direita está escrito o nome James Marcus. Ele tinha feições de ")
+        LinhaF  ("um homem adulto de trinta e poucos anos.")
 
-        Linha   ("No do meio tem o nome Edward Ashford, ele aparentava ser o mais novo dos três, ")
-        LinhaF  ("parecia ter acabado de entrar na vida adulta.                                  ")
+        Linha   ("No do meio tem o nome Edward Ashford. Ele aparentava ser o mais novo dos três, ")
+        LinhaF  ("parecia ter acabado de entrar na vida adulta.")
 
-        Linha   ("No da esquerda tinha a figura de um homem muito velho, estava escrito que seu  ")
-        LinhaF  ("nome era Oswell Spencer.                                                       ")
+        Linha   ("No da esquerda tinha a figura de um homem muito velho. Estava escrito que seu  ")
+        LinhaF  ("nome era Oswell Spencer.")
 
         Linha   ("Você não tem certeza se esse nomes poderão ou não ser úteis no futuro, mas os  ")
         LinhaF  ("guarda na memória.")
 
       CASO "ESTANTE"
+        //      ("+-----------------------------------------------------------------------------+")
         LinhaF  ("Você vai até a estante e percebe algo muito suspeito e curioso.                ")
 
         Linha   ("Na estante tem apenas quatro livros, cada um em um andar e em posições bem se- ")
         LinhaF  ("paradas.")
 
-        Linha   ("Cada livro tinha uma cor diferente, sendo um era azul, o outro era amarelo, ou-")
-        LinhaF  ("tro era branco encardido e o último era preto.                                 ")
+        Linha   ("Cada livro tinha uma cor diferente, sendo um era azul, o outro era amarelo, o  ")
+        LinhaF  ("outro era branco encardido e o último era preto.")
 
         LinhaF  ("Você lê o nome dos livros um por um:")
 
-        LinhaF  ("Livro amarelo : O Rei de Amarelo de Robert W. Chambers.                        ")
+        LinhaF  ("Livro amarelo : O Rei de Amarelo, de Robert W. Chambers.                       ")
 
-        LinhaF  ("Livro azul    : A cor vindo do Espaço e outros Contos de H. P. Lovecraft.      ")
+        LinhaF  ("Livro azul    : A cor vindo do Espaço e outros Contos, de H. P. Lovecraft.     ")
 
-        LinhaF  ("Livro branco  : Nas montanhas da Loucura e outros Contos de H. P. Lovecraft.   ")
+        LinhaF  ("Livro branco  : Nas montanhas da Loucura e outros Contos, de H. P. Lovecraft.  ")
 
-        LinhaF  ("Livro preto   : O sussurro nas trevas e outros Contos de H. P. Lovecraft.      ")
+        LinhaF  ("Livro preto   : O sussurro nas trevas e outros Contos, de H. P. Lovecraft.     ")
 
         Linha   ("Você tenta puxar o livro branco encardido, pois ele era um dos seus contos fa- ")
         LinhaF  ("voritos de H. P. Lovecraft, e te dava orgulho de dizer que é uma parente dele. ")
 
-        LinhaF  ("Click!!!                                                                       ")
+        LinhaF  ("Click!!!")
 
         Linha   ("Você percebe que esses livros são apenas alavancas disfarçadas e que você acio-")
         LinhaF  ("nou algo.")
 
+        Linha   ("Você puxa os outros livros aleatoriamente. Escuta um som baixo de um mecanismo,")
+        LinhaF  ("mas nada acontece. Os livros voltam às posições originais.")
+
+        // OK ATE AQUI!!
         //      ("+____________________________________________________________________+")
         Dialogo ("Jesse")
-        LinhaF  ("O que será que acontece quando se eu puxar na ordem certa?            ")
+        LinhaF  ("O que será que acontece se eu puxar na ordem certa?")
 
         Pergunta("Você tenta qual ordem?")
 
-        acertou  <- FALSO
-        iteracao <- 1
-        ENQUANTO nao acertou FAÇA
-          PerguntaExtra("Que ordem você tenta agora?", iteracao > 1)
-          ESCREVA ("Livro 1 :  ")
-          Resposta(livros[1])
-          ESCREVA ("Livro 2 :  ")
-          Resposta(livros[2])
-          ESCREVA ("Livro 3 :  ")
-          Resposta(livros[3])
-          ESCREVA ("Livro 4 :  ")
-          Resposta(livros[4])
+        ENQUANTO nao acertouOrdem FAÇA
+          ESCREVAL("- AMARELO")
+          ESCREVAL("- AZUL")
+          ESCREVAL("- BRANCO")
+          ESCREVAL("- PRETO")
 
-          ESCREVAL()
+          PARA i de 1 ate 4 FACA
+            REPITA
+              ESCREVA ("Livro", i, " :  ")
+              LEIA    (livros[i])
 
-          LinhaF  ("Você puxa os livros na ordem que estava no enigma.")
-          LinhaF  ("Você se afasta um pouco esperando por algo.")
+              SE (livros[i] <> "AMARELO") e (livros[i] <> "AZUL") e (livros[i] <> "BRANCO") e (livros[i] <> "PRETO") ENTAO
+                ESCREVAL()
+                LinhaF  ("Não existe livro dessa cor na estante.")
+              FIMSE
+            ATE (livros[i] = "AMARELO") ou (livros[i] = "AZUL") ou (livros[i] = "BRANCO") ou (livros[i] = "PRETO")
+          FIMPARA
 
-          SE (livros[1] = "AMARELO") E (livros[2] = "BRANCO") E (livros[1] = "AZUL") E (livros[1] = "PRETO") ENTAO
+          SE (livros[1] = "AMARELO") e (livros[2] = "BRANCO") e (livros[3] = "AZUL") e (livros[4] = "PRETO") ENTAO
+            acertouOrdem <- VERDADEIRO
+            LIMPATELA()
             //      ("+-----------------------------------------------------------------------------+")
-            LinhaF  ("Você escuta sons abafados de engrenagem.                                       ")
+            LinhaF  ("Você se afasta um pouco esperando por alguma coisa acontecer.")
 
-            Linha   ("A estante vai milímetros para frente, deixando uma frestinha por onde cabem os ")
+            LinhaF  ("...")
+
+            LinhaF  ("Você escuta sons abafados de engrenagem.")
+
+            LinhaF  ("...")
+
+            Linha   ("A estante vai centímetros para frente, deixando uma frestinha por onde cabem os")
             LinhaF  ("seus dedos.")
 
             Linha   ("Você enfia seus dedos na fresta e arrasta a estante para frente, abrindo a pas-")
             LinhaF  ("sagem.")
+            terminarLoop <- VERDADEIRO
+            ESCREVAL("fim")
           SENAO
+            LIMPATELA()
             //      ("+-----------------------------------------------------------------------------+")
-            LinhaF  ("Mas nada acontece, você conclui que a ordem colocada era errada.               ")
+            LinhaF  ("Você se afasta um pouco esperando por alguma coisa.")
+
+            LinhaF  ("...")
+            LinhaF  ("...")
+            LinhaF  ("...")
+
+            LinhaF  ("Mas nada acontece.")
 
             //      ("+____________________________________________________________________+")
             Dialogo ("Jesse")
-            FalaI   ("Provavelmente está errada. É melhor eu tentar outra ordem ou procurar ")
-            FalaF   ("por mais alguma pista.")
+            FalaS   ("Provavelmente está errada. É melhor eu tentar outra ordem.")
 
-            LIMPATELA()
-              Pergunta("Tente outra ordem
+            Pergunta("Qual ordem você tenta agora?")
           FIMSE
-
-          iteracao <- iteracao + 1
         FIMENQUANTO
 
-
       OUTROCASO
-        LinhaF  ("Escolha inválida.                                                         ")
+        LinhaF  ("Esse móvel não existe na sala.")
     FIMESCOLHA
 
-
-
-    PARA i de 1 ate 5 FACA
-      SE entrada = opcoes[i].rotulo ENTAO
-        opcoes[i].foiEscolhida <- VERDADEIRO
-      FIMSE
-    FIMPARA
-
     iteracao <- iteracao + 1
-    FIMENQUANTO
+  FIMENQUANTO
+  ESCREVAL("FIM")
 FIMPROCEDIMENTO
-
-
-// ======================================================================
-INICIO
-  SalaDeSeguranca()
-FIMALGORITMO
