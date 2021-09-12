@@ -1688,7 +1688,7 @@ PROCEDIMENTO MaisUmDia()
   FalaS   ("O quê? Vamos ter que lutar pra pegar esse livro?")
 
   Dialogo ("Alice")
-  FalaI   ("Espere um exército de monstros e cãos. Acredite, qualquer coisa seria ")
+  FalaI   ("Espere um exército de monstros e caos. Acredite, qualquer coisa seria ")
   FalaF   ("melhor que encarar Shub-niggurath.")
 
   LinhaF  ("...")
@@ -1839,7 +1839,7 @@ PROCEDIMENTO ManipulacaoReligiosa()
         Dialogo ("Nyarlathotep")
         FalaI   ("Se você tiver o mínimo de massa cerebral você não vai fazer isso, pois")
         FalaC   ("ao invés de eu dominar todo o mundo, eu te dou um pedaço dele pra você")
-        FalaF   (" governar e ser uma deusa entre esses humanos nojentos.")
+        FalaF   ("governar e ser uma deusa entre esses humanos nojentos.")
 
         LinhaF  ("Você se aproxima aos poucos. Ele vai se arrastando de costas para longe.       ")
 
