@@ -1,6 +1,6 @@
 ALGORITMO "Sala de Descanso"
 
-VAR
+VAR entrada: CARACTERE
 
 PROCEDIMENTO Titulo(texto: CARACTERE)
  INICIO
@@ -108,7 +108,7 @@ PROCEDIMENTO SalaDeDescanso()
 
   Pergunta("Você vai para a porta ou para a poltrona?")
 
-  ENQUANTO (entrada <> "PORTA") OU (entrada <> "POLTRONA")
+  ENQUANTO (entrada <> "PORTA") e (entrada <> "POLTRONA") FACA
     ESCREVAL("- PORTA")
     ESCREVAL("- POLTRONA")
 
@@ -137,7 +137,7 @@ PROCEDIMENTO SalaDeDescanso()
         LinhaF  ("Era de novo aquela voz jovial que escutou no corredor.")
 
         Dialogo ("Jesse")
-        Linha   ("Vá pro inferno, sua voz de merda!")
+        FalaS   ("Vá pro inferno, sua voz de merda!")
 
         Dialogo ("???????")
         FalaI   ("Ora, ora, parece que a pobre indefesa Jesse finalmente mostrou suas   ")
@@ -163,7 +163,7 @@ PROCEDIMENTO SalaDeDescanso()
         Dialogo ("Jesse")
         FalaS   ("Cala a boca!!")
 
-        Linha   ("E mais outra quebrando a mesinha ao meio.")
+        LinhaF  ("E mais outra quebrando a mesinha ao meio.")
 
         Dialogo ("Jesse")
         FalaS   ("CALA A BOCAAAA!!!")
@@ -243,11 +243,12 @@ PROCEDIMENTO SalaDeDescanso()
         Linha   ("Você vai até a porta e tenta abrí-la, mas ver que ela está barricada pelo outro")
         LinhaF  ("lado.")
 
-        Linha   ("Você olha para o molho de chaves na sua mão.")
+        LinhaF  ("Você olha para o molho de chaves na sua mão.")
 
         Dialogo ("Jesse")
-        Linha   ("Espero que os meus extintos estejam certos...")
+        FalaS   ("Espero que os meus instintos estejam certos...")
       OUTROCASO
+        LIMPATELA()
         LinhaF  ("Você não se importa com outras opções.")
         Pergunta("O que você vai conferir?")
     FIMESCOLHA
