@@ -903,7 +903,8 @@ PROCEDIMENTO SalaDeMaquinas()
               LinhaF  ("Sem entender nada, você se levanta e corre desesperadamente para a saída.      ")
 
               Linha   ("Quando você está entrando pela passagem, os tentáculos ainda em chamas te dão  ")
-              LinhaF  ("um último golpe de oportunidade em suas costas, que te arremessa para frente.  ")
+              Linha   ("um último golpe de oportunidade em suas costas, que te arremessa em direção    ")
+              LinhaF  ("a saída.")
 
             CASO "ESQUERDA"
               //      ("+-----------------------------------------------------------------------------+")
@@ -920,14 +921,14 @@ PROCEDIMENTO SalaDeMaquinas()
 
               //      ("+____________________________________________________________________+")
               Dialogo ("??????")
-              FalaS   ("Vá em frente, Jesse. Eu cuido do Nyarlathotep.")
+              FalaS   ("Saia daqui, Jesse. Eu cuido do Nyarlathotep.")
 
               Dialogo ("Nyarlathotep")
               FalaS   ("COMO OUSAS ATRAPALHAR MEU PLANO, SEU TRAIDOR?")
 
               //      ("+-----------------------------------------------------------------------------+")
-              Linha   ("De repente, você é jogada para frente, contra a parede da passagem por uma on- ")
-              LinhaF  ("da de vento.")
+              Linha   ("De repente, você é jogada em direção a saída, contra a parede da passagem por  ")
+              LinhaF  ("outra onda de vento.")
 
             OUTROCASO
               LinhaF  ("Só existem esses dois lados...")
@@ -973,14 +974,14 @@ PROCEDIMENTO SalaDeMaquinas()
 
               //      ("+____________________________________________________________________+")
               Dialogo ("??????")
-              FalaS   ("Vá em frente, Jesse. Eu cuido do Nyarlathotep.")
+              FalaS   ("Saia daqui, Jesse. Eu cuido do Nyarlathotep.")
 
               Dialogo ("Nyarlathotep")
               FalaS   ("COMO OUSAS ATRAPALHAR MEU PLANO, SEU TRAIDOR?")
 
               //      ("+-----------------------------------------------------------------------------+")
-              Linha   ("De repente, você é jogada para frente, contra a parede da passagem por uma onda")
-              LinhaF  ("de vento.")
+              Linha   ("De repente, você é jogada em direção a saída, contra a parede da passagem por  ")
+              LinhaF  ("uma onda de vento.")
 
             CASO "ESQUERDA"
               //      ("+-----------------------------------------------------------------------------+")
@@ -1007,8 +1008,8 @@ PROCEDIMENTO SalaDeMaquinas()
               FalaS   ("Já não basta ser um traídor, agora tem que atrapalhar os meus planos.")
 
               //      ("+-----------------------------------------------------------------------------+")
-              Linha   ("De repente, você é jogada para frente, contra a parede da passagem por uma onda")
-              LinhaF  ("de vento.")
+              Linha   ("De repente, você é jogada em direção a saída, contra a parede da passagem por  ")
+              LinhaF  ("uma onda de vento.")
 
             OUTROCASO
               LinhaF  ("Não existe esse lado!")
