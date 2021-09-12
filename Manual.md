@@ -10,9 +10,17 @@ Execute o algoritmo apertando a tecla `F9`.
 
 Ao ser executado, uma tela de console aparecerá. Redimensione a tela até que a linha horizontal mostrada apareça por completo. É recomendado que o tamanho vertical da tela seja o maior possível.
 
+
+
 ## Sobre o Jogo
 
-Esse jogo foi criado como trabalho da disciplina de Fundamentos da Programação.
+Esse jogo foi criado como um trabalho para a disciplina de Fundamentos da Programação.
+
+Este jogo contém textos que descrevem violência e que apresentam palavrões.
+
+Pessoas religiosas podem se sentir ofendidas com determinadas partes do jogo.
+
+SE VOCÊ NÃO SE SENTE CONFORTÁVEL COM ALGUM DOS ÍTENS ACIMA, NÃO JOGUE.
 
 ## Menu
 
