@@ -166,7 +166,7 @@ PROCEDIMENTO Prologo()
 
   Linha   ("Essa escritura é sua última memória antes do início do pesadelo:               ")
   ESCREVAL()
-  LinhaF  ("                             Ph’nglui mglw’nafh Cthulhu R’lyeh wgah’nagl fhtagn")
+  LinhaF  ("                            Ph’nglui mglw’nafh Cthulhu R’lyeh wgah’nagl fhtagn.")
 FIMPROCEDIMENTO
 
 PROCEDIMENTO Cela()
@@ -1127,7 +1127,7 @@ PROCEDIMENTO SalaDeDescanso()
         LinhaF  ("Você bate com força várias vezes na porta, mas só uma frestinha se abre.       ")
 
         //      ("+____________________________________________________________________+")
-        Dialogo ("???????")
+        Dialogo ("Vitrola")
         FalaI   ("Como é a sensação da frustação de saber que a única saída que você co-")
         FalaF   ("nhece está trancada?")
 
@@ -1142,7 +1142,7 @@ PROCEDIMENTO SalaDeDescanso()
         Dialogo ("Jesse")
         FalaS   ("Vá pro inferno, sua voz de merda!")
 
-        Dialogo ("???????")
+        Dialogo ("Vitrola")
         FalaI   ("Ora, ora, parece que a pobre indefesa Jesse finalmente mostrou suas   ")
         FalaF   ("garras!")
 
@@ -1215,8 +1215,6 @@ PROCEDIMENTO SalaDeDescanso()
         LinhaF  ("Você pega a bainha, guarda a adaga na bainha e a prende na calça.")
 
         LinhaF  ("...")
-
-        LinhaF  ("Da vitrola começa a sair uma voz:")
 
         //      ("+____________________________________________________________________+")
         Dialogo ("Vitrola")
