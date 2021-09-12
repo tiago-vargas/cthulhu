@@ -1450,7 +1450,7 @@ PROCEDIMENTO EncarandoOBicho()
 
   LinhaF  ("Ele está te apertando com tanta força que você começa a ficar sem ar.          ")
 
-  LinhaF  ("Ele te joga na parede onde ficam as celas. Você quase desmaia com a pancada   .")
+  LinhaF  ("Ele te joga na parede onde ficam as celas. Você quase desmaia com a pancada.   ")
 
   Dialogo ("??????")
   FalaS   ("Use a adaga.")
@@ -1746,7 +1746,7 @@ PROCEDIMENTO ManipulacaoReligiosa()
   FalaC   ("história para o céu. Vocês já chamaram esse lugar de Valhalla, Campos ")
   FalaF   ("Elísios, Campos de Junco, Orum, Céu, dentre outros nomes.")
 
-  Dialogo ("???")
+  Dialogo ("??????")
   FalaI   ("Não acredite em nada que ele diga, ele só quer usar as suas crenças   ")
   FalaF   ("contra você.")
 
