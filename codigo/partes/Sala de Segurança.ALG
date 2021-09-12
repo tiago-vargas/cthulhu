@@ -202,7 +202,6 @@ PROCEDIMENTO SalaDeSeguranca()
             Linha   ("Você enfia seus dedos na fresta e arrasta a estante para frente, abrindo a pas-")
             LinhaF  ("sagem.")
             terminarLoop <- VERDADEIRO
-            ESCREVAL("fim")
           SENAO
             LIMPATELA()
             //      ("+-----------------------------------------------------------------------------+")
@@ -228,5 +227,4 @@ PROCEDIMENTO SalaDeSeguranca()
 
     iteracao <- iteracao + 1
   FIMENQUANTO
-  ESCREVAL("FIM")
 FIMPROCEDIMENTO
