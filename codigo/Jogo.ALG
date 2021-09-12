@@ -339,7 +339,7 @@ PROCEDIMENTO Corredor()
 
   LinhaF  ("Você vai até a janela primeiro.")
 
-  LinhaF  ("crack!")
+  LinhaF  ("CRACK!")
 
   LinhaF  ("Os vidros se quebram aos seus passos.")
 
