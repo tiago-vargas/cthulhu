@@ -1,4 +1,4 @@
-# Prologo
+# Prólogo
 
 Você é Jesse Lovecraft, uma brilhante e renomada psicóloga de 26 anos, na qual se meteu em uma loucura que só se pode ser concebida na sua totalidade por mentes insanas, perturbadas e doentias.
 
