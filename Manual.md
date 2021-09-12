@@ -271,3 +271,15 @@ Ela é tão bondosa com seus seguidores que oferece para os mais fiéis uma chan
 Segundo o Necronomicom, Hastur é irmão e rival de Cthulhu, e o único dos deuses antigos que ousa desobedecê-lo. Ele é muito benevolente com os seus fiéis seguidores, realizando seus maiores desejos e vingando qualquer injustiça que eles sofram de forma cruel e impiedosa, e se necessário, ele se vingaria de outros deuses também. Muitos relatos de sua manifestações para seus seguidores diz que ele aparece como um ser encapuzado de amarelo e com uma corola de luz da mesma cor.
 
 Seus fiéis eram constantemente assediados por cultos de outros deuses antigos por causa do envolvimento de Hastur no fim do reinado de Cthulhu, porem esses assédios não duraram muito pois os cultos que o faziam eram dizimados pela fúria e ódio de Hastur, o rei amarelo.
+
+
+
+## Criadores
+
+Este jogo foi criado pelos seguintes alunos:
+
+TIAGO VARGAS PEREIRA DE OLIVEIRA
+
+JOÃO VITOR ABREU CASTRO
+
+JOÃO VICTOR DE SOUZA ALBUQUERQUE
