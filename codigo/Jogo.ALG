@@ -1565,7 +1565,7 @@ PROCEDIMENTO MaisUmDia()
   LIMPATELA()
 
   Titulo  ("VIVENDO PARA LUTAR MAIS UM DIA")
-
+  //      ("+-----------------------------------------------------------------------------+")
   LinhaF  ("Você acorda com o toque de alguém na sua cabeça.")
 
   Linha   ("Você consegue ver que quem está te tocando é uma figura que você não vê desde  ")
@@ -1642,9 +1642,9 @@ PROCEDIMENTO MaisUmDia()
   FalaF   ("a sua dívida com a Alice.")
 
   Dialogo ("Jesse")
-  FalaI   ("Calma… Isso é me parece muito familiar… Necronomicon, Cthulhu… Não…   ")
-  FalaC   ("Não é possível que as histórias do meu descendente são todas verdadei-")
-  FalaF   ("ras…")
+  FalaI   ("Calma... Isso é me parece muito familiar... Necronomicon, Cthulhu...  ")
+  FalaC   ("Não... Não é possível que as histórias do meu descendente sejam todas ")
+  FalaF   ("verdadeiras...")
 
   FalaI   ("Supondo que eu acredite que tudo isso não é só mais um pesadelo, ou   ")
   FalaF   ("que eu simplesmente não estou louca...")
@@ -1932,7 +1932,7 @@ PROCEDIMENTO ManipulacaoReligiosa()
         LinhaF  ("Hastur se vira e começa ir embora na direção da imensidão branca do céu.")
 
         Dialogo ("Hastur")
-        FalaS   ("*Suspiro*")
+        FalaS   ("*suspiro*")
 
         FalaS   ("Está tudo acabado.")
 
