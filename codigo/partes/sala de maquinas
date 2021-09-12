@@ -91,8 +91,6 @@ FIMPROCEDIMENTO
 // ----------------------------------------------------------------------
 
 PROCEDIMENTO SalaDeMaquinas()
- VAR terminarLoop : LOGICO
-     iteracao     : INTEIRO
  INICIO
   LIMPATELA()
 
@@ -170,11 +168,7 @@ PROCEDIMENTO SalaDeMaquinas()
 
   Pergunta("Qual instinto você vai seguir?")
 
-  terminarLoop <- FALSO
-  iteracao <- 1
   ENQUANTO (entrada <> "DIREITA") e (entrada <> "ESQUERDA") FACA
-    PerguntaExtra("Qual deles você vai seguir?", iteracao > 1)
-
     ESCREVAL("- CORRER")
     ESCREVAL("- LUTAR")
 
@@ -254,8 +248,8 @@ PROCEDIMENTO SalaDeMaquinas()
               Linha   ("Quando você está entrando pela passagem, os tentáculos ainda em chamas te dão  ")
               LinhaF  ("um último golpe de oportunidade em suas costas, que te arremessa para frente.  ")
 
-              terminarLoop <- VERDADEIRO
-
+              ESCREVAL("FIM")
+              // terminarLoop <- VERDADEIRO
             CASO "ESQUERDA"
               LIMPATELA()
               //      ("+-----------------------------------------------------------------------------+")
@@ -281,14 +275,14 @@ PROCEDIMENTO SalaDeMaquinas()
               Linha   ("De repente, você é jogada para frente, contra a parede da passagem por uma on- ")
               LinhaF  ("da de vento.")
 
-              terminarLoop <- VERDADEIRO
+              ESCREVAL("FIM")
+              // terminarLoop <- VERDADEIRO
             OUTROCASO
               LIMPATELA()
               LinhaF  ("Só existem esses dois lados...")
               Pergunta("Para qual lado você vai se esquivar?")
           FIMESCOLHA
         FIMENQUANTO
-
       CASO "LUTAR"
         LIMPATELA()
         //      ("+-----------------------------------------------------------------------------+")
@@ -336,7 +330,8 @@ PROCEDIMENTO SalaDeMaquinas()
               Linha   ("De repente, você é jogada para frente, contra a parede da passagem por uma onda")
               LinhaF  ("de vento.")
 
-              terminarLoop <- VERDADEIRO
+              ESCREVAL("FIM")
+              // terminarLoop <- VERDADEIRO
             CASO "ESQUERDA"
               LIMPATELA()
               //      ("+-----------------------------------------------------------------------------+")
@@ -366,7 +361,8 @@ PROCEDIMENTO SalaDeMaquinas()
               Linha   ("De repente, você é jogada para frente, contra a parede da passagem por uma onda")
               LinhaF  ("de vento.")
 
-              terminarLoop <- VERDADEIRO
+              ESCREVAL("FIM")
+              // terminarLoop <- VERDADEIRO
             OUTROCASO
               LIMPATELA()
               LinhaF  ("Não existe esse lado!")
@@ -377,8 +373,14 @@ PROCEDIMENTO SalaDeMaquinas()
       OUTROCASO
         LIMPATELA()
         LinhaF  ("Você não tem outra opção além de seguir o seu instinto.")
+        Pergunta("Qual deles você vai seguir?")
     FIMESCOLHA
 
-    iteracao <- iteracao + 1
   FIMENQUANTO
+
+  ESCREVAL("FIM")
 FIMPROCEDIMENTO
+
+INICIO
+  SalaDeMaquinas()
+FIMALGORITMO
