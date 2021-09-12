@@ -22,9 +22,12 @@ PROCEDIMENTO Titulo(texto: CARACTERE)
  INICIO
   ESCREVA ("  ") // margem
   ESCREVAL("+-----------------------------------------------------------------------------+")
+  ESCREVA ("  ") // margem
   ESCREVA ("¦                        ") // 24 espacos
   ESCREVA (texto)                       // 30 caracteres exatamente
+
   ESCREVAL("                       ¦")  // 23 espacos
+  ESCREVA ("  ") // margem
   ESCREVAL("+-----------------------------------------------------------------------------+")
   ESCREVAL()
 FIMPROCEDIMENTO
@@ -40,6 +43,8 @@ PROCEDIMENTO LinhaF(texto: CARACTERE) // Linha de texto final
  INICIO
   ESCREVA ("  ") // margem
   ESCREVAL(texto)
+
+  ESCREVA ("  ") // margem
   LEIA    (a)
 FIMPROCEDIMENTO
 
@@ -59,6 +64,8 @@ PROCEDIMENTO FalaS(texto: CARACTERE) // Fala Simples
   ESCREVA ("  ") // margem
   ESCREVA ("     — ") // 5 espaços + 1 travessao + 1 espaço
   ESCREVAL(texto)
+
+  ESCREVA ("  ") // margem
   LEIA(a)
 FIMPROCEDIMENTO
 
@@ -82,6 +89,8 @@ PROCEDIMENTO FalaF(texto: CARACTERE) // Fala, Fim
   ESCREVA ("  ") // margem
   ESCREVA ("       ") // 7 espaços
   ESCREVAL(texto)
+
+  ESCREVA ("  ") // margem
   LEIA(a)
 FIMPROCEDIMENTO
 
@@ -2115,8 +2124,9 @@ PROCEDIMENTO RedimensionarTela()
   LIMPATELA()
   ESCREVAL()
   // a largura da scroll bar eh de 2 espacos
-  // tamanho : 2 espaços + largura dos textos + 2 espaços
-  ESCREVAL("|<+-----------------------------------------------------------------------------+>|")
+  // tamanho : 2 espaços + largura dos textos + 2 espaços + 2 espaços
+  //      ("|<+-------------------------------------------------------------------------------+>|")
+  ESCREVAL("|<+------------------------------- Largura da tela -------------------------------+>|")
   //      ("+-----------------------------------------------------------------------------+") largura dos textos
   ESCREVAL()
   ESCREVAL("Redimensione esta janela até que a linha tracejada caiba numa única linha.")
@@ -2125,6 +2135,7 @@ PROCEDIMENTO RedimensionarTela()
   ESCREVAL()
   ESCREVAL()
   ESCREVAL("Presione a tecla ENTER para continuar...")
+  ESCREVA ("  ") // margem
   LEIA(a)
 FIMPROCEDIMENTO
 
@@ -2135,19 +2146,27 @@ PROCEDIMENTO Avisos()
 
   Titulo  ("            AVISOS            ")
   //      ("+-----------------------------------------------------------------------------+")
+  ESCREVA ("  ") // margem
   ESCREVAL("1 - Este jogo contém textos que descrevem violência e que apresentam palavrões.")
   ESCREVAL()
+  ESCREVA ("  ") // margem
   ESCREVAL("2 - Pessoas religiosas podem se sentir ofendidas com determinadas partes do jo-")
+  ESCREVA ("  ") // margem
   ESCREVAL("    go.")
   ESCREVAL()
+  ESCREVA ("  ") // margem
   ESCREVAL("Se você não se sente confortável com algum dos ítens acima, é aconselhado que  ")
+  ESCREVA ("  ") // margem
   ESCREVAL("NÃO jogue.")
   ESCREVAL()
   ESCREVAL()
+  ESCREVA ("  ") // margem
   ESCREVAL("- É recomendado que se leia o manual antes de jogar.")
   ESCREVAL()
   ESCREVAL()
+  ESCREVA ("  ") // margem
   ESCREVAL("Pressione a tecla ENTER para voltar...")
+  ESCREVA ("  ") // margem
   LEIA    (a)
 FIMPROCEDIMENTO
 
@@ -2191,6 +2210,7 @@ PROCEDIMENTO Creditos()
   ESCREVAL()
   ESCREVAL()
   ESCREVAL("Pressione a tecla ENTER para voltar...")
+  ESCREVA ("  ") // margem
   LEIA    (a)
 FIMPROCEDIMENTO
 
@@ -2199,22 +2219,22 @@ PROCEDIMENTO MenuDebug()
   LIMPATELA()
 
   Titulo  ("        MENU DE DEBUG         ")
-  ESCREVAL("[1]  - Prologo")
-  ESCREVAL("[2]  - Cela")
-  ESCREVAL("[3]  - Corredor")
-  ESCREVAL("[4]  - Sala de Segurança")
-  ESCREVAL("[5]  - Passagem Secreta 1")
-  ESCREVAL("[6]  - Sala de Máquinas")
-  ESCREVAL("[7]  - Passagem Secreta 2")
-  ESCREVAL("[8]  - Sala de Descanso")
-  ESCREVAL("[9]  - De Volta ao Primeiro Andar")
-  ESCREVAL("[10] - Encarando o Bicho")
-  ESCREVAL("[11] - Manipulação Religiosa")
-  ESCREVAL("[12] - Fim do Mundo")
-  ESCREVAL("[13] - Vivendo para Lutar Mais um Dia")
-  ESCREVAL("[14] - Avisos")
-  ESCREVAL("[15] - Menu")
-  ESCREVAL("[00] - Sair do Programa")
+  ESCREVAL("  [1]  - Prologo")
+  ESCREVAL("  [2]  - Cela")
+  ESCREVAL("  [3]  - Corredor")
+  ESCREVAL("  [4]  - Sala de Segurança")
+  ESCREVAL("  [5]  - Passagem Secreta 1")
+  ESCREVAL("  [6]  - Sala de Máquinas")
+  ESCREVAL("  [7]  - Passagem Secreta 2")
+  ESCREVAL("  [8]  - Sala de Descanso")
+  ESCREVAL("  [9]  - De Volta ao Primeiro Andar")
+  ESCREVAL("  [10] - Encarando o Bicho")
+  ESCREVAL("  [11] - Manipulação Religiosa")
+  ESCREVAL("  [12] - Fim do Mundo")
+  ESCREVAL("  [13] - Vivendo para Lutar Mais um Dia")
+  ESCREVAL("  [14] - Avisos")
+  ESCREVAL("  [15] - Menu")
+  ESCREVAL("  [00] - Sair do Programa")
   ESCREVAL()
   Resposta(entrada)
 
@@ -2251,6 +2271,8 @@ PROCEDIMENTO MenuDebug()
       Menu()
     CASO "00"
       terminarJogo <- VERDADEIRO
+    OUTROCASO
+      MenuDebug()
   FIMESCOLHA
 FIMPROCEDIMENTO
 
@@ -2259,10 +2281,10 @@ PROCEDIMENTO Menu()
   LIMPATELA()
 
   Logo()
-  ESCREVAL("[1] - JOGAR")
-  ESCREVAL("[2] - REDIMENSIONAR TELA")
-  ESCREVAL("[3] - CREDITOS")
-  ESCREVAL("[0] - SAIR")
+  ESCREVAL("  [1] - JOGAR")
+  ESCREVAL("  [2] - REDIMENSIONAR TELA")
+  ESCREVAL("  [3] - CREDITOS")
+  ESCREVAL("  [0] - SAIR")
   ESCREVAL()
   Resposta(entrada)
 
