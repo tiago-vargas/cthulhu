@@ -1228,7 +1228,7 @@ PROCEDIMENTO SalaDeDescanso()
         FalaF   ("mente mortos depois da passagem.")
 
         //      ("+-----------------------------------------------------------------------------+")
-        Linha   ("Era aquela voz rouca que te ajudara a sair da sala de máquinas.")
+        LinhaF  ("Era aquela voz rouca que te ajudara a sair da sala de máquinas.")
 
         Linha   ("De tudo o que aquela voz falou, a única coisa que você compreendeu por completo")
         LinhaF  ("foi o nome Nyarlathotep.")
@@ -1406,7 +1406,7 @@ PROCEDIMENTO PrimeiroAndar()
 
         LinhaF  ("A criatura se bate enfurecida na grade.")
 
-        LinhaF  ("Você esta segura agora. Aquela coisa não poderia te pegar.                     ")
+        LinhaF  ("Você está segura agora. Aquela coisa não poderia te pegar.                     ")
 
         Dialogo ("Nyarlathotep")
         FalaS   ("Ou será que pode? AHAHAHAHAHAHAAAA")
