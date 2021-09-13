@@ -25,44 +25,28 @@ Indentação padrão de 2 espaços dentro de cada bloco.
 
 ## Escrevendo na Tela
 
-Use o procedimento `Mostre` pra mostrar texto na tela seguido de uma pausa, que o usuario pode pressionar `Enter` pra continuar o programa. Como o usuario pode avancar sem escrever nada, o efeito tambem eh de textos separados de uma linha em branco. Util pra mostrar textos aos poucos.
+### Paragrafos
+Use os procedimentos `Linha` e `LinhaF` pra mostrar paragrafos na tela seguido de uma pausa, que o usuario pode pressionar `Enter` pra continuar o programa. Como o usuario pode avancar sem escrever nada, o efeito tambem eh de textos separados de uma linha em branco. Util pra mostrar textos aos poucos. `Linha` eh pra escrever as primeiras linhas do paragrafo. A ultima linha (ou a unica, se for o caso) deve ser feita com `LinhaF`
 
 ``` alg
-PROCEDIMENTO Mostre(texto: CARACTERE)
- VAR a: CARACTERE
+PROCEDIMENTO Linha(texto: CARACTERE) // Linha de texto intermediária
  INICIO
+  ESCREVA ("  ") // margem
   ESCREVAL(texto)
-  LEIA(a)
+FIMPROCEDIMENTO
+
+PROCEDIMENTO LinhaF(texto: CARACTERE) // Linha de texto final
+ VAR a : CARACTERE
+ INICIO
+  ESCREVA ("  ") // margem
+  ESCREVAL(texto)
+
+  ESCREVA ("  ") // margem
+  LEIA    (a)
 FIMPROCEDIMENTO
 ```
 
-## Lendo Entrada do Usuario
-
-Use o procedimento `pergunte` pra fazer uma pergunta ao usuario antes. Esse procedimento ja vem escreve um *campo de escrita* pro usuario saber que precisa digitar.
-
-``` alg
-PROCEDIMENTO pergunte(pergunta: CARACTERE)
-INICIO
-	ESCREVAL(pergunta)
-	ESCREVA(">> ")
-FIMPROCEDIMENTO
-```
-
-Pra implementar, faca:
-
-``` alg
-pergunte("O que voce vai fazer?")
-leia(resposta)
-```
-
-Isso mostra no console:
-
-```
-O que voce vai fazer?
->> [resposta]
-```
-
-## Dialogo de Personagens
+### Dialogo de Personagens
 
 Em cada dialogo deve ser indicado quem fala com `Dialogo`.
 
@@ -115,6 +99,32 @@ FIMPROCEDIMENTO
 ```
 
 O tamanho maximo de uma linha de dialogo deve ser do tamanho de `"+____________________________________________________________________+"`
+
+## Lendo Entrada do Usuario
+
+Use o procedimento `pergunte` pra fazer uma pergunta ao usuario antes. Esse procedimento ja vem escreve um *campo de escrita* pro usuario saber que precisa digitar.
+
+``` alg
+PROCEDIMENTO pergunte(pergunta: CARACTERE)
+INICIO
+	ESCREVAL(pergunta)
+	ESCREVA(">> ")
+FIMPROCEDIMENTO
+```
+
+Pra implementar, faca:
+
+``` alg
+pergunte("O que voce vai fazer?")
+leia(resposta)
+```
+
+Isso mostra no console:
+
+```
+O que voce vai fazer?
+>> [resposta]
+```
 
 ## Multiplas Escolhas
 
