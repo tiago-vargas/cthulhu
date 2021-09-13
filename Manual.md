@@ -25,8 +25,8 @@ Além disso, é recomendável você desligar o "sons do sistema" no seu mixer de
 Esse jogo foi criado como um trabalho para a disciplina de Fundamentos da Programação.
 
 - Tiago Vargas Pereira de Oliveira
--
--
+- João Vitor Abreu Castro 
+- João Victor de Souza Albuquerque
 
 ## Avisos Antes de Jogar
 
