@@ -1,10 +1,5 @@
 # MURAL DE AVISOS
 
-O guia de estilos tá desatualizado. Depois resolvo isso.
-
-* **Terminar o Manual.**
- 
-
 ## Adicionando Arquivos
 
 Vá pro diretório onde você deseja adicionar o arquivo.
